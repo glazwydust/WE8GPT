@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gap: what companies say vs. what the web shows</title>
+  <meta name="description" content="Gap compares what listed companies say on earnings calls with what the live web shows, using TinyFish, and flags mismatches early. Not investment advice.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#app">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <div class="nav-in">
+      <a class="logo" href="#/" aria-label="Gap, home">G<span>a</span>p</a>
+      <nav class="links" aria-label="Main">
+        <a href="#/" data-nav="home">Home</a>
+        <a href="#/results" data-nav="results">Results</a>
+        <a href="#/claims" data-nav="claims">Claims</a>
+        <a href="#/how" data-nav="how">How it works</a>
+        <a href="#/ask" data-nav="ask">Ask Gap</a>
+      </nav>
+      <span class="badge" id="badge" role="status">saved results</span>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="foot">
+    <div class="foot-in">
+      <div>
+        <div class="logo small">G<span>a</span>p</div>
+        <p id="disclaimer">Gap compares what listed companies say on earnings calls with what the live web shows. It is not investment advice and does not say a company is dishonest.</p>
+      </div>
+      <div class="foot-links">
+        <a href="#/">Home</a><a href="#/results">Results</a><a href="#/claims">Claims</a><a href="#/how">How it works</a><a href="#/ask">Ask Gap</a>
+        <p>Web data collected with TinyFish agents.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="data/bundle.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

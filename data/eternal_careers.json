@@ -1,0 +1,94 @@
+{
+  "jobs": [
+    {
+      "brand": "Zomato",
+      "title": "Zomato hiring Customer Care Executive(Voice/Chat Process)",
+      "location": "Hybrid - Noida, New Delhi, Gurugram"
+    },
+    {
+      "brand": "Zomato",
+      "title": "Customer Service Executive (Zomato)",
+      "location": "Remote"
+    },
+    {
+      "brand": "Zomato",
+      "title": "Customer Service Executive",
+      "location": "Remote"
+    },
+    {
+      "brand": "Zomato",
+      "title": "Customer Care Executive",
+      "location": "Remote"
+    },
+    {
+      "brand": "Zomato",
+      "title": "Zomato CD",
+      "location": "Remote"
+    },
+    {
+      "brand": "Zomato",
+      "title": "Zomato Apprentice",
+      "location": "Remote"
+    },
+    {
+      "brand": "Zomato",
+      "title": "Walk-in || Chat Support Executive",
+      "location": "Delhi / NCR"
+    },
+    {
+      "brand": "Zomato",
+      "title": "Team Member",
+      "location": "Noida"
+    },
+    {
+      "brand": "Zomato",
+      "title": "Zomato Station Walker",
+      "location": "Multiple locations (Chengalpattu, Kopargaon, etc.)"
+    },
+    {
+      "brand": "Zomato",
+      "title": "Senior Executive - Aggregator Operations | Zomato, Swiggy, Campaigns",
+      "location": "Noida"
+    },
+    {
+      "brand": "Zomato",
+      "title": "Software Engineer - Back End",
+      "location": "Gurugram"
+    },
+    {
+      "brand": "Blinkit",
+      "title": "Blinkit email",
+      "location": "Remote"
+    },
+    {
+      "brand": "Blinkit",
+      "title": "Blinkit",
+      "location": "Remote"
+    },
+    {
+      "brand": "Blinkit",
+      "title": "Blinkit CD",
+      "location": "Remote"
+    },
+    {
+      "brand": "Blinkit",
+      "title": "Warehouse Operations Executive",
+      "location": "Noida(Sector 8)"
+    }
+  ],
+  "source": "careers",
+  "company": "Eternal",
+  "by_brand": [
+    {
+      "brand": "Zomato",
+      "count": 179
+    },
+    {
+      "brand": "Blinkit",
+      "count": 302
+    }
+  ],
+  "page_url": "https://www.naukri.com/zomato-jobs; https://www.naukri.com/blinkit-jobs",
+  "open_jobs": 481,
+  "count_method": "Combined count from Naukri.com search results: 179 Zomato jobs + 302 Blinkit jobs = 481 total jobs. These are search result pages on Naukri.com, not the official Eternal careers page."
+}

@@ -1,0 +1,143 @@
+{
+  "company": "Billionbrains Garage Ventures Limited",
+  "slug": "groww",
+  "quarter": "Q2 FY27",
+  "claims": [
+    {
+      "id": 1,
+      "topic": "MTF risk controls",
+      "quote": "I think there are like lot of policy-level changes that we implemented after what happened last to last quarter. And we have seen goodness coming in the last quarter as well.",
+      "speaker": "Ishan Bansal",
+      "role": "Co-Founder and CFO",
+      "segment_id": "s29",
+      "source": "Groww Q2 FY27 earnings call, PDF page 7",
+      "source_url": "PASTE_BSE_TRANSCRIPT_LINK",
+      "date": "2026-10-14",
+      "weight_note": "Margin trading (MTF) is one product line; the call does not give its share of revenue.",
+      "relevant_signals": [
+        "news",
+        "reddit",
+        "reviews"
+      ],
+      "what_to_look_for": "Reports of MTF/margin problems, forced selling, or customer complaints about margin or withdrawals."
+    },
+    {
+      "id": 2,
+      "topic": "Expiry-day technology issue was one-time",
+      "quote": "There was an issue that we faced because on a particular expiry day, the files got delayed. Because of that, there was a one-time hit of around INR10 crores to INR13 crore",
+      "speaker": "Ishan Bansal",
+      "role": "Co-Founder and CFO",
+      "segment_id": "s5",
+      "source": "Groww Q2 FY27 earnings call, PDF page 3",
+      "source_url": "PASTE_BSE_TRANSCRIPT_LINK",
+      "date": "2026-10-14",
+      "weight_note": "Cost impact is small relative to total costs; the claim is that the issue was one-time.",
+      "relevant_signals": [
+        "reviews",
+        "reddit",
+        "news"
+      ],
+      "what_to_look_for": "Repeated outages, order failures, app crashes or delayed settlements after the expiry day."
+    },
+    {
+      "id": 3,
+      "topic": "Pricing is fair to customers",
+      "quote": "if you are giving more value to the customers than what we are charging, I think customers will be happy. They feel fair",
+      "speaker": "Lalit Keshre",
+      "role": "Co-Founder and CEO",
+      "segment_id": "s22",
+      "source": "Groww Q2 FY27 earnings call, PDF page 6",
+      "source_url": "PASTE_BSE_TRANSCRIPT_LINK",
+      "date": "2026-10-14",
+      "weight_note": "Applies to the whole product range; the app reviews cover only the Groww app.",
+      "relevant_signals": [
+        "reviews",
+        "reddit"
+      ],
+      "what_to_look_for": "Complaints about charges, hidden fees, brokerage or pricing changes."
+    },
+    {
+      "id": 4,
+      "topic": "US stocks early feedback",
+      "quote": "The feedback is really good from the customers.",
+      "speaker": "Lalit Keshre",
+      "role": "Co-Founder and CEO",
+      "segment_id": "s22",
+      "source": "Groww Q2 FY27 earnings call, PDF page 6",
+      "source_url": "PASTE_BSE_TRANSCRIPT_LINK",
+      "date": "2026-10-14",
+      "weight_note": "US stocks is a new, small product; the call says it is very early.",
+      "relevant_signals": [
+        "reviews",
+        "reddit"
+      ],
+      "what_to_look_for": "Customer comments about the US stocks feature (onboarding, funding, withdrawals, support)."
+    },
+    {
+      "id": 5,
+      "topic": "Operating cost flat, hiring continues",
+      "quote": "our cost to operate has remained flat quarter-on-quarter",
+      "speaker": "Lalit Bhimani",
+      "role": "Group Head, Finance",
+      "segment_id": "s16",
+      "source": "Groww Q2 FY27 earnings call, PDF page 5",
+      "source_url": "PASTE_BSE_TRANSCRIPT_LINK",
+      "date": "2026-10-14",
+      "weight_note": "Careers-page job count shows hiring intent only, not actual cost.",
+      "relevant_signals": [
+        "jobs"
+      ],
+      "what_to_look_for": "Open-role count and its change over time; sharp hiring freeze or sharp expansion."
+    },
+    {
+      "id": 6,
+      "topic": "Room to keep growing",
+      "quote": "we are still highly underpenetrated from a both customer as well as the market share perspective. We expect this to keep on growing for the foreseeable future.",
+      "speaker": "Ishan Bansal",
+      "role": "Co-Founder and CFO",
+      "segment_id": "s11",
+      "source": "Groww Q2 FY27 earnings call, PDF page 4",
+      "source_url": "PASTE_BSE_TRANSCRIPT_LINK",
+      "date": "2026-10-14",
+      "weight_note": "This is a forward-looking statement; evidence can only show current direction.",
+      "relevant_signals": [
+        "news",
+        "reviews",
+        "jobs"
+      ],
+      "what_to_look_for": "Customer growth signals, review volume trends, hiring trend, news on market share."
+    },
+    {
+      "id": 7,
+      "topic": "CAS rule impact expected to normalise",
+      "quote": "Hence, our expectation is that it will go back to like normal in some ways.",
+      "speaker": "Ishan Bansal",
+      "role": "Co-Founder and CFO",
+      "segment_id": "s7",
+      "source": "Groww Q2 FY27 earnings call, PDF page 4",
+      "source_url": "PASTE_BSE_TRANSCRIPT_LINK",
+      "date": "2026-10-14",
+      "weight_note": "Regulatory statement about the derivatives segment; depends on SEBI's final circular.",
+      "relevant_signals": [
+        "news"
+      ],
+      "what_to_look_for": "News on SEBI closing-auction (CAS) rule, its start date or effect on derivatives volumes."
+    },
+    {
+      "id": 8,
+      "topic": "UPI charge impact not material",
+      "quote": "Our expectation is it's not going to be a material change to our cost in any case",
+      "speaker": "Ishan Bansal",
+      "role": "Co-Founder and CFO",
+      "segment_id": "s87",
+      "source": "Groww Q2 FY27 earnings call, PDF page 14",
+      "source_url": "PASTE_BSE_TRANSCRIPT_LINK",
+      "date": "2026-10-14",
+      "weight_note": "The cost depends on the final regulator decision on UPI charges and any cap.",
+      "relevant_signals": [
+        "news"
+      ],
+      "what_to_look_for": "News on UPI charges for capital-market use, caps, or final regulator decisions."
+    }
+  ]
+}

@@ -1,0 +1,1040 @@
+{
+  "company": "Eternal Limited",
+  "brand": "Eternal (Zomato, Blinkit)",
+  "nse_symbol": "ETERNAL",
+  "bse_scrip_code": "543320",
+  "quarter": "Q1 FY27",
+  "call_date": "2026-07-22",
+  "filed_with_exchange": "2026-07-29",
+  "source_url": "https://b.zmtcdn.com/investorrelations/Q1FY27-earnings-call-transcript.pdf",
+  "source_page_url": null,
+  "fetched_at": "2026-10-19T22:28:36+05:30",
+  "fetched_by": "manual download (pdf to text locally); link taken from the exchange filing cover letter",
+  "page_note": "pdf_page is the physical PDF page (page 1 is the exchange cover letter).",
+  "segments": [
+    {
+      "id": "s1",
+      "pdf_page": 3,
+      "speaker": "Moderator",
+      "speaker_type": "moderator",
+      "role": null,
+      "text": "Ladies and gentlemen, a very good evening, and welcome to Eternal Limited's Q1FY27 earnings conference call. From Eternal's management team, we have with us today Albinder Singh Dhindsa, Akshant Goyal and Kunal Swarup. Before we begin, a few quick announcements for the attendees. Anything said on this call, which reflects outlook for the future, or which could be construed as a forwardlooking statement, may involve risks and uncertainties. Such statements or comments are not guarantees of future performance, and actual results may differ from those statements. Additionally, please note that this earnings call is scheduled for a duration of 45 minutes, and we will be starting directly with the Q&A section of the call. If you wish to ask a question, please use the raise hand feature available on your Zoom dashboard. We will announce your name on the call and unmute your line, post which you can proceed with your question. We will wait for a minute while the question queue assembles. The first question is from the line of Gaurav Malhotra from Axis. Please go ahead."
+    },
+    {
+      "id": "s2",
+      "pdf_page": 3,
+      "speaker": "Gaurav Malhotra",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Hi, good evening, everyone. Congrats on a good set of numbers. Just had a couple of questions. Firstly, you seem to have raised the long-term guidance in quick commerce from 5-6% to 6%. What gives you this confidence to do this now, especially when there is sort of competitive intensity in this sector?"
+    },
+    {
+      "id": "s3",
+      "pdf_page": 3,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "Hi, Gaurav. This is basis what we are seeing in the business. What we're trying to communicate here is that over time, we have increased the capex per store in our business and some of these investments are leading to increase in efficiency in the business. It's also a function of increase in average store sizes, etc. All these investments are clearly lining up in a way where we now have higher visibility on margins and we think at this point we're likely to end at the higher end of the range that we had guided earlier and hence, the communication."
+    },
+    {
+      "id": "s4",
+      "pdf_page": 3,
+      "speaker": "Gaurav Malhotra",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Understood. The next question is you mentioned the older cohorts are spending 3x versus three years back. Just wanted to get a sense of the split between how much of this is related to order frequency and how much of it is related to the AOV growth?"
+    },
+    {
+      "id": "s5",
+      "pdf_page": 3,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "Gaurav, we don't share that data, but directionally, most of it is frequency growth. With passage of time for a customer cohort, we see that NAOV stabilizes. It grows but only slightly, and most of the growth comes from frequency growth."
+    },
+    {
+      "id": "s6",
+      "pdf_page": 3,
+      "speaker": "Gaurav Malhotra",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Got it. Just one last question. How much of this growth, which we are seeing at an aggregate level in Blinkit, is coming from existing cities versus geographical expansion?"
+    },
+    {
+      "id": "s7",
+      "pdf_page": 3,
+      "speaker": "Albinder Singh Dhindsa",
+      "speaker_type": "management",
+      "role": "Chief Executive Officer",
+      "text": "Most of it is from existing cities."
+    },
+    {
+      "id": "s8",
+      "pdf_page": 4,
+      "speaker": "Gaurav Malhotra",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Okay, thank you."
+    },
+    {
+      "id": "s9",
+      "pdf_page": 4,
+      "speaker": "Moderator",
+      "speaker_type": "moderator",
+      "role": null,
+      "text": "Thank you. Next question is from the line of Vivek Maheshwari from Jefferies. Please go ahead."
+    },
+    {
+      "id": "s10",
+      "pdf_page": 4,
+      "speaker": "Vivek Maheshwari",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Hi, good evening team. My first question is on Blinkit, two parts. On your response in question number eight, you mentioned two points. Can you please elaborate on that? You have started with a statement, “No - competitive intensity remains high but has become more predictable”. Can I request if you can elaborate on this? And do you also think that this first quarter has been the peak of competitive intensity or the phase where we are is the highest competition at this point of time?"
+    },
+    {
+      "id": "s11",
+      "pdf_page": 4,
+      "speaker": "Albinder Singh Dhindsa",
+      "speaker_type": "management",
+      "role": "Chief Executive Officer",
+      "text": "Hey, Vivek. First quarter, so far, was the peak of competitive intensity that we have seen till date because the number of players is higher and everybody was more aggressive. But when we look at competitive intensity and the way that it has evolved over the last few quarters, what we are seeing is that most of the competition is coming in the form of subsidies to customers on products and on delivery fees and that is what has become more predictable. Most competitors are going towards grocery subsidizing, which we are fairly clear about in terms of what we do in that and what is the kind of impact that it has on the business. We don't think that there is a lot of wiggle room for people to go much, much deeper than what they are currently doing because that would balloon losses fairly significantly. That's what we mean when we say it is fairly predictable now."
+    },
+    {
+      "id": "s12",
+      "pdf_page": 4,
+      "speaker": "Vivek Maheshwari",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Interesting. Got it. And the second part, if you can elaborate on this - you mentioned pricing-led growth requires sustained cash burn and leads to systemic trap they can't easily walk out of. Can you just elaborate on this piece also?"
+    },
+    {
+      "id": "s13",
+      "pdf_page": 4,
+      "speaker": "Albinder Singh Dhindsa",
+      "speaker_type": "management",
+      "role": "Chief Executive Officer",
+      "text": "See, we are fundamentally a supply-creation business and if you channel your supply towards providing discounts to customers, then that's what the business becomes. Every time you want to pull away from that, there is nothing else to offer to the customers because that's what brought those customers to you in the first place. As we’ve also explained, there's no pullback that you'll pull the discounts, and the customers will stay because you've got the customers by promising them a subsidy. They will move to the next platform or the next platform, or they will drop out of the category. We don't see a recovery for platforms from this trap if they are acquiring customers by giving a lot of subsidies. There is no path to recovery or saying that they'll be able to retain those customers when they pull back the subsidies."
+    },
+    {
+      "id": "s14",
+      "pdf_page": 4,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "Vivek, just to add, this is also coming from our own experience in the past. Couple of years ago, when we were building out this business, we were in many major cities and were the number three or four player, and our initial approach in those markets was like typical e-commerce thinking, that let's start discounting and get customers and over time the investment will pay off. That didn't work for us initially in some markets in the south. Eventually, what worked was working on the infrastructure growth, which Albinder mentioned, and we have the outcome in front of us. Now, we are the leading player by NOV in most of these markets and we strongly feel that discount-led growth is not sustainable in the business. That is what has become predictable and so we are able to more confidently plan our next few quarters on what we need to do."
+    },
+    {
+      "id": "s15",
+      "pdf_page": 5,
+      "speaker": "Vivek Maheshwari",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Got it, just last one on the same point. You already have a number of MTUs, which is comfortably over 30 million. I'm sure the industry is growing so rapidly. If you have to double this number, let's say, 30 plus 30, do you think with the current strategy of not discounting at the time when the intensity is very high in the market, the service quality and whatever you stand for, will still allow you to do that? Or will there be a cohort of customers which will be price sensitive, and therefore, getting incremental customer from this stage will require probably more discounting on your part?"
+    },
+    {
+      "id": "s16",
+      "pdf_page": 5,
+      "speaker": "Albinder Singh Dhindsa",
+      "speaker_type": "management",
+      "role": "Chief Executive Officer",
+      "text": "Vivek, our strategy in these things is not that we don't give customers value. As the platform has gotten bigger, our profitability has improved. There is a certain amount that we keep reinvesting back into making our product prices more competitive, giving customers actual value, which allows us to tap deeper into customer cohorts, which might be more price sensitive than the current ones that we currently have. That process will continue but that's a gradual process. As the platform gets bigger, we will pass on more benefits to customers. It allows us to tap into a larger market and that is where the additional MTUs will come from as well."
+    },
+    {
+      "id": "s17",
+      "pdf_page": 5,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "Also, Vivek, we don't think this level of discounting is sustainable, as we said. We expect this to not continue beyond the near future so we do think that this will come off. Therefore, the pressure on us needing to discount as to maintain competitiveness and price will go down. Even with that, prices can come off with scale, but then that's a choice that we make to pass on the benefits of scale to customers rather than trying to compete on price with someone else."
+    },
+    {
+      "id": "s18",
+      "pdf_page": 5,
+      "speaker": "Vivek Maheshwari",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Got it, thank you. Wishing you all the very best."
+    },
+    {
+      "id": "s19",
+      "pdf_page": 5,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "Thanks."
+    },
+    {
+      "id": "s20",
+      "pdf_page": 5,
+      "speaker": "Moderator",
+      "speaker_type": "moderator",
+      "role": null,
+      "text": "Thank you. Next question is from the line of Aditya Soman from CLSA. Please go ahead."
+    },
+    {
+      "id": "s21",
+      "pdf_page": 5,
+      "speaker": "Aditya Soman",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Hi, good evening and thanks for the opportunity. I have two questions. Firstly, on Blinkit, we saw a lower AOV now for two quarters in a row while we have seen very strong order growth. Can you just explain what led to this drop in AOV? Last quarter, I understand there was an element of seasonality, but we've seen it drop a little bit more. And maybe related to that, with sort of the delayed monsoon, what has been the impact, if at all, on the business or any changes in the mix or anything of that sort? Secondly, on food delivery. The absolute number of monthly transacting customers you're adding is actually increasing every quarter. Is this a function of new customers coming to the fold or just a faster conversion from the ATUs? Also, any sense on frequency in food delivery?"
+    },
+    {
+      "id": "s22",
+      "pdf_page": 6,
+      "speaker": "Albinder Singh Dhindsa",
+      "speaker_type": "management",
+      "role": "Chief Executive Officer",
+      "text": "The NAOV drop in Blinkit is still in the same range as was last year, but most of this drop is usually just related to small changes in the patterns that happen during the quarter. Overall, in terms of the throughput and the category share, nothing has materially moved to change the NAOV. Some of it can also just be related to lower product prices because there is a lot of competitive intensity, which also forces us to price match and a lot of things. Those can also have an impact on lower NAOV."
+    },
+    {
+      "id": "s23",
+      "pdf_page": 6,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "Generally, Aditya, we're not expecting the NAOV to grow from here. If you look at yearon-year, it's flat. That accounts for seasonality for Q1, and we broadly expect NAOVs to remain in the same range. In Q3, they might climb up again because of seasonality, but broadly, we don't think they should move up in a meaningful way."
+    },
+    {
+      "id": "s24",
+      "pdf_page": 6,
+      "speaker": "Aditya Soman",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Understood. So, is the right way then to understand this is that the focus remains on order growth and maintaining AOV at the current level, which is already profitable?"
+    },
+    {
+      "id": "s25",
+      "pdf_page": 6,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "Yes, NAOV is more of an outcome. We don't drive that. The mix of categories and the product assortment that we have leads to that NAOV. Eventually, what is important is the NOV in the business and the margins. As long as they move in the right direction, we don't worry too much about NAOV because there could be smaller categories or products which are high margin and vice versa. So beyond a point, NAOV doesn't dictate the margin structure too much from hereon."
+    },
+    {
+      "id": "s26",
+      "pdf_page": 6,
+      "speaker": "Aditya Soman",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Very clear, thanks. And on food delivery?"
+    },
+    {
+      "id": "s27",
+      "pdf_page": 6,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "On food delivery, the increase in MTUs is a combination of both. We've seen acceleration in new users that we've added to our platform in the last three or four quarters. This is a function of the category growing as well as more customers transacting more frequently. Both of them are playing a part in the growth in MTUs which you are seeing, which is driving growth."
+    },
+    {
+      "id": "s28",
+      "pdf_page": 6,
+      "speaker": "Aditya Soman",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Very clear. And just to be clear, this does not include Bistro, right?"
+    },
+    {
+      "id": "s29",
+      "pdf_page": 7,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "No, there is no Bistro overlap in our disclosures, neither in NOV nor in the bottom line. The Bistro business is also in a separate entity, and so the segregation of accounts is very clear, and there is no overlap with the food delivery business."
+    },
+    {
+      "id": "s30",
+      "pdf_page": 7,
+      "speaker": "Aditya Soman",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Perfect. Very clear. Lastly, since we're on Bistro, if you can give a sense of how many kitchens you have now and what's the current state of the business?"
+    },
+    {
+      "id": "s31",
+      "pdf_page": 7,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "Broadly, we are adding about 10-odd kitchens in a quarter, that's the pace of expansion there. What is encouraging is that in some of our older kitchens, we are seeing a lot of progress in throughput, and we're getting the mix of the right assortment, menus, menu pricing and operational infrastructure & efficiency. As we iterate and make that better, we will see the business becoming more profitable and we can then be more aggressive on expansion as we build that confidence. It's the same mindset we had while we built Blinkit, that you get things right including basic processes which you know need to be fixed. As you do that, that gives more room to expand more aggressively in the future. We'll be cautiously expanding for now, but at some point, it can accelerate once we are more confident about the business."
+    },
+    {
+      "id": "s32",
+      "pdf_page": 7,
+      "speaker": "Aditya Soman",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Right. That’s it, thank you very much."
+    },
+    {
+      "id": "s33",
+      "pdf_page": 7,
+      "speaker": "Moderator",
+      "speaker_type": "moderator",
+      "role": null,
+      "text": "Thank you. Next question is from the line of Swapnil Potdukhe from JM Financial. Please go ahead."
+    },
+    {
+      "id": "s34",
+      "pdf_page": 7,
+      "speaker": "Swapnil Potdukhe",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Hi, thanks for the opportunity. My first question is on Blinkit. You mentioned last quarter that there will be some bit of seasonality in the Blinkit business, and that will help you grow meaningfully faster and you did deliver 21% QoQ volume growth. I was looking at your historical data as well. It seems that between 1Q and 2Q, you typically grow between 18% to 20% in volume terms. In fact, last year, you grew 26%. Will it be fair to say that we should be looking at a similar kind of growth in 2Q as well and broadly in line with the historical range, if not more?"
+    },
+    {
+      "id": "s35",
+      "pdf_page": 7,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "Sorry, Swapnil, we don't want to comment on the quarter right now, no guidance on that."
+    },
+    {
+      "id": "s36",
+      "pdf_page": 7,
+      "speaker": "Swapnil Potdukhe",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Okay. The second question is with respect to your take-rate in the Blinkit business. You are seeing some decent improvement in the take rate, but that doesn't seem to be flowing down to your contribution margin. Is there any particular reason that is hurting you here? Because ideally, a decent proportion of your take rate increase should flow down to your contribution margin."
+    },
+    {
+      "id": "s37",
+      "pdf_page": 7,
+      "speaker": "Albinder Singh Dhindsa",
+      "speaker_type": "management",
+      "role": "Chief Executive Officer",
+      "text": "There was some increase in the cost of doing business in the quarter because there were a lot of states which implemented increase in minimum wage. That was one factor. Also, we are opening larger stores. So, some of the contribution is also impacted by the earlier stages of these stores, as the contribution is lower than when we open smaller stores."
+    },
+    {
+      "id": "s38",
+      "pdf_page": 8,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "Swapnil, it's a seasonal business. In Q1, the last mile costs are usually higher because of summer and heat and various other factors. If you look at year on year, you see that a large part of gross profit increase or take rate increase has translated into contribution increase. Over the longer term, the right metric to compare this with is Q1 of the previous year, and it could differ from quarter to quarter depending on seasonality. The margin could be higher because of mix change also. These things are also in addition to what Albinder said, I would like to note."
+    },
+    {
+      "id": "s39",
+      "pdf_page": 8,
+      "speaker": "Swapnil Potdukhe",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Got it. The other question is with respect to your capex guidance that you have said. You say on a per store basis, one should look at around INR 2.5 crore of capex. You added around 200 stores this quarter, but your capex was around INR 700 crore. There is a meaningful difference between what you are suggesting as typical capex versus what is there in your cash flow statement."
+    },
+    {
+      "id": "s40",
+      "pdf_page": 8,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "We should look at this number more longer-term because there is a lumpiness in investment here because while we are presenting the information as capex per store, a large part of the capex is in warehousing and that investment is lumpy. If you therefore look at our capex over the last six months, nine months or a longer period, and the capex per store for that period, you will find it is lower than INR 2.5 crore. We expect that to continue going forward."
+    },
+    {
+      "id": "s41",
+      "pdf_page": 8,
+      "speaker": "Swapnil Potdukhe",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Just a last one on your NOV retention data that you mentioned that over a three-year period, typically a cohort of customers see 3x increase. When you give this data, this data is for only those customers who you have retained, or this is also includes customers who may have left the platform and never come back after three years?"
+    },
+    {
+      "id": "s42",
+      "pdf_page": 8,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "Yes, it's for the overall cohort. If you acquire 100 customers in the quarter, the percentages are for the entire 100. If 40 of them never show up again, then the retention is only 60%."
+    },
+    {
+      "id": "s43",
+      "pdf_page": 8,
+      "speaker": "Swapnil Potdukhe",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "And despite that, you have 3x increase, is what you are suggesting?"
+    },
+    {
+      "id": "s44",
+      "pdf_page": 8,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "Yes. For the cohort that has remained, the growth is much higher, but at the full cohort level, the numbers are what we have presented here."
+    },
+    {
+      "id": "s45",
+      "pdf_page": 8,
+      "speaker": "Swapnil Potdukhe",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Got it. Thanks a lot for the opportunity and all the best."
+    },
+    {
+      "id": "s46",
+      "pdf_page": 9,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "Thanks."
+    },
+    {
+      "id": "s47",
+      "pdf_page": 9,
+      "speaker": "Moderator",
+      "speaker_type": "moderator",
+      "role": null,
+      "text": "Thank you. Next question is from the line of Jignanshu Gor from Bernstein. Please go ahead. Hi Jignanshu, are you there? Seems like we’re facing some technical difficulties. We’ll move on to our next caller. Next question is from the line of Vijit Jain from Citigroup. Please go ahead."
+    },
+    {
+      "id": "s48",
+      "pdf_page": 9,
+      "speaker": "Vijit Jain",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Hi, thanks for the opportunity. Congratulations on a great set of numbers. My first question is that you mentioned you plan to add gourmet stores in tier 1 cities as you focus on assortment in these cities. Does that mean we could see more split orders in metro cities in the future or are you thinking of these stores as generally housing more expensive assortment while still housing everything? That's my first question."
+    },
+    {
+      "id": "s49",
+      "pdf_page": 9,
+      "speaker": "Albinder Singh Dhindsa",
+      "speaker_type": "management",
+      "role": "Chief Executive Officer",
+      "text": "It's a combination of both, Vijit. It depends on the kind of real estate that we get and our infrastructure requirements and if we can fulfill it within the same stores. Like I said, we are opening larger stores, so we have the ability as well within some stores."
+    },
+    {
+      "id": "s50",
+      "pdf_page": 9,
+      "speaker": "Vijit Jain",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Got it. And is there any consideration that split orders are not a good user experience? Is that the case at all or in your experience that has not really been a factor at all?"
+    },
+    {
+      "id": "s51",
+      "pdf_page": 9,
+      "speaker": "Albinder Singh Dhindsa",
+      "speaker_type": "management",
+      "role": "Chief Executive Officer",
+      "text": "As a platform, we do want to make sure that we're not tilting too much towards split orders. Customer experience would not be as great. So far, we have not experienced that in practicality. Customers value the availability of products more than split orders."
+    },
+    {
+      "id": "s52",
+      "pdf_page": 9,
+      "speaker": "Vijit Jain",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Understood. My second question is that comment on competition. I know one of the previous callers already talked about it a little, but you also said that discounting, you believe, is even less effective in quick commerce than e-commerce. I just wanted to double check. You say that because quick commerce is a higher frequency engagement and that habit formation and expectation of discounting becomes more entrenched here. Is that why you're saying that or is there more to it?"
+    },
+    {
+      "id": "s53",
+      "pdf_page": 9,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "No. The difference is in the real estate available. In quick commerce, you're working off smaller store sizes, so you have limited shelf space. Hence, if you are discounting in categories where the margins are low, then that's all that sells from that store. You don't have ways to really increase assortment or even if you increase assortment, the reliability of that availability is not there for the customers. That's the fundamental difference. In e-commerce, you have large warehouses. You get more customers looking for grocery items that are highly discounted. Theoretically, you can still offer and fulfill wider assortment. Here, the constraint is the store size and that's why it's different in the case of quick commerce."
+    },
+    {
+      "id": "s54",
+      "pdf_page": 10,
+      "speaker": "Vijit Jain",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Got it, understood. One last question - that comment on EBIT margin of 4% and Adjusted EBITDA margin of close to 6%. I just want to be clear because you say EBIT margin of 4%, not Adjusted EBIT. Are you including ESOP expenses when you say EBIT margin of 4% or are you including something else?"
+    },
+    {
+      "id": "s55",
+      "pdf_page": 10,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "Yes, there are ESOP expenses and there is depreciation. We are accounting for both of them."
+    },
+    {
+      "id": "s56",
+      "pdf_page": 10,
+      "speaker": "Vijit Jain",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "And then you get to a GAAP EBIT margin of 4% as long-term?"
+    },
+    {
+      "id": "s57",
+      "pdf_page": 10,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "Right."
+    },
+    {
+      "id": "s58",
+      "pdf_page": 10,
+      "speaker": "Vijit Jain",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Understood. And if I can just squeeze in one last question on inventory losses. You say that it's about 1.8% of NOV and largely driven by perishables. Practically speaking, does this go down from 1.8% or is it a harder problem to solve, aside from the mix changing?"
+    },
+    {
+      "id": "s59",
+      "pdf_page": 10,
+      "speaker": "Albinder Singh Dhindsa",
+      "speaker_type": "management",
+      "role": "Chief Executive Officer",
+      "text": "It has been fairly asymptotic so far. We don't expect it to be materially much better."
+    },
+    {
+      "id": "s60",
+      "pdf_page": 10,
+      "speaker": "Vijit Jain",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Got it. And do you net it at the gross profit level?"
+    },
+    {
+      "id": "s61",
+      "pdf_page": 10,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "That's right. That's what we mentioned also in the letter, last line of question six, that all the losses are netted out of gross profit. That’s part of COGS in a way, so gross profit is net of losses."
+    },
+    {
+      "id": "s62",
+      "pdf_page": 10,
+      "speaker": "Vijit Jain",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Understood. Thank you so much. Those were my questions."
+    },
+    {
+      "id": "s63",
+      "pdf_page": 10,
+      "speaker": "Moderator",
+      "speaker_type": "moderator",
+      "role": null,
+      "text": "Thank you. Next question is from the line of Yogesh Aggarwal from HSBC. Please go ahead."
+    },
+    {
+      "id": "s64",
+      "pdf_page": 10,
+      "speaker": "Yogesh Aggarwal",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Hi, just a couple of questions. Firstly, can you provide some color on the growth differential across bigger cities and the smaller towns in Blinkit?"
+    },
+    {
+      "id": "s65",
+      "pdf_page": 10,
+      "speaker": "Albinder Singh Dhindsa",
+      "speaker_type": "management",
+      "role": "Chief Executive Officer",
+      "text": "Yogesh, the non-metro cities are obviously growing faster because they're also growing off a smaller base. The percentage growth rates obviously will look much higher over there. Also, whatever competitive intensity we see, we see that it mostly starts off within groceries in the top-tier cities. There is some impact of that over there. Although we are still seeing robust growth in our tier 1 cities, we think there is some share shift also which happens over there, which lowers the number that we end up seeing."
+    },
+    {
+      "id": "s66",
+      "pdf_page": 10,
+      "speaker": "Yogesh Aggarwal",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Right. Just the other one - based on the new economics for the stores, since they are bigger stores, you're looking at 2,100-2,200 OPD per store, per day. Is there a possibility to modify the existing stores for them to also do similar level of throughput going forward or are we close to peak there in terms of size and throughput?"
+    },
+    {
+      "id": "s67",
+      "pdf_page": 11,
+      "speaker": "Albinder Singh Dhindsa",
+      "speaker_type": "management",
+      "role": "Chief Executive Officer",
+      "text": "Not as regular exercise. We've been upgrading a lot of the existing stores to find more optimal properties which are larger and move to larger store sizes."
+    },
+    {
+      "id": "s68",
+      "pdf_page": 11,
+      "speaker": "Yogesh Aggarwal",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Right. Thank you."
+    },
+    {
+      "id": "s69",
+      "pdf_page": 11,
+      "speaker": "Moderator",
+      "speaker_type": "moderator",
+      "role": null,
+      "text": "Thank you. Next question is from the line of Ankur Rudra from JP Morgan. Please go ahead."
+    },
+    {
+      "id": "s70",
+      "pdf_page": 11,
+      "speaker": "Ankur Rudra",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Looks like a nice growth recovery in QC. Do you think you're back to regaining share in the market? Or is the industry growth vis-a-vis better than expected in the quarter?"
+    },
+    {
+      "id": "s71",
+      "pdf_page": 11,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "We don't know, it's speculative, Ankur. We are more focused on what we can rely on which is our data. As we mentioned, for us, the tracker is customer retention, which is better than what it has been. From our vantage point, therefore, if the market is expanding faster than us, it really doesn't matter to us."
+    },
+    {
+      "id": "s72",
+      "pdf_page": 11,
+      "speaker": "Ankur Rudra",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Got it. Just in response to Vivek's question, you had mentioned that you have been passing on some benefit of scale as value to customers. How do you distinguish between giving customers value versus discounting you see from your peers?"
+    },
+    {
+      "id": "s73",
+      "pdf_page": 11,
+      "speaker": "Albinder Singh Dhindsa",
+      "speaker_type": "management",
+      "role": "Chief Executive Officer",
+      "text": "We usually don't look at what discounting is happening from peers beyond a certain point. Our baseline is usually what we think product prices can sustainably be in the long run, and that is what we index towards. The idea is that if our business is generating more efficiency and we can actually lower those prices even further, that is when we actually take those price decreases. We want to sustainably stay at those prices for the foreseeable future. We usually don't discount for a shorter period of time just to get some customers."
+    },
+    {
+      "id": "s74",
+      "pdf_page": 11,
+      "speaker": "Ankur Rudra",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Got it. Just a follow-up. It was a nice surprise to see a very nice sharp increase in MTUs in quick commerce despite a lower spend in marketing and fewer store adds. Is there anything you did differently this time to increase the MTU addition?"
+    },
+    {
+      "id": "s75",
+      "pdf_page": 11,
+      "speaker": "Albinder Singh Dhindsa",
+      "speaker_type": "management",
+      "role": "Chief Executive Officer",
+      "text": "Not really."
+    },
+    {
+      "id": "s76",
+      "pdf_page": 11,
+      "speaker": "Ankur Rudra",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Okay. Just last question on food delivery. Can you elaborate how you have responded to Toing and Ownly given you have accelerated this quarter? Does it appear like there's been any share loss despite lower customer fees from these formats?"
+    },
+    {
+      "id": "s77",
+      "pdf_page": 12,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "As we have mentioned also, Ankur, in the response to question three, that we're trying to be price competitive in certain markets where these platforms are more aggressively spending. So far, that's been enough to be able to make sure that we are able to defend and not lose share to these platforms. One of the bits that we did was last year when we dropped the eligibility for free delivery for a gold member to INR 99 instead of INR 199. That's one example of how that reduces the cost for a customer who is seeking a low-value order."
+    },
+    {
+      "id": "s78",
+      "pdf_page": 12,
+      "speaker": "Ankur Rudra",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Understood, appreciate it. Thank you."
+    },
+    {
+      "id": "s79",
+      "pdf_page": 12,
+      "speaker": "Moderator",
+      "speaker_type": "moderator",
+      "role": null,
+      "text": "Thank you. Next question is from the line of Abhisek Banerjee from ICICI. Please go ahead."
+    },
+    {
+      "id": "s80",
+      "pdf_page": 12,
+      "speaker": "Abhisek Banerjee",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Hi, thanks for the opportunity. Just on capex per store bit, you have given INR 2.5 crore versus INR 1 crore earlier. Is that INR 1 crore comparable? Did you use to include warehousing fees also in that INR 1 crore number?"
+    },
+    {
+      "id": "s81",
+      "pdf_page": 12,
+      "speaker": "Albinder Singh Dhindsa",
+      "speaker_type": "management",
+      "role": "Chief Executive Officer",
+      "text": "That’s right."
+    },
+    {
+      "id": "s82",
+      "pdf_page": 12,
+      "speaker": "Abhisek Banerjee",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Okay. On the net working capital side, you have managed to reduce it to 12 days but when you were actually going to the inventory model, the thought process was that if you increase your assortment, it can actually increase to that 18 days number. What has helped you reduce it further? Is it just terms of trade or something else?"
+    },
+    {
+      "id": "s83",
+      "pdf_page": 12,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "The 12 days that we are saying here is a steady-state estimate right now. Currently, as we have mentioned in question five, we are at 14 days. What has helped us reduce it from 18 to 14, and what we think will reduce it further to 12, is largely lower inventory days than we initially thought we would need to carry. Replenishment and throughput across the stores and supply chain have enabled us to achieve lower inventory days in the business, and that has been the main driver of this reduction."
+    },
+    {
+      "id": "s84",
+      "pdf_page": 12,
+      "speaker": "Abhisek Banerjee",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Understood. With regards to your OCF, there is a tax reversal which has come in, which is why the OCF number is higher this quarter. Is that a sustainable level going forward? Also, if you could give some color on the taxation, that would be helpful."
+    },
+    {
+      "id": "s85",
+      "pdf_page": 12,
+      "speaker": "Kunal Swarup",
+      "speaker_type": "management",
+      "role": "Head, Corporate Development",
+      "text": "Abhisek, this is Kunal here. The tax refund was on account of a refund because there were certain expenses which were ambiguous on whether they'll be allowable. We had deposited higher advance tax and there's a refund towards that. That's normal course of business and such things may come up once in a while going forward as well, but nothing structural."
+    },
+    {
+      "id": "s86",
+      "pdf_page": 13,
+      "speaker": "Abhisek Banerjee",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Got it. Could you also give some color on the Nugget business? Like exactly what is it that you are doing there? If you could give some clarity on that."
+    },
+    {
+      "id": "s87",
+      "pdf_page": 13,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "Abhisek, we'll share more about it in the coming quarters. We are still, in some ways, in a little bit of stealth mode here. It's an enterprise AI product business and we are seeing good traction in that but it's an evolving market, as you know, the entire AI space. We want to take a couple of more quarters and build our thesis more strongly around this, and then we'll share more about this business going forward."
+    },
+    {
+      "id": "s88",
+      "pdf_page": 13,
+      "speaker": "Abhisek Banerjee",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "When you're saying expenses, is it because your losses have increased there? Is it on manpower or is it for buying GPUs and stuff like that? If you could just give some color on that."
+    },
+    {
+      "id": "s89",
+      "pdf_page": 13,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "Largely manpower."
+    },
+    {
+      "id": "s90",
+      "pdf_page": 13,
+      "speaker": "Abhisek Banerjee",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "One last question, not really a quarter question, but since you've already spoken about how there's no point getting users beyond a certain number of MTU, could you give some color on what is the pareto ratio in QC? We already know that it's very steep for delivery. But in QC, is it steeper than that? Or how does it look, if you can give some color?"
+    },
+    {
+      "id": "s91",
+      "pdf_page": 13,
+      "speaker": "Albinder Singh Dhindsa",
+      "speaker_type": "management",
+      "role": "Chief Executive Officer",
+      "text": "I didn’t understand your question."
+    },
+    {
+      "id": "s92",
+      "pdf_page": 13,
+      "speaker": "Abhisek Banerjee",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "In food delivery, maybe your top 15-18% customers already drive 80% of revenue. How does that ratio apply in QC, if you could give some color on that?"
+    },
+    {
+      "id": "s93",
+      "pdf_page": 13,
+      "speaker": "Albinder Singh Dhindsa",
+      "speaker_type": "management",
+      "role": "Chief Executive Officer",
+      "text": "Much flatter than that."
+    },
+    {
+      "id": "s94",
+      "pdf_page": 13,
+      "speaker": "Abhisek Banerjee",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "So it’s flatter?"
+    },
+    {
+      "id": "s95",
+      "pdf_page": 13,
+      "speaker": "Albinder Singh Dhindsa",
+      "speaker_type": "management",
+      "role": "Chief Executive Officer",
+      "text": "Yes."
+    },
+    {
+      "id": "s96",
+      "pdf_page": 13,
+      "speaker": "Moderator",
+      "speaker_type": "moderator",
+      "role": null,
+      "text": "Thank you. Next question is from the line of Manish Adukia from Goldman Sachs. Please go ahead."
+    },
+    {
+      "id": "s97",
+      "pdf_page": 13,
+      "speaker": "Manish Adukia",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "My question is actually a follow-up on what was discussed earlier. Akshant, you say that your AOV should remain range bound in the foreseeable future and when you also talked about the cohort data earlier, you said that large part of that expansion was a function of frequency and not necessarily AOV. I'm just trying to reconcile that with, one, your assortment expansion over a period of time where non-grocery has continued to expand from an assortment perspective, we are already talking about Gourmet also as an added focus area from an assortment perspective. When I think about MTU expansion in the near term, I understand why average AOV may not expand. But over a period of time, if I look at today, your basket size, your MTUs are probably spending less than INR 2,000 per month on your platform. Why should that number not be substantially higher in two to three years from now as MTU growth maybe starts slowing down at some point in time? If you can just help maybe explain that a little bit better, that would be great."
+    },
+    {
+      "id": "s98",
+      "pdf_page": 14,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "Manish, the wallet share will increase. We are not saying a customer will spend the same amount of money. There's a distinction between wallet share and NAOV. When we say NAOV is unlikely to increase despite assortment expansion, what we are saying is that a lot of assortment that we are adding is also low-NAOV assortment. There is that element which you have to acknowledge. Also, as frequency of consumers increases on our platform, we see that they start ordering fewer items in a cart because it becomes a daily use case. As customers, we have seen for ourselves that the order sizes need not be INR 400-500 for every order as you become a more frequent customer. Therefore, there is a drag on NAOV from both these sides. As frequency goes up, we see NAOV flattening out. The assortment expansion in many of the general merchandise categories is actually small, but the margin is higher so that doesn't hurt us. Net-net, therefore, while there will be an inflationary pull on NAOV, there'll also be a pull on NAOV because of some assortment that has higher NAOV. As a combination of all these factors, at this point, we feel that NAOV expansion is not something that we see happening at this point."
+    },
+    {
+      "id": "s99",
+      "pdf_page": 14,
+      "speaker": "Manish Adukia",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Very clear. My second question was a follow-on to one of the previous questions. When you look at your capex per store assumption where you have now increased that by 150% versus what you had earlier, but your NOV per day, per store assumption is only up by 60%. How do I reconcile the difference between these two numbers? Why should NOV per day per store only grow by 60%, and you were talking about capex expansion of 150% versus previous assumption?"
+    },
+    {
+      "id": "s100",
+      "pdf_page": 14,
+      "speaker": "Albinder Singh Dhindsa",
+      "speaker_type": "management",
+      "role": "Chief Executive Officer",
+      "text": "Manish, the capex expansion has a lot to do with the overall supply chain and not just the store itself. The efficiency of the supply chain goes up because we are able to store more products in a single warehouse. We have more requirements, and if we are able to do more capex and put more products in the same store and same warehouse, we can ship them more efficiently. That is why we are doing that capex but it is not only correlated to the store throughput."
+    },
+    {
+      "id": "s101",
+      "pdf_page": 15,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "Another thing about this, Manish, is that higher capex with lower NOV growth can be explained if we are expanding the market. What we are solving here is actually trying to expand the market while making sure the ROCE is healthy. Opening stores in smaller cities could lead to a lower NOV per day, per store, but if that NOV is still profitable at 6% margin, then that increases the top line for us. That's the whole point. The spirit on this topic is that we are open with these numbers moving around - the capex per store, the net working capital or NOV per day, per store, even the EBITDA and EBIT margins, as long as the math on ROCE is stacking up well. The more we invest, even if the margins fall, as long as the ROCE remains high, the absolute dollar of profit on the business will be more. That's how I would look at it."
+    },
+    {
+      "id": "s102",
+      "pdf_page": 15,
+      "speaker": "Manish Adukia",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Very clear. My last question is on margin. Given that you mentioned that competition is becoming, or has become more predictable, you're not seeing any material pressure of that, or your margin is going to expand despite that. You also called out that June was probably at least closer to peak, if not the peak of competition. Is it safe to say that as long as growth in the business continues as per your expectations, which you said should be robust, there are no near-term pressures on margins that we should anticipate and directionally, margin should continue to improve? Is that like a fair conclusion?"
+    },
+    {
+      "id": "s103",
+      "pdf_page": 15,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "At this point, we can say that."
+    },
+    {
+      "id": "s104",
+      "pdf_page": 15,
+      "speaker": "Manish Adukia",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Thank you so much. Very clear. All the best."
+    },
+    {
+      "id": "s105",
+      "pdf_page": 15,
+      "speaker": "Moderator",
+      "speaker_type": "moderator",
+      "role": null,
+      "text": "Thank you. Next question is from the line of Garima Mishra from Kotak. Please go ahead."
+    },
+    {
+      "id": "s106",
+      "pdf_page": 15,
+      "speaker": "Garima Mishra",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Thanks so much for the opportunity. I had a couple of questions on District. You mentioned in the letter that District is operating across five categories. I presume out of those five, dine-out and movies are the largest revenue contributors. Is that correct? What traction are you seeing for the newer categories let's say, events, activity outlets, etc.?"
+    },
+    {
+      "id": "s107",
+      "pdf_page": 15,
+      "speaker": "Kunal Swarup",
+      "speaker_type": "management",
+      "role": "Head, Corporate Development",
+      "text": "Yes, Garima, that's broadly correct. Today, dining-out and movies are the bigger categories. Amongst the newer ones, retail stores and events could be the more promising ones, but we are still early on that journey. We're seeing good traction. At this point, the idea is to figure out how much value we are able to add to the supply ecosystem. And also from a customer experience standpoint, work on areas that improve customer experience. That's the journey we are on, in the other categories. Difficult to say what kind of trajectory of growth we'll be able to see. As of now, things are promising."
+    },
+    {
+      "id": "s108",
+      "pdf_page": 16,
+      "speaker": "Garima Mishra",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Okay. Second, in terms of users, how would the MTU base of District compare with that of the food delivery business? Should we assume that District is present in as many cities as dine-out or food delivery business is present in?"
+    },
+    {
+      "id": "s109",
+      "pdf_page": 16,
+      "speaker": "Kunal Swarup",
+      "speaker_type": "management",
+      "role": "Head, Corporate Development",
+      "text": "Garima, like we’ve pointed out in the past as well for the going-out business, we certainly think of the customer base as slightly different from the food delivery business. This is a base that is able to spend more, and that's also reflected in the NAOVs that we see in District. We wouldn't compare it but there's still enough room to grow even at this NAOV base for District."
+    },
+    {
+      "id": "s110",
+      "pdf_page": 16,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "It's definitely a smaller customer base, Garima, for going-out compared to food delivery or quick commerce. The number of cities that we will do in this business will also be much smaller than the other two businesses."
+    },
+    {
+      "id": "s111",
+      "pdf_page": 16,
+      "speaker": "Garima Mishra",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Understood, got it. That’s it from me. Thank you."
+    },
+    {
+      "id": "s112",
+      "pdf_page": 16,
+      "speaker": "Moderator",
+      "speaker_type": "moderator",
+      "role": null,
+      "text": "Thank you. Ladies and gentlemen, in the interest of time, we will now take the last one to two questions. The next question is from the line of Aditya Suresh from Macquarie. Please go ahead."
+    },
+    {
+      "id": "s113",
+      "pdf_page": 16,
+      "speaker": "Aditya Suresh",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Thank you for the opportunity. Two questions. First is on the productivity gains which you have seen in the past, say, two quarters. Can you maybe just talk through that a little bit on how you see that trending in the next few quarters or maybe on a two-three year basis? That's the first one. The second is, Akshant, as the business stands today, if you were to kind of measure or calculate ROCE, what would that be like?"
+    },
+    {
+      "id": "s114",
+      "pdf_page": 16,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "Right now, of course, the EBIT margin is negative. There is no ROCE. We are all talking about future here. It's a business and industry which is in the making right now. We're trying to invest. The framework we've given for ROCE is a framework for us to think about on how much to invest in the business. As of today, given the margin of the business is negative, there's no ROCE. I hope that answers your question."
+    },
+    {
+      "id": "s115",
+      "pdf_page": 16,
+      "speaker": "Aditya Suresh",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Okay. Thank you."
+    },
+    {
+      "id": "s116",
+      "pdf_page": 16,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "On your first question, can you be more specific? It's a very generic question."
+    },
+    {
+      "id": "s117",
+      "pdf_page": 16,
+      "speaker": "Aditya Suresh",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "You have seen productivity gains at dark store level in the past few quarters, whether it be on a per order basis order or NOV basis. Could you just talk through beyond just cohorts maturing? Are there any other dynamics which are at play, which is driving this improvement?"
+    },
+    {
+      "id": "s118",
+      "pdf_page": 17,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "It's everything. Not just last few quarters, we have seen productivity improving since the time we started the business. The productivity gains are at the dark store level, at the warehouse level, supply chain, even our marketing is getting more efficient, assortment etc. It's everything the business is about. Again, not sure if you have a specific question here, but otherwise, the answer is what I just said."
+    },
+    {
+      "id": "s119",
+      "pdf_page": 17,
+      "speaker": "Aditya Suresh",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Great. Thanks."
+    },
+    {
+      "id": "s120",
+      "pdf_page": 17,
+      "speaker": "Moderator",
+      "speaker_type": "moderator",
+      "role": null,
+      "text": "Thank you. Next question is from the line of Ashwin Mehta from Ambit. Please go ahead."
+    },
+    {
+      "id": "s121",
+      "pdf_page": 17,
+      "speaker": "Ashwin Mehta",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Hi, can you hear me?"
+    },
+    {
+      "id": "s122",
+      "pdf_page": 17,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "Yes."
+    },
+    {
+      "id": "s123",
+      "pdf_page": 17,
+      "speaker": "Ashwin Mehta",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Just two questions. One, in terms of payables, there seems to be a material increase of almost INR 1,650 crore this quarter, what exactly is driving that? And secondly, a broader view, are we getting better terms from brands, etc, in terms of payables? The second one was in terms of food delivery, where the restaurant count this quarter seems to have gone down. Is there some rationalization at play? How are we seeing additions there?"
+    },
+    {
+      "id": "s124",
+      "pdf_page": 17,
+      "speaker": "Kunal Swarup",
+      "speaker_type": "management",
+      "role": "Head, Corporate Development",
+      "text": "On the first question, the payables include both trade payables as well as expense payables. Trade payables have increased because of the increase in the scale of the business. At this point, we are not necessarily trying to overoptimize on terms with brands. It's really more driven by scale, and the expense payables keeps fluctuating."
+    },
+    {
+      "id": "s125",
+      "pdf_page": 17,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "Yes, there's nothing to highlight on payables. Payables are fairly on expected lines. On the second question, Ashwin, it's a little bit of an impact from the LPG situation in the country last quarter because of which some restaurants went offline. That's why you probably see a slight dip in the monthly active restaurant count."
+    },
+    {
+      "id": "s126",
+      "pdf_page": 17,
+      "speaker": "Ashwin Mehta",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Okay. Thanks, Akshant and all the best."
+    },
+    {
+      "id": "s127",
+      "pdf_page": 17,
+      "speaker": "Akshant Goyal",
+      "speaker_type": "management",
+      "role": "Chief Financial Officer",
+      "text": "Thank you."
+    },
+    {
+      "id": "s128",
+      "pdf_page": 17,
+      "speaker": "Moderator",
+      "speaker_type": "moderator",
+      "role": null,
+      "text": "Thank you. Ladies and gentlemen, we will now conclude this conference call. Thank you for joining us, and you may now disconnect your lines."
+    }
+  ]
+}

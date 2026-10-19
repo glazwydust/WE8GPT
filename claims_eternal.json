@@ -1,0 +1,143 @@
+{
+  "company": "Eternal Limited",
+  "slug": "eternal",
+  "quarter": "Q1 FY27",
+  "claims": [
+    {
+      "id": 1,
+      "topic": "Peak of competitive intensity",
+      "quote": "First quarter, so far, was the peak of competitive intensity that we have seen till date because the number of players is higher and everybody was more aggressive.",
+      "speaker": "Albinder Singh Dhindsa",
+      "role": "Chief Executive Officer",
+      "segment_id": "s11",
+      "source": "Eternal Q1 FY27 earnings call, PDF page 4",
+      "source_url": "https://b.zmtcdn.com/investorrelations/Q1FY27-earnings-call-transcript.pdf",
+      "date": "2026-07-22",
+      "weight_note": "Applies mainly to quick commerce (Blinkit); the call does not give its share of company revenue. Eternal runs several businesses (food delivery, quick commerce, going-out, supply); the Play Store data covers the Blinkit and Zomato apps only.",
+      "relevant_signals": [
+        "news",
+        "reddit"
+      ],
+      "what_to_look_for": "News on new entrants, aggressive discounting or competitor expansion in quick commerce during April-June 2026."
+    },
+    {
+      "id": 2,
+      "topic": "Discounting expected to ease",
+      "quote": "we don't think this level of discounting is sustainable, as we said. We expect this to not continue beyond the near future",
+      "speaker": "Akshant Goyal",
+      "role": "Chief Financial Officer",
+      "segment_id": "s17",
+      "source": "Eternal Q1 FY27 earnings call, PDF page 5",
+      "source_url": "https://b.zmtcdn.com/investorrelations/Q1FY27-earnings-call-transcript.pdf",
+      "date": "2026-07-22",
+      "weight_note": "Forward-looking; evidence can only show whether discounting is easing now. Eternal runs several businesses (food delivery, quick commerce, going-out, supply); the Play Store data covers the Blinkit and Zomato apps only.",
+      "relevant_signals": [
+        "news",
+        "reddit"
+      ],
+      "what_to_look_for": "Reports of competitors cutting or continuing discounts, delivery-fee subsidies or losses after the quarter."
+    },
+    {
+      "id": 3,
+      "topic": "Defending market share by matching prices",
+      "quote": "So far, that's been enough to be able to make sure that we are able to defend and not lose share to these platforms.",
+      "speaker": "Akshant Goyal",
+      "role": "Chief Financial Officer",
+      "segment_id": "s77",
+      "source": "Eternal Q1 FY27 earnings call, PDF page 12",
+      "source_url": "https://b.zmtcdn.com/investorrelations/Q1FY27-earnings-call-transcript.pdf",
+      "date": "2026-07-22",
+      "weight_note": "Share claims cannot be verified from reviews; news and posts give only indirect signs. Eternal runs several businesses (food delivery, quick commerce, going-out, supply); the Play Store data covers the Blinkit and Zomato apps only.",
+      "relevant_signals": [
+        "news",
+        "reviews",
+        "reddit"
+      ],
+      "what_to_look_for": "Reports of Blinkit losing or gaining share; customer posts comparing prices or switching apps."
+    },
+    {
+      "id": 4,
+      "topic": "Customer retention is better",
+      "quote": "the tracker is customer retention, which is better than what it has been.",
+      "speaker": "Akshant Goyal",
+      "role": "Chief Financial Officer",
+      "segment_id": "s71",
+      "source": "Eternal Q1 FY27 earnings call, PDF page 11",
+      "source_url": "https://b.zmtcdn.com/investorrelations/Q1FY27-earnings-call-transcript.pdf",
+      "date": "2026-07-22",
+      "weight_note": "Retention data is internal; reviews and posts are only a partial view of customer mood. Eternal runs several businesses (food delivery, quick commerce, going-out, supply); the Play Store data covers the Blinkit and Zomato apps only.",
+      "relevant_signals": [
+        "reviews",
+        "reddit",
+        "news"
+      ],
+      "what_to_look_for": "Trends in ratings and one-star share for Blinkit and Zomato apps; posts about switching or leaving."
+    },
+    {
+      "id": 5,
+      "topic": "New users accelerating in food delivery",
+      "quote": "We've seen acceleration in new users that we've added to our platform in the last three or four quarters.",
+      "speaker": "Akshant Goyal",
+      "role": "Chief Financial Officer",
+      "segment_id": "s27",
+      "source": "Eternal Q1 FY27 earnings call, PDF page 6",
+      "source_url": "https://b.zmtcdn.com/investorrelations/Q1FY27-earnings-call-transcript.pdf",
+      "date": "2026-07-22",
+      "weight_note": "Food delivery only; the Zomato app is the relevant app. Eternal runs several businesses (food delivery, quick commerce, going-out, supply); the Play Store data covers the Blinkit and Zomato apps only.",
+      "relevant_signals": [
+        "news",
+        "reviews"
+      ],
+      "what_to_look_for": "News on food-delivery user growth or market share; review volume trend for the Zomato app."
+    },
+    {
+      "id": 6,
+      "topic": "Split orders do not hurt customer experience",
+      "quote": "Customer experience would not be as great. So far, we have not experienced that in practicality.",
+      "speaker": "Albinder Singh Dhindsa",
+      "role": "Chief Executive Officer",
+      "segment_id": "s51",
+      "source": "Eternal Q1 FY27 earnings call, PDF page 9",
+      "source_url": "https://b.zmtcdn.com/investorrelations/Q1FY27-earnings-call-transcript.pdf",
+      "date": "2026-07-22",
+      "weight_note": "A narrow claim about split orders; reviews cover the whole delivery experience. Eternal runs several businesses (food delivery, quick commerce, going-out, supply); the Play Store data covers the Blinkit and Zomato apps only.",
+      "relevant_signals": [
+        "reviews",
+        "reddit"
+      ],
+      "what_to_look_for": "Complaints about missing items, partial deliveries, split or late orders in Blinkit reviews and posts."
+    },
+    {
+      "id": 7,
+      "topic": "Restaurant dip caused by the LPG situation",
+      "quote": "a little bit of an impact from the LPG situation in the country last quarter because of which some restaurants went offline.",
+      "speaker": "Akshant Goyal",
+      "role": "Chief Financial Officer",
+      "segment_id": "s125",
+      "source": "Eternal Q1 FY27 earnings call, PDF page 17",
+      "source_url": "https://b.zmtcdn.com/investorrelations/Q1FY27-earnings-call-transcript.pdf",
+      "date": "2026-07-22",
+      "weight_note": "A factual claim about one cause of a small dip in active restaurants. Eternal runs several businesses (food delivery, quick commerce, going-out, supply); the Play Store data covers the Blinkit and Zomato apps only.",
+      "relevant_signals": [
+        "news"
+      ],
+      "what_to_look_for": "News on LPG shortages or supply problems that took restaurants offline in April-June 2026."
+    },
+    {
+      "id": 8,
+      "topic": "Minimum wage increases raised costs",
+      "quote": "there were a lot of states which implemented increase in minimum wage.",
+      "speaker": "Albinder Singh Dhindsa",
+      "role": "Chief Executive Officer",
+      "segment_id": "s37",
+      "source": "Eternal Q1 FY27 earnings call, PDF page 7",
+      "source_url": "https://b.zmtcdn.com/investorrelations/Q1FY27-earnings-call-transcript.pdf",
+      "date": "2026-07-22",
+      "weight_note": "One of two reasons given for higher cost of doing business; the other is larger store size. Eternal runs several businesses (food delivery, quick commerce, going-out, supply); the Play Store data covers the Blinkit and Zomato apps only.",
+      "relevant_signals": [
+        "news"
+      ],
+      "what_to_look_for": "News on state minimum wage increases or labour-cost changes for delivery and warehouse staff in 2026."
+    }
+  ]
+}

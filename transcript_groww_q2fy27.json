@@ -1,0 +1,856 @@
+{
+  "company": "Billionbrains Garage Ventures Limited",
+  "brand": "Groww",
+  "nse_symbol": "GROWW",
+  "bse_scrip_code": "544603",
+  "quarter": "Q2 FY27",
+  "call_date": "2026-10-14",
+  "filed_with_exchange": "2026-10-16",
+  "source_url": "PASTE_THE_BSE_OR_SCREENER_LINK",
+  "source_page_url": null,
+  "fetched_at": "2026-10-19T00:49:43+05:30",
+  "fetched_by": "tinyfish (link) + manual (pdf to text)",
+  "page_note": "pdf_page is the physical PDF page (page 1 is the exchange cover letter).",
+  "segments": [
+    {
+      "id": "s1",
+      "pdf_page": 3,
+      "speaker": "Moderator",
+      "speaker_type": "moderator",
+      "role": null,
+      "text": "Good afternoon, ladies and gentlemen. Welcome to Billionbrains Garage Ventures Limited or Groww's Q2 FY 27 Earnings Conference Call. As a reminder, all participant lines will be in the listen-only mode, and there will be an opportunity for you to ask questions after the management's opening remarks. Please note that this call is being recorded. Additionally, please note that this earnings call is scheduled for a duration of 45 minutes. If you wish to ask a question, please use the raise hand feature available on your Zoom dashboard. We will announce your name on the call and unmute your line, post which you can proceed with your questions. For today's call, from the management, we have Lalit Keshre, Co-founder and CEO; Ishan Bansal, Co-founder and CFO; Lalit Bhimani, Group Head, Finance; and Shiv Tallam, Head of Investor Relations and Corporate Development. I now hand the call over to Shiv. Thank you, and over to you."
+    },
+    {
+      "id": "s2",
+      "pdf_page": 3,
+      "speaker": "Shiv Tallam",
+      "speaker_type": "management",
+      "role": "Head of IR and Corporate Development",
+      "text": "Thank you, Yashashri. Thank you, everyone. Good afternoon and welcome to the Q2 FY 27 earnings call on 14th October. Our results and shareholders' letters have been updated on the exchanges along with KPIs on the Investor Relations website. For our investors whose analyst is a bot, there is also an AI earnings pack that we started updating on our website. We'd like everyone to take a note on the call that some of the statements that we make may be deemed as forward-looking and carry risks. They are not guarantees of future performance, and the actual results may differ. On that short introduction, I'd like to just open up the floor for calls."
+    },
+    {
+      "id": "s3",
+      "pdf_page": 3,
+      "speaker": "Moderator",
+      "speaker_type": "moderator",
+      "role": null,
+      "text": "Thank you. Ladies and gentlemen, we will now begin the question-and-answer session. In order to ensure management is able to answer queries from all participants, kindly restrict your questions to two at a time. We'll take our first question from Sameet Sinha. Mr. Sinha, please introduce yourself and go ahead with your question, please."
+    },
+    {
+      "id": "s4",
+      "pdf_page": 3,
+      "speaker": "Sameet Sinha",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Yes. Thank you very much for taking the question. Just on a question between your interplay between Cost to Grow and Cost to Serve: Cost to Grow obviously came down pretty dramatically this quarter. Is that a function of the fact that Cost to Serve went up or was it just a function of the fact that the market was not suitable, so you decided to pull back on this spend?"
+    },
+    {
+      "id": "s5",
+      "pdf_page": 3,
+      "speaker": "Ishan Bansal",
+      "speaker_type": "management",
+      "role": "Co-Founder and CFO",
+      "text": "Let me take this. The Cost to Grow and Cost to Serve, first of all, are very independent costs in some ways. Cost to Serve primarily has costs related to transactions and costs related to technology from our side, whereas Cost to Grow is primarily a growth-related cost, where we spend some part of that in brand building, some part of that in performance marketing as well. What happened, what you saw in last quarter, we did a branding event in IPL, and there was a cost attributed to that IPL piece, which didn't show up in this quarter's Cost to Grow. Because of that, the Cost to Grow actually was lower. Whereas Cost to Serve, the reason it was higher was independent of actually Cost to Grow, and we have actually explained that in our shareholders' letter as well. There were multiple, two or three different reasons why it went up. One reason was basically there is the AI-related cost that started coming now because we started focusing a lot on AI. Second piece was, because of AI itself, actually some of the compute cost has also went up. Second piece is actually the number of trading days in last quarter was higher, and because of that also the compute cost goes up because we actually use compute more on the trading days and significantly lower on non-trading days. The third piece was due to one-time. There was an issue that we faced because on a particular expiry day, the files got delayed. Because of that, there was a one-time hit of around INR10 crores to INR13 crore, which is also kind of part of Cost to Serve in this quarter. Because of these three things, the Cost to Serve went up, and Cost to Grow went down because of IPL not being there in this quarter."
+    },
+    {
+      "id": "s6",
+      "pdf_page": 4,
+      "speaker": "Sameet Sinha",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Got it. Got it. I understand that those are independent. I just wanted to make sure that they were, one did not, as you saw Cost to Serve increase, wasn't that you managed the Cost to Grow. Second thing is, in terms of CAS, obviously we'll hear more about what SEBI decides to do by the end of this week. Any thoughts there? What are you expecting to hear from them? If things go as per your expectation, when do you expect to see volume start to kind of come back to more normalized levels?"
+    },
+    {
+      "id": "s7",
+      "pdf_page": 4,
+      "speaker": "Ishan Bansal",
+      "speaker_type": "management",
+      "role": "Co-Founder and CFO",
+      "text": "CAS, if you look at the circular, both the options that SEBI has given, more or less are not going to impact derivatives as a segment because the closing of derivative segment will either be like 100% based on VWAP or will have a weighted average. Even with weighted average also, the large part of the weight will come from the VWAP piece compared to the CAS piece. Hence, our expectation is that it will go back to like normal in some ways. We are also waiting for the circular to understand the date from which this will be applicable. We think that from the date it becomes applicable, the normalization will be much faster. But it will depend on from which date it becomes applicable."
+    },
+    {
+      "id": "s8",
+      "pdf_page": 4,
+      "speaker": "Sameet Sinha",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Got it. Thank you very much."
+    },
+    {
+      "id": "s9",
+      "pdf_page": 4,
+      "speaker": "Moderator",
+      "speaker_type": "moderator",
+      "role": null,
+      "text": "Thank you. I now invite Prayesh Jain. Mr. Jain, kindly introduce yourself and go ahead with the question, please."
+    },
+    {
+      "id": "s10",
+      "pdf_page": 4,
+      "speaker": "Prayesh Jain",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Hi, everyone. This is Prayesh Jain from Motilal Oswal, and congrats on a good set of numbers. Firstly, just wanted to touch base on the margin trade funding book side. We saw some bit of moderation and steadiness in during the quarter and then towards the end again you started scaling up. What really went through there, and how should we see the trajectory going ahead on this?"
+    },
+    {
+      "id": "s11",
+      "pdf_page": 4,
+      "speaker": "Ishan Bansal",
+      "speaker_type": "management",
+      "role": "Co-Founder and CFO",
+      "text": "So, I think like stocks is volatile, right? Basically whenever some stocks goes down, people try to kind of take positions at that time. When it goes up, they try to kind of square off some of those positions from a profit perspective. There is always a volatility in terms of when the book is getting built and when the book kind of goes down. Another reason can be in some cases there are stocks which came into like a circuit or it changes from a Group 1 security to where you can't do MTF. Basically, all those things actually have a lot of, every day it changes effectively. But what we are seeing is on average we are able to add like INR600 crores, INR700 crores on a quarterly basis. Our expectation is that trend should continue. Obviously, we are still highly underpenetrated from a both customer as well as the market share perspective. We expect this to keep on growing for the foreseeable future. But obviously, between the quarter, there will always be some days in which it goes down, some days it will go up."
+    },
+    {
+      "id": "s12",
+      "pdf_page": 5,
+      "speaker": "Prayesh Jain",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Any strategy approach that you would have taken of realigning the stocks that you kind of fund, and the amount of funding that you do on certain stocks because of the midcap rally and everything? Would you have realigned that in terms of any risk measurements that you would have done?"
+    },
+    {
+      "id": "s13",
+      "pdf_page": 5,
+      "speaker": "Ishan Bansal",
+      "speaker_type": "management",
+      "role": "Co-Founder and CFO",
+      "text": "So that we keep on doing on a continuous basis. There is like underwriting in some ways on a stock level that we try to run it on a daily basis and see if we want to kind of add a stock, reduce a stock, or change a haircut on them. There are obviously optimizations possible in some of them, which are in pipeline, where we can probably do a better job in kind of changing those haircuts on a slightly earlier frequency or not necessarily a frequency, but also review probably slightly better. Even we have done some such changes, but that's not the reason why probably the volatility was there in last quarter. The volatility was actually independent of that."
+    },
+    {
+      "id": "s14",
+      "pdf_page": 5,
+      "speaker": "Prayesh Jain",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Okay. One question on financials was, your employee cost seems to have gone down from INR182 crores in 1Q, and even INR173 crores in fourth quarter to more like INR169 crores. How should we read this, and how should we take the trend going ahead on this?"
+    },
+    {
+      "id": "s15",
+      "pdf_page": 5,
+      "speaker": "Ishan Bansal",
+      "speaker_type": "management",
+      "role": "Co-Founder and CFO",
+      "text": "Lalit, do you want to take it?"
+    },
+    {
+      "id": "s16",
+      "pdf_page": 5,
+      "speaker": "Lalit Bhimani",
+      "speaker_type": "management",
+      "role": "Group Head, Finance",
+      "text": "So, overall, our cost to operate has remained flat quarter-on-quarter. Typically, we look at this cost from a cost to operate perspective, which includes my people cost, my G&A, and the CSR spends. So, my CSR spends is the only increase from the last quarter. Specific to this line item on employee expenses, I think structurally longer-term the cost will remain in line with how it was the last quarter. Although Q1 also had the impact of one-time kind of slight impact of appraisal cycle, which has got a little normalized, but I don't think you should think about that the cost will come down from here."
+    },
+    {
+      "id": "s17",
+      "pdf_page": 5,
+      "speaker": "Prayesh Jain",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "So my question was more on, first of all, because you would amortize the variable pays, right? Not take it one-time. And if you take one-time, then possibly this is a more normalized run rate and this is something that we should work with. And then probably only first quarter is where we should take variable pay number and then work accordingly."
+    },
+    {
+      "id": "s18",
+      "pdf_page": 6,
+      "speaker": "Lalit Bhimani",
+      "speaker_type": "management",
+      "role": "Group Head, Finance",
+      "text": "No, the point I was trying to make is, variable pay we typically amortize over the period of the year. So, let's say 12 months, and it is amortized over 12 months. But this particular quarter had some of the blip as some number of the people have come down, and then again we have hired them. So, there's a short-term blip, but structurally the cost is going to go up."
+    },
+    {
+      "id": "s19",
+      "pdf_page": 6,
+      "speaker": "Prayesh Jain",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Got it. Just last couple of..."
+    },
+    {
+      "id": "s20",
+      "pdf_page": 6,
+      "speaker": "Moderator",
+      "speaker_type": "moderator",
+      "role": null,
+      "text": "Prayesh, I request you to join back the queue, please, as we have participants waiting for their turn. Thank you. Next question is from the line of Supratim Datta. Kindly introduce yourself and go ahead with your question, please."
+    },
+    {
+      "id": "s21",
+      "pdf_page": 6,
+      "speaker": "Supratim Datta",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Hi. Thanks a lot for the opportunity. I'm Supratim from Jefferies. My first question was on competition. So we have seen some discount brokers reducing the brokerage by half. Then there are other brokers who are offering AI-led tools. Just wanted to understand that how are you seeing the competitive landscape evolve, and how are you trying to protect your moats or your customers against competition? If you could give us some color there, that would be helpful. Secondly, on the margin lending book, wanted to understand that in March, when the market saw a dip, there was some one-off cost that was there in the book. Did a similar thing happen this time in September as well? Or if not, then what did you change to really avoid this? If you could give us some color there, that would also be helpful. And lastly, on the US stocks side. I understand that you have launched that, you are testing that product. Wanted to understand what has been the initial feedback, if you could give us some color around that. And how is the new product pipeline? How are you thinking about that? Recently, IRDAI has proposed significant reduction in commission. Could that become an opportunity for you guys? Could insurance become a product opportunity? So if you could give us some color on the product opportunities, that would also be very helpful. Thank you."
+    },
+    {
+      "id": "s22",
+      "pdf_page": 6,
+      "speaker": "Lalit Keshre",
+      "speaker_type": "management",
+      "role": "Co-Founder and CEO",
+      "text": "So, thanks, Supratim. I'll answer three questions, and then I'll leave the second question. I forgot to record that. But let me answer the first one, which is competition. So, see, I think in consumer, in any consumer product, there's always we have seen multiple players and so on. And the way we have thought since the beginning is to kind of be paranoid about the markets and focus on the customer. And the moment you start following competition, then you kind of get biased and start thinking like them. And we fundamentally believe in kind of having the first-principle insights, like first-hand insights about the customer and continue building. And that has worked so far good for us. And from the pricing perspective, like, we believe that if you are giving more value to the customers than what we are charging, I think customers will be happy. They feel fair, and so on, and we'll continue doing that. And on the AI side, I mean, if you look at Groww, I don't know if you use, we have kind of added significant number of features and tools which kind of help customers to make right decisions and everything. So, that is the first one. Maybe I'll jump to the third question, and then we can move come back to the second. As for the US stocks, it's kind of very, very early. Just kind of started testing the water. The feedback is really good from the customers. But as we do with every product so far, like, as we have done with any product that we have launched so far, we go slow. We kind of continue listening to the customers and keep making changes on what they are saying and continue launching. So as we speak, the product is kind of getting kind of visible to a lot of customers, and let's see how it goes. On the new product pipeline, Yes."
+    },
+    {
+      "id": "s23",
+      "pdf_page": 7,
+      "speaker": "Supratim Datta",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Just one clarification, Lalit. When would the full launch take place? When would you move from beta to full?"
+    },
+    {
+      "id": "s24",
+      "pdf_page": 7,
+      "speaker": "Lalit Keshre",
+      "speaker_type": "management",
+      "role": "Co-Founder and CEO",
+      "text": "So, I don't think we have the timeline like this. What we have, like, fixed set of feedback, and we continue getting those feedback. We kind of keep building that. So, I don't know."
+    },
+    {
+      "id": "s25",
+      "pdf_page": 7,
+      "speaker": "Supratim Datta",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Okay, no problem."
+    },
+    {
+      "id": "s26",
+      "pdf_page": 7,
+      "speaker": "Lalit Keshre",
+      "speaker_type": "management",
+      "role": "Co-Founder and CEO",
+      "text": "Yes. On the new product pipeline, see, right now, like few of the products are already kind of you are talked about. So US stocks is one of them. MF Prime we spoke in the last call. And that is going on. In the wealth side, one thing that we'll talk -- I think we spoke in our newsletter also, like the company that we acquired, now that integration has been done. So, a lot of their products we are kind of -- they are getting mainstream across multiple apps, and so on. And then there are some products that we are still kind of figuring out and working on, and we'll probably be in a position to talk about them in future calls."
+    },
+    {
+      "id": "s27",
+      "pdf_page": 7,
+      "speaker": "Supratim Datta",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Sure, sure."
+    },
+    {
+      "id": "s28",
+      "pdf_page": 7,
+      "speaker": "Lalit Keshre",
+      "speaker_type": "management",
+      "role": "Co-Founder and CEO",
+      "text": "Ishan, can you answer? Ishan or Bhimani, can you answer the second question?"
+    },
+    {
+      "id": "s29",
+      "pdf_page": 7,
+      "speaker": "Ishan Bansal",
+      "speaker_type": "management",
+      "role": "Co-Founder and CFO",
+      "text": "Yes, Yes, I'll do that. So, I think it was about MTF. I think there are like lot of policy-level changes that we implemented after what happened last to last quarter. And we have seen goodness coming in the last quarter as well. Obviously, I can't tell you each of those rules in some ways, but where I think we are investing lot of effort is, one is, how do we make the policy, first of all, strong. And the second piece is, how do we actually implement that policy almost in the real time? Because policy is as good as the execution of that policy in some ways, and we have focused a lot on kind of making sure that the execution of that policy is like much, much better. Another thing that we have realized, I think we are again trying to improve in our policy itself, is we don't need to look at our balance sheet or our kind of book in this. We have to start looking at the industry-level book as well. Because in some stocks, even though we might have a smaller market share, but if the book is significantly large at the industry level, so when a bad time comes the days to sell becomes really important. And in such stocks, we are more proactive now to exclude such stocks from -- either exclude such stocks from our MTF-approved list or actually have a much higher haircut compared to what the regulated required haircut. Our haircut can be higher than that as well. So there are stocks which have actually ran up significantly, and the MTF book also has ran up in them. And we are actually sitting in some cases like 80% as haircut, which effectively means that we are only funding 20% in that case. So such rules are really helpful because in a bad times, you will be able to kind of even 80% down, you will not be able to kind of -- you are still able to recover your capital. I think that's how we are looking at focusing on both of these levers on haircut as well as changing the approved list more frequently and almost in a real-time basis."
+    },
+    {
+      "id": "s30",
+      "pdf_page": 8,
+      "speaker": "Supratim Datta",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Got it. So is it fair to then understand that there was no one-off cost because of the MTF and the sharp market move in this quarter?"
+    },
+    {
+      "id": "s31",
+      "pdf_page": 8,
+      "speaker": "Ishan Bansal",
+      "speaker_type": "management",
+      "role": "Co-Founder and CFO",
+      "text": "So, obviously, there will be some cost of MTF into this, but there is no like one-off cost as such."
+    },
+    {
+      "id": "s32",
+      "pdf_page": 8,
+      "speaker": "Supratim Datta",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Understood. That's it. Thank you."
+    },
+    {
+      "id": "s33",
+      "pdf_page": 8,
+      "speaker": "Moderator",
+      "speaker_type": "moderator",
+      "role": null,
+      "text": "Thank you. Our next question is from Nidhesh Jain. Nidhesh, kindly introduce yourself and go ahead with your question, please."
+    },
+    {
+      "id": "s34",
+      "pdf_page": 8,
+      "speaker": "Nidhesh Jain",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Hi. My name is Nidhesh. I'm from Investec. My first question is on wealth management. So thanks for the disclosure on the AUM. Can you break up that AUM in terms of Groww Prime and W. How much each of them are contributing?"
+    },
+    {
+      "id": "s35",
+      "pdf_page": 8,
+      "speaker": "Ishan Bansal",
+      "speaker_type": "management",
+      "role": "Co-Founder and CFO",
+      "text": "So broadly if you look at it, I think this is the first time we are even publishing the wealthrelated AUM. Because MF Prime is very small, I think you can assume that it's not a significant part of it yet. But obviously, that's probably the fastest-growing part at the same time. But we don't want to disclose too much into those numbers."
+    },
+    {
+      "id": "s36",
+      "pdf_page": 8,
+      "speaker": "Nidhesh Jain",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "The number of users have gone up by almost 50%, I think, on a Q-on-Q basis. Majority of the addition is because of Groww Prime?"
+    },
+    {
+      "id": "s37",
+      "pdf_page": 8,
+      "speaker": "Ishan Bansal",
+      "speaker_type": "management",
+      "role": "Co-Founder and CFO",
+      "text": "Prime, yes."
+    },
+    {
+      "id": "s38",
+      "pdf_page": 8,
+      "speaker": "Nidhesh Jain",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Okay. And in which line item in the revenue mix that you're disclosing in the shareholder letter, which line item the wealth management income is getting clubbed in?"
+    },
+    {
+      "id": "s39",
+      "pdf_page": 8,
+      "speaker": "Ishan Bansal",
+      "speaker_type": "management",
+      "role": "Co-Founder and CFO",
+      "text": "It's in other operating income."
+    },
+    {
+      "id": "s40",
+      "pdf_page": 9,
+      "speaker": "Nidhesh Jain",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Other operating income. Because I think this time you have also clubbed the wealth management business in the operational KPIs. That explains the difference between active users of last quarter versus what we have disclosed this time, right? Or..."
+    },
+    {
+      "id": "s41",
+      "pdf_page": 9,
+      "speaker": "Ishan Bansal",
+      "speaker_type": "management",
+      "role": "Co-Founder and CFO",
+      "text": "Active user is, I think, independent of this."
+    },
+    {
+      "id": "s42",
+      "pdf_page": 9,
+      "speaker": "Nidhesh Jain",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "The active user count for the last quarter in the recent disclosure is different from the active user count of last quarter disclosures?"
+    },
+    {
+      "id": "s43",
+      "pdf_page": 9,
+      "speaker": "Ishan Bansal",
+      "speaker_type": "management",
+      "role": "Co-Founder and CFO",
+      "text": "It might be, but that number should not be significantly different because active user hasn't significantly changed because of including wealth. Wealth is -- MF Prime, if you look at it, earlier was not there and every customer was coming on normal MF, and that piece was anyways adding customers. The growth, you can assume, is coming from that. But the Fisdom users are actually included now in active customers, and because of that probably that number is changing."
+    },
+    {
+      "id": "s44",
+      "pdf_page": 9,
+      "speaker": "Nidhesh Jain",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Sure. Second question is on the broking business. If we look at our market share for last three to four quarters on cash and derivatives, that has been broadly around 15% in cash and 11% in derivatives. Though our market share on NSE active continues to increase, upwards of, I think, 23%, 24% or even higher. Why that is not reflecting in our cash market share -- cash and derivative market share? NSE active market share is not reflecting into that. And what is the right threshold you think is possible for us to reach in cash and derivatives ADTO market share?"
+    },
+    {
+      "id": "s45",
+      "pdf_page": 9,
+      "speaker": "Ishan Bansal",
+      "speaker_type": "management",
+      "role": "Co-Founder and CFO",
+      "text": "Our expectation is longer run, we can come to that similar level. But obviously, it's not a quarter-to-quarter basis that every quarter will have the same increase or there will be increase in every quarter as well. But we should look at from a long-term perspective. The expectation is that as our customers becomes older, they will do larger turnover per customers. And as our kind of more and more products come in, or more and more features also comes in, for example MTF is growing, as the MTF percentage goes up, the cash turnover will go up. This is more like a fundamental growth that we will see, but it might not show up in every quarter. Because the volatility is still there on a quarterly basis, but if you look at on a Y-o-Y basis, the market share will keep on growing."
+    },
+    {
+      "id": "s46",
+      "pdf_page": 9,
+      "speaker": "Nidhesh Jain",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Basically, over longer term, whether your cash market share and F&O market share should trend towards NSE active market share, or is that a -- because there is a wide difference between the two numbers. One is 15 and other is 25, 26."
+    },
+    {
+      "id": "s47",
+      "pdf_page": 9,
+      "speaker": "Ishan Bansal",
+      "speaker_type": "management",
+      "role": "Co-Founder and CFO",
+      "text": "The average age is also very different. I think probably it will take 10 years to reach to those numbers, but it will converge one day, which might be like infinity in some ways."
+    },
+    {
+      "id": "s48",
+      "pdf_page": 9,
+      "speaker": "Nidhesh Jain",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "And last question is on..."
+    },
+    {
+      "id": "s49",
+      "pdf_page": 10,
+      "speaker": "Moderator",
+      "speaker_type": "moderator",
+      "role": null,
+      "text": "Nidhesh, I request you to join back, please, as we have other participants waiting for their turn. Thank you. Next question is from Ansuman Deb. Ansuman, kindly introduce yourself and go ahead with your question, please."
+    },
+    {
+      "id": "s50",
+      "pdf_page": 10,
+      "speaker": "Ansuman Deb",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Yes, hi. This is Ansuman from ICICI Securities. My question was on the order per ADTV kind of a ratio, if we see. This was declining, but this quarter, on a quarter-on-quarter, we have seen an increase in order per ADTV. That has led to your revenue being flat in broking despite a lower volume. Any kind of reason of why this would happen in Q2?"
+    },
+    {
+      "id": "s51",
+      "pdf_page": 10,
+      "speaker": "Ishan Bansal",
+      "speaker_type": "management",
+      "role": "Co-Founder and CFO",
+      "text": "First of all, I think both are not correlated, because the order size and I don't know actually you're talking about stocks revenue or you're talking about derivatives in this?"
+    },
+    {
+      "id": "s52",
+      "pdf_page": 10,
+      "speaker": "Ansuman Deb",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "I'm talking about both stocks, derivative, and commodity. All of them has been sequentially reported better order per ADTV. If we can if you can use the word of order intensity, that has gone up sequentially in all the categories. That's why your volumes are down sequentially, but the revenues are quite largely unchanged."
+    },
+    {
+      "id": "s53",
+      "pdf_page": 10,
+      "speaker": "Ishan Bansal",
+      "speaker_type": "management",
+      "role": "Co-Founder and CFO",
+      "text": "Honestly, I think we don't look at all of them together. But if I look at, let's say, commodities, the revenue is dependent on orders, not on ADTV. So, every order is charged at INR20, same is with equity derivatives. The difference we have seen, it depends on the asset class that customer actually -- or an asset class or you can say a contract that customer is trading. If customer trades on gold versus customer trades on crude versus on natural gas, the ticket size significantly changes. Same is the case in cash also. ETFs have a different ticket size compared to small-cap or mid-cap. And hence, in the revenue only changes for cash actually. But everything else, the revenue is 100% linked to orders, not linked to actually ADTV. In cash, it's a mix of order size as well as number of orders, because our pricing is mix of both. It is 10 basis points or INR20, whichever is lower. So, if you look at our brokerage income per order on cash side is actually more closer to like INR15, INR16 compared to in equity derivatives and commodities where per order it's INR20. So, it's really not correlated with ADTV as much as we give ADTV numbers because that is publicly available number for us to calculate the market share and stuff. That's why we are actually reporting those numbers as well."
+    },
+    {
+      "id": "s54",
+      "pdf_page": 10,
+      "speaker": "Ansuman Deb",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Understood. So, one last thing about this is, did September have a significantly larger order compared to -- you know, because you don't give monthly, so I was just -- because September had a significantly higher volatility, would it be materially higher?"
+    },
+    {
+      "id": "s55",
+      "pdf_page": 10,
+      "speaker": "Ishan Bansal",
+      "speaker_type": "management",
+      "role": "Co-Founder and CFO",
+      "text": "So, I think August was probably the lowest is one way I can look at it. I don't remember between July and September, which one was higher. But August was the lowest among 3 months."
+    },
+    {
+      "id": "s56",
+      "pdf_page": 10,
+      "speaker": "Ansuman Deb",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Understood. Thanks a lot. I'll get back in the queue."
+    },
+    {
+      "id": "s57",
+      "pdf_page": 11,
+      "speaker": "Moderator",
+      "speaker_type": "moderator",
+      "role": null,
+      "text": "Thank you. Next question is from Sanketh Godha. Sanketh, kindly introduce yourself and go ahead with your question, please."
+    },
+    {
+      "id": "s58",
+      "pdf_page": 11,
+      "speaker": "Sanketh Godha",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Yes. Thank you. This is Sanketh from Avendus Spark. So, my first question is on your derivative revenue. So, we -- our market share broadly remains stable on ADTV, but given we have introduced 915 and web-based trading, power trading tools for power traders, is that has – I mean, the contribution of that has increased or how has it played any role for reporting a flat market share or growth? Just wanted to understand, and how do you look this to play out going ahead? That's my first question."
+    },
+    {
+      "id": "s59",
+      "pdf_page": 11,
+      "speaker": "Ishan Bansal",
+      "speaker_type": "management",
+      "role": "Co-Founder and CFO",
+      "text": "So, let me take this. Basically, the 915 is not a significant contributor to the trading volume today. And we obviously, our expectation is that the day we get a -- like a significant PMF on that product, it will start contributing significantly, and the market share can grow even faster. But today, that is not the reason why -- that is not a contributor to the market share or even revenue, etcetera, from a material perspective."
+    },
+    {
+      "id": "s60",
+      "pdf_page": 11,
+      "speaker": "Sanketh Godha",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "But, Ishan, do you see this to play out more internal customers graduating to power traders, or you think you can attract the external power traders who are active with some other brokers, and given you provide much better features maybe, and therefore, they come on your platform? From your revenue growth point of view, how do you see this to play out? Whether it is external guys coming on your board on your platform, or internal guys graduating to power traders?"
+    },
+    {
+      "id": "s61",
+      "pdf_page": 11,
+      "speaker": "Ishan Bansal",
+      "speaker_type": "management",
+      "role": "Co-Founder and CFO",
+      "text": "So, our expectation is obviously to kind of increase the market share in the power trader segment. And hence, the focus was not on our customer graduating, but the focus was on customers from other platform coming to us. And hence, increases overall market share for us. That's why I was saying that this hasn't been yet kind of proven from our side. That's why we are not even talking about 915 too much because that's not adding significantly to the revenue or to the turnover today."
+    },
+    {
+      "id": "s62",
+      "pdf_page": 11,
+      "speaker": "Sanketh Godha",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Got it. But I mean…"
+    },
+    {
+      "id": "s63",
+      "pdf_page": 11,
+      "speaker": "Moderator",
+      "speaker_type": "moderator",
+      "role": null,
+      "text": "Sanketh, I request you to join back, please. Thank you. Next question is from Abhijeet Sakhare. Abhijeet, kindly introduce yourself and go ahead with your question, please."
+    },
+    {
+      "id": "s64",
+      "pdf_page": 11,
+      "speaker": "Abhijeet Sakhare",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Yes. Hi. This is Abhijeet from Kotak. I had a couple of data questions. If you could give the number on net inflows on the platform. I didn't see the numbers are getting reported for this time. Secondly, on cost to grow, generally if we look at this number, it's up and down a lot. But on average, it's about INR120 crores a quarter. Even this year, I think over the first half, it's about INR125 crores. Should we kind of assume that to be the run rate for second half as well? And…"
+    },
+    {
+      "id": "s65",
+      "pdf_page": 11,
+      "speaker": "Ishan Bansal",
+      "speaker_type": "management",
+      "role": "Co-Founder and CFO",
+      "text": "Sorry, go ahead."
+    },
+    {
+      "id": "s66",
+      "pdf_page": 11,
+      "speaker": "Abhijeet Sakhare",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Yes, one last question, Ishan, on impact of CAS. I just want to kind of follow-up on that given the statement that you expect CAS to really help improve the volumes. But if we actually look at how August panned out, by the end of August, I think volumes had recovered a fair bit. So, I'm not -- I mean, I'm just trying to figure out whether you actually expect removal of CAS to really improve the volumes in a big manner or the system has already adjusted a fair bit."
+    },
+    {
+      "id": "s67",
+      "pdf_page": 12,
+      "speaker": "Ishan Bansal",
+      "speaker_type": "management",
+      "role": "Co-Founder and CFO",
+      "text": "Got it. I'll take, I think, CAS one first then. It's easier. We don't expect it will go up. The way we are expecting is it will normalize the problem that it created and now because - there are multiple variables that effect the volume. Volume is one, I think somebody else was also asking, the volatility, whenever it increases, increases volume. And anything like, for example disruptions like where CAS, for example, would have a negative impact on volumes. So both of them can counterbalance each other in some cases where you see the volume normalized. But normal for everyday is a different in some ways. With and without CAS, the expectation is that it will change. Now, will it change with volatility or without volatility is more to be seen in the future. On the second piece, on cost to grow, I think we've been talking about that roughly we spend between INR400 crores to INR500 crores a year. And in a good year, obviously we'll end up spending INR500 crores plus as well. But in a bad year, we might end up spending like more closer to INR400 crores. You are correct that our average is around INR125 crores today. But next quarter, if market does well, we will probably spend more than that as well. But if market doesn't do well, we might do lower than that as well. So there will always be a some bit of flexibility that we will have to make sure that we don't overspend when market -- it's not worth spending in a bad market and hence we reduce cost. In a -- if market does well, let's say in Q4 or in Q3 as well, we might end up spending even more than INR125 crores. So, it will depend on how market does or where we see demand coming from."
+    },
+    {
+      "id": "s68",
+      "pdf_page": 12,
+      "speaker": "Moderator",
+      "speaker_type": "moderator",
+      "role": null,
+      "text": "Thank you. Next question is from Shrenik Mehta. Shrenik, kindly introduce yourself and go ahead with your question, please."
+    },
+    {
+      "id": "s69",
+      "pdf_page": 12,
+      "speaker": "Shrenik Mehta",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Hi, my question was answered. So, I am skipping it."
+    },
+    {
+      "id": "s70",
+      "pdf_page": 12,
+      "speaker": "Moderator",
+      "speaker_type": "moderator",
+      "role": null,
+      "text": "Thank you. Next question is from Manish Ostwal. Manish, please introduce yourself and go ahead with your question, please."
+    },
+    {
+      "id": "s71",
+      "pdf_page": 12,
+      "speaker": "Manish Ostwal",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Yes, my name is Manish Ostwal, calling from Nirmal Bang Securities. My question on the --one question -- I mean, the company is focusing customer for business growth, right? So, if I ask you, how you track this metric called product per customer, how the progress the company is making? And secondly, a question on AI. So, AI, total investment the company is making on AI front and both from a use case of revenue maximization as well as the customer experience cost reduction, can you make some comment on that? It will be quite useful for us. Thank you."
+    },
+    {
+      "id": "s72",
+      "pdf_page": 13,
+      "speaker": "Ishan Bansal",
+      "speaker_type": "management",
+      "role": "Co-Founder and CFO",
+      "text": "Lalit?"
+    },
+    {
+      "id": "s73",
+      "pdf_page": 13,
+      "speaker": "Lalit Keshre",
+      "speaker_type": "management",
+      "role": "Co-Founder and CEO",
+      "text": "So I think your -- I'm sorry, I missed your second question, which was about AI."
+    },
+    {
+      "id": "s74",
+      "pdf_page": 13,
+      "speaker": "Manish Ostwal",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "I mean my question is use of AI. What kind of investment the company is making on AI front first? And secondly, how we leverage AI with respect to revenue maximization as well as customer experience on the platform and cost reduction in the business?"
+    },
+    {
+      "id": "s75",
+      "pdf_page": 13,
+      "speaker": "Lalit Keshre",
+      "speaker_type": "management",
+      "role": "Co-Founder and CEO",
+      "text": "Yes, sure. First thing is on AI, as we spoke, we are using it in multiple ways. One is, of course, how can we ship things faster for customers? How can we ship better quality product to customers? And then, how can we improve customer experience better? Revenue maximization typically, if you have seen us, the -- first way we think about it is how we kind of improve customer experience. And then if customers like everything, then revenue happens. It's more like customer first and then everything later. And on investment side, if you ask, on productivity side, like we use a lot of tools. We have kind of as, again, as our philosophy is, we like to do everything in-house. So, we are building like our own in-house stack. So, it also reduces like per token cost. Like if we had used like all the kind of commercial kind of models, our cost would have been much higher. And we do the kind of number of tokens that we consume is much, much higher, but because of our per token cost, we kind of we are able to kind of save a lot of money as well. I hope that answers your question. The first one is, how is product per customer growing? Do we have data?"
+    },
+    {
+      "id": "s76",
+      "pdf_page": 13,
+      "speaker": "Ishan Bansal",
+      "speaker_type": "management",
+      "role": "Co-Founder and CFO",
+      "text": "Yes. So, I think, broadly, more than 50% of our customers are today using more than two products, and actually more than 5% are using more than four products today. So, we keep on tracking these metrics. We are obviously rehashing some of these things, because the number of products are increasing very rapidly, and how do we actually engage more and more with our customers. The thought process is basically again, instead of looking at product per user, look at one customer and what all products that customer needs and make sure that all those products are served by us is I think the way we look at it from a fundamental perspective. But obviously, product per user is a averaging of all of that. But a lot of time what happens is a customer actually uses only one product because that's the only product that is relevant for them. And we don't want to force customer or push customers to use multiple products. It is about their need and how can we become the most, or only platform that they are using is more important for us than number of products that they are using."
+    },
+    {
+      "id": "s77",
+      "pdf_page": 13,
+      "speaker": "Manish Ostwal",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Thank you."
+    },
+    {
+      "id": "s78",
+      "pdf_page": 13,
+      "speaker": "Moderator",
+      "speaker_type": "moderator",
+      "role": null,
+      "text": "Thank you. Next question is from Sarang Sanil. Sarang, please introduce yourself and go ahead with your question, please."
+    },
+    {
+      "id": "s79",
+      "pdf_page": 14,
+      "speaker": "Sarang Sanil",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Hi. Good afternoon. This is Sarang from Courser Park Advisors. Just two questions. Firstly, considering the good growth that we saw this quarter, is there a way that we optimize the float income, or has anything changed here? And secondly, on our lending book, referring to the PL and LAS, what are the changes that we made in the last two quarters, and how should we see the scaling?"
+    },
+    {
+      "id": "s80",
+      "pdf_page": 14,
+      "speaker": "Ishan Bansal",
+      "speaker_type": "management",
+      "role": "Co-Founder and CFO",
+      "text": "Lalit Bhimani, you want to take it?"
+    },
+    {
+      "id": "s81",
+      "pdf_page": 14,
+      "speaker": "Lalit Bhimani",
+      "speaker_type": "management",
+      "role": "Group Head, Finance",
+      "text": "On the lending side, the last two quarters we have, in fact, launched our loan against shares product. And the early two quarters, I think we have seen good traction in that. On the personal loan side, the business has been same as gradually growing over quarter-on-quarter. Sorry, what was your second question, Sarang?"
+    },
+    {
+      "id": "s82",
+      "pdf_page": 14,
+      "speaker": "Sarang Sanil",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Yes. The first question was on float income. Are we optimizing something here, or has anything changed that we are able to generate better yields?"
+    },
+    {
+      "id": "s83",
+      "pdf_page": 14,
+      "speaker": "Lalit Bhimani",
+      "speaker_type": "management",
+      "role": "Group Head, Finance",
+      "text": "No. Float income, there is no change, because you have to look at it from two perspective. One is our own treasury. So, on our own treasury side, it is the -- we make investments in NCDs and bonds and mutual funds, debt mutual funds. Largely, the returns are as per what is getting generated from the market, whatever you see there. And on the money which we have collected from customers as part of the wallet, that is typically -- you don't have much option there. You can only invest in certain set of FDs, which are prescribed by SEBI and exchange. So, you won't see much change in the yield there as well."
+    },
+    {
+      "id": "s84",
+      "pdf_page": 14,
+      "speaker": "Sarang Sanil",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Got it. So, it's the treasury that's making the difference. Okay. Thank you."
+    },
+    {
+      "id": "s85",
+      "pdf_page": 14,
+      "speaker": "Moderator",
+      "speaker_type": "moderator",
+      "role": null,
+      "text": "Thank you. Next question is from Pranuj Shah. Pranuj, please introduce yourself and go ahead with your question, please."
+    },
+    {
+      "id": "s86",
+      "pdf_page": 14,
+      "speaker": "Pranuj Shah",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Hi. Thanks for taking my question. This is Pranuj from 3P Investments. My first question is on, if MDR on UPI is implemented under the current framework, how much of an escalation does it lead to your cost to serve, if you can answer that? My second question is on the US-based investing. Could you explain the opex structure over here? I think you guys make $1 or 0.1 based on the transaction value. How much has to be shared with the partner in US, or is there any fixed cost associated with it? And lastly, you used to give broking transacting users up till the last quarter. If you could disclose that number. Thank you."
+    },
+    {
+      "id": "s87",
+      "pdf_page": 14,
+      "speaker": "Ishan Bansal",
+      "speaker_type": "management",
+      "role": "Co-Founder and CFO",
+      "text": "Yes. Again, I'll go with the last question here. I think QTU is more or less broking transacting users, so that's why we thought probably QTU is a better metric than looking at broking transacting users. So, it is much closer to that. On the UPI piece, I think we are still figuring out. We one obviously, there was a circular out and it got delayed. And the second piece is, there are recommendation made from our side, SEBI's side, to actually have a different pricing when it looked at the capital market use cases. And we are still awaiting finally what will be the final outcome. Our expectation is it's not going to be a material change to our cost in any case, but obviously it will depend on how much actual number that comes out to be. Because if the number is 0.4%, which they are charging for others, or 0.02%, the difference is huge. And what…"
+    },
+    {
+      "id": "s88",
+      "pdf_page": 15,
+      "speaker": "Pranuj Shah",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "I think it's 0.02% for capital market investments."
+    },
+    {
+      "id": "s89",
+      "pdf_page": 15,
+      "speaker": "Ishan Bansal",
+      "speaker_type": "management",
+      "role": "Co-Founder and CFO",
+      "text": "But the discussion is still on the capping is on what? INR300 capping is insane today. And I think if the capping is lower, that number becomes immaterial. But if the capping is very high, then we have to evaluate how to kind of solve for this."
+    },
+    {
+      "id": "s90",
+      "pdf_page": 15,
+      "speaker": "Pranuj Shah",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "But you would look to increase the cost on your instead of INR20 that you're charging currently, you may have to re-evaluate that?"
+    },
+    {
+      "id": "s91",
+      "pdf_page": 15,
+      "speaker": "Ishan Bansal",
+      "speaker_type": "management",
+      "role": "Co-Founder and CFO",
+      "text": "Not necessarily. I think we need to first, I think we have to make our case to make sure that it doesn't go that high. INR300 is not affordable either for us or for the customer in such cases. Because a lot of time customer doesn't really actually transact also. They add money, and then they don't transact. Still, if you end up paying that cost, it doesn't make sense for us to pay that cost in some ways. But obviously, we have to work with the regulator on this and figure out what can be done for us on this."
+    },
+    {
+      "id": "s92",
+      "pdf_page": 15,
+      "speaker": "Pranuj Shah",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Understood. And in the lump sum mutual fund investments, you guys won't be liable to pay, right? That will be the mutual fund house that will have to pay."
+    },
+    {
+      "id": "s93",
+      "pdf_page": 15,
+      "speaker": "Ishan Bansal",
+      "speaker_type": "management",
+      "role": "Co-Founder and CFO",
+      "text": "Yes."
+    },
+    {
+      "id": "s94",
+      "pdf_page": 15,
+      "speaker": "Pranuj Shah",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Understood. And the broking transacting users…"
+    },
+    {
+      "id": "s95",
+      "pdf_page": 15,
+      "speaker": "Moderator",
+      "speaker_type": "moderator",
+      "role": null,
+      "text": "Pranuj, I request you to join back the queue, please. Thank you. Next question is from Dipanjan Ghosh. Dipanjan, please introduce yourself and go ahead with the question, please."
+    },
+    {
+      "id": "s96",
+      "pdf_page": 15,
+      "speaker": "Dipanjan Ghosh",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Hi. This is Dipanjan here from Goldman Sachs. Few questions from my side. First, on the other operating income, I think there has been some reclassification also that you have done. But on a mixed basis, I think on a quarter-on-quarter, there has been a decent increase. So, just wanted to get some color. Is it led by distribution income, IPOled revenues? I mean, some color on that. Second, I think for the past few quarters, you have been sustainably seeing rise in your cash realizations. Now, I would presume a lot of it has to do with the increase in the MTF book. So, by any chance, is it possible if -- or you have done some exercise to understand what percentage of cash turnover is led by MTF? I mean, if you have any color on that part. Yes, those are the two questions, and one data-keeping question. If you can just give the employee number as on date or as of September 30th?"
+    },
+    {
+      "id": "s97",
+      "pdf_page": 15,
+      "speaker": "Ishan Bansal",
+      "speaker_type": "management",
+      "role": "Co-Founder and CFO",
+      "text": "Yes. Lalit, you want to take this."
+    },
+    {
+      "id": "s98",
+      "pdf_page": 16,
+      "speaker": "Lalit Bhimani",
+      "speaker_type": "management",
+      "role": "Group Head, Finance",
+      "text": "On other income, we have as of now regrouped the IPO income plus BSDA income, which were earlier part of stocks revenue. And what was your second question, sorry?"
+    },
+    {
+      "id": "s99",
+      "pdf_page": 16,
+      "speaker": "Dipanjan Ghosh",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Yes, Lalit sir. Basically, the second one was on the MTF portion as percentage of cash turnover. And just a follow-up on this first one, I just wanted to understand what led to the growth in other operating income during the quarter?"
+    },
+    {
+      "id": "s100",
+      "pdf_page": 16,
+      "speaker": "Lalit Bhimani",
+      "speaker_type": "management",
+      "role": "Group Head, Finance",
+      "text": "So, this quarter had we have seen about 30 IPOs happening in this quarter. And some of the large IPOs, in fact, happened this quarter, which includes your SBI AMC, NSE. And all these have overall contributed significant revenue to the other income line item. And second is, we typically get a BSDA revenue from authorities in terms of how many new demat accounts we are adding in the industry. So, that income has also been accrued in this quarter."
+    },
+    {
+      "id": "s101",
+      "pdf_page": 16,
+      "speaker": "Dipanjan Ghosh",
+      "speaker_type": "participant",
+      "role": null,
+      "text": "Yes. The second one was on the MTF portion as a percentage of cash turnover, just to understand, you know, how much more scope is there for the cash realizations to go up?"
+    },
+    {
+      "id": "s102",
+      "pdf_page": 16,
+      "speaker": "Ishan Bansal",
+      "speaker_type": "management",
+      "role": "Co-Founder and CFO",
+      "text": "Today, I think that piece is slightly above 5%, and we obviously, as the book grows, that number will keep on going up. I think, we expect at least in the foreseeable future that number will kind of go up. But again, percentage of ADTO can vary also. It's not directly proportional with the book. It depends on the churn also. If the volatility is high, actually that goes up. If the volatility is low, that might actually go down as a percentage as well. So, it's not necessarily that it will keep on going up every quarter. But in this quarter, the volatility was high. That's why probably it contributed more."
+    },
+    {
+      "id": "s103",
+      "pdf_page": 16,
+      "speaker": "Moderator",
+      "speaker_type": "moderator",
+      "role": null,
+      "text": "Thank you. Ladies and gentlemen, we will take that as the last question for today. I would now hand over the conference to Mr. Shiv Tallam for closing comments. Thank you, and over to you sir."
+    },
+    {
+      "id": "s104",
+      "pdf_page": 16,
+      "speaker": "Shiv Tallam",
+      "speaker_type": "management",
+      "role": "Head of IR and Corporate Development",
+      "text": "Thank you, everyone, for attending the Q2 call. Any follow-up questions, please do reach out to the IR team and the shareholders email ID. You have all our details on the IR website as well. Thank you very much, and look forward to having this again next quarter."
+    },
+    {
+      "id": "s105",
+      "pdf_page": 16,
+      "speaker": "Moderator",
+      "speaker_type": "moderator",
+      "role": null,
+      "text": "Thank you, members of the management. On behalf of Billionbrains Garage Ventures Limited or Groww, we thank you for joining us, and you may now exit the meeting. Thank you all."
+    }
+  ]
+}

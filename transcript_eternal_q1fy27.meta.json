@@ -1,0 +1,11 @@
+{
+  "company": "Eternal Limited",
+  "brand": "Eternal (Zomato, Blinkit)",
+  "quarter": "Q1 FY27",
+  "call_date": "2026-07-22",
+  "filed_with_exchange": "2026-07-29",
+  "transcript_url": "https://b.zmtcdn.com/investorrelations/Q1FY27-earnings-call-transcript.pdf",
+  "source_page_url": "PASTE_SCREENER_URL",
+  "fetched_by": "manual download (pdf to text locally); link taken from the exchange filing cover letter",
+  "note": "Uploaded by the team and converted from PDF to text locally. Cover letter excluded; the extract starts at the first Moderator turn."
+}

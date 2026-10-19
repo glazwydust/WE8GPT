@@ -3,8 +3,8 @@
   "brand": "Groww",
   "quarter": "Q2 FY27",
   "call_date": "2026-10-14",
-  "source_page_url": "PASTE_SCREENER_URL",
-  "transcript_url": "PASTE_BSE_PDF_URL",
+  "source_page_url": "",
+  "transcript_url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/af9d191d-a154-41aa-be1c-2ebd99bedaea.pdf",
   "fetched_by": "tinyfish (link) + manual (pdf to text)",
   "note": "TinyFish located the filing link; the PDF was downloaded and converted to text with pdftotext on our side. Cover letter and exchange header excluded; the extract starts at the first Moderator turn. The extracted Q&A contains no opening prepared remarks."
 }

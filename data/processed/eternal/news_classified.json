@@ -1,8 +1,9 @@
 {
   "company": "Eternal Limited",
-  "classified_at": "2026-10-19T23:46:57+05:30",
+  "classified_at": "2026-10-20T00:15:41+05:30",
   "model": "gemini-3.8-flash",
   "source_file": "news_2026-10-19.json",
+  "prompt_version": 2,
   "collected_at": "2026-10-19T22:50:00+05:30",
   "articles": [
     {
@@ -18,8 +19,8 @@
       "type": "reported_fact",
       "topic": "financials",
       "direction": "positive",
-      "relevance": "high",
-      "why": "Eternal reports strong Q4 profit and revenue growth driven by food delivery and Blinkit."
+      "relevance": "low",
+      "why": "Financial results for FY26; does not directly test specific claims about competitive intensity, LPG, or retention."
     },
     {
       "title": "SBI Card-Eternal's credit card for Zomato, Blinkit: How to directly apply for early access by app? Features explained",
@@ -34,8 +35,8 @@
       "type": "reported_fact",
       "topic": "product_launch",
       "direction": "positive",
-      "relevance": "high",
-      "why": "Details launch and early access features for co-branded SBI Card for Eternal platforms."
+      "relevance": "low",
+      "why": "Launch of co-branded SBI credit card; unrelated to the core claims."
     },
     {
       "title": "Eternal SBI Card offers up to 10% discounts on Zomato, Blinkit, District",
@@ -50,8 +51,8 @@
       "type": "reported_fact",
       "topic": "product_launch",
       "direction": "positive",
-      "relevance": "high",
-      "why": "Co-branded SBI Card offers discounts across Eternal's brands including Zomato and Blinkit."
+      "relevance": "low",
+      "why": "Co-branded credit card features and discounts; not testing competitive intensity or market share claims."
     },
     {
       "title": "Eternal SBI Card to have instant discounts on food delivery, quick commerce and services",
@@ -66,8 +67,8 @@
       "type": "reported_fact",
       "topic": "product_launch",
       "direction": "positive",
-      "relevance": "high",
-      "why": "Eternal SBI Card provides instant discounts across food delivery and quick commerce."
+      "relevance": "low",
+      "why": "Credit card launch and promotional features."
     },
     {
       "title": "SBI Card launches Eternal credit card with Zomato Gold membership, cashback benefits",
@@ -82,8 +83,8 @@
       "type": "reported_fact",
       "topic": "product_launch",
       "direction": "positive",
-      "relevance": "high",
-      "why": "SBI Card launches co-branded Eternal credit card featuring Zomato Gold membership."
+      "relevance": "low",
+      "why": "Co-branded credit card launch details."
     },
     {
       "title": "SBI Card and Eternal launch co-branded Eternal SBI Card with discounts on Zomato, Blinkit, Bistro and District",
@@ -98,8 +99,8 @@
       "type": "reported_fact",
       "topic": "product_launch",
       "direction": "positive",
-      "relevance": "high",
-      "why": "SBI Card and Eternal officially launch co-branded card offering discounts across platforms."
+      "relevance": "low",
+      "why": "Credit card partnership between SBI Card and Eternal."
     },
     {
       "title": "SBI Cards and Zomato parent launch co-branded 'Eternal SBI Card': Know more about discounts, cashbacks",
@@ -114,8 +115,8 @@
       "type": "reported_fact",
       "topic": "product_launch",
       "direction": "positive",
-      "relevance": "high",
-      "why": "SBI Cards and Eternal launch co-branded credit card with cashback and discounts."
+      "relevance": "low",
+      "why": "Announcement of Eternal SBI Card discounts and cashbacks."
     },
     {
       "title": "Quick commerce's festive share set to rise to 18% as mobiles and electronics gain ground",
@@ -129,9 +130,9 @@
       "id": "n8",
       "type": "speculation",
       "topic": "macro_market",
-      "direction": "positive",
-      "relevance": "medium",
-      "why": "Sector forecast expects quick commerce share to rise during festive season."
+      "direction": "neutral",
+      "relevance": "none",
+      "why": "Forecast on quick commerce festive share for electronics."
     },
     {
       "title": "U.K. E-Commerce Market Size, Share, & Growth, 2034",
@@ -147,7 +148,7 @@
       "topic": "macro_market",
       "direction": "neutral",
       "relevance": "none",
-      "why": "Report focuses on the UK e-commerce market."
+      "why": "UK e-commerce market report; completely unrelated."
     },
     {
       "title": "Festive hiring grows 7% to 1.27 lakh jobs, led by quick commerce: Report",
@@ -161,9 +162,9 @@
       "id": "n10",
       "type": "reported_fact",
       "topic": "macro_market",
-      "direction": "positive",
-      "relevance": "medium",
-      "why": "Industry report shows festive hiring growth led by quick commerce sector."
+      "direction": "neutral",
+      "relevance": "none",
+      "why": "Report on festive hiring in quick commerce."
     },
     {
       "title": "Q-commerce's makeup market hits ₹938 Cr, more than double Amazon's ₹418 Cr: Report",
@@ -176,10 +177,10 @@
       "query_type": "sector_regulatory",
       "id": "n11",
       "type": "reported_fact",
-      "topic": "competition",
+      "topic": "macro_market",
       "direction": "positive",
-      "relevance": "medium",
-      "why": "Report shows quick commerce market share surpassing Amazon in key retail category."
+      "relevance": "low",
+      "why": "Report on quick commerce market size in makeup category."
     },
     {
       "title": "Eternal (Zomato) Competitor Amazon Plans $3 Billion Quick Commerce Push, Eyeing 1,300 Stores",
@@ -191,11 +192,11 @@
       "query": "Eternal Zomato Blinkit news",
       "query_type": "company",
       "id": "n12",
-      "type": "speculation",
+      "type": "reported_fact",
       "topic": "competition",
       "direction": "negative",
-      "relevance": "high",
-      "why": "Competitor Amazon plans major $3B push and dark stores against Eternal."
+      "relevance": "medium",
+      "why": "Amazon planning a $3 billion quick commerce push relates to competitor aggression and new entrants."
     },
     {
       "title": "EXCLUSIVE: Amazon bets $3 billion on India's fast-delivery boom, sources say",
@@ -211,7 +212,7 @@
       "topic": "competition",
       "direction": "negative",
       "relevance": "medium",
-      "why": "Sources state Amazon plans $3 billion investment into fast delivery in India."
+      "why": "Amazon's reported $3 billion investment into India's fast delivery points to intensifying competition."
     },
     {
       "title": "Amazon to invest $3Bn into quick commerce in India as it plays catch up",
@@ -227,7 +228,7 @@
       "topic": "competition",
       "direction": "negative",
       "relevance": "medium",
-      "why": "Amazon announces plans to invest $3B into Indian quick commerce."
+      "why": "Amazon investing $3B in quick commerce shows aggressive competitor moves."
     },
     {
       "title": "Top 13 Quick Commerce Companies in India [2026]",
@@ -242,8 +243,8 @@
       "type": "reported_fact",
       "topic": "competition",
       "direction": "neutral",
-      "relevance": "medium",
-      "why": "Listicle outlining top quick commerce players in India."
+      "relevance": "low",
+      "why": "Generic listicle of quick commerce companies in India."
     },
     {
       "title": "Quick commerce firms cross 9 million daily orders as market share battle heats up",
@@ -256,10 +257,10 @@
       "query_type": "sector_regulatory",
       "id": "n16",
       "type": "reported_fact",
-      "topic": "macro_market",
-      "direction": "positive",
+      "topic": "competition",
+      "direction": "neutral",
       "relevance": "medium",
-      "why": "Quick commerce sector hits 9 million daily orders amid intensifying competition."
+      "why": "Highlights heating market share battles in quick commerce."
     },
     {
       "title": "Eternal stock rating: Brokerages bullish, eye Blinkit profitability, food delivery growth; check target...",
@@ -274,8 +275,8 @@
       "type": "expert_opinion",
       "topic": "financials",
       "direction": "positive",
-      "relevance": "high",
-      "why": "Brokerages issue bullish ratings and target prices on Eternal's Blinkit and food delivery."
+      "relevance": "low",
+      "why": "Brokerage target and bullish outlook on Eternal's growth."
     },
     {
       "title": "Eternal Q1 FY27 Results: Net Profit Jumps 3.7X to ₹92 Crore as Blinkit Becomes Biggest Revenue Driver",
@@ -290,8 +291,8 @@
       "type": "reported_fact",
       "topic": "financials",
       "direction": "positive",
-      "relevance": "high",
-      "why": "Eternal reports net profit jump 3.7x in Q1 FY27 led by Blinkit."
+      "relevance": "low",
+      "why": "Earnings report for Q1 FY27; does not directly bear on the claims."
     },
     {
       "title": "Amazon, Flipkart spark quick commerce price war as Blinkit, Instamart hold the line",
@@ -305,9 +306,9 @@
       "id": "n19",
       "type": "reported_fact",
       "topic": "competition",
-      "direction": "negative",
+      "direction": "mixed",
       "relevance": "high",
-      "why": "Price war sparked by Amazon and Flipkart challenges Blinkit and rivals."
+      "why": "Directly reports on Amazon/Flipkart price wars while Blinkit holds the line in June 2026, testing claims 1-3."
     },
     {
       "title": "India Quick Commerce 2026: Blinkit, Zepto, Instamart",
@@ -322,8 +323,8 @@
       "type": "reported_fact",
       "topic": "competition",
       "direction": "neutral",
-      "relevance": "medium",
-      "why": "Industry overview of top quick commerce competitors in India including Blinkit."
+      "relevance": "low",
+      "why": "Overview of quick commerce landscape in India."
     },
     {
       "title": "Quick commerce race intensifies as Flipkart Minutes and Amazon Now scale up operations",
@@ -338,8 +339,8 @@
       "type": "reported_fact",
       "topic": "competition",
       "direction": "negative",
-      "relevance": "medium",
-      "why": "Quick commerce competition intensifies as Flipkart and Amazon scale delivery operations."
+      "relevance": "high",
+      "why": "Reports on Flipkart Minutes and Amazon Now scaling up in June 2026, directly testing Claim 1."
     },
     {
       "title": "Quick commerce platforms raise consumer fees as ultra-fast delivery becomes a lifestyle",
@@ -354,8 +355,8 @@
       "type": "reported_fact",
       "topic": "fees_pricing",
       "direction": "positive",
-      "relevance": "medium",
-      "why": "Quick commerce platforms raise consumer fees as adoption grows."
+      "relevance": "high",
+      "why": "Quick commerce platforms raising consumer fees bears directly on Claim 2 regarding discounting easing."
     },
     {
       "title": "Swiggy scales back quick-commerce spending in push for profitability",
@@ -370,8 +371,8 @@
       "type": "reported_fact",
       "topic": "competition",
       "direction": "positive",
-      "relevance": "medium",
-      "why": "Key rival Swiggy scales back quick-commerce spending to pursue profitability."
+      "relevance": "high",
+      "why": "Swiggy scaling back quick commerce spending in May 2026 supports Claim 2 that unsustainable discounting would ease."
     },
     {
       "title": "Inside Zepto's plan to go deeper into metros while rivals spread wider",
@@ -386,8 +387,8 @@
       "type": "reported_fact",
       "topic": "competition",
       "direction": "neutral",
-      "relevance": "low",
-      "why": "Strategy article focusing specifically on competitor Zepto's metro expansion plan."
+      "relevance": "medium",
+      "why": "Zepto's expansion strategy bears on competitive intensity and expansion during Q1 (Claim 1)."
     },
     {
       "title": "Zepto ahead of Instamart on dark stores, MAUs and orders; trails Blinkit as quick commerce race...",
@@ -403,7 +404,7 @@
       "topic": "competition",
       "direction": "positive",
       "relevance": "high",
-      "why": "Market data shows Blinkit maintains its lead over rivals Zepto and Instamart."
+      "why": "Reports Blinkit maintaining lead over Zepto and Instamart in May 2026, directly testing Claim 3 on defending share."
     },
     {
       "title": "Fuelling the kitchen, burning the climate",
@@ -415,11 +416,11 @@
       "query": "LPG shortage restaurants India 2026",
       "query_type": "sector_regulatory",
       "id": "n26",
-      "type": "expert_opinion",
-      "topic": "other",
+      "type": "speculation",
+      "topic": "macro_market",
       "direction": "neutral",
       "relevance": "none",
-      "why": "Discusses environmental impacts of kitchen fuels with no mention of or link to the company."
+      "why": "General commentary on kitchens and climate, does not relate to listed claims."
     },
     {
       "title": "The 'Ten-Minute' Paradox: Can India's Kirana Heritage Survive the Quick Commerce Surge?",
@@ -431,11 +432,11 @@
       "query": "Blinkit Zepto Instamart quick commerce discounting 2026",
       "query_type": "company",
       "id": "n27",
-      "type": "expert_opinion",
+      "type": "speculation",
       "topic": "competition",
-      "direction": "mixed",
-      "relevance": "medium",
-      "why": "Analyzes the impact of quick commerce expansion on traditional kirana stores."
+      "direction": "neutral",
+      "relevance": "low",
+      "why": "Discusses quick commerce impact on kirana stores, not directly on competitive intensity or market share claims."
     },
     {
       "title": "Eating out may get expensive: LPG crisis makes several Pune restaurants hike prices",
@@ -450,8 +451,8 @@
       "type": "reported_fact",
       "topic": "macro_market",
       "direction": "negative",
-      "relevance": "low",
-      "why": "LPG shortages force restaurant price hikes, which could affect food delivery platform order volumes."
+      "relevance": "high",
+      "why": "Reports an LPG crisis affecting restaurant operations and prices, relevant to Claim 7."
     },
     {
       "title": "How India Shops Online 2026",
@@ -465,9 +466,9 @@
       "id": "n29",
       "type": "expert_opinion",
       "topic": "macro_market",
-      "direction": "positive",
+      "direction": "neutral",
       "relevance": "low",
-      "why": "A broad industry report on online shopping trends across India."
+      "why": "General industry report on online shopping trends, not directly addressing specific claims."
     },
     {
       "title": "India's sugar, edible oil demand drops as commercial gas shortages hit restaurants",
@@ -482,8 +483,8 @@
       "type": "reported_fact",
       "topic": "macro_market",
       "direction": "negative",
-      "relevance": "low",
-      "why": "Commercial gas shortages impacting restaurant operations indirectly affect food delivery supply."
+      "relevance": "high",
+      "why": "Reports commercial gas shortages directly hitting restaurants, bearing on Claim 7."
     },
     {
       "title": "India LPG Crisis 2026: A COVID-Like Economic Shock?",
@@ -498,8 +499,8 @@
       "type": "speculation",
       "topic": "macro_market",
       "direction": "negative",
-      "relevance": "none",
-      "why": "Discusses broad macroeconomic shock scenarios from an LPG crisis without referencing the company."
+      "relevance": "medium",
+      "why": "Discusses broader economic shock of the LPG crisis affecting India."
     },
     {
       "title": "LPG Crisis Bites Chennai, Restaurants Reel Despite Supply Boost",
@@ -514,8 +515,8 @@
       "type": "reported_fact",
       "topic": "macro_market",
       "direction": "negative",
-      "relevance": "low",
-      "why": "Chennai restaurant disruptions from LPG shortages indirectly impact restaurant delivery partners."
+      "relevance": "high",
+      "why": "Covers LPG crisis causing restaurants in Chennai to reel, directly supporting Claim 7."
     },
     {
       "title": "LPG supply shock exposes fragility of India's clean cooking strategy",
@@ -527,11 +528,11 @@
       "query": "LPG shortage restaurants India 2026",
       "query_type": "sector_regulatory",
       "id": "n33",
-      "type": "expert_opinion",
-      "topic": "other",
+      "type": "reported_fact",
+      "topic": "macro_market",
       "direction": "neutral",
-      "relevance": "none",
-      "why": "Examines government clean cooking policy and fuel supply issues, unrelated to the company."
+      "relevance": "low",
+      "why": "Focuses on clean cooking strategy rather than restaurant operational disruptions."
     },
     {
       "title": "LPG crisis hits restaurants: Staff face salary cuts, layoffs as eateries struggle to keep kitchens runnin",
@@ -546,8 +547,8 @@
       "type": "reported_fact",
       "topic": "macro_market",
       "direction": "negative",
-      "relevance": "low",
-      "why": "Distress across restaurants due to fuel shortages affects supply on food delivery platforms."
+      "relevance": "high",
+      "why": "Reports LPG crisis hitting restaurant kitchens, directly bearing on Claim 7."
     },
     {
       "title": "'We cut down the menu': Cooking gas crisis hits restaurants in India amid war in Iran",
@@ -562,8 +563,8 @@
       "type": "reported_fact",
       "topic": "macro_market",
       "direction": "negative",
-      "relevance": "low",
-      "why": "Restaurant menu reductions from gas shortages may reduce food delivery ordering volumes."
+      "relevance": "high",
+      "why": "Cooking gas crisis forces Indian restaurants to cut menus and struggle, supporting Claim 7."
     },
     {
       "title": "India's Restaurants Face Tense 48 Hours",
@@ -578,8 +579,8 @@
       "type": "reported_fact",
       "topic": "macro_market",
       "direction": "negative",
-      "relevance": "low",
-      "why": "Restaurant industry pressure from gas supply issues indirectly impacts food aggregators."
+      "relevance": "medium",
+      "why": "Reports restaurants facing tense situation, likely tied to operational disruptions."
     },
     {
       "title": "LPG shortage fears grip major cities",
@@ -591,11 +592,11 @@
       "query": "LPG shortage restaurants India 2026",
       "query_type": "sector_regulatory",
       "id": "n37",
-      "type": "speculation",
+      "type": "reported_fact",
       "topic": "macro_market",
       "direction": "negative",
-      "relevance": "none",
-      "why": "Broad city-level cooking gas shortage fears with no direct link to the company."
+      "relevance": "medium",
+      "why": "Reports LPG shortage fears gripping major cities, context for restaurant disruptions in Claim 7."
     },
     {
       "title": "Blinkit, Instamart expect slower growth as unit economics take priority",
@@ -607,11 +608,11 @@
       "query": "Blinkit Zepto Instamart quick commerce discounting 2026",
       "query_type": "company",
       "id": "n38",
-      "type": "speculation",
-      "topic": "financials",
+      "type": "expert_opinion",
+      "topic": "competition",
       "direction": "mixed",
-      "relevance": "high",
-      "why": "Directly reports growth and unit economics expectations for the company's quick-commerce unit, Blinkit."
+      "relevance": "medium",
+      "why": "Discusses Blinkit and rival shifting to unit economics over growth, relevant to Claim 1 and 2."
     },
     {
       "title": "Quick commerce giants split strategies as new rivals close in",
@@ -623,11 +624,11 @@
       "query": "Blinkit Zepto Instamart quick commerce discounting 2026",
       "query_type": "company",
       "id": "n39",
-      "type": "expert_opinion",
+      "type": "reported_fact",
       "topic": "competition",
       "direction": "neutral",
-      "relevance": "medium",
-      "why": "Examines shifting competitive strategies among leading Indian quick commerce platforms."
+      "relevance": "high",
+      "why": "Reports quick commerce giants splitting strategies as new rivals close in, bearing on Claim 1."
     },
     {
       "title": "Is Quick Commerce Set To Enter Its Most Competitive Phase In 2026?",
@@ -641,9 +642,9 @@
       "id": "n40",
       "type": "speculation",
       "topic": "competition",
-      "direction": "mixed",
+      "direction": "neutral",
       "relevance": "medium",
-      "why": "Discusses intensifying competition within the Indian quick commerce sector."
+      "why": "Speculates about quick commerce entering its most competitive phase in 2026, relevant to Claim 1."
     }
   ]
 }

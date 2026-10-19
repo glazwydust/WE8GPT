@@ -1,8 +1,9 @@
 {
   "company": "Billionbrains Garage Ventures (Groww)",
-  "classified_at": "2026-10-19T23:41:09+05:30",
+  "classified_at": "2026-10-20T00:28:31+05:30",
   "model": "gemini-3.8-flash",
   "source_file": "news_2026-10-19.json",
+  "prompt_version": 2,
   "collected_at": "2026-10-19T02:05:00+05:30",
   "articles": [
     {
@@ -18,8 +19,8 @@
       "type": "reported_fact",
       "topic": "macro_market",
       "direction": "positive",
-      "relevance": "high",
-      "why": "Weekly share price performance of listed new-age tech stocks including Groww."
+      "relevance": "none",
+      "why": "General weekly share price movement of new-age tech stocks."
     },
     {
       "title": "Zetwerk Manufacturing Businesses IPO Day 2: Subscription Status, Timeline & Key Issue Details",
@@ -32,10 +33,10 @@
       "query_type": "company",
       "id": "n2",
       "type": "reported_fact",
-      "topic": "other",
+      "topic": "product_launch",
       "direction": "neutral",
       "relevance": "low",
-      "why": "Published by Groww about an IPO subscription update for another company."
+      "why": "Published directly by Groww about a third-party IPO subscription."
     },
     {
       "title": "Groww Q2 FY27: Can the non-F&O engines pull the stock forward?",
@@ -47,11 +48,11 @@
       "query": "Groww news",
       "query_type": "company",
       "id": "n3",
-      "type": "speculation",
+      "type": "expert_opinion",
       "topic": "financials",
       "direction": "neutral",
-      "relevance": "high",
-      "why": "Speculative analysis questioning if non-F&O business engines can drive Groww's stock forward post Q2."
+      "relevance": "medium",
+      "why": "Analyst commentary on Groww's Q2 performance and revenue engine growth potential."
     },
     {
       "title": "Abakkus Flexi Cap Fund September portfolio: 35 stocks, including Groww and NTPC, see higher holdings",
@@ -64,10 +65,10 @@
       "query_type": "company",
       "id": "n4",
       "type": "reported_fact",
-      "topic": "macro_market",
+      "topic": "financials",
       "direction": "positive",
-      "relevance": "medium",
-      "why": "Mutual fund increased holdings in Groww stock during September."
+      "relevance": "none",
+      "why": "Mutual fund portfolio change increasing holding in Groww stock."
     },
     {
       "title": "Jio Platforms IPO Review: Key Issue Details, Financials, Strengths, Risks and More",
@@ -80,10 +81,10 @@
       "query_type": "company",
       "id": "n5",
       "type": "reported_fact",
-      "topic": "other",
+      "topic": "product_launch",
       "direction": "neutral",
       "relevance": "low",
-      "why": "Published by Groww reviewing an upcoming IPO for Jio Platforms."
+      "why": "Published directly by Groww reviewing an upcoming third-party IPO."
     },
     {
       "title": "SEBI Introduces 10-minute Closing Auction Session, Revises Expiry Settlement Rules for Stock, Index Derivatives",
@@ -98,8 +99,8 @@
       "type": "reported_fact",
       "topic": "regulation",
       "direction": "neutral",
-      "relevance": "medium",
-      "why": "SEBI introduced new closing auction session and derivatives settlement rules affecting brokerages."
+      "relevance": "high",
+      "why": "SEBI amends CAS and derivatives expiry settlement rules directly bearing on claim 7."
     },
     {
       "title": "Sebi tweaks closing auction rules, extends stock derivatives trading to 3:45 pm",
@@ -114,8 +115,8 @@
       "type": "reported_fact",
       "topic": "regulation",
       "direction": "neutral",
-      "relevance": "medium",
-      "why": "SEBI tweaked closing auction rules and extended stock derivatives trading hours."
+      "relevance": "high",
+      "why": "SEBI adjusts closing auction rules, directly bearing on claim 7."
     },
     {
       "title": "SEBI Announces New Closing Auction Session Rules For Equity Markets; Check Key Changes",
@@ -130,8 +131,8 @@
       "type": "reported_fact",
       "topic": "regulation",
       "direction": "neutral",
-      "relevance": "medium",
-      "why": "SEBI announced new closing auction session rules for equity markets."
+      "relevance": "high",
+      "why": "Reports SEBI's new closing auction session rules, relevant to claim 7."
     },
     {
       "title": "Rs 300 cap on UPI MDR 'not affordable' for stockbrokers, says Groww",
@@ -147,7 +148,7 @@
       "topic": "fees_pricing",
       "direction": "negative",
       "relevance": "high",
-      "why": "Groww stated that a Rs 300 cap on UPI MDR is not affordable for stockbrokers."
+      "why": "Groww states proposed UPI MDR cap is unaffordable, directly challenging claim 8."
     },
     {
       "title": "India markets regulator partly reverses derivative settlement rules after pushback",
@@ -161,9 +162,9 @@
       "id": "n10",
       "type": "reported_fact",
       "topic": "regulation",
-      "direction": "neutral",
-      "relevance": "medium",
-      "why": "SEBI partly reversed derivative settlement rules after industry pushback."
+      "direction": "positive",
+      "relevance": "high",
+      "why": "SEBI reverses derivative settlement rules, directly impacting claim 7 normalisation expectation."
     },
     {
       "title": "Sebi revises CAS rules, changes derivatives expiry settlement methodology",
@@ -178,8 +179,8 @@
       "type": "reported_fact",
       "topic": "regulation",
       "direction": "neutral",
-      "relevance": "medium",
-      "why": "SEBI revised CAS rules and derivatives expiry settlement methodology."
+      "relevance": "high",
+      "why": "SEBI revises CAS rules and expiry settlement methodology, addressing claim 7."
     },
     {
       "title": "Sebi revises closing auction session framework, changes derivatives settlement norms",
@@ -194,8 +195,8 @@
       "type": "reported_fact",
       "topic": "regulation",
       "direction": "neutral",
-      "relevance": "medium",
-      "why": "SEBI revised closing auction session framework and derivatives settlement norms."
+      "relevance": "high",
+      "why": "Regulatory update on closing auction session framework, directly addressing claim 7."
     },
     {
       "title": "SEBI may lean towards pausing closing auction method for derivatives for a year",
@@ -209,9 +210,9 @@
       "id": "n13",
       "type": "speculation",
       "topic": "regulation",
-      "direction": "neutral",
-      "relevance": "medium",
-      "why": "Speculation that SEBI may lean towards pausing closing auction method for derivatives."
+      "direction": "positive",
+      "relevance": "high",
+      "why": "Speculation that SEBI may pause derivatives closing auction method, bearing on claim 7."
     },
     {
       "title": "SEBI revises closing auction timings, derivatives settlement rules; changes to kick in from December 7",
@@ -226,8 +227,8 @@
       "type": "reported_fact",
       "topic": "regulation",
       "direction": "neutral",
-      "relevance": "medium",
-      "why": "SEBI revised closing auction timings and derivatives settlement rules effective December."
+      "relevance": "high",
+      "why": "SEBI confirms revised CAS timings and effective dates, bearing on claim 7."
     },
     {
       "title": "SEBI receives 20,000 comments on CAS and derivatives changes",
@@ -243,7 +244,7 @@
       "topic": "regulation",
       "direction": "neutral",
       "relevance": "medium",
-      "why": "SEBI received comments on closing auction session and derivatives regulatory changes."
+      "why": "SEBI receives market feedback on CAS and derivatives changes, related to claim 7."
     },
     {
       "title": "SEBI retains 30-minute VWAP for derivatives expiry settlement, revises closing auction timings",
@@ -257,9 +258,9 @@
       "id": "n16",
       "type": "reported_fact",
       "topic": "regulation",
-      "direction": "neutral",
-      "relevance": "medium",
-      "why": "SEBI retained 30-minute VWAP for derivatives expiry settlement and adjusted closing auction timings."
+      "direction": "positive",
+      "relevance": "high",
+      "why": "SEBI retains 30-minute VWAP for expiry settlement, directly related to claim 7."
     },
     {
       "title": "UPI MDR Rules From 15 Oct: Brokers' Cost Concerns",
@@ -274,8 +275,8 @@
       "type": "reported_fact",
       "topic": "fees_pricing",
       "direction": "negative",
-      "relevance": "medium",
-      "why": "Reports on brokers facing cost concerns due to new UPI MDR rules."
+      "relevance": "high",
+      "why": "Brokers flag cost concerns regarding new UPI MDR rules, directly bearing on claim 8."
     },
     {
       "title": "Sebi discusses new UPI merchant charges with NPCI as brokers flag cost concerns",
@@ -290,8 +291,8 @@
       "type": "reported_fact",
       "topic": "fees_pricing",
       "direction": "neutral",
-      "relevance": "medium",
-      "why": "SEBI discussed new UPI merchant charges with NPCI following broker cost concerns."
+      "relevance": "high",
+      "why": "SEBI discusses new UPI merchant fees with NPCI following broker cost concerns (claim 8)."
     },
     {
       "title": "Sebi reintroduces VWAP for derivatives expiry after CAS turns markets volatile",
@@ -305,9 +306,9 @@
       "id": "n19",
       "type": "reported_fact",
       "topic": "regulation",
-      "direction": "neutral",
-      "relevance": "medium",
-      "why": "SEBI reintroduced VWAP for derivatives expiry settlement following market volatility."
+      "direction": "positive",
+      "relevance": "high",
+      "why": "SEBI restores VWAP after CAS volatility, directly relevant to claim 7."
     },
     {
       "title": "Groww Q2 Results: Cons net profit surges 54% YoY to Rs 726 crore; revenue jumps 47%",
@@ -322,8 +323,8 @@
       "type": "reported_fact",
       "topic": "financials",
       "direction": "positive",
-      "relevance": "high",
-      "why": "Groww reported Q2 net profit surge of 54% YoY to Rs 726 crore."
+      "relevance": "medium",
+      "why": "Groww reports strong Q2 profit and revenue growth, relevant to room to grow (claim 6)."
     },
     {
       "title": "Groww Q2 profit up 54% to Rs 725 cr",
@@ -338,8 +339,8 @@
       "type": "reported_fact",
       "topic": "financials",
       "direction": "positive",
-      "relevance": "high",
-      "why": "Groww's Q2 profit rose 54% to Rs 725 crore."
+      "relevance": "medium",
+      "why": "Reports 54% profit jump in Q2 for Groww, relevant to growth trajectory (claim 6)."
     },
     {
       "title": "Billionbrains Garage Ventures Q2 results: Groww operator's profit rises 54% YoY to ₹726 crore, revenue up 47%",
@@ -354,8 +355,8 @@
       "type": "reported_fact",
       "topic": "financials",
       "direction": "positive",
-      "relevance": "high",
-      "why": "Groww operator Billionbrains Garage Ventures reported 54% profit growth and 47% revenue increase in Q2."
+      "relevance": "medium",
+      "why": "Groww's parent entity posts 54% YoY profit rise, bearing on claim 6."
     },
     {
       "title": "Sebi has heard brokers' MDR-charges related issues: Tuhin Kanta Pandey",
@@ -369,9 +370,9 @@
       "id": "n23",
       "type": "reported_fact",
       "topic": "fees_pricing",
-      "direction": "neutral",
-      "relevance": "medium",
-      "why": "Official confirmed SEBI heard brokers' concerns regarding MDR charges."
+      "direction": "positive",
+      "relevance": "high",
+      "why": "SEBI acknowledges brokers' concerns over UPI MDR charges, bearing on claim 8."
     },
     {
       "title": "UPI transaction charges: Check which payments can now attract a fee from October 2026",
@@ -385,9 +386,9 @@
       "id": "n24",
       "type": "reported_fact",
       "topic": "fees_pricing",
-      "direction": "neutral",
-      "relevance": "low",
-      "why": "General report on upcoming UPI transaction charges and fee applicability from October 2026."
+      "direction": "negative",
+      "relevance": "medium",
+      "why": "Details upcoming UPI transaction charges from October, directly related to claim 8."
     },
     {
       "title": "Sebi to hear brokers' concerns over UPI MDR charges and trading account transfers",
@@ -402,8 +403,8 @@
       "type": "reported_fact",
       "topic": "fees_pricing",
       "direction": "neutral",
-      "relevance": "medium",
-      "why": "SEBI scheduled discussions on broker concerns regarding UPI MDR charges and trading account transfers."
+      "relevance": "high",
+      "why": "SEBI schedules hearing on brokers' concerns over UPI MDR fees, directly bearing on claim 8."
     },
     {
       "title": "Broker associations apprises SEBI of the challenges in implementing UPI MDR",
@@ -417,9 +418,9 @@
       "id": "n26",
       "type": "reported_fact",
       "topic": "fees_pricing",
-      "direction": "negative",
+      "direction": "neutral",
       "relevance": "medium",
-      "why": "Brokers raise challenges to SEBI regarding implementation of UPI MDR charges."
+      "why": "Brokers raised challenges with SEBI regarding UPI MDR charges, bearing on claim 8 regarding UPI cost impact."
     },
     {
       "title": "SEBI to examine brokers' concerns over UPI merchant charges",
@@ -433,9 +434,9 @@
       "id": "n27",
       "type": "reported_fact",
       "topic": "regulation",
-      "direction": "neutral",
+      "direction": "positive",
       "relevance": "medium",
-      "why": "SEBI will examine broker concerns regarding UPI merchant charges."
+      "why": "SEBI examining brokers' concerns on UPI charges relates directly to Claim 8 regarding UPI cost changes."
     },
     {
       "title": "UPI payments for stock market investments to attract new charges",
@@ -451,7 +452,7 @@
       "topic": "fees_pricing",
       "direction": "negative",
       "relevance": "medium",
-      "why": "UPI payments for stock investments face new charges, affecting retail broking apps."
+      "why": "New UPI charges on stock market payments directly relate to claim 8's expectation of non-material cost."
     },
     {
       "title": "₹2,500 crore Groww block deal knocks shares down 3%",
@@ -467,8 +468,8 @@
       "type": "reported_fact",
       "topic": "financials",
       "direction": "negative",
-      "relevance": "high",
-      "why": "Groww shares fell 3 percent following a 2,500 crore block deal."
+      "relevance": "none",
+      "why": "Reports a block deal in Groww shares, unrelated to any of the listed claims."
     },
     {
       "title": "India's push away from options fuels boom in leveraged stock bets",
@@ -482,9 +483,9 @@
       "id": "n30",
       "type": "reported_fact",
       "topic": "macro_market",
-      "direction": "positive",
-      "relevance": "medium",
-      "why": "Curbs on options trading drive surge in leveraged stock bets for brokers."
+      "direction": "neutral",
+      "relevance": "low",
+      "why": "Reports general boom in leveraged stock bets/MTF, loosely touching Claim 1."
     },
     {
       "title": "Nifty Capital Market index slips over 2%; HDFC AMC, Groww down up to 5%",
@@ -500,8 +501,8 @@
       "type": "reported_fact",
       "topic": "financials",
       "direction": "negative",
-      "relevance": "high",
-      "why": "Groww shares dropped up to 5 percent as Nifty Capital Market index slipped."
+      "relevance": "none",
+      "why": "Routine market movements and stock price drop, not related to the listed claims."
     },
     {
       "title": "SEBI Unpaid Securities Rules Get an Overhaul With New Auto-Pledge and Auto-Release Framework",
@@ -516,8 +517,8 @@
       "type": "reported_fact",
       "topic": "regulation",
       "direction": "neutral",
-      "relevance": "medium",
-      "why": "SEBI overhauls unpaid securities framework with auto-pledge and auto-release rules."
+      "relevance": "low",
+      "why": "SEBI auto-pledge rules loosely touch margin mechanisms but not Groww's MTF risk controls claim."
     },
     {
       "title": "Sebi Proposes Modifications To Margin Trading Facility Rules",
@@ -530,10 +531,10 @@
       "query_type": "sector_regulatory",
       "id": "n33",
       "type": "reported_fact",
-      "topic": "mtf_margin",
+      "topic": "regulation",
       "direction": "neutral",
       "relevance": "medium",
-      "why": "SEBI proposes modifications to Margin Trading Facility rules applicable to brokers."
+      "why": "SEBI proposing MTF rule modifications directly relates to Claim 1 on MTF policy and risk controls."
     },
     {
       "title": "SEBI proposes 4 major changes in Margin Trading Facility—Key takeaways for traders & brokers",
@@ -546,10 +547,10 @@
       "query_type": "sector_regulatory",
       "id": "n34",
       "type": "reported_fact",
-      "topic": "mtf_margin",
+      "topic": "regulation",
       "direction": "neutral",
       "relevance": "medium",
-      "why": "SEBI proposes changes to MTF rules impacting traders and retail brokers."
+      "why": "SEBI changes to Margin Trading Facility regulatory framework touch claim 1 regarding MTF policies."
     },
     {
       "title": "Sebi proposes easing margin trading funding rules, tighter broker norms",
@@ -562,10 +563,10 @@
       "query_type": "sector_regulatory",
       "id": "n35",
       "type": "reported_fact",
-      "topic": "mtf_margin",
-      "direction": "mixed",
+      "topic": "regulation",
+      "direction": "neutral",
       "relevance": "medium",
-      "why": "SEBI proposes easing MTF funding rules while tightening broker norms."
+      "why": "SEBI proposals easing MTF rules and tightening broker norms relate to claim 1."
     },
     {
       "title": "SEBI proposes overhaul of margin trading rules as MTF volumes rise",
@@ -578,10 +579,10 @@
       "query_type": "sector_regulatory",
       "id": "n36",
       "type": "reported_fact",
-      "topic": "mtf_margin",
+      "topic": "regulation",
       "direction": "neutral",
       "relevance": "medium",
-      "why": "SEBI proposes an overhaul of margin trading rules amid rising volumes."
+      "why": "Overhaul of MTF rules by SEBI relates to MTF controls and market conditions in Claim 1."
     },
     {
       "title": "SEBI Eases F&O Margin Rules - New Norms to Boost Liquidity",
@@ -594,10 +595,10 @@
       "query_type": "sector_regulatory",
       "id": "n37",
       "type": "reported_fact",
-      "topic": "mtf_margin",
+      "topic": "regulation",
       "direction": "positive",
-      "relevance": "medium",
-      "why": "SEBI eases F&O margin rules to boost market liquidity."
+      "relevance": "low",
+      "why": "SEBI F&O margin rules change; does not specifically bear on the listed claims."
     },
     {
       "title": "SEBI Removes Calendar Spread Margin Benefit for Single-Stock Derivatives on Expiry Day from May 05, 2026",
@@ -611,9 +612,9 @@
       "id": "n38",
       "type": "reported_fact",
       "topic": "regulation",
-      "direction": "negative",
+      "direction": "neutral",
       "relevance": "low",
-      "why": "Published by Groww on SEBI removing calendar spread margin benefits."
+      "why": "Published by Groww itself on regulatory calendar spread changes; low relevance under company publisher rule."
     },
     {
       "title": "Sebi mulls allowing MFs to use intraday borrowing lines as cash management tool",
@@ -625,11 +626,11 @@
       "query": "SEBI margin trading funding rules 2026",
       "query_type": "sector_regulatory",
       "id": "n39",
-      "type": "reported_fact",
+      "type": "speculation",
       "topic": "regulation",
       "direction": "neutral",
-      "relevance": "medium",
-      "why": "SEBI considers intraday borrowing lines for mutual funds as cash management tool."
+      "relevance": "none",
+      "why": "Discusses mutual fund borrowing lines, irrelevant to the listed claims."
     },
     {
       "title": "Groww app faces outage; services down as users struggle with login and transactions",
@@ -646,7 +647,7 @@
       "topic": "outage_tech",
       "direction": "negative",
       "relevance": "high",
-      "why": "Groww app experienced a technical outage affecting logins and user transactions."
+      "why": "Reports an app outage and transaction failures on Groww, challenging Claim 2 that tech issues were one-time."
     },
     {
       "title": "Sebi mulls MTF rule revamp, dynamic price bands to boost market activity",
@@ -658,11 +659,11 @@
       "query": "SEBI margin trading funding rules 2026",
       "query_type": "sector_regulatory",
       "id": "n41",
-      "type": "reported_fact",
-      "topic": "mtf_margin",
-      "direction": "positive",
+      "type": "speculation",
+      "topic": "regulation",
+      "direction": "neutral",
       "relevance": "medium",
-      "why": "SEBI mulls MTF rule revamp and dynamic price bands to boost market activity."
+      "why": "SEBI mulling MTF rule revamp relates to industry MTF regulation in Claim 1."
     },
     {
       "title": "Groww Introduces Groww Lite for Uninterrupted Trading",
@@ -678,7 +679,7 @@
       "topic": "product_launch",
       "direction": "positive",
       "relevance": "low",
-      "why": "Company self-published announcement about launching Groww Lite for trading."
+      "why": "Published by Groww itself, so relevance is low per rules."
     },
     {
       "title": "Cloudflare outage: ChatGPT, Spotify, Fortnite and other apps and sites that were hit",
@@ -694,7 +695,7 @@
       "topic": "outage_tech",
       "direction": "neutral",
       "relevance": "none",
-      "why": "General report on global Cloudflare outage without mentioning Groww."
+      "why": "General Cloudflare outage article mentioning global apps, no relevance to company claims."
     },
     {
       "title": "Cloudflare down: Users unable to use multiple apps, Groww and Zerodha also hit",
@@ -709,8 +710,8 @@
       "type": "reported_fact",
       "topic": "outage_tech",
       "direction": "negative",
-      "relevance": "high",
-      "why": "Cloudflare outage hit Groww and Zerodha users."
+      "relevance": "low",
+      "why": "Third-party Cloudflare outage hitting multiple brokers; mentions Groww in passing."
     },
     {
       "title": "Cloudflare down again: Outage hits multiple apps, company says issue fixed",
@@ -726,7 +727,7 @@
       "topic": "outage_tech",
       "direction": "neutral",
       "relevance": "none",
-      "why": "General article on Cloudflare outage without reference to Groww."
+      "why": "General Cloudflare outage article with no specific bearing on Groww's claims."
     },
     {
       "title": "Cloudflare Outage Disrupts Trading On Groww, Zerodha, Angel One",
@@ -741,8 +742,8 @@
       "type": "reported_fact",
       "topic": "outage_tech",
       "direction": "negative",
-      "relevance": "high",
-      "why": "Cloudflare outage disrupted trading on Groww and other broking platforms."
+      "relevance": "low",
+      "why": "Cloudflare outage affecting multiple brokers including Groww; external infrastructure failure."
     }
   ]
 }

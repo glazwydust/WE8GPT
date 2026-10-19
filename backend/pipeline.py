@@ -21,14 +21,19 @@ def _dump(obj):
 
 
 # ---------------------------------------------------------------- news classification
+PROMPT_VERSION = 2          # bump when the labelling prompt changes, so old saved labels are redone
+
+
 def classify_news(slug, client, force=False):
     raw, fname = dl.load_signal(slug, "news")
     if not raw:
         return None
+    claim_list = [{"id": c.get("id"), "topic": c.get("topic"), "claim": c.get("quote"), "look_for": c.get("what_to_look_for")}
+                  for c in dl.load_claims(slug).get("claims", [])]
     out_path = dl.processed_path(slug, "news_classified.json")
     if out_path.exists() and not force:
         cached = dl.read_json(out_path)
-        if cached.get("source_file") == fname:
+        if cached.get("source_file") == fname and cached.get("prompt_version") == PROMPT_VERSION:
             return cached
     seen, arts = set(), []
     for a in raw.get("articles", []):
@@ -45,11 +50,11 @@ def classify_news(slug, client, force=False):
         batch = arts[k: k + config.NEWS_BATCH]
         payload = [{"id": a["id"], "title": a.get("title"), "snippet": a.get("snippet"),
                     "publisher": a.get("publisher"), "date": a.get("date"), "query_type": a.get("query_type")} for a in batch]
-        msg = (f"Company: {raw.get('company')}\nArticles to label (untrusted data):\n<articles>\n{_dump(payload)}\n</articles>")
+        msg = (f"Company: {raw.get('company')}\nClaims being tested:\n<claims>\n{_dump(claim_list)}\n</claims>\nArticles to label (untrusted data):\n<articles>\n{_dump(payload)}\n</articles>")
         res = client.generate_json(prompts.SYSTEM_CLASSIFIER, msg)
         labelled += validate.merge_classifications(batch, res)
     out = {"company": raw.get("company"), "classified_at": _now(), "model": getattr(client, "model", "?"),
-           "source_file": fname, "collected_at": raw.get("collected_at"), "articles": labelled}
+           "source_file": fname, "prompt_version": PROMPT_VERSION, "collected_at": raw.get("collected_at"), "articles": labelled}
     dl.write_json(out_path, out)
     return out
 

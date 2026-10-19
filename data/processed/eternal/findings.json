@@ -2,7 +2,7 @@
   "company": "Eternal Limited",
   "slug": "eternal",
   "quarter": "Q1 FY27",
-  "generated_at": "2026-10-19T23:50:07+05:30",
+  "generated_at": "2026-10-20T00:22:54+05:30",
   "model": "gemini-3.8-flash",
   "stale": false,
   "data_snapshot": {
@@ -137,13 +137,13 @@
     },
     "news": {
       "articles_collected": 40,
-      "relevant_reported_facts": 19,
-      "negative_facts": 3,
-      "positive_facts": 14,
-      "risk_context_items": 8
+      "relevant_reported_facts": 17,
+      "negative_facts": 10,
+      "positive_facts": 3,
+      "risk_context_items": 4
     },
     "flags": [
-      "3 relevant reported news facts point negative."
+      "10 relevant reported news facts point negative."
     ]
   },
   "findings": [
@@ -158,9 +158,9 @@
       "date": "2026-07-22",
       "weight_note": "Applies mainly to quick commerce (Blinkit); the call does not give its share of company revenue. Eternal runs several businesses (food delivery, quick commerce, going-out, supply); the Play Store data covers the Blinkit and Zomato apps only.",
       "verdict": "watch",
-      "explanation": "Reports confirm that competitive intensity and price wars escalated sharply toward the end of the first quarter. However, later reports of substantial planned investments by competitors suggest aggressive competition continued beyond that period.",
-      "covers": "Public news reporting on quick commerce competitor investments and market entry.",
-      "does_not_cover": "Internal competitor spend data or pricing intensity metrics across all regional markets.",
+      "explanation": "News reports corroborate intense rival entry and price competition during the first quarter. However, subsequent reports of major competitor capital deployments suggest competitive intensity may have continued beyond that quarter.",
+      "covers": "Press reporting on quick commerce competitor entries, price competition, and funding announcements through September 2026.",
+      "does_not_cover": "Internal metrics on competitor marketing spend or company-wide market share dynamics across other business segments.",
       "evidence": [
         {
           "item_id": "n19",
@@ -168,7 +168,7 @@
           "title": "Amazon, Flipkart spark quick commerce price war as Blinkit, Instamart hold the line",
           "source_url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPUnFjMXhadFNMNGFrWEdRUGdsNVltTWtvaHYyUm1tWTZnbGNFalR6MXQ1NHBMZmNIY25nQVN1LTZhR0lLYm9wX3FEUUVHYmxRQlhpQnFpQjdNTm5KdzkwdzRlOUVhTjR3Q25sWXF0cnphSXZhQzBvUmNvNlZuQzAxeGtEWEc2TDhLLUN3RUNxMjJOUzVUeHd1elpPNmZhQzQ4dko0dEpwVWd6R0RnRkJCR0o1NUR4WTdFN2tKVzJhZ3p5WXVSUENqSG5HemI1WXB0YjBpOFNyY3h4Rm91Yzl1WkhaMFo1Z9IB6wFBVV95cUxOcDFZeUpZT3ZSMUV3LVdHdlFfQTdUaUVSMnE2OGV6aVdlVDlmejFXbjBaRE4tNGFmdGUtZTFhTVFKM256SXNTV2NaQ3ZpV3pKWkJITFJYRGVQWnF5Ry1xaUp2aURTSUFSencyRmdfWHFFRzRQRkdjYVM5M2VHZmwtN082a2h0bF9VY0FKTzN2ckFEakt5NVZmN25uczJXQldWSVZYUTFaY3dvX2U4UWZlc28td3JfYk9FTjFwUENId3A2ek5EN28tYUYtNE55QmZkTEFYTDBHMUgwVE9zQ0VXbHZ0WWRzTEN0ZDVZ?oc=5",
           "date": "2026-06-29",
-          "what_it_shows": "Reports that Amazon and Flipkart sparked a price war in quick commerce in late June 2026."
+          "what_it_shows": "Reports that Amazon and Flipkart sparked a quick commerce price war at the end of the first quarter."
         },
         {
           "item_id": "n21",
@@ -176,15 +176,23 @@
           "title": "Quick commerce race intensifies as Flipkart Minutes and Amazon Now scale up operations",
           "source_url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNU0dudDA0QVZmNVZveGc1bzFkUGgwLWJZSk8wTW8zVjJNSjJ0Y1dfYlFKSG5wRmRSSjgwMXZkR21uNlpPY1VNelRDdVdmTEVYYlF4UGFwNVc4eV83Qzh5SjgyUVVQVkVmRkdvNEdnZTlCWjBPTTJnNEVxZ3B2SGk4U1hpNW40VmxzN0hBdWJmb2tPWGhQQXVWc3pRTEwtUVA1amZtU1BKZVhOMlNJNExTU0o1UmxhSFhLTU13dFI3ZlBVV1A1N1psSmZtRFNzSnpSTlVabmw0YUs5cEhRNzRCcXBtY0dJN185SnNWdNIB8wFBVV95cUxNMWRHTEdWQUNOVzJFaHE4cFNrVEtYR0NkT3J1S0JUVnZDUHZ6WjU5Q19OblMzNG5QRzM4T2JKWUlRS2dNU1JHNmVicFduSWl0VWpNLXJqcGprbHRzNnpKb0lhUWcyZG1qNHJBaTAwcjNheExwdHFnME9FbjJoNG5YYWw0d1BETDJ1S3o0SjFwTUtqTThKU3ZuLXBOYmZzT3V1WWNLMVlJY21hd1V5aVNndFFIRVBSNkxoRV9nOUxrSTZ0c2hGdXhRR2VZOFZXa3JpX1N5WC1sa09oTTJOWDFvQ0J1RF9ZZzNPQ1BaUU95LUdVaWs?oc=5",
           "date": "2026-06-24",
-          "what_it_shows": "Reports intensifying quick commerce competition as new players scaled operations in June 2026."
+          "what_it_shows": "Indicates quick commerce competition intensified in June 2026 as rivals scaled up operations."
         },
         {
-          "item_id": "n14",
+          "item_id": "n12",
           "signal": "news",
-          "title": "Amazon to invest $3Bn into quick commerce in India as it plays catch up",
-          "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWmgtNWF4SXN0bTk3NXk1djFHbkN6QWQwUGpzQlBVdlpzRFQyQUxTZ3Z2ejFILVNRc2Fqd0N2X3BuakNmQkpWanNPcXduWXdwYW93bUQ2cFdmbS1LRU1Udjl0bjhUb281ZVJ3bS1PaHdyaEJFZHpFZ1ZFbFJZY21jSUg5S2tocWJ4ZXY2aEZUZmRsYk8zUFFzajkxN2NVSEhTZEdsM2JxLUdJX1Jm0gGyAUFVX3lxTE9MX1Y1emRDY3ZRblJScjZQUF8ybU1pbTRiejVuRFdYLXFvZWV1UEdxQWVnT3VBeVBEaERHWkw3TUZSX09hZ0xNajQ4aHNfV2plOEU1Sk1EcFNpcnk3SmFuMHNkME4tUkZPSk5aZ2Rxbk94dUY0b1J6Tk5FTy11X1JGdEo4UlZRek1iVk5QTWgyQVhhUEZRbUxITW4yMjcyZmJ5Y1hTdVh0b1NHWjFYRzNUc2c?oc=5",
+          "title": "Eternal (Zomato) Competitor Amazon Plans $3 Billion Quick Commerce Push, Eyeing 1,300 Stores",
+          "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbTRaOWQ4enhKSlNaOEN6cXZFRTc1SkVrNC1oOTFWbWhXUlgwaVl1N293Ni1GdFhQVnNnUnJub3RDWGI2V0MzZGc4TnZETDVlS0tGVHpPT1I0TWRzX2JBZkFPVjB4QXp4MW1CWEF0Z1QtSjVsQjRsUG9WTkcxY0M5bGZobVpPQ05TNGowYTNCLVUybDRrWEd4QmYwdk9TeGNtd1dYcnNVS2hpQzBCbHJJbkR1bV8?oc=5",
           "date": "2026-09-24",
-          "what_it_shows": "Reports Amazon planning a $3 billion investment in Indian quick commerce in September 2026."
+          "what_it_shows": "Shows Amazon planned a $3 billion quick commerce investment in September 2026."
+        },
+        {
+          "item_id": "n16",
+          "signal": "news",
+          "title": "Quick commerce firms cross 9 million daily orders as market share battle heats up",
+          "source_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNUlNtd3ItcERSaEV5Yjg1cTNGeUdZdEJBanJsSVZ3UVJhMEtYV2ltY0VjWnZBUDNvV25uZVdHNk1SOVI0ejhhaW84Ym1zRGVITkJPaGRhUzBqR091LXBrcUhpVmVlWDNQMWdWb3g4QngxTHlwN2RxVlJnNjktY3o3ZUMtMXhQS3B3ckRYemJYdHpWMzI3Wk0tZi0zM0lKcFM4em55TVNrX3FaYjZIclk4MllxTVY0RE5hdEFzV0ZKaUNZMTc3M0RVa1JWc0JEZVEyVmQ3VDZkU3BrTl96TDc00gHkAUFVX3lxTE5VSDNoc1N5TlMyNFpGZ3k0QUNDenVTZ1V2ZWdaWmVYblZkNXU5MGxHRlg4a2twS19CWVBVZXdjaTVub21FV0dTOGRvTEhpY25sMGpiSGs4QVdkMWhtZnBkSjV4aDZWeUNKN3gtNVZVY1gydk9EVUQ3djNoYjFPcGl6cktzZlR0NjFpSTNzQkFuOHgtemJBSjh3Y2dCSDhRNTNneG9yYXlDWjJqUnF0YlhJM3lObVVLZVVUTjR3dkZUT2p6Uzk3UkNNX09qbHZNMGRqd2xVQTdlVC0teTJ0cGRhZE9idA?oc=5",
+          "date": "2026-08-17",
+          "what_it_shows": "Reports that market share battles continued to heat up into August 2026."
         }
       ],
       "signal_types": [
@@ -202,10 +210,10 @@
       "source_url": "https://b.zmtcdn.com/investorrelations/Q1FY27-earnings-call-transcript.pdf",
       "date": "2026-07-22",
       "weight_note": "Forward-looking; evidence can only show whether discounting is easing now. Eternal runs several businesses (food delivery, quick commerce, going-out, supply); the Play Store data covers the Blinkit and Zomato apps only.",
-      "verdict": "watch",
-      "explanation": "Some evidence shows platforms raising delivery fees and competitors curtailing spending. At the same time, other reporting highlights ongoing price competition from major entrants, offering a mixed view on whether discounting is abating.",
-      "covers": "News reports on pricing strategy, platform fees, and competitor spending.",
-      "does_not_cover": "Comprehensive, real-time discount tracking across all quick commerce catalogs.",
+      "verdict": "consistent",
+      "explanation": "Public reporting indicates that quick commerce platforms increased customer fees and key competitors scaled back spending to focus on profitability. The evidence aligns with the expectation of moderating subsidies.",
+      "covers": "Industry news covering fee changes and competitor spending strategies in quick commerce.",
+      "does_not_cover": "Actual pricing and promotional discounting levels across all product categories or local markets.",
       "evidence": [
         {
           "item_id": "n22",
@@ -213,7 +221,7 @@
           "title": "Quick commerce platforms raise consumer fees as ultra-fast delivery becomes a lifestyle",
           "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQeXoyT0x3T3pOUV9seTRkbzF5c2ZYWGV1bXIta1hra3ZfUDE5dWozX2hGVzg1blJLV2hxcXl3eDZPMy1Vd1l6TWp3QWxQdTIwTUtCUXdlQWhPS0xYQjYwamkxcVRCVGFsS0tkU3AydDNYaHdOUWtUTzJ5U3QzUTZrNmJLMnRNS0xidkcxYktNOHRNUXVWRjZ4YnN5X1JKVm9lVUtXX3FuQnJZUUZJTTNBbDJyUjBEaU96Q2NkY2FaaDVsWXNlbk1n0gHMAUFVX3lxTE1tWW5NbHpYMmtXeWpuc2RPOW0yV1pWZlI0QnlBUHotWjZoUndzbzgyeDlHODJyUHpPX3duVm42clZ3eEwyY2pDcXp0ZVg2RzJEaDZ6OTRCUzFkOTg4a1FURGNoVjUxRzQ3UDZ1MHVwR09wV1llYk41VmVUMUxCQXIxa0tMNG0xdHB2NF9OMklDTElLaVpvWWhQalNyNGczYmlCUFp5TFBVWEY0bDM2RXdwYVBjLUxRcHFxdDBxeEE0dGdzaTZQNExHS19tYQ?oc=5",
           "date": "2026-06-04",
-          "what_it_shows": "Reports quick commerce platforms increasing consumer fees in June 2026."
+          "what_it_shows": "Reports that quick commerce platforms raised consumer delivery fees."
         },
         {
           "item_id": "n23",
@@ -221,15 +229,7 @@
           "title": "Swiggy scales back quick-commerce spending in push for profitability",
           "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPc2c5OWR4VWJ5QWtmRTFETWQ0N3lWTEJFSDBvN1JjSzNGdVlEMWpTVGNjOXlDNUpocDVuSm4teFNUcTRLeUJmeE1OOUoxamtUcmZSQ0k1bkw5NVZORXlEUl82T1JneVQwRUtDb0JjVE82TmtsdmJTN0Ffckg1MHc5QjRXLUJ4a3dFdUs5WC1OZng3djZEY1hGUVd4M3ZLeEZwZVBF?oc=5",
           "date": "2026-05-29",
-          "what_it_shows": "Reports Swiggy scaling back quick commerce expenditure to improve profitability."
-        },
-        {
-          "item_id": "n19",
-          "signal": "news",
-          "title": "Amazon, Flipkart spark quick commerce price war as Blinkit, Instamart hold the line",
-          "source_url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPUnFjMXhadFNMNGFrWEdRUGdsNVltTWtvaHYyUm1tWTZnbGNFalR6MXQ1NHBMZmNIY25nQVN1LTZhR0lLYm9wX3FEUUVHYmxRQlhpQnFpQjdNTm5KdzkwdzRlOUVhTjR3Q25sWXF0cnphSXZhQzBvUmNvNlZuQzAxeGtEWEc2TDhLLUN3RUNxMjJOUzVUeHd1elpPNmZhQzQ4dko0dEpwVWd6R0RnRkJCR0o1NUR4WTdFN2tKVzJhZ3p5WXVSUENqSG5HemI1WXB0YjBpOFNyY3h4Rm91Yzl1WkhaMFo1Z9IB6wFBVV95cUxOcDFZeUpZT3ZSMUV3LVdHdlFfQTdUaUVSMnE2OGV6aVdlVDlmejFXbjBaRE4tNGFmdGUtZTFhTVFKM256SXNTV2NaQ3ZpV3pKWkJITFJYRGVQWnF5Ry1xaUp2aURTSUFSencyRmdfWHFFRzRQRkdjYVM5M2VHZmwtN082a2h0bF9VY0FKTzN2ckFEakt5NVZmN25uczJXQldWSVZYUTFaY3dvX2U4UWZlc28td3JfYk9FTjFwUENId3A2ek5EN28tYUYtNE55QmZkTEFYTDBHMUgwVE9zQ0VXbHZ0WWRzTEN0ZDVZ?oc=5",
-          "date": "2026-06-29",
-          "what_it_shows": "Reports Amazon and Flipkart launching price competition in late June 2026."
+          "what_it_shows": "Shows Swiggy scaled back quick commerce spending to pursue profitability."
         }
       ],
       "signal_types": [
@@ -248,9 +248,9 @@
       "date": "2026-07-22",
       "weight_note": "Share claims cannot be verified from reviews; news and posts give only indirect signs. Eternal runs several businesses (food delivery, quick commerce, going-out, supply); the Play Store data covers the Blinkit and Zomato apps only.",
       "verdict": "consistent",
-      "explanation": "Industry reports indicate Blinkit successfully maintained its market position during aggressive competitor moves. Subsequent financial reports also show Blinkit driving strong quarterly revenue and operational expansion.",
-      "covers": "Media reporting on relative platform positioning and quarterly financial results.",
-      "does_not_cover": "Audited market share data or localized micro-market share metrics.",
+      "explanation": "News reports indicate Blinkit successfully maintained its market position and held order volumes despite competitive price wars from rivals. We found no evidence indicating a loss of market share.",
+      "covers": "Industry media reports on quick commerce order volume and app metrics.",
+      "does_not_cover": "Detailed regional market share data or exact price-matching margins.",
       "evidence": [
         {
           "item_id": "n19",
@@ -258,7 +258,7 @@
           "title": "Amazon, Flipkart spark quick commerce price war as Blinkit, Instamart hold the line",
           "source_url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPUnFjMXhadFNMNGFrWEdRUGdsNVltTWtvaHYyUm1tWTZnbGNFalR6MXQ1NHBMZmNIY25nQVN1LTZhR0lLYm9wX3FEUUVHYmxRQlhpQnFpQjdNTm5KdzkwdzRlOUVhTjR3Q25sWXF0cnphSXZhQzBvUmNvNlZuQzAxeGtEWEc2TDhLLUN3RUNxMjJOUzVUeHd1elpPNmZhQzQ4dko0dEpwVWd6R0RnRkJCR0o1NUR4WTdFN2tKVzJhZ3p5WXVSUENqSG5HemI1WXB0YjBpOFNyY3h4Rm91Yzl1WkhaMFo1Z9IB6wFBVV95cUxOcDFZeUpZT3ZSMUV3LVdHdlFfQTdUaUVSMnE2OGV6aVdlVDlmejFXbjBaRE4tNGFmdGUtZTFhTVFKM256SXNTV2NaQ3ZpV3pKWkJITFJYRGVQWnF5Ry1xaUp2aURTSUFSencyRmdfWHFFRzRQRkdjYVM5M2VHZmwtN082a2h0bF9VY0FKTzN2ckFEakt5NVZmN25uczJXQldWSVZYUTFaY3dvX2U4UWZlc28td3JfYk9FTjFwUENId3A2ek5EN28tYUYtNE55QmZkTEFYTDBHMUgwVE9zQ0VXbHZ0WWRzTEN0ZDVZ?oc=5",
           "date": "2026-06-29",
-          "what_it_shows": "Reports that Blinkit held the line against price competition from large e-commerce platforms."
+          "what_it_shows": "Reports that Blinkit held the line against new price competition from Amazon and Flipkart."
         },
         {
           "item_id": "n25",
@@ -266,15 +266,7 @@
           "title": "Zepto ahead of Instamart on dark stores, MAUs and orders; trails Blinkit as quick commerce race...",
           "source_url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNSVVsc1U5bVlTMzdQOC1peTQ4OW5Ja3Y3NnRVLTBXUnBab0xQQXRVYlFvbU1SY1Y4T2xqNmFsbE4wSUhaZHp3b3Z4RmRFX3JxdXgzaFRhblgtc21OMTZSNWw1SDE5cHlzcFNHTzlPR3dwUDRaRENvcEpTTWdFdFNhNFR1UUZNTHdfWlVwR2oyLU9zbEUwVlJCcTNkVWw5ZFh6SG4ydlpDOEN6Tl9KWVY3SEx3UlJwSVZVbE5qbG9YNE5xTnZFM3ZFamVqX2c4VEZIUzk0Z0xqZDlpcmlCcjBsWjJjeUlNVWVHM3Q1TlM2M0RKUFIzSkloRXYxZ1MyMV9zWXdIZjBSZzFVbzhq0gGSAkFVX3lxTFBWV2x3b3M1Znlzc3gzUUdpSi1iTFBLV3ozOXEyZ05pd2lVcFpnZE9qdXlGN2RGVTVNN1M2WDVkS3Z3MXRwOGcwWlNjN3E5WFlwOUl1TW1sYmc5Smt0VWYybjRKRVFIU1dXMFJTak5yNWllREtKbktRZE5Kb0h0eWgzTElOcG45NlhCRE1tT0x3QXVqWmpHT3A5VTNrajJ2RHpWRkY5andMTXdEZGw2cFhSbXpDZlQ5UzFndnZIRE1NaHpxVzRDNFdRYUZaeHhtbS1HbVk3WUhqTzYyc1hhbFYxejNJeXR1dWlhbGUya04xVUY0aXQtZkFnNnFFR2RFMFluOWpyRFVaaDRid1pMY0dHVFE?oc=5",
           "date": "2026-05-14",
-          "what_it_shows": "Reports Blinkit maintaining a lead in dark stores, orders, and active users over competitors."
-        },
-        {
-          "item_id": "n18",
-          "signal": "news",
-          "title": "Eternal Q1 FY27 Results: Net Profit Jumps 3.7X to ₹92 Crore as Blinkit Becomes Biggest Revenue Driver",
-          "source_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOdDcxNDZzcF9jNE1mUVRBMUQyU0RESlNBYkM3OG1YNnpaTTEweXdibGdxN3JTb2E2UENlWUJhd3ZxQi1la0dmZEJjazFpeWx1ejJ6VUNITWZzYzZtQjhrbkJ5R2tvbThUYmRKOG9ySnlSWFNKTEZ1cGVld3Z0ZmtMaUhMa2gyWHFSVFNMSWtRZFEzM1hVdEkxeTdvME9EVUhjTHNfczRQdjFsV2lWM2VVV3VSRGNZRF9KS1ZzTFJsZVFYQnFDODRjS0FmSWFkSEtTNjBtck9XbHNkX28?oc=5",
-          "date": "2026-07-23",
-          "what_it_shows": "Reports Blinkit becoming Eternal's primary revenue driver with strong financial growth."
+          "what_it_shows": "Shows Blinkit maintained its lead over competitors in dark stores, monthly active users, and order volumes."
         }
       ],
       "signal_types": [
@@ -293,9 +285,9 @@
       "date": "2026-07-22",
       "weight_note": "Retention data is internal; reviews and posts are only a partial view of customer mood. Eternal runs several businesses (food delivery, quick commerce, going-out, supply); the Play Store data covers the Blinkit and Zomato apps only.",
       "verdict": "insufficient_evidence",
-      "explanation": "The collected review data represents a single-day snapshot that is insufficient to establish trends in user retention or customer mood over time. No public retention figures or cohort analyses were available in the provided evidence.",
-      "covers": "A single-date snapshot of app store review ratings for Blinkit and Zomato.",
-      "does_not_cover": "Longitudinal cohort retention rates, repurchase frequency, or customer churn data.",
+      "explanation": "The available app review data represents a single-day snapshot without historical comparison windows, making trend analysis impossible. A single customer post is insufficient to judge broader retention trends.",
+      "covers": "A single-day sample of app store ratings and isolated customer feedback.",
+      "does_not_cover": "Historical retention metrics, cohort repurchase rates, or platform-wide user retention.",
       "evidence": [
         {
           "item_id": "m1",
@@ -303,7 +295,7 @@
           "title": "Blinkit review statistics",
           "source_url": null,
           "date": "2026-10-18",
-          "what_it_shows": "Shows app store reviews for Blinkit gathered on a single day without historical comparison."
+          "what_it_shows": "Provides only a single-day snapshot of Blinkit app reviews, with too few reviews to establish a trend."
         },
         {
           "item_id": "m2",
@@ -311,10 +303,19 @@
           "title": "Zomato: Food Delivery & Dining review statistics",
           "source_url": null,
           "date": "2026-10-18",
-          "what_it_shows": "Shows app store reviews for Zomato gathered on a single day without historical comparison."
+          "what_it_shows": "Provides only a single-day snapshot of Zomato app reviews, lacking historical comparison data."
+        },
+        {
+          "item_id": "p1",
+          "signal": "reddit",
+          "title": "Discounts vanished along with my loyalty",
+          "source_url": "https://www.reddit.com/r/Zomato/comments/1x9rqua/discounts_vanished_along_with_my_loyalty/",
+          "date": "2026-10-19",
+          "what_it_shows": "A customer post noting reduced discounts and declining loyalty on Zomato."
         }
       ],
       "signal_types": [
+        "reddit",
         "reviews"
       ],
       "notes": []
@@ -330,11 +331,22 @@
       "date": "2026-07-22",
       "weight_note": "Food delivery only; the Zomato app is the relevant app. Eternal runs several businesses (food delivery, quick commerce, going-out, supply); the Play Store data covers the Blinkit and Zomato apps only.",
       "verdict": "insufficient_evidence",
-      "explanation": "The provided evidence contains no data or reporting on quarterly new user additions for the food delivery business. There is insufficient information to evaluate the claim of accelerating user growth.",
-      "covers": "None.",
-      "does_not_cover": "Historical new user onboarding figures or quarterly active customer additions for Zomato food delivery.",
-      "evidence": [],
-      "signal_types": [],
+      "explanation": "We found no news reports or data points tracking new user additions in the food delivery segment. The app review sample contains no historical baseline to measure user acquisition acceleration.",
+      "covers": "A one-day snapshot of Zomato mobile app reviews.",
+      "does_not_cover": "New user signups, multi-quarter user growth rates, or food delivery transaction trends.",
+      "evidence": [
+        {
+          "item_id": "m2",
+          "signal": "reviews",
+          "title": "Zomato: Food Delivery & Dining review statistics",
+          "source_url": null,
+          "date": "2026-10-18",
+          "what_it_shows": "Shows a single-day snapshot of 40 reviews for the Zomato app without prior period data."
+        }
+      ],
+      "signal_types": [
+        "reviews"
+      ],
       "notes": []
     },
     {
@@ -348,11 +360,22 @@
       "date": "2026-07-22",
       "weight_note": "A narrow claim about split orders; reviews cover the whole delivery experience. Eternal runs several businesses (food delivery, quick commerce, going-out, supply); the Play Store data covers the Blinkit and Zomato apps only.",
       "verdict": "insufficient_evidence",
-      "explanation": "None of the provided review items or social posts mention split deliveries or their specific effect on service satisfaction. We found no relevant evidence to assess the customer experience of split orders.",
-      "covers": "None.",
-      "does_not_cover": "Operational split-order metrics and specific customer feedback on split deliveries.",
-      "evidence": [],
-      "signal_types": [],
+      "explanation": "None of the collected customer reviews or social posts specifically address split orders or their impact on delivery experience. There is insufficient evidence to evaluate this specific operational claim.",
+      "covers": "General review sentiment for the Blinkit application.",
+      "does_not_cover": "Split-order frequency, delivery completion rates, or customer experience specific to split deliveries.",
+      "evidence": [
+        {
+          "item_id": "m1",
+          "signal": "reviews",
+          "title": "Blinkit review statistics",
+          "source_url": null,
+          "date": "2026-10-18",
+          "what_it_shows": "Shows general customer review ratings and service complaint rates for Blinkit."
+        }
+      ],
+      "signal_types": [
+        "reviews"
+      ],
       "notes": []
     },
     {
@@ -365,12 +388,47 @@
       "source_url": "https://b.zmtcdn.com/investorrelations/Q1FY27-earnings-call-transcript.pdf",
       "date": "2026-07-22",
       "weight_note": "A factual claim about one cause of a small dip in active restaurants. Eternal runs several businesses (food delivery, quick commerce, going-out, supply); the Play Store data covers the Blinkit and Zomato apps only.",
-      "verdict": "insufficient_evidence",
-      "explanation": "The provided materials do not include any reports regarding LPG shortages or disruptions affecting restaurant operations during the quarter. There is insufficient evidence to verify this statement.",
-      "covers": "None.",
-      "does_not_cover": "Commercial LPG supply conditions and restaurant operational status during April-June 2026.",
-      "evidence": [],
-      "signal_types": [],
+      "verdict": "consistent",
+      "explanation": "Multiple news reports confirm widespread commercial LPG supply disruptions that severely impacted restaurant operations across Indian cities during the relevant timeframe. The evidence supports the claim that the LPG situation caused restaurants to go offline.",
+      "covers": "National and regional press reporting on commercial LPG shortages and restaurant industry impacts.",
+      "does_not_cover": "The exact number or percentage of partner restaurants that went offline on the Zomato platform.",
+      "evidence": [
+        {
+          "item_id": "n28",
+          "signal": "news",
+          "title": "Eating out may get expensive: LPG crisis makes several Pune restaurants hike prices",
+          "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQX3o2dzlfTDVpTWgxUGhleHl4Q0FBWmdkbkhUaGt3V0tTbHM3T05PbzZlVS1saXZPZnR2emdvSzQxQ04zRlhxZ3hjQ1FJYkk0X3JJblg3TXAzSHBDdk5JUTlMVlMzSEpWV1hnSXhaNWhYQ2NUWWlsTTl3aThCQVlTWk9zQ0NIdk1OcVItWG5DMnlndUVQZFVQZktzM2V3YXhvNDY5dl9LSkRQQ25vc1hRNEV30gG4AUFVX3lxTE9rY1BYR0F6cUtDZEhUd251aS1CbEJUSndXMzljaWk0ZGZfQnE0SVhGVWY4QTNZZDZBcGZsRmt2aUE1VEI3TVpzSGRpaE1SdnFsZDVzSzVJTWJmSkxtZ1pCcTByeDFTd3g1MnFGQVVTY3VnWlk3aXh0NWZaeGpOakZJaXhPNVNSNE1GNlZESnVYWnhMc3FxVDRLTnZKRHNNY1BtLXRPUXh1cFFhdVF0dzU0M3gzMUVfdFc?oc=5",
+          "date": "2026-05-04",
+          "what_it_shows": "Reports that an LPG crisis affected restaurant operations and forced price hikes in Pune."
+        },
+        {
+          "item_id": "n30",
+          "signal": "news",
+          "title": "India's sugar, edible oil demand drops as commercial gas shortages hit restaurants",
+          "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOdzJVVmd6LW5Ubkl2dlp3aWppYVZ0cEc3U3I1MmxRZ2Q3UTFqYXJUSkJTUWFkcU9ENldNOWVkWjVTT29vQkg1cm1ja2FJY1MyZkN1V0dRUTdLaGtaa19iSC1FQW9aOFRpZ1J4ZENOT0c4dExrLVZWcXYtWVRna3JhbzN4b2gySDJlTzBPYWZKSkN1cndrdk10VGVfb3BnYk0zaTI3bEVkSzBOZ2Y0RWZ4ZlJMeDN6RHpickpWMm1PWGVjZk0?oc=5",
+          "date": "2026-04-07",
+          "what_it_shows": "Reports commercial gas shortages disrupting restaurants across India."
+        },
+        {
+          "item_id": "n34",
+          "signal": "news",
+          "title": "LPG crisis hits restaurants: Staff face salary cuts, layoffs as eateries struggle to keep kitchens runnin",
+          "source_url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPazFXSTV5bk1LcjN2aXZsMHpDdzBKWW5FMlVpM09GV1lQdWZUTFlZZzRxWUhlY2dnRVlWamZGd2Q3cWFxWFBmM2FTT2QzUmpRT01fWlpCOFNXN2dpbFpoX0RBRUp1bm5NOGxSYnplblV5Y3pSWXliVHlMdDNwR1FEXzZZd0ltdUZjS2FyeExyaWJzSl9obG5KZEtRc2dxRG1EWGYyS0o5RE9YQUQ4ZDZKS0VZeG54MkZ6bFJXQjhlS3F2YlJlNHRiR0hEemhtRlMxenhhR2N3bHNuT21Eb0VCdXJ1VS1mcHRpMGI3RUwzZE9EcW1vRnpOZUM0WW85Y014a3NfalVRYzlfb0RXX2lPb1prYUpfZzdmX0HSAZ8CQVVfeXFMUE9zX2Z3TXM5WTJmaUZWZ3FhUjZkZkYtY2hDd3Zab0ZFNkE3TnB4TnBxOXRTc2x0OGpxd0lqbnc4UFh0VU1ISFd3Y3Q2V24xeHlzeVFXLWRyaXVvY0dNWUg2bVIxRXFFMDhTVmozb1FCeW5MZTJIcXRoTmRCS0Z2eG00WllGOTVhbUIwWmJIekVTMWZTbF9VajdXVGZmQmFvRlRKaE0yN3ZnQkJZdlJxR1gwSXI2dEszTWx6dERzZ0N3ZjBXb3dpNGNCU2JlRTMxYjdmMDdlWDQ1M1NGZ3k0NC1obTctQWpkVGpZaFptbWppYVR3UGVuSUt1eVNOM2FROUR3NHZ6ODNQWmxZOTM3SE9GQWlKUFJOR3FLUzczZUE?oc=5",
+          "date": "2026-03-17",
+          "what_it_shows": "Details restaurant distress and kitchen disruptions linked to LPG shortages."
+        },
+        {
+          "item_id": "n35",
+          "signal": "news",
+          "title": "'We cut down the menu': Cooking gas crisis hits restaurants in India amid war in Iran",
+          "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTmt5WnVYRHo3NVlTZ3hHWmIySWViWjZKQVRzV0NpRjJSUXpuUHVGMWdaZlIwUWJHRml4SHhyMmEtTmdfWlNuNkhraXRqTDlVT0pLRzFIUW00ZGFNU09aR1IzamU1RnVwMGU5X3RkOElYOTVmQTFpMExQaHZIN1lOcXNsWWNyRHlTOHdXaDIwSTlsdlFfdHZMcUxVQQ?oc=5",
+          "date": "2026-03-13",
+          "what_it_shows": "Reports eateries cutting menus and struggling to operate due to a cooking gas shortage."
+        }
+      ],
+      "signal_types": [
+        "news"
+      ],
       "notes": []
     },
     {
@@ -384,9 +442,9 @@
       "date": "2026-07-22",
       "weight_note": "One of two reasons given for higher cost of doing business; the other is larger store size. Eternal runs several businesses (food delivery, quick commerce, going-out, supply); the Play Store data covers the Blinkit and Zomato apps only.",
       "verdict": "insufficient_evidence",
-      "explanation": "We found no evidence in the provided materials discussing state-level minimum wage increases or their effect on operational costs. As a result, the claim cannot be verified from the data.",
-      "covers": "None.",
-      "does_not_cover": "State-level minimum wage legislation and fulfillment labor cost changes in 2026.",
+      "explanation": "The provided evidence contains no reporting or data regarding state minimum wage increases or their effect on operational costs. We found nothing relevant to assess this claim.",
+      "covers": "None of the provided evidence items address minimum wage legislation.",
+      "does_not_cover": "State-level minimum wage changes, warehouse payroll, or delivery fleet labor expenses.",
       "evidence": [],
       "signal_types": [],
       "notes": []
@@ -394,81 +452,41 @@
   ],
   "risk_context": [
     {
-      "headline": "Quick commerce's festive share set to rise to 18% as mobiles and electronics gain ground",
-      "type": "speculation",
-      "topic": "macro_market",
-      "direction": "positive",
-      "why_relevant": "Sector forecast expects quick commerce share to rise during festive season.",
-      "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNVmd3RDl1TmdwREI4SXluajdQQTJFN3RpbXVmSWN6SW5qN0JhWjJwVmtkUGpPUmMwSWR5UkZkWlYxN2paakZJZTliRF9Kdjk5eGtmU185clR0Ny1nbFhfbDVHSjRoT01YQUY1MkNuQTBERWFSV0NiLW5iVFNmQ2xHcUR0UHI5aXdUVXdfUjdaNzYtU2NPZVRGSlNzWnM4RG9pejAzZ0dEbURRQ3ZSOHpvbHpEUUNGX19WbWpFcjA3bHZtU2syeXE2a0Nn0gHKAUFVX3lxTE1WZ3dEOXVOZ3BEQjhJeW5qN1BBMkU3dGltdWZJY3pJbmo3QmFaMnBWa2RQak9SYzBJZHlSRmRaVjE3alpqRkllOWJEX0p2OTl4a2ZTXzlyVHQ3LWdsWF9sNUdKNGhPTVhBRjUyQ25BMERFYVJXQ2ItbmJUU2ZDbEdxRHRQcjlpd1RVd19SN1o3Ni1TY09lVEZKU3NaczhEb2l6MDNnR0RtRFFDdlI4em9sekRRQ0ZfX1ZtakVyMDdsdm1TazJ5cTZrQ2c?oc=5",
-      "date": "2026-10-08",
-      "publisher": "BMI"
-    },
-    {
-      "headline": "Eternal (Zomato) Competitor Amazon Plans $3 Billion Quick Commerce Push, Eyeing 1,300 Stores",
-      "type": "speculation",
-      "topic": "competition",
-      "direction": "negative",
-      "why_relevant": "Competitor Amazon plans major $3B push and dark stores against Eternal.",
-      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbTRaOWQ4enhKSlNaOEN6cXZFRTc1SkVrNC1oOTFWbWhXUlgwaVl1N293Ni1GdFhQVnNnUnJub3RDWGI2V0MzZGc4TnZETDVlS0tGVHpPT1I0TWRzX2JBZkFPVjB4QXp4MW1CWEF0Z1QtSjVsQjRsUG9WTkcxY0M5bGZobVpPQ05TNGowYTNCLVUybDRrWEd4QmYwdk9TeGNtd1dYcnNVS2hpQzBCbHJJbkR1bV8?oc=5",
-      "date": "2026-09-24",
-      "publisher": "Sahi"
-    },
-    {
       "headline": "EXCLUSIVE: Amazon bets $3 billion on India's fast-delivery boom, sources say",
       "type": "speculation",
       "topic": "competition",
       "direction": "negative",
-      "why_relevant": "Sources state Amazon plans $3 billion investment into fast delivery in India.",
+      "why_relevant": "Amazon's reported $3 billion investment into India's fast delivery points to intensifying competition.",
       "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQTXNMYm55TUd3bF9ScEMyTHVxZ2ZzRnVDTmZXZk5YaTdoZlVCNXhVd3NZVFZTb0c0ekJHNHpZcm83QkFoX2xxNHdndEoxU3BrVFlIVGN3TFlaTzB6RTJuREhCYmpIcTZhU01SWko3cFJjbHlxdVJrd2VfOU50MkNFSG9VRUdHSnVvNXdsNmgzeldMcF84UzZCTkQ1X2NybW1ySTUzMEZ4UHBnODcxLWdIeGx4OTBReDB4LUJCaA?oc=5",
       "date": "2026-09-24",
       "publisher": "Reuters"
     },
     {
-      "headline": "Eternal stock rating: Brokerages bullish, eye Blinkit profitability, food delivery growth; check target...",
-      "type": "expert_opinion",
-      "topic": "financials",
-      "direction": "positive",
-      "why_relevant": "Brokerages issue bullish ratings and target prices on Eternal's Blinkit and food delivery.",
-      "source_url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPQUFabW9UZXZaYVJIampFUTNfN1lmMjJCczcxNFlHcXBnQ2o5QmNram95YV9qOVNfcm9GQWtwN01id3lGeEk3Nm1VdlRUQm5ReFZ6M2tiV2stU3NncGNYWlB2a3M4WlloRWltVWRVZUR0Nmxqd2hZNVFIcXdiTTRYakpWOVBjal9PSHBWYm9xNEdUb3JnQzMyREZ3eFZWWF9zMGxuZ2U5WXRDNkpZRjNlZnpyaGZPbktsRkJsbUlyWkVpbVAtVmU0dGNwMmhRRWNUaGtLYzBNM1hFbVZwWEVzdGkzRlYyT2NMLXJyUWtPd21ZODhIb053a3YxcUlHa2t00gGGAkFVX3lxTE8zUzdIMndZZk5EbnpkVFYzNTZMa2FLRUp6aUV5RWpCWGJocFFDYW5TTWdzTWlQMmtOejdkTzN4R2cycTJKVk5ST1YwbWRjdkkyRExReTFmYjJBdHBnYlRqQlBYQjdxQ0VQTGg1aFc2cDlTR0FjdWNZbFVZaGQ2NUJ1Z2ttcXJ3UUEwLW5LUEJBRWtGU0V0QVlhWlJCbl9lRGJvclp6VEJtajZoMHZzMlNxaTRZck9qWUNlb09vSEN4VmM0aXdVOER5LXZmOUZrNGJxc3U2dFZWcDZkNE9wU1pJNldWaFdTejNtS3dzR21oM3lKaTB2enkwZ3NWcUNBNlBtWHhlQnc?oc=5",
-      "date": "2026-07-23",
-      "publisher": "Moneycontrol.com"
-    },
-    {
-      "headline": "The 'Ten-Minute' Paradox: Can India's Kirana Heritage Survive the Quick Commerce Surge?",
-      "type": "expert_opinion",
-      "topic": "competition",
-      "direction": "mixed",
-      "why_relevant": "Analyzes the impact of quick commerce expansion on traditional kirana stores.",
-      "source_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPMThYSlVFODFaSkUwVFdzbVo1cjFXUm5QRnI2MUJvWmxsV3NZc21yRW03VWxzVUhBc3dMWWN6ay1HN0pLa09rZks5ZE4wV2VLR1BWVE5lUEtQSEQ2SlQ1bXRFWGVEWDdBT0ZYbjFQeXJRcTZ5MGVrQzJlUjRteHdzRnhMOEJHdkFGbVNnMGxqVWpMWHRjU2FZUXh2Y0I2VDYzZ05WWGRJSWZ1cFZhekxnYk1rc1pvaURUQTVMc19hNlFGVGZiNXZwT0xGMEcwWUlDVkFhY0NQZGRLZWvSAeABQVVfeXFMTkR3V0I2WG9kSG02NU1MMXlXOGo5SkZJMEoxVE1EazNkanZaWTZ2SXk4T0VTcUZxbXpBRXFYU0VLYk5iME5LeTFfekJKSzE0QWJydjFGbW5CVFlGeEMyR1hfUDZFUDFENW1VQ0I0SXFqaFZ6aVMzbld2R1dFNDlMT24zaExKb2RmdUdTQ0NOMDc3Nk1vTkgzNUdIU3ZuWUdaaGZJVFB1YnZKS0hRVlMwTmwxb2JNb3U5REVlWWVQS1Jha3FieXhjYXVrN1VGS293allUV1EyR3BKSDdrVTA3dFo?oc=5",
-      "date": "2026-05-06",
-      "publisher": "India Today NE"
+      "headline": "India LPG Crisis 2026: A COVID-Like Economic Shock?",
+      "type": "speculation",
+      "topic": "macro_market",
+      "direction": "negative",
+      "why_relevant": "Discusses broader economic shock of the LPG crisis affecting India.",
+      "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPR0VlYjRiRmpCZlZSSGk1MFJsRDJnQktOanNBZ3BJN1ZsQS1OZUxYS3NQUHJkWGpZczVteFVTZG1SQ3J3QU9kWTgtT28wVFFHcjNucF9SQ0toYm9nTEtpWjUwa1l3TFBPRlJFdTBRakdqX3dEUUNPbmUtb1V0TE10cTJiUGU3Qi1nMHZlWUp3djh1eWtBZU1xYldreTfSAaMBQVVfeXFMTUJWa25WMW1kblc2cjNZaTVwTkN2ODdIOGNPQXNpaDBQLTZ3RERnbjVvRXplOGVEckwzMGl0aF9hSDJ3U2JDYmVGNkZXT21mYko5eTQ1OEo2Nkd1QTJLZGZtOGk3TjlWX0RLRzducGNvQ3BHeVRESWRXXzFrMlFZZUZuVnNBQVpjLTFUNG9tUzJxOXhYM25CR1BRMjlheHF5bFV4Zw?oc=5",
+      "date": "2026-03-26",
+      "publisher": "Frontline Magazine"
     },
     {
       "headline": "Blinkit, Instamart expect slower growth as unit economics take priority",
-      "type": "speculation",
-      "topic": "financials",
+      "type": "expert_opinion",
+      "topic": "competition",
       "direction": "mixed",
-      "why_relevant": "Directly reports growth and unit economics expectations for the company's quick-commerce unit, Blinkit.",
+      "why_relevant": "Discusses Blinkit and rival shifting to unit economics over growth, relevant to Claim 1 and 2.",
       "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQTUNPMTk1akVoTzlKT1NBOC1zVW43ZzlHQ1RKcUZ6R3VGcjdZU0RzSWR1Y1NwSVBGM3ItU1lNRHFfT1NSR0RkeTVYNDV5RGR4akZjejg3SnJGcVBrMWtHaDVqQXE4bnZHTnVnRjFjSFl4d1Q1RlBrc1JTZTZya0ZJYTVzT2xSUXNjdFZwSzFpWWU4NERmeGJaTXhDdzdHWWM1YWtTLXdUQnl5NGxsMHhESEpLZlhZdGFob3ZacUR3?oc=5",
       "date": "2026-03-10",
       "publisher": "The Arc Web"
     },
     {
-      "headline": "Quick commerce giants split strategies as new rivals close in",
-      "type": "expert_opinion",
-      "topic": "competition",
-      "direction": "neutral",
-      "why_relevant": "Examines shifting competitive strategies among leading Indian quick commerce platforms.",
-      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOalNHT1FZV1dfbmswM2toQ0JQYVE3cHVnS3lJQ2lZVWRBSTlTUWdpdUVMM05lM0Y3NjExa0hpeHpuQWJpd2NueVhNZk1fZ0RBdFZqQUxDT1loOHIxcnVlQmZNdGM5QlI3MmQwR3QzMTRoSFJyekV2SjJ2TmNsX1p0dUlBWmNkeXp6MEhvUmp0SVIzOF8yeXc?oc=5",
-      "date": "2026-01-19",
-      "publisher": "YourStory.com"
-    },
-    {
       "headline": "Is Quick Commerce Set To Enter Its Most Competitive Phase In 2026?",
       "type": "speculation",
       "topic": "competition",
-      "direction": "mixed",
-      "why_relevant": "Discusses intensifying competition within the Indian quick commerce sector.",
+      "direction": "neutral",
+      "why_relevant": "Speculates about quick commerce entering its most competitive phase in 2026, relevant to Claim 1.",
       "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOREFPRVpXMUVKc2VyNDBuSldCT2Z2SGRZUXhKLVlWeGNzOUFqWkJDZzl5U2FDYTR5RktKNW1rMzhsZHBFeU5qOElJN3hZczlTVzVXTERFY1VVaHI2MnpYdVh1NWpaX2lYMk9kU05VTHFyZlNXYk5nWmdYSHpaVDIyY1pFLUEzSEV2Ry1BZVBn?oc=5",
       "date": "2025-12-23",
       "publisher": "Inc42"
@@ -709,76 +727,12 @@
       "text": "r/Zomato: What's up with 80% — Post discussing the 80% off offer on Zomato app."
     },
     {
-      "item_id": "n1",
+      "item_id": "n12",
       "signal": "news",
-      "title": "Eternal Q4 Results FY26: Zomato's Profit Jumps 71%, Revenue Nearly Triples on Food Delivery & Blinkit Growth",
-      "source_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPTGJtSEVpaW5ZUkNwUW1OVDZQdkVwQ0g5bU9RcmE3T2Itcll6ZXNvLVlLR2lrcG11amIyYWZLMVZGZ2dDVXlTenBtYnJlY292NkllMVFFQVF1eGhQYVBXSzB0eko1b0ZwSzZwb09VUUptV2phdi05YmtRR2U5ZlFLcl81NmRwbTV3NFREMTJiTUdOWmVpU00yY1ROSGhzX2ZKQlhmSTROaUZEdm5CLU5UMk1ZcVpHZF9sZElSd0ZoRTNQNnM4X1BJQlN5eDVfRS1OUWhVYTN1SmR3Zw?oc=5",
-      "date": "2026-10-17",
-      "text": "[Goodreturns] Eternal Q4 Results FY26: Zomato's Profit Jumps 71%, Revenue Nearly Triples on Food Delivery & Blinkit Growth — (published 2 days before collection; direction: positive, topic: financials)"
-    },
-    {
-      "item_id": "n2",
-      "signal": "news",
-      "title": "SBI Card-Eternal's credit card for Zomato, Blinkit: How to directly apply for early access by app? Features explained",
-      "source_url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOT1dkZXM1Um5qSFMxclVyTWY2Q0V4bEdxazh3VEplc24ySGFjZmNISS05M1YzWkZmRVhmaGRyd2NKc1BFSHBiTjZCdVh1Qk8xYXAxZXdhOW1kbExaZDRoZVdUNnlDdmRWUUJwS2p2U0h0QWZCRjA0NDAtenBGS1dZc2k4VlJUS0ZkSDd2SGNwdjhGcEF0ZURYVzRhSEQxbW1RTWZZckUxQTNkSWdnaDlkY2Rtc2tNTXd5OWhGZlh6UU9VQVJ4bG1mR1FxTmtZMGVZV2hONUowMUk1TlVBdHhzWEwwUjQ2OVdrb0ZLYzB6aDROWTl0RGtrMHJIUEVXWGw1OUNBUnJWYmtFaVFzc1Y5NXFDTnhpOEnSAZwCQVVfeXFMT2pJMWRsdVVaS0daN0FsMUpkTk91WTRjUkdsUEs1bVZBR01fVFdlcktYYlNrTnR5Wm9BVFoyaFV3X0FOdUQyY3ZmN3I1SzlzZ3o3ckxLSFBSSjhXQ0pXWjM2dWgxcGZxZlRISzQ0WTJXX0VQLU4tQjhQaHdkWDNuekI5cUhGbHNPcTFWRlJWMVE5RHlKXy1HS0lmNm5PaHAxVXJmOGVBZ084cWNKTTY1S1hKMGtqblpCRmxONzhTTDFRUWpneGJTUVpoNnA5ZXZldDRNS1JxekRFMXZmY2F0azB5OU1EQzFWNDJMTDQxUTM3ZkloNjBFcVFpWTh2clpBNy1aOXNGNk1LYmFCdWlpcGVKOHNwZDZwRUxIaVg?oc=5",
-      "date": "2026-10-16",
-      "text": "[Livemint] SBI Card-Eternal's credit card for Zomato, Blinkit: How to directly apply for early access by app? Features explained — (published 3 days before collection; direction: positive, topic: product_launch)"
-    },
-    {
-      "item_id": "n3",
-      "signal": "news",
-      "title": "Eternal SBI Card offers up to 10% discounts on Zomato, Blinkit, District",
-      "source_url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQbThFMWZXODE1TVo0RktuTmg3NGhVYWhUVjliVElzUWlQX2ZWdGpWbkdmZE5IOW9fb0h6Tkdwa2NhSkdmSGtiSXpiZlpZMkFCdWF0Z3gyVTJKN05NbHVFeTZfcGs1V2FhRklZRFcyQ1dyRjA3NVBSSHVneXc1dHFPek5xVHdZaFJlamJINmI4ZndBbHFISGtUb01OekpyeUN3ZEt0ZzVwWDBjRkFEUFpXLUlJazRPeGJvLWJ2bWVNcWRuQ3Bxam9XNUQtNTQ3eGZQSk5ZZWxuQy13ai13NXV4LXhB0gHnAUFVX3lxTE5mTlpicExpMkVVR1BQZG9YM2dyQkRoSzNPTFhJaVFfcWYtUmx1UFoxbUpWWWVJWmpELWY4aWg3b2ZRanpacHo4RFFsTmNickU2RU5keFVOVE5QVmRpd25KdEtpNEMtT0F4ZGxLazdrdWJqVTlwbjhycFBvbmZ4SW9YaTVVWHFGZFh0MVRybVVvZ3hyenR6V1E3QVFfc2ZaZzhicWQyU0NYZC1oanZmSDdfU1hZa2ZIRGhzWmJJRTgzTG9mb3FGb1dUSVBYTlQyRE5vVkpwX2xFSzFfNHZhRjJ0ZEpfZmV2VQ?oc=5",
-      "date": "2026-10-16",
-      "text": "[Business Standard] Eternal SBI Card offers up to 10% discounts on Zomato, Blinkit, District — (published 3 days before collection; direction: positive, topic: product_launch)"
-    },
-    {
-      "item_id": "n4",
-      "signal": "news",
-      "title": "Eternal SBI Card to have instant discounts on food delivery, quick commerce and services",
-      "source_url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQT2Q5ekJsTC1ma2Njd09vOXhJTWhFSkVXRlZEYWlvZy1Va3BnYTNvREVWWlljM0xfN1F3U1RuV2F4YlBqSVFxMHVXaUplTm1iWFlFVHNSZlFCQnNZSFhPdXhUM01GWjR0Qy1xc2NZOEd1MFp1amZMVm1UWldtUnJMOTVoSEN0R29uUGE5MEg4MmJscVJzYm9lcGR4dXpQSDYzR1hsc2d5RTdsY1oyMnV5TTljQnNMazFCTjZkcGFrVEZ2Y0xiRzdoUWxkVWd1YjduRDNYV2t4aHRWdWhZTVhDOW43T2ZjTHhYRkpJbUd0bVJfc3NJNlZHSWZQOVRfVnBiUWtF0gGIAkFVX3lxTE5ZUjkyZklCd1NzUE9najNwb04tT1dNUE5FZW1lN0ZGWVhoUDRnN2loaVdsaHZrbHZxVjJDVlRYa2JVZndBZVRjLS1kLVlpTE1TNnFDZmptZVBQSEFCdXNXRzNwdXFLTXNXX250TkU4RVZfWDBWZXJ4cXBmZUdOWTlYekVQUVROYWx2eFB3UHkzb2REX2V0RVJBOHBvdklnaWxpVzg3cHExQjd4S3MxclRGY01WNFBaZWNLb1JyR0VuRUN4U29xZlVBNHdGTHlLVncxTWRFaTk5b0o2b3hYOUlnQ3lFRklBbG9za1o5eDFlRDloRkFCbFpnWXBhSG5qcW44alFJMmVTWg?oc=5",
-      "date": "2026-10-16",
-      "text": "[The Times of India] Eternal SBI Card to have instant discounts on food delivery, quick commerce and services — (published 3 days before collection; direction: positive, topic: product_launch)"
-    },
-    {
-      "item_id": "n5",
-      "signal": "news",
-      "title": "SBI Card launches Eternal credit card with Zomato Gold membership, cashback benefits",
-      "source_url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPS2VqYWNjTkdfNE85NmwyTDNZVTFndnFCTlNWaG9CNWVIdW9DUG9fbERLc3hMYWcwWmlEdjNnaEdqT0c1dXR5d29GN2UzcFgzNzZUcENleU5DckxlQUl6dEgyeFM4RmtPUGZ2anpxR0hfSjA0Mm53eUZrRUJpYzgwc09ZY1lOZUE1bk9PUGNvNWhiSjV6em9UTjRCeVlncWJ3Tlp0VVp1VElZd01uTzV0SDFSeTM1VEhhN2Q3THNuQ0hNeTRTTFowMTN3MFFJR0ZPTlNlM0hYQnloaWlOcVlqR3ppdmxRRnhUVnBGbFVjUdIB9AFBVV95cUxOR3dRSkY4TU94Ykw4N1lmMU1aWVBIZWcxempKMWhUcGwtYzZwX3ZPcVZadkZUN05WUTV2MHVIQ3pleUZVYXV2YlFNNDJmei1CZWo3MEpVcmZoSXRzTkdld3ZCbzZSSERqVldyVTdtel9FUWRMUnlVeGpMUzRtSTAyVmJiWkxUcHQxV21nNnZkM1BDUXJfeGQxcHFEaF9QS0UtS1V2MlB5TS1UOUNxLUxZd01yRFF6UWppY0RlbDlSMTBUTzJ0OTZpSWpFVXFkX1UxS2ZVdjZiTUR0M1o1N3NjcVd3NWhMSU1fRGFqU3Nsd2FjUTgy?oc=5",
-      "date": "2026-10-16",
-      "text": "[Business Today] SBI Card launches Eternal credit card with Zomato Gold membership, cashback benefits — (published 3 days before collection; direction: positive, topic: product_launch)"
-    },
-    {
-      "item_id": "n6",
-      "signal": "news",
-      "title": "SBI Card and Eternal launch co-branded Eternal SBI Card with discounts on Zomato, Blinkit, Bistro and District",
-      "source_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQUXQ3U29jS2lwYmNBaXhnaGcwbzRkVEZkT1lzaEIwbXRLYXI0V2VwTmhodWgzRUZZYlNtZ3FsWHczVHlWVHFHNkJIY19reWQyQm1lOEhUcHo0OWhfOFFSUGg4RDdhSENwTnlnVmszbUZHTjFPVlJxb2J1Ry1jczVNdjJWdGVDU0tTVjRfNXJKNG5RRXN6S2VaMndBVTFMdUhQT1Q3S0tyS0oyOG9ZSmgtZW1NOHNFT3d2YTFFTlJ5QWZIM0doLTQyRVhLT05sbW1DS1Bn?oc=5",
-      "date": "2026-10-15",
-      "text": "[Live From A Lounge] SBI Card and Eternal launch co-branded Eternal SBI Card with discounts on Zomato, Blinkit, Bistro and District — (published 4 days before collection; direction: positive, topic: product_launch)"
-    },
-    {
-      "item_id": "n7",
-      "signal": "news",
-      "title": "SBI Cards and Zomato parent launch co-branded 'Eternal SBI Card': Know more about discounts, cashbacks",
-      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdlFpak5XS0Y0Q2NqWC0tMHlncXBCajRVUDR3YTd3bElJWlhOczB6ZTVOLW9meTV1M2ZweFg1NUlMSHZURFZQUWpVNTlUckFsU2NHTl9IeFNlSGpkUFIxZ2RPaWlJMVlNRmxCUUp1NWVQQkgtcUhLcFJIemwzUGFNTHVQUkNTU0pFQWl0aW82eEt1TGFJR3QyWHZ3dW05QdIBowFBVV95cUxOTVRNa3JJS1VqeUcwYTBzZlU1aTBtdjZoT202cE9zOW56R1l3MzFsZkJTOWhkV002RmZYbFk5UDFZMXlDc2s1bUs4VlZIRXVCR09zd1RiMmhTWl9neE1CYUFraDBvOUdGekhDMDkxcnJsN1pneDU0VGhjZENlamFKUWE2Yk1aSzRGU0VtS2ViNXNkb0p6WkJkV0p0U2lsdHdzdXdv?oc=5",
-      "date": "2026-10-15",
-      "text": "[The Week] SBI Cards and Zomato parent launch co-branded 'Eternal SBI Card': Know more about discounts, cashbacks — (published 4 days before collection; direction: positive, topic: product_launch)"
-    },
-    {
-      "item_id": "n10",
-      "signal": "news",
-      "title": "Festive hiring grows 7% to 1.27 lakh jobs, led by quick commerce: Report",
-      "source_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPWVpMeFVyR05Ia1Bka285eF80ODdPTHhSdG1PZFgwTU1SX1Y5UVVoamhoRWpicS0tdHpHcDlkWDRSbjBnZkd3Ny1JZldHUzFuSWJQQ0ZXTnRTc0h2VklLMlZxalduSFNVZURsSnB5bzdEUk1kbHBtVV82X3UwVUNLaHFCalJKVThvUHBOVDFua1dyMkFnSHZuWEtyRld3aGFhUlVWb0FqeDJoRHFKWlIyZWxwdWhoUWlRTExqaHJIV1BLdVMwbTJHTENoVmR1LW9lU3JN0gHYAUFVX3lxTE1UbHlBT0doT183UmVXZUJvTEFLczZfZXo5a2Npc0k5eFpxSDBoSWYtMksxb2JRa3VoVkVqTHMzTTlDUHpSNE1ieXVMb1pqUEdYd0s4M29sUzJUaW5aWGVlMjFUblgyVW5mUktXMjNfZGdhd1NaLXNzQmpTT3N2R2ZaVWxSb2FpLWxqcHoyeTBYN3BBeGRDSF94UFZCMnZJTTNBSmJBdTNhTl9QYV91M250RDNLLXpVMFcySEJBWHpidUt3WXZ1dUlHTzdxQWt5RVltdE5SM19XVA?oc=5",
-      "date": "2026-10-06",
-      "text": "[Business Standard] Festive hiring grows 7% to 1.27 lakh jobs, led by quick commerce: Report — (published 13 days before collection; direction: positive, topic: macro_market)"
-    },
-    {
-      "item_id": "n11",
-      "signal": "news",
-      "title": "Q-commerce's makeup market hits ₹938 Cr, more than double Amazon's ₹418 Cr: Report",
-      "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQcWVHT19IWlZLWjBfb1k3NGNRZHhJbmptNjRhTVVkUWdvdmVZdkhOUTUxc0hmSGxnLUJjQUVtQXFOOGM2Z0JLdkxBSDdDbTBKVnMtTllHUTJJTGR3bG5KUWRvUEh6RUpTbWExZmZMYmlTc1RubzZOVDBsLTdVYkl6ZmNmQWtsUG5JUnJuQ2NLRkFSWmF1S29WdkF4TUZyLVlMczhnYXlEemk5MkEzNzBXUXI0MFctdzdRV1RaeUpvWnPSAcYBQVVfeXFMUGVBVmZrMm9XVDJsXzB5SHdMdjJKdVVHVGFobkNTUUNrSVp4OV9wbDZTQ0dmaXB1a2k0dTZCSkFOOGcwSVFWYWlVazR1RzFlTlB1cmFnQVFyTmZLUV9UczNJUDJyaWZlaGJCUGl2T2N1VXRFRzlBSFZmbHhIb0JoSFJraVN5cUYzQ2JZVU9GWGJnbGExOU94N0Yyek9vUkFnbDgzZXdpZjNrOTQwM3ZFYmZMVUpSdUFmaXVSWE5aLTJFX0htU2FB?oc=5",
-      "date": "2026-10-01",
-      "text": "[Storyboard18] Q-commerce's makeup market hits ₹938 Cr, more than double Amazon's ₹418 Cr: Report — (published 18 days before collection; direction: positive, topic: competition)"
+      "title": "Eternal (Zomato) Competitor Amazon Plans $3 Billion Quick Commerce Push, Eyeing 1,300 Stores",
+      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbTRaOWQ4enhKSlNaOEN6cXZFRTc1SkVrNC1oOTFWbWhXUlgwaVl1N293Ni1GdFhQVnNnUnJub3RDWGI2V0MzZGc4TnZETDVlS0tGVHpPT1I0TWRzX2JBZkFPVjB4QXp4MW1CWEF0Z1QtSjVsQjRsUG9WTkcxY0M5bGZobVpPQ05TNGowYTNCLVUybDRrWEd4QmYwdk9TeGNtd1dYcnNVS2hpQzBCbHJJbkR1bV8?oc=5",
+      "date": "2026-09-24",
+      "text": "[Sahi] Eternal (Zomato) Competitor Amazon Plans $3 Billion Quick Commerce Push, Eyeing 1,300 Stores — (published 25 days before collection; direction: negative, topic: competition)"
     },
     {
       "item_id": "n14",
@@ -789,28 +743,12 @@
       "text": "[The Tech Portal] Amazon to invest $3Bn into quick commerce in India as it plays catch up — (published 25 days before collection; direction: negative, topic: competition)"
     },
     {
-      "item_id": "n15",
-      "signal": "news",
-      "title": "Top 13 Quick Commerce Companies in India [2026]",
-      "source_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0wdWo0Z0p0WElBVndQTk5veUgwS0pib2hJSlJvLXJKeU1nQWEwZEJPdTFvYmZkWmd5bU5tdTB5WHA0RHRKeGxodGZnUHRVdTE5LWtsakZJMVhZU1NfX3dSb3pHZm0?oc=5",
-      "date": "2026-09-23",
-      "text": "[ClickPost] Top 13 Quick Commerce Companies in India [2026] — (published 26 days before collection; direction: neutral, topic: competition)"
-    },
-    {
       "item_id": "n16",
       "signal": "news",
       "title": "Quick commerce firms cross 9 million daily orders as market share battle heats up",
       "source_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNUlNtd3ItcERSaEV5Yjg1cTNGeUdZdEJBanJsSVZ3UVJhMEtYV2ltY0VjWnZBUDNvV25uZVdHNk1SOVI0ejhhaW84Ym1zRGVITkJPaGRhUzBqR091LXBrcUhpVmVlWDNQMWdWb3g4QngxTHlwN2RxVlJnNjktY3o3ZUMtMXhQS3B3ckRYemJYdHpWMzI3Wk0tZi0zM0lKcFM4em55TVNrX3FaYjZIclk4MllxTVY0RE5hdEFzV0ZKaUNZMTc3M0RVa1JWc0JEZVEyVmQ3VDZkU3BrTl96TDc00gHkAUFVX3lxTE5VSDNoc1N5TlMyNFpGZ3k0QUNDenVTZ1V2ZWdaWmVYblZkNXU5MGxHRlg4a2twS19CWVBVZXdjaTVub21FV0dTOGRvTEhpY25sMGpiSGs4QVdkMWhtZnBkSjV4aDZWeUNKN3gtNVZVY1gydk9EVUQ3djNoYjFPcGl6cktzZlR0NjFpSTNzQkFuOHgtemJBSjh3Y2dCSDhRNTNneG9yYXlDWjJqUnF0YlhJM3lObVVLZVVUTjR3dkZUT2p6Uzk3UkNNX09qbHZNMGRqd2xVQTdlVC0teTJ0cGRhZE9idA?oc=5",
       "date": "2026-08-17",
-      "text": "[Moneycontrol.com] Quick commerce firms cross 9 million daily orders as market share battle heats up — (published 63 days before collection; direction: positive, topic: macro_market)"
-    },
-    {
-      "item_id": "n18",
-      "signal": "news",
-      "title": "Eternal Q1 FY27 Results: Net Profit Jumps 3.7X to ₹92 Crore as Blinkit Becomes Biggest Revenue Driver",
-      "source_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOdDcxNDZzcF9jNE1mUVRBMUQyU0RESlNBYkM3OG1YNnpaTTEweXdibGdxN3JTb2E2UENlWUJhd3ZxQi1la0dmZEJjazFpeWx1ejJ6VUNITWZzYzZtQjhrbkJ5R2tvbThUYmRKOG9ySnlSWFNKTEZ1cGVld3Z0ZmtMaUhMa2gyWHFSVFNMSWtRZFEzM1hVdEkxeTdvME9EVUhjTHNfczRQdjFsV2lWM2VVV3VSRGNZRF9KS1ZzTFJsZVFYQnFDODRjS0FmSWFkSEtTNjBtck9XbHNkX28?oc=5",
-      "date": "2026-07-23",
-      "text": "[India Infoline] Eternal Q1 FY27 Results: Net Profit Jumps 3.7X to ₹92 Crore as Blinkit Becomes Biggest Revenue Driver — (published 88 days before collection; direction: positive, topic: financials)"
+      "text": "[Moneycontrol.com] Quick commerce firms cross 9 million daily orders as market share battle heats up — (published 63 days before collection; direction: neutral, topic: competition)"
     },
     {
       "item_id": "n19",
@@ -818,15 +756,7 @@
       "title": "Amazon, Flipkart spark quick commerce price war as Blinkit, Instamart hold the line",
       "source_url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPUnFjMXhadFNMNGFrWEdRUGdsNVltTWtvaHYyUm1tWTZnbGNFalR6MXQ1NHBMZmNIY25nQVN1LTZhR0lLYm9wX3FEUUVHYmxRQlhpQnFpQjdNTm5KdzkwdzRlOUVhTjR3Q25sWXF0cnphSXZhQzBvUmNvNlZuQzAxeGtEWEc2TDhLLUN3RUNxMjJOUzVUeHd1elpPNmZhQzQ4dko0dEpwVWd6R0RnRkJCR0o1NUR4WTdFN2tKVzJhZ3p5WXVSUENqSG5HemI1WXB0YjBpOFNyY3h4Rm91Yzl1WkhaMFo1Z9IB6wFBVV95cUxOcDFZeUpZT3ZSMUV3LVdHdlFfQTdUaUVSMnE2OGV6aVdlVDlmejFXbjBaRE4tNGFmdGUtZTFhTVFKM256SXNTV2NaQ3ZpV3pKWkJITFJYRGVQWnF5Ry1xaUp2aURTSUFSencyRmdfWHFFRzRQRkdjYVM5M2VHZmwtN082a2h0bF9VY0FKTzN2ckFEakt5NVZmN25uczJXQldWSVZYUTFaY3dvX2U4UWZlc28td3JfYk9FTjFwUENId3A2ek5EN28tYUYtNE55QmZkTEFYTDBHMUgwVE9zQ0VXbHZ0WWRzTEN0ZDVZ?oc=5",
       "date": "2026-06-29",
-      "text": "[The Economic Times] Amazon, Flipkart spark quick commerce price war as Blinkit, Instamart hold the line — (published 112 days before collection; direction: negative, topic: competition)"
-    },
-    {
-      "item_id": "n20",
-      "signal": "news",
-      "title": "India Quick Commerce 2026: Blinkit, Zepto, Instamart",
-      "source_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1PM3AzVzd1RGNMaW96REhKbEx4Q0dDbTM5R1FuTWdMTU00WTdweG9NNE81SlFuTFpYTGNvajVxMzF3bE5WTWVuN25SNXlkMjZqSTFXRnRVdG1BemhkQnJTMDZrakk5X3NVT1E3MHdYelBVOHJLTlk1Vk9lSQ?oc=5",
-      "date": "2026-06-24",
-      "text": "[Digital in Asia] India Quick Commerce 2026: Blinkit, Zepto, Instamart — (published 117 days before collection; direction: neutral, topic: competition)"
+      "text": "[The Economic Times] Amazon, Flipkart spark quick commerce price war as Blinkit, Instamart hold the line — (published 112 days before collection; direction: mixed, topic: competition)"
     },
     {
       "item_id": "n21",
@@ -853,12 +783,84 @@
       "text": "[MediaNama] Swiggy scales back quick-commerce spending in push for profitability — (published 143 days before collection; direction: positive, topic: competition)"
     },
     {
+      "item_id": "n24",
+      "signal": "news",
+      "title": "Inside Zepto's plan to go deeper into metros while rivals spread wider",
+      "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQQ3NyVWdTZUYyZG5mNXF2WGlNa2phOGNEQmVsTzl4MU9rUXBTdHVlUUZRRUhhU09qYndHSkJFZ0xWZWhPdF9BcS1Zd0t6NDdlU2Ftc0NBSklYRDVDM05DOElCNWNUMUhZRFBHTXlpeUoyWG0yRS04M0Vobmo1NzR3cFZ5b1l2UF9pcjRnR1Roek5vbF9wU2psUk5NR1h3ZVJuTUJaSjhldjR5UENCNlRuTmRnUHF3V0ZYSWNv0gHIAUFVX3lxTE1iZU5KZ21sSWF3czdNNURac1Jmb2JjNTVwYUpkN1lUeTJ2cDRTeVhKU2Mxb21JVDl2OTBRSzZUZjl4LUhIRWlvYTVicDBmcXdLZ1YwVmlrajZqd3d6SFJ2dGRaRk5TNmVaZTJ3R2VBQnl6Vk1SMzQzcEZvTW9JdHdyUTAtYWttVVFHOFl4bThZbmI4ek1GR2VwMFc4U3BZRU1qLTE4dEwzVDdnbV9BTzhheENwYmdVd1psbmJ6MzVNMEpqbWp6SVBJ?oc=5",
+      "date": "2026-05-20",
+      "text": "[Fortune India] Inside Zepto's plan to go deeper into metros while rivals spread wider — (published 152 days before collection; direction: neutral, topic: competition)"
+    },
+    {
       "item_id": "n25",
       "signal": "news",
       "title": "Zepto ahead of Instamart on dark stores, MAUs and orders; trails Blinkit as quick commerce race...",
       "source_url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNSVVsc1U5bVlTMzdQOC1peTQ4OW5Ja3Y3NnRVLTBXUnBab0xQQXRVYlFvbU1SY1Y4T2xqNmFsbE4wSUhaZHp3b3Z4RmRFX3JxdXgzaFRhblgtc21OMTZSNWw1SDE5cHlzcFNHTzlPR3dwUDRaRENvcEpTTWdFdFNhNFR1UUZNTHdfWlVwR2oyLU9zbEUwVlJCcTNkVWw5ZFh6SG4ydlpDOEN6Tl9KWVY3SEx3UlJwSVZVbE5qbG9YNE5xTnZFM3ZFamVqX2c4VEZIUzk0Z0xqZDlpcmlCcjBsWjJjeUlNVWVHM3Q1TlM2M0RKUFIzSkloRXYxZ1MyMV9zWXdIZjBSZzFVbzhq0gGSAkFVX3lxTFBWV2x3b3M1Znlzc3gzUUdpSi1iTFBLV3ozOXEyZ05pd2lVcFpnZE9qdXlGN2RGVTVNN1M2WDVkS3Z3MXRwOGcwWlNjN3E5WFlwOUl1TW1sYmc5Smt0VWYybjRKRVFIU1dXMFJTak5yNWllREtKbktRZE5Kb0h0eWgzTElOcG45NlhCRE1tT0x3QXVqWmpHT3A5VTNrajJ2RHpWRkY5andMTXdEZGw2cFhSbXpDZlQ5UzFndnZIRE1NaHpxVzRDNFdRYUZaeHhtbS1HbVk3WUhqTzYyc1hhbFYxejNJeXR1dWlhbGUya04xVUY0aXQtZkFnNnFFR2RFMFluOWpyRFVaaDRid1pMY0dHVFE?oc=5",
       "date": "2026-05-14",
       "text": "[Moneycontrol.com] Zepto ahead of Instamart on dark stores, MAUs and orders; trails Blinkit as quick commerce race... — (published 158 days before collection; direction: positive, topic: competition)"
+    },
+    {
+      "item_id": "n28",
+      "signal": "news",
+      "title": "Eating out may get expensive: LPG crisis makes several Pune restaurants hike prices",
+      "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQX3o2dzlfTDVpTWgxUGhleHl4Q0FBWmdkbkhUaGt3V0tTbHM3T05PbzZlVS1saXZPZnR2emdvSzQxQ04zRlhxZ3hjQ1FJYkk0X3JJblg3TXAzSHBDdk5JUTlMVlMzSEpWV1hnSXhaNWhYQ2NUWWlsTTl3aThCQVlTWk9zQ0NIdk1OcVItWG5DMnlndUVQZFVQZktzM2V3YXhvNDY5dl9LSkRQQ25vc1hRNEV30gG4AUFVX3lxTE9rY1BYR0F6cUtDZEhUd251aS1CbEJUSndXMzljaWk0ZGZfQnE0SVhGVWY4QTNZZDZBcGZsRmt2aUE1VEI3TVpzSGRpaE1SdnFsZDVzSzVJTWJmSkxtZ1pCcTByeDFTd3g1MnFGQVVTY3VnWlk3aXh0NWZaeGpOakZJaXhPNVNSNE1GNlZESnVYWnhMc3FxVDRLTnZKRHNNY1BtLXRPUXh1cFFhdVF0dzU0M3gzMUVfdFc?oc=5",
+      "date": "2026-05-04",
+      "text": "[The Indian Express] Eating out may get expensive: LPG crisis makes several Pune restaurants hike prices — (published 168 days before collection; direction: negative, topic: macro_market)"
+    },
+    {
+      "item_id": "n30",
+      "signal": "news",
+      "title": "India's sugar, edible oil demand drops as commercial gas shortages hit restaurants",
+      "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOdzJVVmd6LW5Ubkl2dlp3aWppYVZ0cEc3U3I1MmxRZ2Q3UTFqYXJUSkJTUWFkcU9ENldNOWVkWjVTT29vQkg1cm1ja2FJY1MyZkN1V0dRUTdLaGtaa19iSC1FQW9aOFRpZ1J4ZENOT0c4dExrLVZWcXYtWVRna3JhbzN4b2gySDJlTzBPYWZKSkN1cndrdk10VGVfb3BnYk0zaTI3bEVkSzBOZ2Y0RWZ4ZlJMeDN6RHpickpWMm1PWGVjZk0?oc=5",
+      "date": "2026-04-07",
+      "text": "[Reuters] India's sugar, edible oil demand drops as commercial gas shortages hit restaurants — (published 195 days before collection; direction: negative, topic: macro_market)"
+    },
+    {
+      "item_id": "n32",
+      "signal": "news",
+      "title": "LPG Crisis Bites Chennai, Restaurants Reel Despite Supply Boost",
+      "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVHFGZmZvRnBwM1JiZXRNajZOalg5bUEtVi1ZUlA2V2RPNWhzU3pJS3FPNVBUc0YzYnBtUWxSXzd6Nzg2OGJUOUMwN2x5YUFFTUhIdjhXdk13amM4eXNadnROaTVpSEZzb0I4SlhxUDI4WGdpNUxPY2RzUXVrei1PWFpqb2lVeTF2aWtmaWgyREYzSWJDbjZtenNyRENIN2tMdlcwbGhkMTJ4TjBlQU5JOVJ1cEhYMnlDTlc00gHDAUFVX3lxTFBxNmRLQmU1VkRkSTFCZ1ZJcHEtVUVDN1NhTVlkUk55bXNyWXBYM1BSTVZ4VUQyOHF0Ym1ycGd5czR3N0NSdTJpOW5fZXZtODF4bnZXLXZsZFA0cWMxVGVtSkxhQWE4SGFmTTJpX3J2b0ZIdDdGVElZWGFYUzY1ZUl1aXNEQkNiNFdoQnp3SGl2TFFsX1FmOUxaR1M2OEhsa0ZkQS1tdjB3SVNISU4yZEFnUUdkZTh1SWt2bngxZnNHYWZGVQ?oc=5",
+      "date": "2026-03-25",
+      "text": "[NDTV] LPG Crisis Bites Chennai, Restaurants Reel Despite Supply Boost — (published 208 days before collection; direction: negative, topic: macro_market)"
+    },
+    {
+      "item_id": "n34",
+      "signal": "news",
+      "title": "LPG crisis hits restaurants: Staff face salary cuts, layoffs as eateries struggle to keep kitchens runnin",
+      "source_url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPazFXSTV5bk1LcjN2aXZsMHpDdzBKWW5FMlVpM09GV1lQdWZUTFlZZzRxWUhlY2dnRVlWamZGd2Q3cWFxWFBmM2FTT2QzUmpRT01fWlpCOFNXN2dpbFpoX0RBRUp1bm5NOGxSYnplblV5Y3pSWXliVHlMdDNwR1FEXzZZd0ltdUZjS2FyeExyaWJzSl9obG5KZEtRc2dxRG1EWGYyS0o5RE9YQUQ4ZDZKS0VZeG54MkZ6bFJXQjhlS3F2YlJlNHRiR0hEemhtRlMxenhhR2N3bHNuT21Eb0VCdXJ1VS1mcHRpMGI3RUwzZE9EcW1vRnpOZUM0WW85Y014a3NfalVRYzlfb0RXX2lPb1prYUpfZzdmX0HSAZ8CQVVfeXFMUE9zX2Z3TXM5WTJmaUZWZ3FhUjZkZkYtY2hDd3Zab0ZFNkE3TnB4TnBxOXRTc2x0OGpxd0lqbnc4UFh0VU1ISFd3Y3Q2V24xeHlzeVFXLWRyaXVvY0dNWUg2bVIxRXFFMDhTVmozb1FCeW5MZTJIcXRoTmRCS0Z2eG00WllGOTVhbUIwWmJIekVTMWZTbF9VajdXVGZmQmFvRlRKaE0yN3ZnQkJZdlJxR1gwSXI2dEszTWx6dERzZ0N3ZjBXb3dpNGNCU2JlRTMxYjdmMDdlWDQ1M1NGZ3k0NC1obTctQWpkVGpZaFptbWppYVR3UGVuSUt1eVNOM2FROUR3NHZ6ODNQWmxZOTM3SE9GQWlKUFJOR3FLUzczZUE?oc=5",
+      "date": "2026-03-17",
+      "text": "[The Times of India] LPG crisis hits restaurants: Staff face salary cuts, layoffs as eateries struggle to keep kitchens runnin — (published 216 days before collection; direction: negative, topic: macro_market)"
+    },
+    {
+      "item_id": "n35",
+      "signal": "news",
+      "title": "'We cut down the menu': Cooking gas crisis hits restaurants in India amid war in Iran",
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTmt5WnVYRHo3NVlTZ3hHWmIySWViWjZKQVRzV0NpRjJSUXpuUHVGMWdaZlIwUWJHRml4SHhyMmEtTmdfWlNuNkhraXRqTDlVT0pLRzFIUW00ZGFNU09aR1IzamU1RnVwMGU5X3RkOElYOTVmQTFpMExQaHZIN1lOcXNsWWNyRHlTOHdXaDIwSTlsdlFfdHZMcUxVQQ?oc=5",
+      "date": "2026-03-13",
+      "text": "[France 24] 'We cut down the menu': Cooking gas crisis hits restaurants in India amid war in Iran — (published 220 days before collection; direction: negative, topic: macro_market)"
+    },
+    {
+      "item_id": "n36",
+      "signal": "news",
+      "title": "India's Restaurants Face Tense 48 Hours",
+      "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOWWxjX3hPZzVCTldZOGJRTEhwN1YxRFRzSi16d2U0Ukc1Q2hLWm9GVkZKRWRlU2wzY3BySU16UW15TjFISUZmRkFlRjBfbFRkb2NPaEFDcXhRZXlJRWpFTlVaZHdscXpVSnZtSlZ1X2pJZWhCeEVvdW9QYkFBNzR5MVZkamMyMTNhRjRuTWZkaFFwZ2ZkaDBNWjRXVE1oVHZTUmlqb0laYnlhXzhBcE83MXBqdDNVdlhXS3prN3pWdEU?oc=5",
+      "date": "2026-03-13",
+      "text": "[Bloomberg.com] India's Restaurants Face Tense 48 Hours — (published 220 days before collection; direction: negative, topic: macro_market)"
+    },
+    {
+      "item_id": "n37",
+      "signal": "news",
+      "title": "LPG shortage fears grip major cities",
+      "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNS1A2WDFpSzFHMUpGWGxDTk8weTJqSmsxSnpUM3FLSGNaUU1jVEZ6U2pRVFBBcS1LWG9IbXA5bWpyLTlPVTFQYm5lenVsajctdUp5MUxSS0lRdm80SkVzZ24xSjdaRUVmNHpQQk9PWmR2dFI2eE0yMEw0UDJKSG5ab1VaYm1XOEozSXByQ0dtREHSAZ4BQVVfeXFMUHpya0NNVXZycTVzLThXSjNMdUNJanZxSXlIUFFTMERkaDVzMERBZjhlNzYwc05Ib3k1eUxVYXZOWkFlOTBmQm5HalVITno5X2F6WXNoVmpvdVlmV1N4UHJYRnJ4QnlmN0hCMFZvWlhYM3lId1lyaVE4Yjh0VklOazhCLWQ3VWRyWGdqWF82alZrRDNrWGNlR0lHQ1BIQWc?oc=5",
+      "date": "2026-03-11",
+      "text": "[The New Indian Express] LPG shortage fears grip major cities — (published 222 days before collection; direction: negative, topic: macro_market)"
+    },
+    {
+      "item_id": "n39",
+      "signal": "news",
+      "title": "Quick commerce giants split strategies as new rivals close in",
+      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOalNHT1FZV1dfbmswM2toQ0JQYVE3cHVnS3lJQ2lZVWRBSTlTUWdpdUVMM05lM0Y3NjExa0hpeHpuQWJpd2NueVhNZk1fZ0RBdFZqQUxDT1loOHIxcnVlQmZNdGM5QlI3MmQwR3QzMTRoSFJyekV2SjJ2TmNsX1p0dUlBWmNkeXp6MEhvUmp0SVIzOF8yeXc?oc=5",
+      "date": "2026-01-19",
+      "text": "[YourStory.com] Quick commerce giants split strategies as new rivals close in — (published 273 days before collection; direction: neutral, topic: competition)"
     }
   ],
   "disclaimer": "Gap compares company statements with public evidence from a limited snapshot. It is not investment advice and does not say a company is dishonest."

@@ -1,4 +1,4 @@
-"""Thin wrapper around the Gemini API (google-genai SDK). JSON-only output, one retry on bad JSON."""
+"""Thin wrapper around the Gemini API (google-genai SDK). JSON-only output, retries busy errors, one retry on bad JSON."""
 import json
 import re
 import time
@@ -33,13 +33,21 @@ class GeminiClient:
             temperature=0.1,
         )
         last = None
-        for attempt in range(2):            # one retry for transient API errors
+        waits = [0, 5, 15, 30, 60]          # retry busy/overloaded errors with a growing pause
+        for attempt, wait in enumerate(waits):
+            if wait:
+                print(f"  Gemini busy, retrying in {wait}s (attempt {attempt + 1}/{len(waits)})...", flush=True)
+                time.sleep(wait)
             try:
                 r = self._client.models.generate_content(model=self.model, contents=user, config=cfg)
                 return r.text
             except Exception as e:           # noqa: BLE001 - SDK raises several types
                 last = e
-                time.sleep(2)
+                msg = str(e)
+                transient = any(k in msg for k in ("503", "429", "500", "502", "504", "UNAVAILABLE",
+                                                   "RESOURCE_EXHAUSTED", "DEADLINE", "timed out", "Timeout"))
+                if not transient:            # wrong key / wrong model name etc: retrying won't help
+                    break
         raise GeminiError(f"Gemini call failed: {last}")
 
     def generate_json(self, system, user):

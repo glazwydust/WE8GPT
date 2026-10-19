@@ -1,0 +1,1032 @@
+{
+  "company": "Billionbrains Garage Ventures Limited",
+  "slug": "groww",
+  "quarter": "Q2 FY27",
+  "generated_at": "2026-10-19T23:45:04+05:30",
+  "model": "gemini-3.8-flash",
+  "stale": false,
+  "data_snapshot": {
+    "reviews": [
+      {
+        "file": "groww_playstore.json",
+        "collected_at": null,
+        "count": 78
+      }
+    ],
+    "jobs": [
+      {
+        "file": "groww_careers.json",
+        "collected_at": null,
+        "count": 10
+      }
+    ],
+    "reddit": [
+      {
+        "file": "groww_reddit.json",
+        "collected_at": null,
+        "count": 25
+      }
+    ],
+    "news": [
+      {
+        "file": "news_2026-10-19.json",
+        "collected_at": "2026-10-19T02:05:00+05:30",
+        "count": 46
+      }
+    ]
+  },
+  "data_quality": [
+    {
+      "signal": "reviews",
+      "file": "groww_playstore.json",
+      "count": 78,
+      "collected_at": null,
+      "warnings": [
+        "no url in the file: evidence from it cannot link to a source",
+        "no collected_at in the file: cannot show when this was collected"
+      ]
+    },
+    {
+      "signal": "jobs",
+      "file": "groww_careers.json",
+      "count": 10,
+      "collected_at": null,
+      "warnings": [
+        "no job count in the file; using the number of listed roles (10), which may be only a sample",
+        "no url in the file: evidence from it cannot link to a source",
+        "no collected_at in the file: cannot show when this was collected"
+      ]
+    },
+    {
+      "signal": "reddit",
+      "file": "groww_reddit.json",
+      "count": 25,
+      "collected_at": null,
+      "warnings": [
+        "no collected_at in the file: cannot show when this was collected"
+      ]
+    },
+    {
+      "signal": "news",
+      "file": "news_2026-10-19.json",
+      "count": 46,
+      "collected_at": "2026-10-19T02:05:00+05:30",
+      "warnings": []
+    }
+  ],
+  "signal_summary": {
+    "reviews": [
+      {
+        "app": "Groww Stocks, Mutual Fund, IPO",
+        "recent": {
+          "n": 68,
+          "avg": 4.65,
+          "one_star_pct": 5.9,
+          "service_pct": 2.9
+        },
+        "prior": {
+          "n": 0
+        },
+        "comparable": false,
+        "ref_date": "2026-10-18",
+        "overall_rating": 4.8,
+        "total_reviews_in_file": 78
+      }
+    ],
+    "jobs": [
+      {
+        "open_roles": 10,
+        "collected_at": null,
+        "url": null
+      }
+    ],
+    "reddit": {
+      "posts_collected": 25,
+      "posts_used": 15
+    },
+    "news": {
+      "articles_collected": 46,
+      "relevant_reported_facts": 37,
+      "negative_facts": 9,
+      "positive_facts": 8,
+      "risk_context_items": 2
+    },
+    "flags": [
+      "9 relevant reported news facts point negative."
+    ]
+  },
+  "findings": [
+    {
+      "claim_id": 1,
+      "topic": "MTF risk controls",
+      "quote": "I think there are like lot of policy-level changes that we implemented after what happened last to last quarter. And we have seen goodness coming in the last quarter as well.",
+      "speaker": "Ishan Bansal",
+      "role": "Co-Founder and CFO",
+      "source": "Groww Q2 FY27 earnings call, PDF page 7",
+      "source_url": "PASTE_BSE_TRANSCRIPT_LINK",
+      "date": "2026-10-14",
+      "weight_note": "Margin trading (MTF) is one product line; the call does not give its share of revenue.",
+      "verdict": "insufficient_evidence",
+      "explanation": "The available evidence includes industry-wide news regarding SEBI's proposed margin trading regulations, but contains no information on Groww's specific internal MTF risk policies or recent margin outcomes. There is insufficient data to evaluate the claim.",
+      "covers": "Regulatory proposals regarding margin trading facilities across the broader Indian market.",
+      "does_not_cover": "Groww's internal risk management changes, policy adjustments, or customer margin data.",
+      "evidence": [],
+      "signal_types": [],
+      "notes": []
+    },
+    {
+      "claim_id": 2,
+      "topic": "Expiry-day technology issue was one-time",
+      "quote": "There was an issue that we faced because on a particular expiry day, the files got delayed. Because of that, there was a one-time hit of around INR10 crores to INR13 crore",
+      "speaker": "Ishan Bansal",
+      "role": "Co-Founder and CFO",
+      "source": "Groww Q2 FY27 earnings call, PDF page 3",
+      "source_url": "PASTE_BSE_TRANSCRIPT_LINK",
+      "date": "2026-10-14",
+      "weight_note": "Cost impact is small relative to total costs; the claim is that the issue was one-time.",
+      "verdict": "insufficient_evidence",
+      "explanation": "While past app outages and general service metrics are documented, there is no evidence specifically addressing the expiry-day file delay or whether related costs recurred. There is not enough evidence to verify if the incident was one-time.",
+      "covers": "General news reporting on past platform outages and recent app review metrics.",
+      "does_not_cover": "Settlement file processing systems, subsequent expiry days, or recurring financial impacts.",
+      "evidence": [
+        {
+          "item_id": "m1",
+          "signal": "reviews",
+          "title": "Groww Stocks, Mutual Fund, IPO review statistics",
+          "source_url": null,
+          "date": "2026-10-18",
+          "what_it_shows": "App store review data shows a 4.65 recent average rating with 2.9% service complaints."
+        },
+        {
+          "item_id": "n40",
+          "signal": "news",
+          "title": "Groww app faces outage; services down as users struggle with login and transactions",
+          "source_url": "https://news.google.com/read/CBMiyAFBVV95cUxOU1FNcVowV2dEd3FHdnZIUDFXcjB1WGVmdHd1YThMREswWnRwbUlTTHRoZkVPM1FELUJPTWYtSHB1dnc3dDdOUG04THpxTGczdjlQcUFuZ0xXOC1wSEc1YUMtNmtYTlJfc0RzSTdNTTVsNjFRSlhzSnVlR0J4S1VrWVUxQ2RrUGdtZTUyY2JWcnFiOFRSWTVUS0RqZG5mNzEteEY3UVEwajd4YVh4eFJucmE3UHFvYUV6UlFnWlpSUnZ1cTlNZzRMQQ?hl=en-US&gl=US&ceid=US%3Aen",
+          "date": "2026-04-27",
+          "what_it_shows": "News reported an app outage on April 27, 2026."
+        }
+      ],
+      "signal_types": [
+        "news",
+        "reviews"
+      ],
+      "notes": []
+    },
+    {
+      "claim_id": 3,
+      "topic": "Pricing is fair to customers",
+      "quote": "if you are giving more value to the customers than what we are charging, I think customers will be happy. They feel fair",
+      "speaker": "Lalit Keshre",
+      "role": "Co-Founder and CEO",
+      "source": "Groww Q2 FY27 earnings call, PDF page 6",
+      "source_url": "PASTE_BSE_TRANSCRIPT_LINK",
+      "date": "2026-10-14",
+      "weight_note": "Applies to the whole product range; the app reviews cover only the Groww app.",
+      "verdict": "watch",
+      "explanation": "Overall Play Store metrics indicate high satisfaction and a low proportion of service complaints. However, individual customer reviews express dissatisfaction regarding high brokerage fees and customer service.",
+      "covers": "User reviews and aggregate ratings for the Groww mobile app on the Google Play store.",
+      "does_not_cover": "Website users, institutional clients, or customer sentiment across other Groww product lines.",
+      "evidence": [
+        {
+          "item_id": "m1",
+          "signal": "reviews",
+          "title": "Groww Stocks, Mutual Fund, IPO review statistics",
+          "source_url": null,
+          "date": "2026-10-18",
+          "what_it_shows": "Groww app maintains a 4.8 overall store rating and 4.65 recent rating with 2.9% service complaints."
+        },
+        {
+          "item_id": "r1",
+          "signal": "reviews",
+          "title": "Groww Stocks, Mutual Fund, IPO review (1 star)",
+          "source_url": null,
+          "date": "2026-10-18",
+          "what_it_shows": "One customer review complains that broker charges are too high alongside poor customer support."
+        }
+      ],
+      "signal_types": [
+        "reviews"
+      ],
+      "notes": []
+    },
+    {
+      "claim_id": 4,
+      "topic": "US stocks early feedback",
+      "quote": "The feedback is really good from the customers.",
+      "speaker": "Lalit Keshre",
+      "role": "Co-Founder and CEO",
+      "source": "Groww Q2 FY27 earnings call, PDF page 6",
+      "source_url": "PASTE_BSE_TRANSCRIPT_LINK",
+      "date": "2026-10-14",
+      "weight_note": "US stocks is a new, small product; the call says it is very early.",
+      "verdict": "insufficient_evidence",
+      "explanation": "User discussions confirm that customers are receiving access to the US stocks feature and investing in US assets. However, the available posts do not provide sufficient qualitative feedback on user satisfaction or platform performance.",
+      "covers": "Public forum mentions of customer access and ETF investments via the US stocks feature.",
+      "does_not_cover": "Systematic customer satisfaction, onboarding drop-off, or feature feedback trends.",
+      "evidence": [
+        {
+          "item_id": "p2",
+          "signal": "reddit",
+          "title": "Finally got access to us stocks on groww. Now I can loose money on more fronts...",
+          "source_url": "https://www.reddit.com/r/StockMarketIndia/comments/1x9s7i0/finally_got_access_to_us_stocks_on_groww_now_i/",
+          "date": "2026-10-19",
+          "what_it_shows": "A Reddit user notes receiving access to the US stocks feature on Groww."
+        },
+        {
+          "item_id": "p5",
+          "signal": "reddit",
+          "title": "Please review my US based ETFs on Groww Platform",
+          "source_url": "https://www.reddit.com/r/portfolios/comments/1x9r3k3/please_review_my_us_based_etfs_on_groww_platform/",
+          "date": "2026-10-19",
+          "what_it_shows": "A user requests a portfolio review for US-based ETFs held on the Groww platform."
+        },
+        {
+          "item_id": "p15",
+          "signal": "reddit",
+          "title": "For those who got the US Stocks feature on Groww...",
+          "source_url": "https://www.reddit.com/r/StockMarketIndia/comments/1wn1ad0/for_those_who_got_the_us_stocks_feature_on_groww/",
+          "date": "2026-08-30",
+          "what_it_shows": "A forum thread asking for input from users who received the US stocks feature."
+        }
+      ],
+      "signal_types": [
+        "reddit"
+      ],
+      "notes": []
+    },
+    {
+      "claim_id": 5,
+      "topic": "Operating cost flat, hiring continues",
+      "quote": "our cost to operate has remained flat quarter-on-quarter",
+      "speaker": "Lalit Bhimani",
+      "role": "Group Head, Finance",
+      "source": "Groww Q2 FY27 earnings call, PDF page 5",
+      "source_url": "PASTE_BSE_TRANSCRIPT_LINK",
+      "date": "2026-10-14",
+      "weight_note": "Careers-page job count shows hiring intent only, not actual cost.",
+      "verdict": "insufficient_evidence",
+      "explanation": "The jobs data provides only a single static count of 10 open roles without a collection date or trend over time. It does not provide any evidence concerning operating costs.",
+      "covers": "A single snapshot of open job postings on the careers page.",
+      "does_not_cover": "Quarter-on-quarter hiring trends, total workforce changes, or operating expense data.",
+      "evidence": [
+        {
+          "item_id": "j1",
+          "signal": "jobs",
+          "title": "Careers page job count",
+          "source_url": null,
+          "date": "",
+          "what_it_shows": "Careers page snapshot showing 10 open roles without historical comparison data."
+        }
+      ],
+      "signal_types": [
+        "jobs"
+      ],
+      "notes": []
+    },
+    {
+      "claim_id": 6,
+      "topic": "Room to keep growing",
+      "quote": "we are still highly underpenetrated from a both customer as well as the market share perspective. We expect this to keep on growing for the foreseeable future.",
+      "speaker": "Ishan Bansal",
+      "role": "Co-Founder and CFO",
+      "source": "Groww Q2 FY27 earnings call, PDF page 4",
+      "source_url": "PASTE_BSE_TRANSCRIPT_LINK",
+      "date": "2026-10-14",
+      "weight_note": "This is a forward-looking statement; evidence can only show current direction.",
+      "verdict": "consistent",
+      "explanation": "Reported financial results confirm strong revenue growth of 47% year-on-year for the second quarter. The evidence supports management's commentary regarding ongoing business and financial growth.",
+      "covers": "Publicly reported quarterly financial results and year-on-year revenue growth.",
+      "does_not_cover": "Long-term addressable market penetration or future market share forecasts.",
+      "evidence": [
+        {
+          "item_id": "n20",
+          "signal": "news",
+          "title": "Groww Q2 Results: Cons net profit surges 54% YoY to Rs 726 crore; revenue jumps 47%",
+          "source_url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPSDdYRmVPSlBicnB6MkFNX0UtYXhueG5UTVlDWFdQVFk4ZkJZS1d4czF0d2VGc3c1RHA5ME8tZ25wUm9JTEtzODN3RjhGNEVQN0ZUYV93MjhiMUxsQkw1RW16RFBNMFYybGIwSkhhdEQ0MmdibXJubnZCMmVIUWZITVN5VGg3V0l6ajB0Ni1nMXdVVGpod1ZGQXB6WTJ4TDZtbmZsN0VwTGIwellQZGFFRGpaV01TcDdvU3dFY1VNaXhwSUZObzg4aEJxYm9zWFRjUmxfcTVKQUdSZl9mS3JBQlVVdkt4Q3JMbjFSSENn0gHzAUFVX3lxTFBKYkF4VFRFRDBnd1cxS2dGd0NhaUR2Y194TkZNX290SmM4SjZuTHk1M0pjemJtMmJBRWhpdG81SmxjTHRac0ZpTC1UN3I2bERVQk02ZkxVUVRfX2JIYlJNQUpfVWwzUnJlSmxaSkRUd0c3MjQ2b3JIMmd0QlJBSjZ1NlZrRnhBYlpBSDZCS1M2UHpCQnVBa3pTbE1vcjFnSk1EbXFOdVdQOWFtVlpNeHVOMEVpTG5iQXktVDFhS2NwMjhTQ01vVno5UUdyVHFDbGh4Qm1qWW4tYTdfOTdfMUNadWdvRE05NngySXE1eE5aZERrZw",
+          "date": "2026-10-14",
+          "what_it_shows": "News reporting indicates Groww Q2 revenue jumped 47% year-on-year and net profit rose 54%."
+        },
+        {
+          "item_id": "n22",
+          "signal": "news",
+          "title": "Billionbrains Garage Ventures Q2 results: Groww operator's profit rises 54% YoY to ₹726 crore, revenue up 47%",
+          "source_url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQSzFkTG9YTEE5QUlpajliS2ZKX3FPTWFBS1JsaVNLTUM2ZUNUYTQwREpVMW5oYXdmaXFNZkZXU3J6N0JNX0FvZlFpV09IOVhzSnhQeXdHbXlUWDJVb05nN1Vucjlzekt2RjMtSlJiRWxjaU1BUFlMWHg0V3ZjSmdFc0JaNlhpZGdXS1hQNUk4MzlOTnlUQjZSWEtUOFRyQ19xM251dWFId2Z3djJMSlFyM2pLS25EVUtOZUtHd0g4RlFZMldDa2p5X3E5WWVISlQ5R0hoZGZjY1FmR1BkazFMSWRQS3BuVmpVbkJaRjNYU09mMXA1TFZoeFpn",
+          "date": "2026-10-14",
+          "what_it_shows": "Quarterly financial results confirm revenue increased 47% to support continued business expansion."
+        }
+      ],
+      "signal_types": [
+        "news"
+      ],
+      "notes": []
+    },
+    {
+      "claim_id": 7,
+      "topic": "CAS rule impact expected to normalise",
+      "quote": "Hence, our expectation is that it will go back to like normal in some ways.",
+      "speaker": "Ishan Bansal",
+      "role": "Co-Founder and CFO",
+      "source": "Groww Q2 FY27 earnings call, PDF page 4",
+      "source_url": "PASTE_BSE_TRANSCRIPT_LINK",
+      "date": "2026-10-14",
+      "weight_note": "Regulatory statement about the derivatives segment; depends on SEBI's final circular.",
+      "verdict": "consistent",
+      "explanation": "News reports confirm that SEBI adjusted its closing auction rules and reinstated the 30-minute VWAP for derivatives expiry settlement. This directly aligns with management's expectation that derivatives settlement methodology would normalize.",
+      "covers": "Regulatory news coverage of SEBI's circulars on derivatives expiry settlement and closing auctions.",
+      "does_not_cover": "Groww's specific trading volumes or revenue generated from derivatives following the rule change.",
+      "evidence": [
+        {
+          "item_id": "n10",
+          "signal": "news",
+          "title": "India markets regulator partly reverses derivative settlement rules after pushback",
+          "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZGRONTRmdHRZYTJ6Yk54UE52QjBqX1NCZzdZRmFZb3JFR2tBTGF5cHpJWkZoaURDYXVkazBOcnFqdHZIOUNkZ0xNLTRtWnhFeVRrcVo5d0c2TmYwY1BzUDgxYzV3SUxNTlU3RHliUzFDM0Zsc1ZwRlZQQXJTZE5HWGpGOGxUVVBHM3FsQzZGV3VIS1JYOFcxVWYwbWFjRVFUQnUxN0RHVkF3em90RDNRbEd0T0V4eEQ1VlRxM1JR?oc=5",
+          "date": "2026-10-15",
+          "what_it_shows": "Regulator partly reversed derivative settlement rules following market feedback."
+        },
+        {
+          "item_id": "n16",
+          "signal": "news",
+          "title": "SEBI retains 30-minute VWAP for derivatives expiry settlement, revises closing auction timings",
+          "source_url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxQUHVsM0RIdm9UUzN0YzVkVjFHYnlacnByZF95aHh4NXBkTlFnT3FHTGg5c3FNOUZwWVBJRVE0akx2ZHhRTDRQcXVHMEJjZDJWT0p1ZTBOZ2FWb3N1RmlpV2JMdkhJY2U1MVEySk1nMlNkZ21mRk9EY1pPUHR1NE1NU3RiQmRHQWdvc3lraWhFamFnRlJUeXBkOEo0ZTZkSnJIcWF5SDZuMEtUMGxHcTdZMlZqVnNCZURnbmFHWnBwM1JsZ01rUVl6N0VUaElWd2tKZmlYTW1rU0FXUEZ5UDNybEtHTDBicVRDdUt1WkpQWlNlcFVPNGwxTzdlNmRMOTNIVEt2Z3NFR3FpaEpad2owenRYYllPS3RJdGIw0gGgAkFVX3lxTE5CX1d2bXRnMmg0YUEwOTVKLUZPZmVNNWxmVEdjWEdaVXJTTVdwNTJiVVRpRjZkdlg3QXpoaHVtRGl3RDM1MFNMWXgwVXN3cDRFbVBzeTl2VFYxWUlrU1lOZ2Jwc0N2X2JoNGxuTmdMeTVpWXQ2T2FNdkdPbjI4X2JXcnB4Qm1xVUFzeWg4bHVpTHhMT0xMR2FsMmlpa0VXd3hfeThLbF9nOURzODZETjI0OGRheDFjeVMxcWZ4VmpQZ0t3VjlVOXNZaVE1Y2xoNVV0UWpGNGhGV2E3OHRSdzRmWmVyTEFLVTNnc1dSV2FHQXY4eUVsNUROYkViZVhDQTkwOWFKcV8yeXV3bU9YUzA2aWo0UWFFZUZ2VHlMeUxTNQ?oc=5",
+          "date": "2026-10-15",
+          "what_it_shows": "SEBI retained the 30-minute VWAP for derivatives expiry settlement while revising auction timings."
+        },
+        {
+          "item_id": "n19",
+          "signal": "news",
+          "title": "Sebi reintroduces VWAP for derivatives expiry after CAS turns markets volatile",
+          "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNdGpqWDQySG03djBFWGszMWVDQUZHZ0RveG5pbl9DVDlNYVZnM0lrWlJxZjcyUlJNWW1aelpGQ2RfaHdQNzlQcm05X1AyVDB3NDNRQkxZQ0NtNUlmcllfclVhUm05REw0YzlCVDRGSnpzRWswM3pPTEtVRWJoYUtLQ2ZZUGplbnVXeDhtTGM2NTV2ZDY1ZzVTR0ZzM29mR3VPV0JmTDFMQ2l3THhKQ09jRnFVb3dsbERobDdrWi1LSEVzSHZjd1h3emhB0gHPAUFVX3lxTFBrWnREay0zSlU4N2p1ZG9sN0RwS1FhMGtHQjhTX25FUnM4VUFPVmxueWl2Ty1RZ0FRU1ZSckhlX1ZiOVVCVU11M2tJYXpXekN2SDFzOWRoM0JfUXhIRmhlNE1TOEZxSWg0T0FQazFJVU9CclRiTTBoLXlvdl9uWVVMNmFCbWdBUWlmejA2Zjh5YUtqTHlXUHdsLXVOTC1ZMFZucWthYW9qR01pRVlaQVhjS0kyMm13clJKc1RSVENWdUdmQzBTU2VtX1BnWGNvOA?oc=5",
+          "date": "2026-10-15",
+          "what_it_shows": "SEBI reintroduced VWAP for derivatives expiry after closing auction sessions caused market volatility."
+        }
+      ],
+      "signal_types": [
+        "news"
+      ],
+      "notes": []
+    },
+    {
+      "claim_id": 8,
+      "topic": "UPI charge impact not material",
+      "quote": "Our expectation is it's not going to be a material change to our cost in any case",
+      "speaker": "Ishan Bansal",
+      "role": "Co-Founder and CFO",
+      "source": "Groww Q2 FY27 earnings call, PDF page 14",
+      "source_url": "PASTE_BSE_TRANSCRIPT_LINK",
+      "date": "2026-10-14",
+      "weight_note": "The cost depends on the final regulator decision on UPI charges and any cap.",
+      "verdict": "watch",
+      "explanation": "Management expected that potential UPI charges would not represent a material cost change. In contrast, news reports cite Groww stating that a proposed Rs 300 cap on UPI MDR was not affordable for stockbrokers. Because this evidence comes from a single signal type, it is tracked as a watch item.",
+      "covers": "Reported public statements from Groww and industry broker associations on proposed UPI merchant fees.",
+      "does_not_cover": "Final regulator decisions, implemented caps, or internal cost impact assessments across other payment rails.",
+      "evidence": [
+        {
+          "item_id": "n9",
+          "signal": "news",
+          "title": "Rs 300 cap on UPI MDR 'not affordable' for stockbrokers, says Groww",
+          "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPemZSbkctUURwR0liaFNSZ08teTFvblRSb25ZYjZaVWFXMDFLb0thRXlPd3JhN1BpbEVjLVNQZE5qLU5YTnZNejFmSGtmRXZmM21aUENYV2FjaFAzbXVLZHBZeFVuSmNaTDJJSG1fQ3BQUHdCTnI2ZXlyakI2WUdMVGc4VExlLU9F",
+          "date": "2026-10-15",
+          "what_it_shows": "News reported that Groww described a Rs 300 cap on UPI MDR as not affordable for stockbrokers."
+        },
+        {
+          "item_id": "n18",
+          "signal": "news",
+          "title": "Sebi discusses new UPI merchant charges with NPCI as brokers flag cost concerns",
+          "source_url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPMWR1RzM4dkdQSm5CZDA4N1VWOGY2MnJOV2hxY24wTno4ZTI2T05aejFBV20xZGtfSjZYR0xyaHhWTy1hVzcxZ3IwN3VESmpldHJ6OTJVcy1HaTM3X2ExUDlUOUdHeU84SXByUkNlWmlqdWs5dEc0X3Z1ZVhfdm84QWhkQUpKZXZHSjl4TlhJUHkwWFdjRFIydEtwOGwtZGlyNkI3V1p2SGRSRzFzc2d6YXlldzNaU3lkeVpPR2N0amxubmVRVjUtWmNud9IB0AFBVV95cUxQd1dadDN2QjBHUDRfOWlCTFBIbFA3eDZmYjRXUGpIRkI2a1Voa0NjVFN3ZXJLZTBBWjZJQk1mNUdqbjZ6MUpGbXduejZpLUtOQUx3WC14T19VbzhYN1BQbmVvZm1zNEpRdnRaS2gtenRsWWkzSXFRMDg3cDUxb3VJQjA0STZqcWo2ZWRYbGdCczgwQ290YmhybTlzMkZRM1VLQy1LX3pFUkY4QVZhamhSQTJWa05nVWtKM2ZMU3o3QnFBRWtIWEEyZGszNUZaX09O?oc=5",
+          "date": "2026-10-15",
+          "what_it_shows": "SEBI discussed UPI merchant charges with NPCI after brokers flagged cost concerns."
+        },
+        {
+          "item_id": "n26",
+          "signal": "news",
+          "title": "Broker associations apprises SEBI of the challenges in implementing UPI MDR",
+          "source_url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQa2ljWUljb0lXSEN1SW9OS0FQckZ2N2RmaE5OTDkwXzR2MzlPYnE3Ql9pT3JzSVp1TU9HdURqNFh4NW1pZVExRFd6TnpnMk14QnY5MXBnS2tlTXZKZWRkSGxIWWV6d19mZFprN0ZOX2c4bW9ESS1xaTBNcGJWY2l3aDhJd3BXVGZqMU9WRjRURHl1eEVYREFGWW1ZRmt4ZExrUjRpMjhYVG5fdXRvRnVOWUUtWVZwNll4T3Nhb3UwOVJFXzhHMjkxR2lkX1hDZnB1NzNaSTN0WlFsbXpFdTA2S19vYVpjLUlGZGstU1ptdUR1LVFocW90LdIB_gFBVV95cUxQRDVEdG01ZnI3TWUzczA4dDE4LU1fOTZfdkJTT3R3YXJjNThsN1owRDdybFBhaU5pNzFLN3Y5UHRVbkZnQVBYYmFaY2NpQU1CLVJVMWlaWFBWaGFFaEVmbjBCV0l5M19UajJ0ZTJxbnNLTFFaU2tiOU94Vmd4V3RnVzY5bHZzV3g3a2g0MENzOVh4OW10dW1HRmZUQ3lZdFduUlF5VlZ6NVpkeW1VUF9uVDhVTXU4N0RHZFVYcFZwaUg2QUFFTW9jVEI3dzA2ZVB2VHFSbGNrRldGbFk5bi1EQUV0LTZSNjRTdkcxYzNldXlMRzYxWGtnMjBqZmdpZw?oc=5",
+          "date": "2026-09-17",
+          "what_it_shows": "Broker associations formally apprised SEBI of challenges regarding UPI MDR implementation."
+        }
+      ],
+      "signal_types": [
+        "news"
+      ],
+      "notes": []
+    }
+  ],
+  "risk_context": [
+    {
+      "headline": "Groww Q2 FY27: Can the non-F&O engines pull the stock forward?",
+      "type": "speculation",
+      "topic": "financials",
+      "direction": "neutral",
+      "why_relevant": "Speculative analysis questioning if non-F&O business engines can drive Groww's stock forward post Q2.",
+      "source_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPZXB3dnhxNE9VQlNqUGFTa1BnUjZoMElkWktVdGlSMFRvbGIzLTZjbFJGNTFmWTlHM2M2N29zMjk1cFFUMUVGR0kxNUpfR3hWV2ExT3BPRmxzS0NUaVNjMWJCWkVaeWtOaEdkWEV0aURzMnRHUUZHZzlCM3o1dU90QlhzLUVlaUl3dFlfaVM0RG5YaDB4UUg4TFNBM1Y0UU9abnhDbFpNQkhJQzBheXRjVzJXbzRPdFNTaVA2SFMyUm15Qmc0ODU3X0pPRHB4VW9oTG9BNGJR0gHbAUFVX3lxTE02YmFVQmVkZVh2SGh5VDgtcTczY1hYUkRITURGZU8yRlRDeGVfOFhHRGZiSXVxeDFvWjNsVHdYcnkyQ0tLMURnUGM1X0tqWWFlSHhueTdKQzJJaEdLdDVxVnVlcnF3MWxlWlE3WTNnOW8wRm9tRE82aUc3QmMwWk5BeWpjRXRXNlZLdDZ0RTB6dHl6N0Z3Qk55VVRGekFFaU11dUwtcW9oZGR4aGF1VUd4dXJuM1F4Q1FIbFgybFF2YTZJVUJKYjVsQXgzcGlTZmJhanNheEUzWi16OA",
+      "date": "2026-10-16",
+      "publisher": "Moneycontrol.com"
+    },
+    {
+      "headline": "SEBI may lean towards pausing closing auction method for derivatives for a year",
+      "type": "speculation",
+      "topic": "regulation",
+      "direction": "neutral",
+      "why_relevant": "Speculation that SEBI may lean towards pausing closing auction method for derivatives.",
+      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPLVQwQjQtXy1SNW1EX2Q4aUFrbzdway1TVVFaZy1jdk5wb0hqbkVaUzZIZXlxc192WGFRWkZralN0aXlXdjZicEhzUWVEbXgxT3hFVklhbVhKeUFwQW9ZZnJyVEM1TkRfeE81ckpsYVlndVA2aFhmemhxWnRXRkN5YlpnankzWk0yUXU1VTk5YWFQUTR0MUhaUEFEOEk0MVdwb1hZNGtB0gGuAUFVX3lxTFBCeFVualRhZFZpVUpabWRoUUpmX0F5dHlKNy12MWJyMklZc0YtWmFJUUFwQXAwQUxhWFB3S05VeUtyazFIeFBVRjNrMlJQWUh2OHlxejN5aTR0NVp0QV9IMEREbF9NNVFObUVhMTM5Nnd5WXFnRGVWbTIyVnlDeHF5WXRXQzJUZnRaTUR0MlFWUS12SXpIQ2RNeXJIUHJkTHFQbHBQejFxb0VHSzIyZw?oc=5",
+      "date": "2026-10-15",
+      "publisher": "VCCircle"
+    }
+  ],
+  "validation_notes": [],
+  "items": [
+    {
+      "item_id": "m1",
+      "signal": "reviews",
+      "title": "Groww Stocks, Mutual Fund, IPO review statistics",
+      "source_url": null,
+      "date": "2026-10-18",
+      "text": "Groww Stocks, Mutual Fund, IPO: reviews in the last 14 days up to 2026-10-18: 68 reviews, average 4.65, 5.9% one-star, 2.9% service complaints. Overall store rating 4.8. Dataset: 78 reviews from 2026-08-18 to 2026-10-18. Too few reviews in one of the windows to call a trend."
+    },
+    {
+      "item_id": "r1",
+      "signal": "reviews",
+      "title": "Groww Stocks, Mutual Fund, IPO review (1 star)",
+      "source_url": null,
+      "date": "2026-10-18",
+      "text": "worest broker charges to High customer support nill"
+    },
+    {
+      "item_id": "r2",
+      "signal": "reviews",
+      "title": "Groww Stocks, Mutual Fund, IPO review (1 star)",
+      "source_url": null,
+      "date": "2026-10-18",
+      "text": "0 support from customer support team my issue was not solved"
+    },
+    {
+      "item_id": "r3",
+      "signal": "reviews",
+      "title": "Groww Stocks, Mutual Fund, IPO review (5 star)",
+      "source_url": null,
+      "date": "2026-10-18",
+      "text": "good"
+    },
+    {
+      "item_id": "r4",
+      "signal": "reviews",
+      "title": "Groww Stocks, Mutual Fund, IPO review (1 star)",
+      "source_url": null,
+      "date": "2026-10-18",
+      "text": "very bad app"
+    },
+    {
+      "item_id": "r5",
+      "signal": "reviews",
+      "title": "Groww Stocks, Mutual Fund, IPO review (5 star)",
+      "source_url": null,
+      "date": "2026-10-18",
+      "text": "aftab uddin paik"
+    },
+    {
+      "item_id": "r6",
+      "signal": "reviews",
+      "title": "Groww Stocks, Mutual Fund, IPO review (5 star)",
+      "source_url": null,
+      "date": "2026-10-18",
+      "text": "👍"
+    },
+    {
+      "item_id": "r7",
+      "signal": "reviews",
+      "title": "Groww Stocks, Mutual Fund, IPO review (5 star)",
+      "source_url": null,
+      "date": "2026-10-18",
+      "text": "nice investing"
+    },
+    {
+      "item_id": "r8",
+      "signal": "reviews",
+      "title": "Groww Stocks, Mutual Fund, IPO review (5 star)",
+      "source_url": null,
+      "date": "2026-10-18",
+      "text": "Simple and smooth , informative super aap ."
+    },
+    {
+      "item_id": "r9",
+      "signal": "reviews",
+      "title": "Groww Stocks, Mutual Fund, IPO review (5 star)",
+      "source_url": null,
+      "date": "2026-10-18",
+      "text": "Nice"
+    },
+    {
+      "item_id": "r10",
+      "signal": "reviews",
+      "title": "Groww Stocks, Mutual Fund, IPO review (5 star)",
+      "source_url": null,
+      "date": "2026-10-18",
+      "text": "good 😊👍"
+    },
+    {
+      "item_id": "r11",
+      "signal": "reviews",
+      "title": "Groww Stocks, Mutual Fund, IPO review (5 star)",
+      "source_url": null,
+      "date": "2026-10-18",
+      "text": "good"
+    },
+    {
+      "item_id": "r12",
+      "signal": "reviews",
+      "title": "Groww Stocks, Mutual Fund, IPO review (5 star)",
+      "source_url": null,
+      "date": "2026-10-18",
+      "text": "best"
+    },
+    {
+      "item_id": "r13",
+      "signal": "reviews",
+      "title": "Groww Stocks, Mutual Fund, IPO review (5 star)",
+      "source_url": null,
+      "date": "2026-10-18",
+      "text": "exilant"
+    },
+    {
+      "item_id": "r14",
+      "signal": "reviews",
+      "title": "Groww Stocks, Mutual Fund, IPO review (5 star)",
+      "source_url": null,
+      "date": "2026-10-18",
+      "text": "nice and osama"
+    },
+    {
+      "item_id": "r15",
+      "signal": "reviews",
+      "title": "Groww Stocks, Mutual Fund, IPO review (5 star)",
+      "source_url": null,
+      "date": "2026-10-18",
+      "text": "I started with small amount of money...and really I found it helpful"
+    },
+    {
+      "item_id": "r16",
+      "signal": "reviews",
+      "title": "Groww Stocks, Mutual Fund, IPO review (5 star)",
+      "source_url": null,
+      "date": "2026-10-18",
+      "text": "Follow best"
+    },
+    {
+      "item_id": "r17",
+      "signal": "reviews",
+      "title": "Groww Stocks, Mutual Fund, IPO review (5 star)",
+      "source_url": null,
+      "date": "2026-10-18",
+      "text": "A very good app, especially for beginners like me, very easy to understand, no complex things. They have their specific YT channels, for example, Mutual funds by Groww, that's a good marketing thing + A very useful thing for users too."
+    },
+    {
+      "item_id": "r18",
+      "signal": "reviews",
+      "title": "Groww Stocks, Mutual Fund, IPO review (5 star)",
+      "source_url": null,
+      "date": "2026-10-18",
+      "text": "very Good best app"
+    },
+    {
+      "item_id": "r19",
+      "signal": "reviews",
+      "title": "Groww Stocks, Mutual Fund, IPO review (5 star)",
+      "source_url": null,
+      "date": "2026-10-18",
+      "text": "best app for trading"
+    },
+    {
+      "item_id": "r20",
+      "signal": "reviews",
+      "title": "Groww Stocks, Mutual Fund, IPO review (5 star)",
+      "source_url": null,
+      "date": "2026-10-18",
+      "text": "good 👍"
+    },
+    {
+      "item_id": "j1",
+      "signal": "jobs",
+      "title": "Careers page job count",
+      "source_url": null,
+      "date": "",
+      "text": "Careers page showed 10 open roles (collection date not recorded). Only one snapshot, so no trend can be shown. Sample roles: Manager - Compliance (PMS); Procurement Specialist; Associate - Content (Digest); Creative Illustrator; Finance Content Creator; Video Editor Intern; Assistant Manager - Internal Audit; Portfolio Specialist - Wealth; Product Research Specialist (W from Groww); Relationship Manager."
+    },
+    {
+      "item_id": "p1",
+      "signal": "reddit",
+      "title": "Just turned 18, getting ₹10k/month allowance to learn investing. Complete beginner, how to start with SIP on Groww?",
+      "source_url": "https://www.reddit.com/r/personalfinance/comments/1x9sgqc/just_turned_18_getting_10kmonth_allowance_to/",
+      "date": "2026-10-19",
+      "text": "r/personalfinance: Just turned 18, getting ₹10k/month allowance to learn investing. Complete beginner, how to start with SIP on Groww? — Just turned 18, getting ₹10k/month allowance to learn investing. Complete beginner, how to start with SIP on Groww? Hi everyone, I just turned 18 and my guardian …"
+    },
+    {
+      "item_id": "p2",
+      "signal": "reddit",
+      "title": "Finally got access to us stocks on groww. Now I can loose money on more fronts...",
+      "source_url": "https://www.reddit.com/r/StockMarketIndia/comments/1x9s7i0/finally_got_access_to_us_stocks_on_groww_now_i/",
+      "date": "2026-10-19",
+      "text": "r/StockMarketIndia: Finally got access to us stocks on groww. Now I can loose money on more fronts... — So as the title says I got access to us stocks now so I can start bleeding on not just sensex and nifty but also nasdaq and snp... I'll probably try putting in a few hundred dollars into some sto…"
+    },
+    {
+      "item_id": "p3",
+      "signal": "reddit",
+      "title": "Is it good time to invest in Groww?",
+      "source_url": "https://www.reddit.com/r/IndianStockMarket/comments/1x9nff0/is_it_good_time_to_invest_in_groww/",
+      "date": "2026-10-19",
+      "text": "r/IndianStockMarket: Is it good time to invest in Groww? — Is it good time to invest in Groww?"
+    },
+    {
+      "item_id": "p4",
+      "signal": "reddit",
+      "title": "Mandate issue",
+      "source_url": "https://www.reddit.com/r/IPO_India/comments/1x9rc3g/mandate_issue/",
+      "date": "2026-10-19",
+      "text": "r/IPO_India: Mandate issue — Mandate issue"
+    },
+    {
+      "item_id": "p5",
+      "signal": "reddit",
+      "title": "Please review my US based ETFs on Groww Platform",
+      "source_url": "https://www.reddit.com/r/portfolios/comments/1x9r3k3/please_review_my_us_based_etfs_on_groww_platform/",
+      "date": "2026-10-19",
+      "text": "r/portfolios: Please review my US based ETFs on Groww Platform — Please review my US based ETFs on Groww Platform"
+    },
+    {
+      "item_id": "p6",
+      "signal": "reddit",
+      "title": "Please review my US based ETFs on Groww Platform",
+      "source_url": "https://www.reddit.com/r/IndianStockMarket/comments/1x9r2s7/please_review_my_us_based_etfs_on_groww_platform/",
+      "date": "2026-10-19",
+      "text": "r/IndianStockMarket: Please review my US based ETFs on Groww Platform — Please review my US based ETFs on Groww Platform"
+    },
+    {
+      "item_id": "p7",
+      "signal": "reddit",
+      "title": "Please review my US based ETFs on Groww Platform",
+      "source_url": "https://www.reddit.com/r/stockmarketcrash/comments/1x9r3bz/please_review_my_us_based_etfs_on_groww_platform/",
+      "date": "2026-10-19",
+      "text": "r/stockmarketcrash: Please review my US based ETFs on Groww Platform — Please review my US based ETFs on Groww Platform"
+    },
+    {
+      "item_id": "p8",
+      "signal": "reddit",
+      "title": "Zerodha or Groww or MFCentral",
+      "source_url": "https://www.reddit.com/r/MutualfundsIndia/comments/1x94vfo/zerodha_or_groww_or_mfcentral/",
+      "date": "2026-10-18",
+      "text": "r/MutualfundsIndia: Zerodha or Groww or MFCentral — Zerodha or Groww or MFCentral"
+    },
+    {
+      "item_id": "p9",
+      "signal": "reddit",
+      "title": "Just turned 18, getting ₹10k/month allowance to learn investing. Complete beginner, how to start with SIP on Groww?",
+      "source_url": "https://www.reddit.com/r/investingforbeginners/comments/1x8zpcw/just_turned_18_getting_10kmonth_allowance_to/",
+      "date": "2026-10-18",
+      "text": "r/investingforbeginners: Just turned 18, getting ₹10k/month allowance to learn investing. Complete beginner, how to start with SIP on Groww? — Just turned 18, getting ₹10k/month allowance to learn investing. Complete beginner, how to start with SIP on Groww?"
+    },
+    {
+      "item_id": "p10",
+      "signal": "reddit",
+      "title": "I am trying to understand why and how is Groww switching SOA to Demat account as default without consent is bad?question",
+      "source_url": "https://www.reddit.com/r/mutualfunds/comments/1x8qm3f/i_am_trying_to_understand_why_and_how_is_groww/",
+      "date": "2026-10-18",
+      "text": "r/mutualfunds: I am trying to understand why and how is Groww switching SOA to Demat account as default without consent is bad?question — I am trying to understand why and how is Groww switching SOA to Demat account as default without consent is bad?question"
+    },
+    {
+      "item_id": "p11",
+      "signal": "reddit",
+      "title": "I want to invest in groww, what are your opinions about the future of this stock?",
+      "source_url": "https://www.reddit.com/r/IndianStocks/comments/1pdq9eb/i_want_to_invest_in_groww_what_are_your_opinions/",
+      "date": "2026-10-10",
+      "text": "r/IndianStocks: I want to invest in groww, what are your opinions about the future of this stock? — I want to invest in groww, what are your opinions about the future of this stock?"
+    },
+    {
+      "item_id": "p12",
+      "signal": "reddit",
+      "title": "Should I hold Groww stock for 5 to 10 years?",
+      "source_url": "https://www.reddit.com/r/IndianStreetBets/comments/1uxsb63/should_i_hold_groww_stock_for_5_to_10_years/",
+      "date": "2026-09-29",
+      "text": "r/IndianStreetBets: Should I hold Groww stock for 5 to 10 years? — Should I hold Groww stock for 5 to 10 years?"
+    },
+    {
+      "item_id": "p13",
+      "signal": "reddit",
+      "title": "Groww Q2 Results",
+      "source_url": "https://www.reddit.com/r/IndianStocks/comments/1x5nu6u/groww_q2_results/",
+      "date": "2026-09-20",
+      "text": "r/IndianStocks: Groww Q2 Results — Groww Q2 Results"
+    },
+    {
+      "item_id": "p14",
+      "signal": "reddit",
+      "title": "Why is GROWW falling ?",
+      "source_url": "https://www.reddit.com/r/IndianStockMarket/comments/1v9rkr2/why_is_groww_falling/",
+      "date": "2026-09-10",
+      "text": "r/IndianStockMarket: Why is GROWW falling ? — Why is GROWW falling ?"
+    },
+    {
+      "item_id": "p15",
+      "signal": "reddit",
+      "title": "For those who got the US Stocks feature on Groww...",
+      "source_url": "https://www.reddit.com/r/StockMarketIndia/comments/1wn1ad0/for_those_who_got_the_us_stocks_feature_on_groww/",
+      "date": "2026-08-30",
+      "text": "r/StockMarketIndia: For those who got the US Stocks feature on Groww... — For those who got the US Stocks feature on Groww..."
+    },
+    {
+      "item_id": "n1",
+      "signal": "news",
+      "title": "Nazara, Groww Gain Among New-Age Tech Stocks This Week, AceVector Falls 18%",
+      "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNX2RLUzdhUmQtcU9uOE1FLWRwd1Q1eFpPM2x3MUhnbEcwNG5OVVBsdWdOenpLYlF2Ri1xVkVHcHkwRno3ZHg1Z3pQaThLemRJc3hMVGtzX2lvYXVmbHFQWVNFOHlyVm5rbEFBTXhCTXB4NWk2TmtFQVNHZS1QSGJIc3BRM3VWeTNicmFYQS0ybTZaT0JFemprTjJURmo",
+      "date": "2026-10-17",
+      "text": "[Inc42] Nazara, Groww Gain Among New-Age Tech Stocks This Week, AceVector Falls 18% — (published 2 days before collection; direction: positive, topic: macro_market)"
+    },
+    {
+      "item_id": "n4",
+      "signal": "news",
+      "title": "Abakkus Flexi Cap Fund September portfolio: 35 stocks, including Groww and NTPC, see higher holdings",
+      "source_url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNVXhWVktxeXFEWUZGT0RXV040am9wQndGTklyZjlLSnFQWHBVcE1MOWF3RTh2Z1FoeXVRYlJ6eTFobkZfcW9aQTM2VThQTzYteVJCbHF2SV9EdWxWVlVNNzhCU3ZiQURTMDV1aWQ3dDlPQ0NnbkU3bHFGMHN3ZkYtTmZDWW9tN1BSeGpyc0RjcklFRUVWNXhSamx1UXM5dVFTNzMtYTZjMFdJT0lxOW8yVjRXR0hGc1UycFNYeHBPRzkzaTBuekh6bUR2Yzl5RERfWGtBcWJLOHNIckp6SEVRYlRKMF9jSXJqenFDdEtyVUYyYmRjLXhzMNIB_gFBVV95cUxPQnZmOEZrSzhNdFRSUExneHVRZ3FHczM0dVJMcktOU1NoM0xHdnBvUmg2bE1NQlFVSTlqYnZGUnJyOWhpcFJ2cEtVZlNQQXpyd1NJVzBPU09KdnF1ZGEzdlRSYzdLZ1BlcUEtNzZyNnBEczJjLXl2OGxwTmtZRTVTeG10MFFYSldWMUdveXdqczlpWTlMT0xlYjZia3FhRHpjNkUwRXhReUtzaXpzLTFVWjEwUUtnTUJfenJJekJQV3hRZEhYcFo0R0RBTlJlTzlFSEhUVkdvaDV0NG5VN3R0RDZQVlVqaWhlaU8xNFo5SEZqTnluU25fajI3VEQydw",
+      "date": "2026-10-16",
+      "text": "[Livemint] Abakkus Flexi Cap Fund September portfolio: 35 stocks, including Groww and NTPC, see higher holdings — (published 3 days before collection; direction: positive, topic: macro_market)"
+    },
+    {
+      "item_id": "n6",
+      "signal": "news",
+      "title": "SEBI Introduces 10-minute Closing Auction Session, Revises Expiry Settlement Rules for Stock, Index Derivatives",
+      "source_url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQU1VfaXRaZVNfLUloV0QzS0ZrenhhVG9ZYXBzZ2F3a05IQ2tmbVZON2o0dktRdktCSnJOYUkyQUdLN0FvaXE0emF2OVh5Z3ZSTzJqeGN5UTdYay1WTUVleVgzOFQyLV9SUVNRM0VLd2xYeUw4RnFaZ1BDc0tzaVVKWEFzamVCNFFoNjVkTFJaQUhoUUQ3cHVpY2pOUFM1di1sODU0aUFSOUlZYzVYWm4xVXhEZ2NWVmYtRk5aTjFCUWpKMjhoQWdqVlB0dVFyczFlNXBsSnBpOTdSY1BjV0hGZkdjZ1g0SlE?oc=5",
+      "date": "2026-10-16",
+      "text": "[Moneylife] SEBI Introduces 10-minute Closing Auction Session, Revises Expiry Settlement Rules for Stock, Index Derivatives — (published 3 days before collection; direction: neutral, topic: regulation)"
+    },
+    {
+      "item_id": "n7",
+      "signal": "news",
+      "title": "Sebi tweaks closing auction rules, extends stock derivatives trading to 3:45 pm",
+      "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQTFl6QndTRHYxSW12YW16WEY2M3V2dE9ZbUt2NmxScGJnTjUzeE9UYjc5RmFKdldlRUZaYkV3UXl0c0VKUWFmS2hOMHRPWFdoT3ZqbGZna0FMNHYtT2djcnIwOW5fRDZuSm9yN2tYR0tqb0prbXg5THlaMjBXVFkyYUxDVVlXY1YyQWs4SGNqZ0E0SkxQT195VkFVbGxmSWNhLTEyZXl6anVuelBoY2k4b2I5N0RBekxFQUxWSkln0gHLAUFVX3lxTE5YMUpuYzVwdHNjVlpYUzJENHFIa2I2WFRabkNMcHF4WmNMQ25jNWRRdUNXX3E1bFZORF9TWVBRaWpMRzV1S1VWejYxR0t1S3JQVjJDM3JaSWRlVnRPdmlOWDRUb3BJVXo4VVNhOFN2ak9jSHZzeHEyWTJMVFp6U3NtVEhLZ2FRTFRyRVBoOWNwNFRCcjJWTnZMZGRPbTJ2TzBVQTJQRDVaMUw4QVctUjU1d25PbEJvZjlyZVNwWlpvLVBDZWlUbHVkM1Mw?oc=5",
+      "date": "2026-10-16",
+      "text": "[Fortune India] Sebi tweaks closing auction rules, extends stock derivatives trading to 3:45 pm — (published 3 days before collection; direction: neutral, topic: regulation)"
+    },
+    {
+      "item_id": "n8",
+      "signal": "news",
+      "title": "SEBI Announces New Closing Auction Session Rules For Equity Markets; Check Key Changes",
+      "source_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPS3c4cGREMWktZUtpZGlWX19jU0tlNWFad2t0MTdjamdoelVKODBaU0lfS1hhYnp6OUdGYUp0eTJDaExCREt4VENOSVRCWjc5TkZmNnhmOVJXZVpBZE1USTBVR0d5Mk1weDRyb2loekxwTE1oLTJSSVJhN3ktVEthNTJNMmVnTGJfZEJZX05MTmVWSE41YjhzYncwWUNnUXdqbTBHNWhfbFBkVkktUndybXdmeDVlUjNPNmZZaTZtVnBTeExialJkTXZoN05qWENGZUxaU9IB2gFBVV95cUxPeEkwRVNuWDcwM0NqcWQyN1RQcFNKNjhGQ0pkdnJfWlZmRGFTdWVxaGR2ZmhnNmhMSk1maFNxbU90QzRGRzhsaGdzUF9KZmZPR0xDeVZDQ3JTS0dPckZfTDJ1bk9kOXRPUmJ3bDU1YWs1MXJwdGpmQm1zUG9RYkYwc01pV1FvX2p3dmx5U0NJbDRtWjFnMWFMWmItUjdvRzM2aENMdkVPdEZlZFZiUE5GYXpjdDhfZEtST3BzU2p0a0ZjcXYyYTZ6ek0zcWJ5Uk93Z19ZMEdaTGtHUQ?oc=5",
+      "date": "2026-10-16",
+      "text": "[ETV Bharat] SEBI Announces New Closing Auction Session Rules For Equity Markets; Check Key Changes — (published 3 days before collection; direction: neutral, topic: regulation)"
+    },
+    {
+      "item_id": "n9",
+      "signal": "news",
+      "title": "Rs 300 cap on UPI MDR 'not affordable' for stockbrokers, says Groww",
+      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPemZSbkctUURwR0liaFNSZ08teTFvblRSb25ZYjZaVWFXMDFLb0thRXlPd3JhN1BpbEVjLVNQZE5qLU5YTnZNejFmSGtmRXZmM21aUENYV2FjaFAzbXVLZHBZeFVuSmNaTDJJSG1fQ3BQUHdCTnI2ZXlyakI2WUdMVGc4VExlLU9F",
+      "date": "2026-10-15",
+      "text": "[MediaNama] Rs 300 cap on UPI MDR 'not affordable' for stockbrokers, says Groww — (published 4 days before collection; direction: negative, topic: fees_pricing)"
+    },
+    {
+      "item_id": "n10",
+      "signal": "news",
+      "title": "India markets regulator partly reverses derivative settlement rules after pushback",
+      "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZGRONTRmdHRZYTJ6Yk54UE52QjBqX1NCZzdZRmFZb3JFR2tBTGF5cHpJWkZoaURDYXVkazBOcnFqdHZIOUNkZ0xNLTRtWnhFeVRrcVo5d0c2TmYwY1BzUDgxYzV3SUxNTlU3RHliUzFDM0Zsc1ZwRlZQQXJTZE5HWGpGOGxUVVBHM3FsQzZGV3VIS1JYOFcxVWYwbWFjRVFUQnUxN0RHVkF3em90RDNRbEd0T0V4eEQ1VlRxM1JR?oc=5",
+      "date": "2026-10-15",
+      "text": "[Reuters] India markets regulator partly reverses derivative settlement rules after pushback — (published 4 days before collection; direction: neutral, topic: regulation)"
+    },
+    {
+      "item_id": "n11",
+      "signal": "news",
+      "title": "Sebi revises CAS rules, changes derivatives expiry settlement methodology",
+      "source_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNNVdPZVI1SjhBZEhtZVNjOVYtS2JNZWpCTkx6X1hFWkVUVERNUWw1YXBsYk9Tb004YmtOVlFlaWdIVks3Q0hkRTgxc09uWTdPS2UyZWI3SXFBWXBGLVF6SmVjcGVqZEk1ZzFUOWgzdU5CVzduOWFxdGhvNTlkTzVHYXBzb2VGZDBmNnlDV0VvVUdZaWIwamlacGZwMG5GcUYycmN3Zk0zZnZEMkhIZ0g5OGxnM0VSd21pdWVIa3pzcDF5RzNNdGgzSjlzbm05S3FvZVA3Y0pZb1RHX0VZeXRJ0gHkAUFVX3lxTE1ieENQSzVlajFqdmRNNVNRdFpDT1FVb2JId19rejFPZlV2bXBTZTFkc3hPcVUzSUJ3V3lDbHYwNXZoVE43MDJaMnhzNWhjcldkQWd5UnZiLUw5WDNJcmM1NzExMW92Q3Q1YzJHX1BnS1JBd2VkWGVSSDRqX1pXdjdIeTlya2ttMTFtNmU1Y2JpRG12MXBPOFdPaXMteW5aYmVfUVVFOVdmajJsZXJac244SEJPRGtOVUZzSDNhdU9zUklkaFRkajh3MC1pakg5a0d4YnlScm16Q1c2Q052eXBtT1BTWg?oc=5",
+      "date": "2026-10-15",
+      "text": "[The Economic Times] Sebi revises CAS rules, changes derivatives expiry settlement methodology — (published 4 days before collection; direction: neutral, topic: regulation)"
+    },
+    {
+      "item_id": "n12",
+      "signal": "news",
+      "title": "Sebi revises closing auction session framework, changes derivatives settlement norms",
+      "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQelBUVjN3UEluREhiUFR6bjBzeUgySHR1Qm1fYjh2TEN0cHVSRWRQbFo3dzlTWmlLbGEwVm5LREJ0SnRQM2FDdnNpUFlZNTlGUmJRczN0SUotallobVJBXzZWSF9EN1ZlN0NYOUpkSUVTSVZ0MUtRUURwOWJYRTFad3dJNHNTQzliRjNRZEhGSkozX3lkN0VZd0pDcURQeFZQdTBJSUplcFdyRzBZdWpGVl94SDVyclAwMnB6NNIBwgFBVV95cUxOdDg1d3pDeVFtNVdCZHJZS3QtM29pNFpjNFhXSTl6Z25xSDZyTEdZSHRsejdnU3hPN05lNXc3X1hOS2hiR1dpZ1ppcDZMUG4xZ3g0MjVDc2FWS3JGSDRDaGF1bkZ5UlBJMF9UcF8wQkpVTnBIMjFjaW5aUjBYWUZvWmxNRHhhV2JOMDM5bU5OUkhnSTRXMFdyTG55Yk9TanpGSjlzaHpYTlhfNWdsS1ZqRndUMU14T3BVQWxzYjhtbjJYdw?oc=5",
+      "date": "2026-10-15",
+      "text": "[ThePrint] Sebi revises closing auction session framework, changes derivatives settlement norms — (published 4 days before collection; direction: neutral, topic: regulation)"
+    },
+    {
+      "item_id": "n14",
+      "signal": "news",
+      "title": "SEBI revises closing auction timings, derivatives settlement rules; changes to kick in from December 7",
+      "source_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOZGxKbElYaEJ6alJEMHI1VDc4OHYwS2pUdmpDTkpEbjNOMEd5aXo0anhLRTRQWXFvOVJoQ1F4ZFhlRDJKSlhiR25EVEQ2LTZaaE1hcHpVOGN5c3BYTFpHT1dXdzY5MDRmVF9oN2FPY3ByUUw0eHBZWlVDRjhfaUpleV9LaHlSV2s4cXhibG9kcjlZTGlnenNnTlZjTHJ2bW5yR2VKWjA5RHBUQXU1RDMwNFZhZC00NVZvRUJlZWVFNVhZS2E5SFQwSFc5Wm5iTEhRUTBpZFpLUWxJR2NPTXfSAeMBQVVfeXFMTW1rYm5HMlZ3ZmxUNHR3M1N4cHgxaHJObno0ZmhZdTNXRWpOSVdKYmZHTTZJM1d5M0N2RzVuWnVkMkk2cnF1THh6a1c0NzFiUDVYa2lRRUotdWlLNVNwZXRtWVNSR1BMQkFFNzhzWGhLUlZIazhhYzM4aW1keVVVOGRaaWhkNnc2Rm94dUNnOU05dGVCcUt0Q2pCbHlkbDd6VUQtUUNNTElzNFZDLTJYR2p2bFNJdXQ5aG1GY2lJT3g1WVl2NFRJWWJBczhVTU9YclB2ckxUQ3pGcWVSOURiWXdNVjQ?oc=5",
+      "date": "2026-10-15",
+      "text": "[CNBC TV18] SEBI revises closing auction timings, derivatives settlement rules; changes to kick in from December 7 — (published 4 days before collection; direction: neutral, topic: regulation)"
+    },
+    {
+      "item_id": "n15",
+      "signal": "news",
+      "title": "SEBI receives 20,000 comments on CAS and derivatives changes",
+      "source_url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNSkUzdUR0eVA3SVhudXZFY0VpUm1wZVhYOXN6NmRreE1XMXBucVZFSHZ6QUVqcTFJS191NzlWNHZsUlJQZVJrS3ZDaTMwZjNDZy1HY2lsWU5BNjV2T0RDdFhYaGFXU2ZwVmtkeklpZW9Qay16SnQwcWcyZjdHaHNmTWNLY1Bwczc2aWxES0stR1JtRzE1RHk4QmhFczZkcTN2NTZILVpYb3loaC02UnV0WDhkbDg0LWlHUE5URF8xQjlmU21YS2NQM3otVndwR05sano4ZWhnbGIxSGVCUV91RTN30gHoAUFVX3lxTE1zdXFibkV6YVQ4bHZncU1qNFZrMm5WYmxGaHpPcVJ2X3hFVks5QTRhWjV2NnZLbnhyX1ZMRFdIMU40OWMtbkdMUWs5emRlSmpqWDZ2dW1GY0twOVUyNEN5VndTZ1VLajRFelFXb1ZTX2dLaUtzQmNyUmZya3RvWlhYVXRWMnBFRnNyR2pFeXluLWtJRGVhQzhaQ2FuNHFFQ2czNENOc1hBUC1wdERDdGpGTW1RbE1ELVNwaWdXR2ZDOFVmWGpSdDNRdXdoUDcxUVd4Q0ZYMXY4TmRQaGZ5UzNxOEt6b180dFI?oc=5",
+      "date": "2026-10-15",
+      "text": "[BusinessLine] SEBI receives 20,000 comments on CAS and derivatives changes — (published 4 days before collection; direction: neutral, topic: regulation)"
+    },
+    {
+      "item_id": "n16",
+      "signal": "news",
+      "title": "SEBI retains 30-minute VWAP for derivatives expiry settlement, revises closing auction timings",
+      "source_url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxQUHVsM0RIdm9UUzN0YzVkVjFHYnlacnByZF95aHh4NXBkTlFnT3FHTGg5c3FNOUZwWVBJRVE0akx2ZHhRTDRQcXVHMEJjZDJWT0p1ZTBOZ2FWb3N1RmlpV2JMdkhJY2U1MVEySk1nMlNkZ21mRk9EY1pPUHR1NE1NU3RiQmRHQWdvc3lraWhFamFnRlJUeXBkOEo0ZTZkSnJIcWF5SDZuMEtUMGxHcTdZMlZqVnNCZURnbmFHWnBwM1JsZ01rUVl6N0VUaElWd2tKZmlYTW1rU0FXUEZ5UDNybEtHTDBicVRDdUt1WkpQWlNlcFVPNGwxTzdlNmRMOTNIVEt2Z3NFR3FpaEpad2owenRYYllPS3RJdGIw0gGgAkFVX3lxTE5CX1d2bXRnMmg0YUEwOTVKLUZPZmVNNWxmVEdjWEdaVXJTTVdwNTJiVVRpRjZkdlg3QXpoaHVtRGl3RDM1MFNMWXgwVXN3cDRFbVBzeTl2VFYxWUlrU1lOZ2Jwc0N2X2JoNGxuTmdMeTVpWXQ2T2FNdkdPbjI4X2JXcnB4Qm1xVUFzeWg4bHVpTHhMT0xMR2FsMmlpa0VXd3hfeThLbF9nOURzODZETjI0OGRheDFjeVMxcWZ4VmpQZ0t3VjlVOXNZaVE1Y2xoNVV0UWpGNGhGV2E3OHRSdzRmWmVyTEFLVTNnc1dSV2FHQXY4eUVsNUROYkViZVhDQTkwOWFKcV8yeXV3bU9YUzA2aWo0UWFFZUZ2VHlMeUxTNQ?oc=5",
+      "date": "2026-10-15",
+      "text": "[Moneycontrol.com] SEBI retains 30-minute VWAP for derivatives expiry settlement, revises closing auction timings — (published 4 days before collection; direction: neutral, topic: regulation)"
+    },
+    {
+      "item_id": "n17",
+      "signal": "news",
+      "title": "UPI MDR Rules From 15 Oct: Brokers' Cost Concerns",
+      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVnRQNElic19uVHR4Sjc2TDl4eWl1WFRjQW9HY18zekF4Vy12Z1BTajNkVk5jTktKNVZnY2xZd3U5Z3pNMktmT2xqem1FNHU4ODVOV0ZhekttbnpxdjU4QzNZblhIMTJrMWwzVkVqd3hDZkVGSGVsaWZQMnVYT2NUc3pmNDZmSldlWUsxSXhodnpQd0t3d1paUG1KMk9CaFB2d25pTXBNUQ?oc=5",
+      "date": "2026-10-15",
+      "text": "[Univest] UPI MDR Rules From 15 Oct: Brokers' Cost Concerns — (published 4 days before collection; direction: negative, topic: fees_pricing)"
+    },
+    {
+      "item_id": "n18",
+      "signal": "news",
+      "title": "Sebi discusses new UPI merchant charges with NPCI as brokers flag cost concerns",
+      "source_url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPMWR1RzM4dkdQSm5CZDA4N1VWOGY2MnJOV2hxY24wTno4ZTI2T05aejFBV20xZGtfSjZYR0xyaHhWTy1hVzcxZ3IwN3VESmpldHJ6OTJVcy1HaTM3X2ExUDlUOUdHeU84SXByUkNlWmlqdWs5dEc0X3Z1ZVhfdm84QWhkQUpKZXZHSjl4TlhJUHkwWFdjRFIydEtwOGwtZGlyNkI3V1p2SGRSRzFzc2d6YXlldzNaU3lkeVpPR2N0amxubmVRVjUtWmNud9IB0AFBVV95cUxQd1dadDN2QjBHUDRfOWlCTFBIbFA3eDZmYjRXUGpIRkI2a1Voa0NjVFN3ZXJLZTBBWjZJQk1mNUdqbjZ6MUpGbXduejZpLUtOQUx3WC14T19VbzhYN1BQbmVvZm1zNEpRdnRaS2gtenRsWWkzSXFRMDg3cDUxb3VJQjA0STZqcWo2ZWRYbGdCczgwQ290YmhybTlzMkZRM1VLQy1LX3pFUkY4QVZhamhSQTJWa05nVWtKM2ZMU3o3QnFBRWtIWEEyZGszNUZaX09O?oc=5",
+      "date": "2026-10-15",
+      "text": "[Livemint] Sebi discusses new UPI merchant charges with NPCI as brokers flag cost concerns — (published 4 days before collection; direction: neutral, topic: fees_pricing)"
+    },
+    {
+      "item_id": "n19",
+      "signal": "news",
+      "title": "Sebi reintroduces VWAP for derivatives expiry after CAS turns markets volatile",
+      "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNdGpqWDQySG03djBFWGszMWVDQUZHZ0RveG5pbl9DVDlNYVZnM0lrWlJxZjcyUlJNWW1aelpGQ2RfaHdQNzlQcm05X1AyVDB3NDNRQkxZQ0NtNUlmcllfclVhUm05REw0YzlCVDRGSnpzRWswM3pPTEtVRWJoYUtLQ2ZZUGplbnVXeDhtTGM2NTV2ZDY1ZzVTR0ZzM29mR3VPV0JmTDFMQ2l3THhKQ09jRnFVb3dsbERobDdrWi1LSEVzSHZjd1h3emhB0gHPAUFVX3lxTFBrWnREay0zSlU4N2p1ZG9sN0RwS1FhMGtHQjhTX25FUnM4VUFPVmxueWl2Ty1RZ0FRU1ZSckhlX1ZiOVVCVU11M2tJYXpXekN2SDFzOWRoM0JfUXhIRmhlNE1TOEZxSWg0T0FQazFJVU9CclRiTTBoLXlvdl9uWVVMNmFCbWdBUWlmejA2Zjh5YUtqTHlXUHdsLXVOTC1ZMFZucWthYW9qR01pRVlaQVhjS0kyMm13clJKc1RSVENWdUdmQzBTU2VtX1BnWGNvOA?oc=5",
+      "date": "2026-10-15",
+      "text": "[Livemint] Sebi reintroduces VWAP for derivatives expiry after CAS turns markets volatile — (published 4 days before collection; direction: neutral, topic: regulation)"
+    },
+    {
+      "item_id": "n20",
+      "signal": "news",
+      "title": "Groww Q2 Results: Cons net profit surges 54% YoY to Rs 726 crore; revenue jumps 47%",
+      "source_url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPSDdYRmVPSlBicnB6MkFNX0UtYXhueG5UTVlDWFdQVFk4ZkJZS1d4czF0d2VGc3c1RHA5ME8tZ25wUm9JTEtzODN3RjhGNEVQN0ZUYV93MjhiMUxsQkw1RW16RFBNMFYybGIwSkhhdEQ0MmdibXJubnZCMmVIUWZITVN5VGg3V0l6ajB0Ni1nMXdVVGpod1ZGQXB6WTJ4TDZtbmZsN0VwTGIwellQZGFFRGpaV01TcDdvU3dFY1VNaXhwSUZObzg4aEJxYm9zWFRjUmxfcTVKQUdSZl9mS3JBQlVVdkt4Q3JMbjFSSENn0gHzAUFVX3lxTFBKYkF4VFRFRDBnd1cxS2dGd0NhaUR2Y194TkZNX290SmM4SjZuTHk1M0pjemJtMmJBRWhpdG81SmxjTHRac0ZpTC1UN3I2bERVQk02ZkxVUVRfX2JIYlJNQUpfVWwzUnJlSmxaSkRUd0c3MjQ2b3JIMmd0QlJBSjZ1NlZrRnhBYlpBSDZCS1M2UHpCQnVBa3pTbE1vcjFnSk1EbXFOdVdQOWFtVlpNeHVOMEVpTG5iQXktVDFhS2NwMjhTQ01vVno5UUdyVHFDbGh4Qm1qWW4tYTdfOTdfMUNadWdvRE05NngySXE1eE5aZERrZw",
+      "date": "2026-10-14",
+      "text": "[The Economic Times] Groww Q2 Results: Cons net profit surges 54% YoY to Rs 726 crore; revenue jumps 47% — (published 5 days before collection; direction: positive, topic: financials)"
+    },
+    {
+      "item_id": "n21",
+      "signal": "news",
+      "title": "Groww Q2 profit up 54% to Rs 725 cr",
+      "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNQjNNWjlRdGdPRGRhS1NoSHBmM3VGY3hoM0VOc2tWb2czZHNLVjZvVDVKdUxwUm53amdwSjlKTzFTZE5LdjR3NHBYYTVKOGRLTkdCWG1JQVRhRDZxUGwyOUpad2s1ZUJjX0F4VGtucnJlUjZjQ1hxRHFwRG9mcWo0cUdJUWx3MmFjMVM5SHgyaV9HbTNEanBfN2liVlQtOHlzNEh5ajBsd1czOWJ1M0JvUXNFMjBsQVZaQkFUadIBwgFBVV95cUxQSk9DY09XcTh2RzE4TlE5aGIwdnlTdnU2ekpXenFodnRTdXd0NEE4ZFJEU2pYT2RlNGdFOXRVTm1RV0ZGY2Y0QjVLalNYeGpuS3VxSWhEUXk0c0kzazFyYkRQQ1k5VlEyTVRERWVQZzdZM2hCc045clJpbWRCWkd5ZThDZGdTcm1KNnNYQmtEM0pHTEo2YUJHSWZQOTZnRUFPUC1IeHFZZlFKRUl4bERvTE5EckdESGJxQlFUWVNYQ3YxQQ",
+      "date": "2026-10-14",
+      "text": "[The Times of India] Groww Q2 profit up 54% to Rs 725 cr — (published 5 days before collection; direction: positive, topic: financials)"
+    },
+    {
+      "item_id": "n22",
+      "signal": "news",
+      "title": "Billionbrains Garage Ventures Q2 results: Groww operator's profit rises 54% YoY to ₹726 crore, revenue up 47%",
+      "source_url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQSzFkTG9YTEE5QUlpajliS2ZKX3FPTWFBS1JsaVNLTUM2ZUNUYTQwREpVMW5oYXdmaXFNZkZXU3J6N0JNX0FvZlFpV09IOVhzSnhQeXdHbXlUWDJVb05nN1Vucjlzekt2RjMtSlJiRWxjaU1BUFlMWHg0V3ZjSmdFc0JaNlhpZGdXS1hQNUk4MzlOTnlUQjZSWEtUOFRyQ19xM251dWFId2Z3djJMSlFyM2pLS25EVUtOZUtHd0g4RlFZMldDa2p5X3E5WWVISlQ5R0hoZGZjY1FmR1BkazFMSWRQS3BuVmpVbkJaRjNYU09mMXA1TFZoeFpn",
+      "date": "2026-10-14",
+      "text": "[Upstox] Billionbrains Garage Ventures Q2 results: Groww operator's profit rises 54% YoY to ₹726 crore, revenue up 47% — (published 5 days before collection; direction: positive, topic: financials)"
+    },
+    {
+      "item_id": "n23",
+      "signal": "news",
+      "title": "Sebi has heard brokers' MDR-charges related issues: Tuhin Kanta Pandey",
+      "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZlIxUkg3R2RQTkhvU2FWN0sta3JNNngzZTVYdkhLZDhFdFIyS19HUFJubEZQaVFMNjRrV1pXMThUbVZBTFNJY1d2UVIyNG5iX0NBYmFmRkVTektTempOTW8zSlB3ellnekVfbDkycm5yZ3VxbDN5Zk5HZVlfdnpzSUloMzJSckh1V0JmQndua2V3TjJfbFFYTEk1UUprai1YMXRpLXo2Q3dYMzBkNlZ0NzdB0gG_AUFVX3lxTFBWRERTMmtaYTgxa0l3RDh2TC0xT0hxUDF4a1JmRWdmUGUwYTFudzVjSWI5ZGNIcnNrd1V2VTVWVGxoYl9TMmxYT3Y3LXJjdF9YQVpPTWNSdlhFRGFjOGRzSG54UVFfaHU0N0VNeHVGX0VNanRuRmlkSzdRaWpsVFFhTlNwMTZjbmF0T3FCRUJJRXljUUtuYzZjeDByZVRnMFZEWDBXTEsxU1hMTHEtbGtBN0RTTGpNcTVqOGlIdmdV?oc=5",
+      "date": "2026-09-24",
+      "text": "[Fortune India] Sebi has heard brokers' MDR-charges related issues: Tuhin Kanta Pandey — (published 25 days before collection; direction: neutral, topic: fees_pricing)"
+    },
+    {
+      "item_id": "n25",
+      "signal": "news",
+      "title": "Sebi to hear brokers' concerns over UPI MDR charges and trading account transfers",
+      "source_url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNdjlOUlJlMUNQSjVwOWxPYlg2a01sVi1YS21UWUZjZmFOSHFZYjMwWlZ4MU14TTFGZUZmbTU0bU1uNVdXVTlzblNKRFdqV1NtczMzMG1Gb3NjYU81VXdZSzJqZmlTdjZKSUpzQmRDNFd6YzdiM2pmYS1hV1pqOC16U3dYRERSNlpwdE9iUEJZbnNuTDF2WUZhc2NXUWw0aGxwT2V1bGFWZnAwb05OTVh4STN6ckk0MDEzazdIM2RmV0swU0FSSGtTMnRSVzZ0TlXSAdQBQVVfeXFMTWtxTVBDSGE2NzNOVkgxaDgwMmtLUnhTam9RdG90M1UzejNxRThIR0p6cUI4NDB0N1VkX3k0TE1Jbi00azJPNGIxdDBtOUtyaEQ3eWt6b0d4dkc0b2JmRUhZLUpiRVJYM1lHaE5MZ2ZrZHM3UDlsY1RObE04TmlDeGFjcE1tbDROUjNMZ0RWMFNMLWpQQUFnYmRrbmJydHZkQ0ZTaDJiV0ZZUVlLdHdRRzI5WmFRSGhmMWU1Mjd5NUh3N2xNWmRWbWVoM1lHOFppa2RlY0U?oc=5",
+      "date": "2026-09-18",
+      "text": "[Telegraph India] Sebi to hear brokers' concerns over UPI MDR charges and trading account transfers — (published 31 days before collection; direction: neutral, topic: fees_pricing)"
+    },
+    {
+      "item_id": "n26",
+      "signal": "news",
+      "title": "Broker associations apprises SEBI of the challenges in implementing UPI MDR",
+      "source_url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQa2ljWUljb0lXSEN1SW9OS0FQckZ2N2RmaE5OTDkwXzR2MzlPYnE3Ql9pT3JzSVp1TU9HdURqNFh4NW1pZVExRFd6TnpnMk14QnY5MXBnS2tlTXZKZWRkSGxIWWV6d19mZFprN0ZOX2c4bW9ESS1xaTBNcGJWY2l3aDhJd3BXVGZqMU9WRjRURHl1eEVYREFGWW1ZRmt4ZExrUjRpMjhYVG5fdXRvRnVOWUUtWVZwNll4T3Nhb3UwOVJFXzhHMjkxR2lkX1hDZnB1NzNaSTN0WlFsbXpFdTA2S19vYVpjLUlGZGstU1ptdUR1LVFocW90LdIB_gFBVV95cUxQRDVEdG01ZnI3TWUzczA4dDE4LU1fOTZfdkJTT3R3YXJjNThsN1owRDdybFBhaU5pNzFLN3Y5UHRVbkZnQVBYYmFaY2NpQU1CLVJVMWlaWFBWaGFFaEVmbjBCV0l5M19UajJ0ZTJxbnNLTFFaU2tiOU94Vmd4V3RnVzY5bHZzV3g3a2g0MENzOVh4OW10dW1HRmZUQ3lZdFduUlF5VlZ6NVpkeW1VUF9uVDhVTXU4N0RHZFVYcFZwaUg2QUFFTW9jVEI3dzA2ZVB2VHFSbGNrRldGbFk5bi1EQUV0LTZSNjRTdkcxYzNldXlMRzYxWGtnMjBqZmdpZw?oc=5",
+      "date": "2026-09-17",
+      "text": "[Moneycontrol.com] Broker associations apprises SEBI of the challenges in implementing UPI MDR — (published 32 days before collection; direction: negative, topic: fees_pricing)"
+    },
+    {
+      "item_id": "n27",
+      "signal": "news",
+      "title": "SEBI to examine brokers' concerns over UPI merchant charges",
+      "source_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQWFlqa0RDTXpiMHRhZkRmV1UwaU5VOTlocFBGMTM0X0llZTE4eTRkaXc4cHB2ZVdpdmZ1dFRqdi1kXzdWVE8yWms4SUJaZjB6b2N4Qmw0VzB4eFJVdDJ6enJRdXNSS1E1NmxaZjg0bTcwSEQ0Z3g5ZjNDQVFLM0R6NnZqcGo1Q1JmdjkwZWRDSDI3QUhkemQzcXpTT25iczVLdVdkRlRJNVAxbnQyRHVjR0RMUDQzR2Jwc0dOanlIOUk0bUQzb21aUkt4ODU3QdIB1AFBVV95cUxQdWpYeVIwNXFzUllfVGMwa0VlMC1EOTEwQ1BidUZlYW1pdF9wUi1nYjBtN0g3OEFKQ01kUTFZS2FKREdJX2JSMEpqT2ltSGdUcV8yVDBxSlo2Z0Zsa29vVENQY1dFTy1sQ1dDVTM4ZGRPMTlTeFlDT1k2N2k5VEIyWlhYWG14WkJjdERwcHlyNU1IYno3XzMtc2FUX3FPUEVLYXlKTi0xZjZORlhsRTNVR2ZRcjhHQVpiTTdLaElfVG1zNHNWaTBYRGtGaDBIeDdOblVvdQ?oc=5",
+      "date": "2026-09-17",
+      "text": "[BusinessLine] SEBI to examine brokers' concerns over UPI merchant charges — (published 32 days before collection; direction: neutral, topic: regulation)"
+    },
+    {
+      "item_id": "n28",
+      "signal": "news",
+      "title": "UPI payments for stock market investments to attract new charges",
+      "source_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE01R0dhMEZrYnhyaHJlOEU4SVYyRlJHVWppeUpObEp3MmdRakNPTUQ2RHhLXzdNQll0UXlwSXRYTVhBd0puZVlBcnl1LThWZHM4bFFPQnV3S2lNNEU?oc=5",
+      "date": "2026-09-15",
+      "text": "[Motilal Oswal] UPI payments for stock market investments to attract new charges — (published 34 days before collection; direction: negative, topic: fees_pricing)"
+    },
+    {
+      "item_id": "n29",
+      "signal": "news",
+      "title": "₹2,500 crore Groww block deal knocks shares down 3%",
+      "source_url": "https://news.google.com/read/CBMiiwFBVV95cUxPbnBwdGNTUWpMOThNVnZDbFdRd3ZRZEhCeUZURE4xa0pmcDdqY1FCaGhWdTNXdEhQQ2RFS3U4dnlrcDVNWG9aOEZPdjdfZlM5a3llcnplZHZkMXI2VWJfLXhGZlFSd0VxS2Y0cnlSZ1lGRTZWcmlwRzg1THVCbzYxTWVaNGJVV3ZjUENR?hl=en-US&gl=US&ceid=US%3Aen",
+      "date": "2026-08-26",
+      "text": "[Dealroom] ₹2,500 crore Groww block deal knocks shares down 3% — ₹2,500 crore Groww block deal knocks shares down 3% (published 54 days before collection; direction: negative, topic: financials)"
+    },
+    {
+      "item_id": "n30",
+      "signal": "news",
+      "title": "India's push away from options fuels boom in leveraged stock bets",
+      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQZU1tZjNBWWcwSWgtVnZfVG1IVHhwbFBYajRTanNJX3JkajB1SnllZGszek1UUmRuSEQ1QjdXQUNwNldMbExMSkJGZlBaaTh0NlBOdUFrUmRrMndMZTViNEZoR1ZzZ1hzTkM0bXp4ZjZZQ0luMzQxU3NsSV9aUWRYd3NFNkFtei1MTzcxSWZpVndFbkc4S2Z1clhNRHlUZGdlejh5OEgyRQ?oc=5",
+      "date": "2026-07-21",
+      "text": "[Reuters] India's push away from options fuels boom in leveraged stock bets — (published 90 days before collection; direction: positive, topic: macro_market)"
+    },
+    {
+      "item_id": "n31",
+      "signal": "news",
+      "title": "Nifty Capital Market index slips over 2%; HDFC AMC, Groww down up to 5%",
+      "source_url": "https://news.google.com/read/CBMizgFBVV95cUxQaU9ENU45ejBTLXNMR3haOUpscUdzYWtJN0N2TWpsWG14SXJsbHhtWlhxOEZka2RLaTQxc09JY2k5TjRTbDRMaTBiU0ZBYS1nS0tWS3N4RkVEdFlDNFNPdWdlNHktSWFhOHFFTEh1c0x5aDFZaTkxWkMyVnhydTJiNm16bVkwbURqckFPdkJsMnkzNzVsdkRKSE5mVW52TlpJcXNGdUhqbVdSeTNxN3B6WGphMl9CYjNVQVJWYnFpbXBvQktUcnRpNHZmYUtHZQ?hl=en-US&gl=US&ceid=US%3Aen",
+      "date": "2026-07-16",
+      "text": "[Business Standard] Nifty Capital Market index slips over 2%; HDFC AMC, Groww down up to 5% — Nifty Capital Market index slips over 2%; HDFC AMC, Groww down up to 5% (published 95 days before collection; direction: negative, topic: financials)"
+    },
+    {
+      "item_id": "n32",
+      "signal": "news",
+      "title": "SEBI Unpaid Securities Rules Get an Overhaul With New Auto-Pledge and Auto-Release Framework",
+      "source_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOd2E0azdPUUJRNGo5dlRhU0VqVFBtdG16d1lkMXM1ZENUd0pacVNaMjBFZk1MNU9IU3NIQ3RLb3NNYUtlUU9lMy1mcUNRbXRNYWNEekY4MXdHSlJVd1dvUW9vMGNhWkE0UENsOWtuT1Y2WEtZWUc1LVd6aFVUbGZROQ?oc=5",
+      "date": "2026-07-03",
+      "text": "[Univest] SEBI Unpaid Securities Rules Get an Overhaul With New Auto-Pledge and Auto-Release Framework — (published 108 days before collection; direction: neutral, topic: regulation)"
+    },
+    {
+      "item_id": "n33",
+      "signal": "news",
+      "title": "Sebi Proposes Modifications To Margin Trading Facility Rules",
+      "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPRG5Lelo2S2YtYWNnajZlemZveUh1clc2OE43Y0szTnZRSk1rY2M0eVdVcFV0NGdpOURhMEQ5Si1IaWgycnZDWjg4NEJtS3dvb0V0TUZYTndSNmlnR2FOZmdsckcxZWpwRjhlMGtCdG9JX1VRbDNKb1lUNkVYdWM2c2dnQ0xyYW02MVhVbF9FZDlYak1iZV83Tk9NZmTSAaoBQVVfeXFMUHdlV3JHcmdFZnBuVlA5SXZLQXF4Y25BZEJuMW1idllNdG44WHpLbmJNQk5FYmpualVqTElSMFFYT2Q0ekFLSFhVQkJTWlBLT3lsbnhUNjZkemVfZ2t5eXRCS0JqOHh1Xy1WQ3pyaGtaTUNqYlZ0TFNFYUNHQ2FvVEczcXJpQTdLNjFwLVU5UTNHbzBaMlRPQkxEWGVKYzZoM1BJMldiaHFDQlE?oc=5",
+      "date": "2026-06-19",
+      "text": "[Outlook Money] Sebi Proposes Modifications To Margin Trading Facility Rules — (published 122 days before collection; direction: neutral, topic: mtf_margin)"
+    },
+    {
+      "item_id": "n34",
+      "signal": "news",
+      "title": "SEBI proposes 4 major changes in Margin Trading Facility—Key takeaways for traders & brokers",
+      "source_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNVjAtUTh4Z3Z3dHFYR3M0aHZrQmhvN3NsbGpwRWc4R2VERDZtV0NJVERMcGhvcWtzVzBJeVlQc2xDcE9MR0xqdVpiVmxLV0M4bm95czFEb25hMDFIUXJjX1ljVHF0UE9vUG81MERxWGN6RWVKendubVRRdExELW9vcmZwTk9KNlZZTTgwYkl0QTBhVHFnZXU0aUNyQklBUjgyRHFqaTBDXzNzaFBSWGEtR1hJNHVjS18zU0VLc1FhY0N5TVRu?oc=5",
+      "date": "2026-06-19",
+      "text": "[Zee Business] SEBI proposes 4 major changes in Margin Trading Facility—Key takeaways for traders & brokers — (published 122 days before collection; direction: neutral, topic: mtf_margin)"
+    },
+    {
+      "item_id": "n35",
+      "signal": "news",
+      "title": "Sebi proposes easing margin trading funding rules, tighter broker norms",
+      "source_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPUlJkcWVEUF8zRFdwUnRGSWFIbXY5end3Mk5VR2FlZlc0anlIZklHcEFpZXFxdG5DdFBvTzB2bURsMDNjS1UyYTNHMU5xN2EwWjl4a2RGSUltdi16VEJ4dXBzbnFOdEpYMk1QeHEzcHktbVNBTzl3RWp4TVJQc0ROTG1yRnNpeHRKd2d1MGV6VTRXMXpCOVJsVjY4cklwV1FvSEluUnZlNlhvTEZ2NFN0ME9ZYnRFbVlqeDE2eDRtNkU3TDdSQmJfaGQ1czVGU3RsQXpKN1ZVOThnLUtH0gHiAUFVX3lxTFA4cHdKOHZ1MW1WSmg5U3RwbThyUjBFN0hzMnNoN28wdGQzeFhReHExRldUaTROWlNqSEhhcXVMcGU2Yjl6cjJ1eTNEODl2cEVBZDNLQ3BRNmxOUU9veTQ3NDk2aWE3bzI1UzJSM1FQVzdsVzktTWR5SWpndTYwMHYwemRxUjVlS0g3Tm5sSFNYNlBVQXQ0SFNPQlhnOXRZT1NNc3ZQZGZkRFYzdDRCU3F4N29YUGFuVF9sUFBNTUwxSlN3dDJ4MXFmQ0RMSE1iVmZ5dmdQdDJlejltaHJjTE8ta2c?oc=5",
+      "date": "2026-06-18",
+      "text": "[The Economic Times] Sebi proposes easing margin trading funding rules, tighter broker norms — (published 123 days before collection; direction: mixed, topic: mtf_margin)"
+    },
+    {
+      "item_id": "n36",
+      "signal": "news",
+      "title": "SEBI proposes overhaul of margin trading rules as MTF volumes rise",
+      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQWXhJenBmaEFJam1RZUxudkNiam9wM0w2ZFFKY014OUR2VUlHTWFCLUNJWVVTZHI1YTRGdnVLYlhfLVpTakVQYVdmZ2FRRWh2OTdvNTNFRGlsZ3Y1V2l5RXpYQ1BoN3A0MjR1cm5xYldEVnVpeGlLQWFxMm1IU00wdlBCNXhJUzFaRU8tUHo5b0hseDltaW5SLXdjdzhwNW8weXBDYm45cDRfdzRGYmtSOdIBtgFBVV95cUxPcGdaQjhJQjlqLVRuNTVOdEJDN2ZxMElaaDhwQjdxbktvSlRDZndsRnB0dzdveTNhZUlJWXdCQ090WEh2UC12N19iLVlFX0hVSzRmMXp4TW9HVGY2ZGM5bTZubjhYWnZHb05NV3NkRnZhSWNOeUZTa2djUnlaemhYS3lQVDg2Y3pnRV9fTW1zQ0VHZGlqbjkyWTZPaGttejJ4TVp0bWpPRmoySGFKcnhGVHdYYkJrZw?oc=5",
+      "date": "2026-06-18",
+      "text": "[CNBC TV18] SEBI proposes overhaul of margin trading rules as MTF volumes rise — (published 123 days before collection; direction: neutral, topic: mtf_margin)"
+    },
+    {
+      "item_id": "n37",
+      "signal": "news",
+      "title": "SEBI Eases F&O Margin Rules - New Norms to Boost Liquidity",
+      "source_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9sMGgxQnJ0TGI2cVBjVExFZkpyTG10cEhXSDk2U0hfYS1tU0J2SW55bFhxeG1LMm1yeVZxV0dvS0pwZF9EWDYzRDB1aFZVdmlVVkxWeUlGQVVETWdmYzF6T3ZVUjBKUGFsMmxZ?oc=5",
+      "date": "2026-05-26",
+      "text": "[Alice Blue] SEBI Eases F&O Margin Rules - New Norms to Boost Liquidity — (published 146 days before collection; direction: positive, topic: mtf_margin)"
+    },
+    {
+      "item_id": "n39",
+      "signal": "news",
+      "title": "Sebi mulls allowing MFs to use intraday borrowing lines as cash management tool",
+      "source_url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPLU9aX2EyTFdkdFRUOG5uQ25zV21oZ3lQcjBDRWdJRW41aGxGbHE1d1RMSmJPaklZWWRqOFBXNjQzTFNsVmFBQWQ0ajFQbVhUSHZjV2hxX0RZUDlHeFlSWWR4WU56T1NZTlNOUkQxem1VNnk2eDFySHZRcV9BcEdYTmNZd3JvdkR1QWxhMk1wS0pVOGFycGxYbldxSGVUbG56QWc2Sm5DelE5ZVZmWGRwS0NrR3Q1cjdQcjM5eDdhbVQwbkN5UGdxd1Jqdkd6QWR2ZUtNdjlScExub1F6TkJSUmlsZkMzREFETE1sS3dPRkxoUdIB9wFBVV95cUxQdDBub2FkUE5VQmxZUDlOOEFKZTZMUzBCT2NMSzFuV0NZU3EyTHhlTUM0SXpzR25BQW1rdkxJSmp6b3lKZ084RzdaTzRZTWVqOWY5VFNuczc4VE5KcUZXYjZyVldQWk5yeHpGRU0tdWVSTU43a0MyZUJ0Q2Ryb21LTS13TDNMUDBRRXJBUmVsLUdDRUF5amdNRVhqR0Nfa3E4OFJEcDFNbS1JbDFZRlpNdm9RSGU5OHNzc1pUbXJmaUV3SWI2ZTd3V2xSR1MwREp2MkpEVV9zTjBzVkRLYTRpejFvSWxGdEhaSlFaMmhQczlqN0ZfVzNN?oc=5",
+      "date": "2026-05-13",
+      "text": "[ETLegalWorld.com] Sebi mulls allowing MFs to use intraday borrowing lines as cash management tool — (published 159 days before collection; direction: neutral, topic: regulation)"
+    },
+    {
+      "item_id": "n40",
+      "signal": "news",
+      "title": "Groww app faces outage; services down as users struggle with login and transactions",
+      "source_url": "https://news.google.com/read/CBMiyAFBVV95cUxOU1FNcVowV2dEd3FHdnZIUDFXcjB1WGVmdHd1YThMREswWnRwbUlTTHRoZkVPM1FELUJPTWYtSHB1dnc3dDdOUG04THpxTGczdjlQcUFuZ0xXOC1wSEc1YUMtNmtYTlJfc0RzSTdNTTVsNjFRSlhzSnVlR0J4S1VrWVUxQ2RrUGdtZTUyY2JWcnFiOFRSWTVUS0RqZG5mNzEteEY3UVEwajd4YVh4eFJucmE3UHFvYUV6UlFnWlpSUnZ1cTlNZzRMQQ?hl=en-US&gl=US&ceid=US%3Aen",
+      "date": "2026-04-27",
+      "text": "[Zee Business] Groww app faces outage; services down as users struggle with login and transactions — Groww app faces outage; services down as users struggle with login and transactions (published 175 days before collection; direction: negative, topic: outage_tech)"
+    },
+    {
+      "item_id": "n41",
+      "signal": "news",
+      "title": "Sebi mulls MTF rule revamp, dynamic price bands to boost market activity",
+      "source_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZkZDMXNkbUFGb3M5eXgtRml6VTVaNUVNOE9EclhTV2lKa0R4dVJ2WFpqNDN1SHZ4WUpsZTlqSmF6WC1TX3JSeHB4MjdJVmNvYmdMSkZtYzZJeXhiRVF5VTlSQkhzUWx3LV9oanM0QUtCci0xeUlJXzhtUnpqY3VjdmluT3RldHZFX2NaZWNaUHp0eGkycEdLSFEyWVI3MzNnUVpvYjRFMVNWcGpyZGlVWFU2dWlfeGM3OF9sQ050NTF4NkY3a0piU3NpTko4OFI5VVBxS9IB2gFBVV95cUxOcFdja0Y5U3d6TEJtVTBxMjJfT1l5WTNpYTdXV3lxZXo1MmF1TUZBRGxkOGhfTU52YzFyVXFNYVVlZjN2NlQ2clJBdUZTWm9LZWUtcjlwVk9hNmNBVDh2WUEwZWc4MjI3bTU0S3dmMHlVbm96UVhUcFhybVFtSHhvLTE0Z1RDRUZqclpzTVdsTWFEbUtBN2pxeUNhLTBTYkhLTW9SSmMwNk9oRnVlOU5UcUZVVHB2b2xleUtnQlNOb2h6Ylc3UEZMaVJKaTJESUd1RFVJYU50aXFjUQ?oc=5",
+      "date": "2026-04-20",
+      "text": "[Business Standard] Sebi mulls MTF rule revamp, dynamic price bands to boost market activity — (published 182 days before collection; direction: positive, topic: mtf_margin)"
+    },
+    {
+      "item_id": "n44",
+      "signal": "news",
+      "title": "Cloudflare down: Users unable to use multiple apps, Groww and Zerodha also hit",
+      "source_url": "https://news.google.com/read/CBMi4gFBVV95cUxQR3RBb1VzOEYxZDZQNUpERS0zWXhBSFNuNGZJdTRTSzl1b2NrUEY4RHdOTU1HbjJnSE5ETVpKNUJFY0hxenFIYWk5MGZVbUg1NHNra0FkclgzMnZka0VzcUFrUEVCM2lwWDNYcEkwNW1FV1hEbmxmenY0czJMUHJOWFlIUUtMc1Z0emN3V19mRkJIcjlYQzI3SVo3bVZCeHF6NC1RWGNnM1FPcVhmVEpRQVotdDdyUkJFcllJNHFhbHhkd1h3LWhiaGxtZ1hZRV84SGtqaUdzZVppWGE1bE1WV19R?hl=en-US&gl=US&ceid=US%3Aen",
+      "date": "2025-12-05",
+      "text": "[Hindustan Times] Cloudflare down: Users unable to use multiple apps, Groww and Zerodha also hit — Cloudflare down: Users unable to use multiple apps, Groww and Zerodha also hit (published 318 days before collection; direction: negative, topic: outage_tech)"
+    },
+    {
+      "item_id": "n46",
+      "signal": "news",
+      "title": "Cloudflare Outage Disrupts Trading On Groww, Zerodha, Angel One",
+      "source_url": "https://news.google.com/read/CBMijgFBVV95cUxQRHhOVzVpNW5NUFpleTlZMHdNaGh6bUhicTlILUJfcm1HQ2gycDF2VUVJX1lOSC1IcXRpNm4zdXF3aDBrZHdPVnMycWRjWjRES01NX1Y2cHlQSU1hc2F3NFZNZVNLS1NjdWxCUWZMaUpHVXhRNFZ4WkhGVkl2bVY2aDhlVmRLSDhlQWNPc293?hl=en-US&gl=US&ceid=US%3Aen",
+      "date": "2025-12-05",
+      "text": "[Inc42] Cloudflare Outage Disrupts Trading On Groww, Zerodha, Angel One — Cloudflare Outage Disrupts Trading On Groww, Zerodha, Angel One (published 318 days before collection; direction: negative, topic: outage_tech)"
+    }
+  ],
+  "disclaimer": "Gap compares company statements with public evidence from a limited snapshot. It is not investment advice and does not say a company is dishonest."
+}

@@ -1,175 +1,111 @@
-# ⚡ GAP — AI-Powered Competitor Intelligence
+# GAP - Competitor Intelligence
 
-<p align="center">
-  <img src="https://img.shields.io/badge/AI-Competitor_Intelligence-7C3AED?style=for-the-badge" alt="AI Competitor Intelligence"/>
-  <img src="https://img.shields.io/badge/Status-Live-22C55E?style=for-the-badge" alt="Live"/>
-  <img src="https://img.shields.io/badge/Deployment-Vercel-black?style=for-the-badge&logo=vercel" alt="Vercel"/>
-  <img src="https://img.shields.io/badge/Backend-Render-46E3B7?style=for-the-badge" alt="Render"/>
-</p>
+GAP is a web-based project designed to help users explore competitor activities, business developments, and market trends. It allows users to ask questions and receive answers along with available source information.
 
-<h3 align="center">
-  Turning business claims into evidence-backed insights.
-</h3>
+The idea behind GAP is to make competitor research easier by bringing relevant information into one place. Instead of looking only at an answer, users can also explore the sources associated with it and learn more about the information being presented.
 
-<p align="center">
-  GAP helps users investigate competitor activity, explore market developments, and examine the evidence behind business claims—all through a single web interface.
-</p>
+## Live Demo
 
-<p align="center">
-  <a href="https://gap-frontend-mu.vercel.app"><strong>🚀 Live Demo</strong></a>
-  &nbsp; • &nbsp;
-  <a href="#-features">Features</a>
-  &nbsp; • &nbsp;
-  <a href="#-architecture">Architecture</a>
-  &nbsp; • &nbsp;
-  <a href="#-getting-started">Getting Started</a>
-</p>
+You can access the deployed application here:
 
----
+**Website:** https://gap-frontend-mu.vercel.app
 
-## 🌐 Experience GAP
+The frontend is hosted on Vercel, and the backend is hosted on Render.
 
-**Live application:** https://gap-frontend-mu.vercel.app
+## About the Project
 
-Ask a question about a company, competitor, or market development. GAP returns an answer with supporting source records so you can investigate the information behind the response.
+In today's business environment, companies frequently introduce new products, expand into new markets, and compete with other businesses. Keeping track of these developments can be time-consuming because relevant information may come from different sources.
 
-> **The idea:** Don't stop at an answer. Explore the evidence behind it.
+GAP aims to simplify this process through a single web interface. Users can enter questions related to competitors or market developments, and the application communicates with its backend to retrieve a response.
 
-## ✨ Features
+The project also displays available source information so that users can explore the original material behind an answer. This makes it easier to investigate business claims instead of relying only on a generated response.
 
-<table>
-  <tr>
-    <td width="50%">
-      <h3>🔎 Competitor Intelligence</h3>
-      Explore reported competitor expansions, market activity, and competitive developments.
-    </td>
-    <td width="50%">
-      <h3>🧠 AI-Powered Answers</h3>
-      Turn natural-language questions into structured responses through the connected backend.
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3>📰 Evidence & Sources</h3>
-      Review source titles, publication dates, and links returned with an answer.
-    </td>
-    <td width="50%">
-      <h3>⚖️ Claim Investigation</h3>
-      Examine business claims against available reporting instead of relying on unsupported assertions.
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3>🔗 Live API Integration</h3>
-      Connect the web interface to a separately deployed backend for live responses.
-    </td>
-    <td width="50%">
-      <h3>🛟 Fallback Experience</h3>
-      Display saved results when the live-answer flow is unavailable, where supported by the application.
-    </td>
-  </tr>
-</table>
+## Features
 
-## 🖥️ Demo
+**1. Question-based search**
 
-<p align="center">
-  <a href="https://gap-frontend-mu.vercel.app">
-    <img src="https://img.shields.io/badge/OPEN-GAP%20LIVE%20DEMO-7C3AED?style=for-the-badge&logo=vercel&logoColor=white" alt="Open GAP Live Demo"/>
-  </a>
-</p>
+Users can enter questions related to companies, competitors, and market developments through the web interface.
 
-Open the application, submit a competitor-intelligence question, and explore the answer and its returned sources.
+**2. Answers through the backend**
 
-*Tip: Add a screenshot or GIF of the actual application here once you've captured one. A real product screenshot makes a GitHub README much more compelling.*
+The frontend sends requests to the connected backend API, which processes them and returns the available response.
 
-## 🏗️ Architecture
+**3. Source information**
 
-```mermaid
-flowchart TD
-    A["👤 User Query"] --> B["💻 GAP Web Interface"]
-    B --> C["☁️ Render Backend API"]
-    C --> D["⚙️ Query Processing"]
-    D --> E["📚 Answer and Source Records"]
-    E --> F["📊 Results Displayed in GAP"]
+The application can display source details returned by the backend, such as article titles, dates, and links. Users can open these links to explore the original information.
 
-    style A fill:#ede9fe,stroke:#7c3aed,color:#111827
-    style B fill:#ddd6fe,stroke:#7c3aed,color:#111827
-    style C fill:#d1fae5,stroke:#059669,color:#111827
-    style D fill:#dbeafe,stroke:#2563eb,color:#111827
-    style E fill:#fef3c7,stroke:#d97706,color:#111827
-    style F fill:#ede9fe,stroke:#7c3aed,color:#111827
-```
+**4. Competitor research**
 
-### Deployment
+GAP is intended to help users explore company activities and understand developments that may be relevant to competitors and their markets.
 
-| Component | Deployment |
-|---|---|
-| Frontend | [Vercel](https://gap-frontend-mu.vercel.app) |
-| Backend API | [Render](https://backend-gap.onrender.com) |
-| Source control | GitHub |
+**5. Simple web interface**
 
-The frontend communicates with the backend over HTTP. The backend returns answer data and associated source records for display in the application.
+The application runs in a web browser, so users do not need to install a separate desktop application.
 
-## 🛠️ Tech Stack
+**6. Online deployment**
 
-<p>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3"/>
-  <img src="https://img.shields.io/badge-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript"/>
-  <img src="https://img.shields.io/badge/API-REST-2563EB?style=flat-square" alt="REST API"/>
-  <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel"/>
-  <img src="https://img.shields.io/badge/Render-46E3B7?style=flat-square&logo=render&logoColor=black" alt="Render"/>
-  <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
-</p>
+The frontend and backend are deployed separately, allowing the website to communicate with the hosted API.
 
-| Layer | Technologies |
-|---|---|
-| User interface | HTML, CSS, JavaScript |
-| API communication | HTTP / REST-style endpoints |
-| Backend hosting | Render |
-| Frontend hosting | Vercel |
-| Version control | Git, GitHub |
+## Technologies Used
 
-*The frontend stack is based on the current project files. Add any confirmed backend frameworks, AI models, databases, or external services once verified.*
+The frontend is built using HTML, CSS, and JavaScript. HTML provides the structure of the webpage, CSS is used for styling and layout, and JavaScript handles the interactive parts of the interface and communication with the backend.
 
-## 📁 Project Structure
+The application uses a backend API to process questions and return responses. The backend is hosted on Render, while the frontend is deployed on Vercel. GitHub is used to store and manage the project's source code.
 
-```text
-frontend/
-├── index.html          # Main application page
-├── styles.css          # Interface styling
-├── config.js           # Backend URL configuration
-├── js/                 # Client-side application logic
-├── data/               # Saved results and frontend data
-└── README_FRONTEND.md  # Frontend documentation
-```
+## How It Works
 
-## 🚀 Getting Started
+The application follows a simple process:
 
-### Prerequisites
+1. The user opens the GAP website in a browser.
+2. The user enters a question related to a competitor or market development.
+3. The frontend sends the request to the backend API.
+4. The backend processes the request and returns the available answer and source information.
+5. The frontend displays the response on the website.
+6. The user can explore the returned source links for more information.
 
-- Python 3
-- A modern web browser
-- Network access to the deployed backend
+This process connects the user interface with the backend and allows the application to retrieve responses without requiring users to interact with the API directly.
 
-### 1. Clone the repository
+## Project Structure
+
+The frontend contains the files responsible for displaying the website, managing its appearance, and communicating with the backend.
+
+- `index.html` contains the main webpage.
+- `styles.css` contains the styling and layout of the website.
+- `config.js` stores the frontend configuration, including the backend API URL.
+- `js/` contains JavaScript files used for application functionality.
+- `data/` contains frontend data files.
+- `README_FRONTEND.md` contains additional frontend documentation.
+
+## Running the Project Locally
+
+To run the frontend on your computer, you need Python 3 and a modern web browser.
+
+**Step 1: Clone the repository**
+
+Open a terminal and run:
 
 ```bash
-git clone <YOUR_REPOSITORY_URL>
+git clone <YOUR_GITHUB_REPOSITORY_URL>
 cd <YOUR_REPOSITORY_NAME>
 ```
 
-### 2. Navigate to the frontend
+Replace the placeholders with your actual GitHub repository URL and repository name.
+
+**Step 2: Open the frontend directory**
+
+If your repository contains a separate `frontend` folder, run:
 
 ```bash
 cd frontend
 ```
 
-Adjust the path if the frontend files are already at the repository root.
+If `index.html` is already in the repository's root directory, you can skip this step.
 
-### 3. Configure the API
+**Step 3: Check the backend configuration**
 
-Open `config.js` and set the backend base URL:
+Open `config.js` and make sure the backend URL points to your deployed backend.
+
+The current configuration is:
 
 ```javascript
 window.GAP_CONFIG = {
@@ -178,102 +114,64 @@ window.GAP_CONFIG = {
 };
 ```
 
-Use your own backend URL if it differs.
+**Step 4: Start the local server**
 
-### 4. Start the local server
+Run the following command from the directory containing `index.html`:
 
 ```bash
 python3 -m http.server 5500
 ```
 
-Open:
+Once the server starts, open the following address in your browser:
 
-```text
-http://localhost:5500
-```
+`http://localhost:5500`
 
-Keep the terminal running while testing the application.
+The frontend should now be available locally, provided the configuration and backend connection are working correctly.
 
-## 🔌 Backend API
+## Backend API
 
-**Base URL:** https://backend-gap.onrender.com
+GAP communicates with its deployed backend at:
 
-Example endpoint observed during testing:
+https://backend-gap.onrender.com
 
-```http
-POST /ask/eternal
-```
+The question-answering endpoint used during testing is `POST /ask/eternal`.
 
-A successful response may contain an answer and a list of source records:
+The endpoint accepts a request and can return a response containing an answer and associated source records. These records may include details such as a source identifier, title, date, and URL.
 
-```json
-{
-  "can_answer": true,
-  "answer": "Summary of the available evidence...",
-  "sources": [
-    {
-      "item_id": "n12",
-      "signal": "news",
-      "title": "Example article title",
-      "source_url": "https://example.com/article",
-      "date": "2026-09-24"
-    }
-  ]
-}
-```
+The frontend uses the backend response to display information to the user. The actual response depends on the request and the data returned by the backend.
 
-*This is an illustrative response structure, not a guarantee that every request returns these exact fields or values.*
+## Testing
 
-## 🧪 Testing Checklist
+The application can be tested by opening the live website and submitting different questions related to competitors or business developments.
 
-Before demonstrating GAP:
+During testing, it is useful to check whether the website loads correctly, whether questions receive responses, and whether the frontend can communicate with the deployed backend. The returned answers and source details should also be checked to ensure they appear correctly.
 
-- [ ] The public frontend opens without requiring Vercel authentication.
-- [ ] A fresh question produces a response.
-- [ ] The request reaches the deployed backend.
-- [ ] The API returns a successful response.
-- [ ] Answer text and source records render correctly.
-- [ ] Source links lead to relevant reporting.
-- [ ] The interface handles failed requests appropriately.
+Source links should be opened to verify that they lead to the intended pages. The application should also be tested when a request fails or the backend is temporarily unavailable.
 
-## 🔐 Responsible Use
+## Limitations
 
-GAP presents information derived from available reporting. A returned answer or source record should not automatically be treated as definitive proof.
+The quality of the information displayed by GAP depends on the data and responses available from the backend. Some information may be incomplete, outdated, or unavailable.
 
-- Review sources before relying on a claim.
-- Distinguish public reporting from direct company disclosures.
-- Be aware that sources may be incomplete, outdated, or inconsistent.
-- Keep API keys and credentials out of public repositories.
-- Configure sensitive credentials through the appropriate hosting environment.
+The presence of a source link does not automatically prove that every claim in an answer is correct. Users should review the original sources and compare information where necessary, especially before relying on important business claims.
 
-## 🔮 What's Next?
+The project can be improved further by expanding its research capabilities, improving source analysis, and testing it with a wider range of questions.
 
-Potential improvements include:
+## Future Improvements
 
-- Claim-level evidence mapping
-- Cross-source contradiction detection
-- Source relevance and credibility scoring
-- Historical competitor activity tracking
-- Company comparison dashboards
-- Confidence explanations and clearer verdicts
-- Expanded automated testing and monitoring
+There are several features that could be added in future versions of GAP.
 
-## 👥 Team
+- Adding options to compare multiple competitors.
+- Improving how source information is displayed.
+- Identifying conflicting information across different sources.
+- Adding filters for dates and types of business developments.
+- Providing clearer explanations of the evidence supporting an answer.
+- Improving error handling and testing for different situations.
+- Expanding the types of questions the application can handle.
 
-Built collaboratively as a hackathon project.
+These improvements could make GAP more useful for users who want to research competitors and follow changes in different markets.
 
-**Project:** GAP — AI-Powered Competitor Intelligence
+## Conclusion
 
-## 📄 License
+GAP is a project focused on making competitor research easier through a simple web interface connected to a backend API. It allows users to ask questions, view available answers, and explore related source information.
 
-No license has been specified. Add a `LICENSE` file if the team decides to distribute the project under an open-source license.
-
----
-
-<p align="center">
-  <strong>GAP — Better questions. Clearer evidence. Smarter decisions.</strong>
-</p>
-
-<p align="center">
-  <sub>Built to make business intelligence more transparent and evidence-oriented.</sub>
-</p>
+The project provides a starting point for investigating business developments and understanding the information behind market-related claims. Further improvements can make the application more useful, reliable, and informative.

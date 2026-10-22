@@ -1,6 +1,10 @@
 """Command line:   python -m backend.cli analyze groww
                    python -m backend.cli ask groww "Is the pricing claim backed up?"
                    python -m backend.cli check groww      (reads the data files, shows problems, NO Gemini call)
+                   python -m backend.cli index groww      (saves meaning vectors for the evidence: run once per data refresh)
+                   python -m backend.cli match groww      (each claim with its closest evidence and similarity scores)
+                   python -m backend.cli search groww "withdrawal stuck"
+                   python -m backend.cli analyze groww --retrieve   (Gemini sees only the best-matching evidence per claim)
 """
 import json
 import sys
@@ -9,7 +13,7 @@ from .gemini_client import GeminiClient
 
 
 def main(argv):
-    if len(argv) < 3 or argv[1] not in ("analyze", "ask", "check"):
+    if len(argv) < 3 or argv[1] not in ("analyze", "ask", "check", "index", "match", "search"):
         print(__doc__)
         return 1
     if argv[1] == "check":
@@ -41,9 +45,34 @@ def main(argv):
         for f in summary.get("flags", []):
             print("flag:", f)
         return 0
-    c = GeminiClient()
+    try:
+        c = GeminiClient()
+    except Exception:                                  # no key: match and search still work with keywords
+        if argv[1] in ("match", "search"):
+            c = None
+        else:
+            raise
+    if argv[1] == "index":
+        print(pipeline.retrieval.build_vectors(argv[2], c))
+        return 0
+    if argv[1] == "match":
+        idx = pipeline.retrieval.get_index(argv[2])
+        for cl in dl.load_claims(argv[2])["claims"]:
+            m = idx.search(f"{cl['quote']} {cl['what_to_look_for']}", c, k=5)
+            print(f"\n#{cl['id']} {cl['topic']}  [{m['method']}]")
+            for h in m["hits"]:
+                sim = h["similarity"] if h["similarity"] is not None else h["keyword_score"]
+                print(f"   {sim:>6}  {h['signal']:<8} {h['title'][:70]}")
+        return 0
+    if argv[1] == "search":
+        m = pipeline.retrieval.get_index(argv[2]).search(" ".join(argv[3:]), c, k=8)
+        print(f"[{m['method']}]" + (f"  {m['note']}" if m["note"] else ""))
+        for h in m["hits"]:
+            sim = h["similarity"] if h["similarity"] is not None else h["keyword_score"]
+            print(f"  {sim:>6}  {h['signal']:<8} {h['title'][:60]} | {h['text'][:70]}")
+        return 0
     if argv[1] == "analyze":
-        r = pipeline.analyze(argv[2], c)
+        r = pipeline.analyze(argv[2], c, retrieve="--retrieve" in argv)
         for f in r["findings"]:
             print(f"[{f['verdict']:<21}] #{f['claim_id']} {f['topic']}  ({', '.join(f['signal_types']) or 'no evidence'})")
         print(f"\nsaved -> data/processed/{argv[2]}/findings.json" + ("  (STALE: " + r["error"] + ")" if r.get("stale") else ""))

@@ -50,7 +50,7 @@ json.dump({"collected_at": "2026-10-18T10:00:00+05:30", "open_roles": 90, "url":
 
 class FakeGemini:
     model = "fake"
-    def generate_json(self, system, user):
+    def generate_json(self, system, user, fast=False):
         if "label news articles" in system:
             arts = json.loads(re.search(r"<articles>\n(.*?)\n</articles>", user, re.S).group(1))
             out = []
@@ -103,7 +103,7 @@ assert "does not give buy" in pipeline.ask("groww", "Should I buy Groww shares?"
 
 class Broken:
     model = "x"
-    def generate_json(self, *a):
+    def generate_json(self, *a, **k):
         from backend.gemini_client import GeminiError; raise GeminiError("down")
 st = pipeline.analyze("groww", Broken())
 assert st["stale"] and st["findings"]
@@ -117,6 +117,54 @@ assert {"m1", "m2", "j1"} <= ids
 assert any(x["signal"] == "news" and x["file"] is None for x in e["data_quality"])
 assert not any(i["signal"] == "news" for i in e["items"])
 assert {f["claim_id"] for f in e["findings"]} == set(range(1, 9))
+
+# ---------------- chat without Gemini: comparisons, company profiles, and a Gemini outage ----------------
+class Counting:
+    model = "x"
+    calls = 0
+    def generate_json(self, *a, **k):
+        Counting.calls += 1
+        return {"can_answer": True, "basis": "evidence", "answer": "ai", "used_item_ids": []}
+
+cc = Counting()
+# Gemini answers every question first (even comparisons and "what is Groww?")
+for q in ("which has more gaps, groww or eternal?", "What is Groww?", "how are users reacting to withdrawals?"):
+    r_ = pipeline.ask("groww", q, cc)
+    assert r_["answered_by"] == "gemini" and r_["can_answer"], (q, r_)
+assert cc.calls == 3
+assert pipeline.ask("groww", "which has more gaps, groww or eternal?", cc).get("cached") is True and cc.calls == 3   # repeats are instant
+
+# Gemini down: the SAME questions still get a real answer from the saved results (never an error, never cached)
+cmp_ = pipeline.ask("groww", "does groww have more gap than eternal?", Broken())
+assert cmp_["degraded"] and cmp_["answered_by"] == "saved_results" and cmp_["can_answer"]
+assert "Groww" in cmp_["answer"] and "Eternal" in cmp_["answer"] and "gap" in cmp_["answer"].lower(), cmp_["answer"]
+cnt = pipeline.ask("groww", "how many gaps does eternal have?", Broken())
+assert cnt["degraded"] and "Eternal" in cnt["answer"] and "Groww" not in cnt["answer"].split("Eternal")[0]
+pr = pipeline.ask("groww", "What does Groww do?", Broken())
+assert pr["degraded"] and pr["basis"] == "background" and "General background" in pr["answer"] and "investing" in pr["answer"]
+pr2 = pipeline.ask("eternal", "what is eternal", Broken())
+assert "Zomato" in pr2["answer"] and "Blinkit" in pr2["answer"]
+down = pipeline.ask("groww", "how are users reacting to withdrawal problems today?", Broken())
+assert down["can_answer"] and down["degraded"] and "AI is busy" in down["answer"]
+assert not any(k[1] == "how are users reacting to withdrawal problems today?" for k in pipeline._ANSWERS)   # a failure is never cached
+
+# a slow Gemini is cut off at the deadline and the chat falls back instead of making the user wait
+import time as _t
+from backend import gemini_client as _gc
+class SlowSDK:
+    def generate_content(self, model, contents, config):
+        _t.sleep(5)
+class _Types:
+    class GenerateContentConfig:
+        def __init__(self, **k): pass
+    class ThinkingConfig:
+        def __init__(self, **k): pass
+slow = _gc.GeminiClient.__new__(_gc.GeminiClient); slow.model = "m"; slow._types = _Types; slow._client = type("C", (), {"models": SlowSDK()})()
+config.CHAT_DEADLINE, config.CHAT_ATTEMPT_TIMEOUT = 2.0, 1.0
+t0 = _t.time()
+slow_ans = pipeline.ask("groww", "how are users reacting to slow withdrawal screens?", slow)
+assert _t.time() - t0 < 4.5 and slow_ans["degraded"] and slow_ans["can_answer"], (_t.time() - t0, slow_ans)
+config.CHAT_DEADLINE, config.CHAT_ATTEMPT_TIMEOUT = 18.0, 12.0
 print("ALL OFFLINE TESTS PASSED")
 for f in r["findings"]: print(f"  groww #{f['claim_id']} {f['verdict']:<21} {f['signal_types']}")
 shutil.rmtree(tmp)

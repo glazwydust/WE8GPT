@@ -54,3 +54,5 @@ CHAT_DEADLINE = float(os.getenv("CHAT_DEADLINE", "18"))
 CHAT_ATTEMPT_TIMEOUT = float(os.getenv("CHAT_ATTEMPT_TIMEOUT", "12"))
 CHAT_EVIDENCE_K = 8                  # evidence pieces sent with a chat question (smaller prompt = faster answer)
 EMBED_QUERY_TIMEOUT = 4              # seconds: if the question cannot be embedded this fast, keyword search is used
+EMBED_BATCH = 40                    # texts per embedding call. The free tier allows about 100 texts a minute
+EMBED_PAUSE = 30                     # seconds to wait between batches

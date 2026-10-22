@@ -215,37 +215,35 @@
       '<div class="ph"><div class="ph-in"><div><h1>Results</h1><p>' + esc(f.company) + ", " + esc(f.quarter) + " earnings call</p></div>" + seg(c.slug) + "</div></div>" +
       '<div class="body">' +
       '<section class="block"><div class="card sum">' + ring(s) +
-      '<div><span class="pill" style="background:' + b.c + ';color:#fff">' + esc(b.t) + "</span><h3>" + esc(f.company) + '</h3><p class="d">' + n + " of " + tot + " management claims had enough public evidence to judge. " + esc(parts.join(". ")) + ".</p>" +
-      '<div class="chips"><span class="chip">Analysed ' + esc(fdate(f.generated_at)) + '</span><span class="chip">Model ' + esc(f.model || "n/a") + "</span>" + (f.stale ? '<span class="chip" style="color:#9a6a07">Data changed since this analysis</span>' : "") + "</div></div>" +
-      '<div class="sum-bars"><h4>How the ' + tot + " claims came out</h4>" + vbar(k) + vkey(k) + '<p class="note">' + (gs ? "Gap Score " + gs.score + " (likely range " + gs.low + " to " + gs.high + ", confidence " + gs.conf + ", based on " + gs.judged + " of " + gs.total + " claims). " : "") + '“Not enough evidence” is not counted.</p></div></div>' +
+      '<div><span class="pill" style="background:' + b.c + ';color:#fff">' + esc(b.t) + "</span><h3>" + esc(f.company) + '</h3><p class="d">' + n + " of " + tot + " claims had enough evidence to judge.</p>" +
+      '<div class="chips"><span class="chip">Analysed ' + esc(fdate(f.generated_at)) + "</span>" + (f.stale ? '<span class="chip" style="color:#9a6a07">Data changed since this analysis</span>' : "") + "</div></div>" +
+      '<div class="sum-bars"><h4>How the ' + tot + " claims came out</h4>" + vbar(k) + vkey(k) + '<p class="note">' + (gs ? "Gap Score " + gs.score + " (likely range " + gs.low + "–" + gs.high + ")" : "") + '</p></div></div>' +
       (flags.length ? '<ul class="flags">' + flags.map(function (x) { return "<li>⚑ " + esc(x) + "</li>"; }).join("") + "</ul>" : "") + "</section>" +
 
-      '<section class="block"><h2>Claims at a glance</h2><p class="sub">' + tot + ' claims from the call. Select one to read the quote and the evidence.</p><div class="card glance">' +
-      claimsOf(c).map(function (x) { return '<a class="row" href="#/claims?co=' + esc(c.slug) + "&id=" + esc(x.claim_id) + '">' + pill(x.verdict) + '<span class="tt">' + esc(x.topic) + '</span><span class="ex">' + esc(x.explanation) + "</span></a>"; }).join("") + "</div></section>" +
+      '<section class="block"><h2>Claims at a glance</h2><p class="sub">Click a claim for the quote and evidence.</p><div class="card glance">' +
+      claimsOf(c).map(function (x) { return '<a class="row" href="#/claims?co=' + esc(c.slug) + "&id=" + esc(x.claim_id) + '">' + pill(x.verdict) + '<span class="tt">' + esc(x.topic) + '</span><span class="ex">' + esc(clip(x.explanation, 110)) + "</span></a>"; }).join("") + "</div></section>" +
 
-      '<section class="block"><h2>Signals</h2><p class="sub">What the web looked like when TinyFish collected it.</p>' +
+      '<section class="block"><h2>Signals</h2>' +
       '<div class="tiles">' +
       tile(num(mainRec.avg, 1) + " ★", "Recent average rating", "#d99a1f", mainRec.n ? "from " + mainRec.n + " reviews in the last 14 days" + (rv.length > 1 ? " (" + esc(r0.app) + ")" : "") : "") +
       tile(num(mainRec.one_star_pct, 1) + "%", "1-star share", "#e5532b", "") +
       tile(jb ? num(jb.open_roles) : "–", "Open roles counted", "#2a4f8a", jb && I.jobs_total && I.jobs_total !== jb.open_roles ? "Job-board search lists " + I.jobs_total + "." : "shown on the careers page") +
       tile(num(nw.negative_facts) + " / " + num(nw.positive_facts), "Negative / positive news facts", "#1f9d8c", "from " + num(nw.relevant_reported_facts) + " relevant facts") +
-      "</div>" +
-      '<div class="two"><div class="card"><h3>App reviews</h3>' + (rv.length ? rv.map(appBlock).join("") : '<p class="muted">No review data in this analysis.</p>') + "</div>" +
+      "</div></section>" + tinyfishCard(c) +
+      '<details class="block card"><summary style="cursor:pointer;font-weight:700">More details: reviews, news, careers and Reddit</summary>' +
+      '<section class="block" style="margin-top:16px"><div class="two"><div class="card"><h3>App reviews</h3>' + (rv.length ? rv.map(appBlock).join("") : '<p class="muted">No review data in this analysis.</p>') + "</div>" +
       '<div class="card"><h3>News and Reddit</h3><p style="font-size:18px"><b>' + num(nw.articles_collected) + "</b> articles read, <b>" + num(nw.relevant_reported_facts) + "</b> relevant facts</p>" +
       vbar({ gap: nw.negative_facts || 0, watch: 0, consistent: nw.positive_facts || 0, insufficient_evidence: Math.max(0, (nw.relevant_reported_facts || 0) - (nw.negative_facts || 0) - (nw.positive_facts || 0)) }) +
       '<div class="vk"><span><i class="dot" style="background:#e5532b"></i><b>' + num(nw.negative_facts) + '</b> negative</span><span><i class="dot" style="background:#1f9d8c"></i><b>' + num(nw.positive_facts) + '</b> positive</span><span><i class="dot" style="background:#8a96a8"></i><b>' + Math.max(0, (nw.relevant_reported_facts || 0) - (nw.negative_facts || 0) - (nw.positive_facts || 0)) + "</b> neutral</span></div>" +
       '<p class="fine">' + num(rd.posts_used) + " of " + num(rd.posts_collected) + " Reddit posts were relevant enough to use.</p></div></div></section>" +
 
-      '<section class="block"><h2>Inspect</h2><p class="sub">What sits behind the numbers.</p><div class="three">' + careersCard(I, jb) + lowStarCard(I) + redditCard(I) + "</div></section>" +
+      '<section class="block"><div class="three">' + careersCard(I, jb) + lowStarCard(I) + redditCard(I) + "</div></section>" +
 
-      tinyfishCard(c) +
-
-      ((f.risk_context || []).length ? '<section class="block"><h2>Risk context</h2><p class="sub">Background that matters but does not test a specific claim.</p><div class="card risk">' + f.risk_context.map(function (x) {
+      ((f.risk_context || []).length ? '<section class="block"><h2>Risk context</h2><div class="card risk">' + f.risk_context.map(function (x) {
         var inner = "<b>" + esc(x.headline) + "</b><span>" + esc([x.publisher, fdate(x.date), (x.type || "").replace(/_/g, " "), x.direction].filter(Boolean).join(", ")) + "</span>" + (x.why_relevant ? "<span>" + esc(x.why_relevant) + "</span>" : "");
         var u = safeUrl(x.source_url); return u ? '<a href="' + esc(u) + '" target="_blank" rel="noopener noreferrer">' + inner + "</a>" : '<a style="cursor:default">' + inner + "</a>"; }).join("") + "</div></section>" : "") +
-      dq(f) + "</div>";
+      dq(f) + "</details></div>";
 
-    document.getElementById("disclaimer").textContent = f.disclaimer || document.getElementById("disclaimer").textContent;
     app.querySelectorAll("[data-co]").forEach(function (bn) { bn.addEventListener("click", function () { location.hash = "#/results/" + bn.dataset.co; }); });
   }
   function tile(big, label, color, small) { return '<div class="tile" style="--tc:' + color + '"><b>' + esc(big) + "</b><span>" + esc(label) + "</span>" + (small ? "<small>" + esc(small) + "</small>" : "") + "</div>"; }
@@ -271,7 +269,7 @@
   function tinyfishCard(c) {
     var t = c.tinyfish || { runs: [] }, m = t.meta, tot = sum(t.runs, function (r) { return r.articles; });
     return '<section class="block" id="tinyfish"><div class="card tfc"><div class="tfh"><span class="tfb">TinyFish</span><h3 style="margin:0">Collected from the live web</h3></div>' +
-      '<p class="muted" style="max-width:62ch">TinyFish agents gathered the signals above and found the earnings-call transcript. Below is the news collection log for ' + esc(short(c.company)) + ".</p>" +
+      '<p class="muted" style="max-width:62ch">News collection log for ' + esc(short(c.company)) + ".</p>" +
       (m ? '<div class="chips"><span class="chip">Source: ' + esc(m.source) + '</span><span class="chip">Collected ' + esc(fdt(m.collected_at)) + '</span><span class="chip">' + esc(m.articles_total) + " articles after removing duplicates</span></div>" : "") +
       (t.runs.length ? '<div class="scroll"><table style="margin-top:14px"><thead><tr><th>Run</th><th>Search query</th><th>Type</th><th class="n">Articles</th></tr></thead><tbody>' + t.runs.map(function (r) { return '<tr><td><span class="tag">' + esc(r.run) + "</span></td><td>" + esc(r.query) + "</td><td>" + esc((r.query_type || "").replace(/_/g, " ")) + '</td><td class="n">' + esc(r.articles) + "</td></tr>"; }).join("") + '<tr><td></td><td><b>Total before removing duplicates</b></td><td></td><td class="n"><b>' + tot + "</b></td></tr></tbody></table></div>" : '<p class="fine">No collection log for this company.</p>') + "</div></section>";
   }

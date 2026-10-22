@@ -31,10 +31,27 @@
   function claimsOf(c) { return (c.findings && c.findings.findings) || []; }
   function allClaims() { var out = []; COS.forEach(function (c) { claimsOf(c).forEach(function (f) { out.push({ co: c, f: f }); }); }); return out; }
   function counts(c) { var k = { gap: 0, watch: 0, consistent: 0, insufficient_evidence: 0 }; claimsOf(c).forEach(function (f) { k[f.verdict] = (k[f.verdict] || 0) + 1; }); return k; }
-  function gapScore(c) {
-    var k = counts(c), n = k.gap + k.watch + k.consistent;
-    return n ? Math.round((k.gap * 100 + k.watch * 50) / n) : null;
+  /* Gap Score: the same method as backend/score.py. consistent 0, watch 0.5, gap 1; claims backed by more evidence count more;
+     the score is the mean of a Beta posterior and comes with a 90% range, because only some claims could be judged. */
+  function gapStats(c) {
+    var M = { consistent: 0, watch: 0.5, gap: 1 }, S = 0, W = 0, n = 0, total = claimsOf(c).length;
+    claimsOf(c).forEach(function (f) {
+      if (M[f.verdict] == null) return;
+      var ids = {}; (f.evidence || []).forEach(function (e) { ids[e.item_id] = 1; });
+      var w = 1 - Math.pow(0.5, Math.max(1, Math.min(5, Object.keys(ids).length)));
+      S += w * M[f.verdict]; W += w; n++;
+    });
+    if (!n) return null;
+    var a = 1 + S, b = 1 + W - S, G = 2000, xs = [], lp = [], mx = -Infinity, i, x;
+    for (i = 0; i < G; i++) { x = (i + 0.5) / G; xs.push(x); lp.push((a - 1) * Math.log(x) + (b - 1) * Math.log(1 - x)); if (lp[i] > mx) mx = lp[i]; }
+    var pdf = lp.map(function (v) { return Math.exp(v - mx); }), tot = pdf.reduce(function (p, q) { return p + q; }, 0), acc = 0, lo = null, hi = null;
+    for (i = 0; i < G; i++) { acc += pdf[i] / tot; if (lo === null && acc >= 0.05) lo = xs[i]; if (hi === null && acc >= 0.95) { hi = xs[i]; break; } }
+    if (hi === null) hi = 1; if (lo === null) lo = 0;
+    var width = (hi - lo) * 100;
+    return { score: Math.floor(100 * a / (a + b) + 0.5), low: Math.floor(100 * lo + 0.5), high: Math.floor(100 * hi + 0.5), judged: n, total: total,
+             conf: width <= 30 ? "high" : width <= 50 ? "medium" : "low" };
   }
+  function gapScore(c) { var g = gapStats(c); return g ? g.score : null; }
   function band(score) {
     if (score == null) return { t: "Not enough evidence", c: "#8a96a8" };
     if (score <= 30) return { t: "Mostly consistent", c: "#1f9d8c" };
@@ -102,7 +119,7 @@
       '<div><h3>The evidence is scattered</h3><p>Reviews, hiring, news and Reddit live on different sites, and most have no API.</p></div>' +
       '<div><h3>Nobody connects them</h3><p>Retail investors can’t read every source against every claim, so mismatches surface late.</p></div></div></div></section>' +
 
-      '<section class="band" style="padding-top:0"><div class="wrap"><div class="sec-head"><h2>See how each company held up</h2><p>The Gap Score averages the claims that had enough evidence: gap counts 100, watch 50, consistent 0. Lower means the web agrees with management.</p></div>' +
+      '<section class="band" style="padding-top:0"><div class="wrap"><div class="sec-head"><h2>See how each company held up</h2><p>The Gap Score runs from 0 to 100: consistent counts 0, watch 0.5 and gap 1, and claims backed by more evidence count more. Lower means the web agrees with management.</p></div>' +
       '<div class="co-cards">' + COS.map(function (c) { var k = counts(c), s = gapScore(c), b = band(s);
         return '<a class="co" href="#/results/' + esc(c.slug) + '">' + ring(s) + "<div><h3>" + esc(short(c.company)) + '</h3><p class="q">' + esc(c.quarter) + " earnings call. " + esc(b.t) + "</p>" + vbar(k) + vkey(k) + "</div></a>"; }).join("") + "</div></div></section>" +
 
@@ -188,7 +205,7 @@
   function pResults(r) {
     var c = co(r.arg) || COS[0];
     if (!r.arg || !co(r.arg)) { history.replaceState(null, "", "#/results/" + c.slug); }
-    var f = c.findings, k = counts(c), s = gapScore(c), b = band(s), n = k.gap + k.watch + k.consistent, tot = claimsOf(c).length, S = sig(c), I = c.inspect || {};
+    var f = c.findings, k = counts(c), gs = gapStats(c), s = gs ? gs.score : null, b = band(s), n = k.gap + k.watch + k.consistent, tot = claimsOf(c).length, S = sig(c), I = c.inspect || {};
     var parts = []; parts.push(k.gap ? k.gap + " clearly contradicted" : "None clearly contradicted"); parts.push(k.watch + " worth watching"); parts.push(k.insufficient_evidence + " could not be checked with the data collected");
     var flags = S.flags || [];
     var rv = S.reviews || [], jb = (S.jobs || [])[0], nw = S.news || {}, rd = S.reddit || {};
@@ -200,7 +217,7 @@
       '<section class="block"><div class="card sum">' + ring(s) +
       '<div><span class="pill" style="background:' + b.c + ';color:#fff">' + esc(b.t) + "</span><h3>" + esc(f.company) + '</h3><p class="d">' + n + " of " + tot + " management claims had enough public evidence to judge. " + esc(parts.join(". ")) + ".</p>" +
       '<div class="chips"><span class="chip">Analysed ' + esc(fdate(f.generated_at)) + '</span><span class="chip">Model ' + esc(f.model || "n/a") + "</span>" + (f.stale ? '<span class="chip" style="color:#9a6a07">Data changed since this analysis</span>' : "") + "</div></div>" +
-      '<div class="sum-bars"><h4>How the ' + tot + " claims came out</h4>" + vbar(k) + vkey(k) + '<p class="note">Score: gap counts 100, watch 50, consistent 0, averaged over claims that had evidence. “Not enough evidence” is never counted as a pass or a fail.</p></div></div>' +
+      '<div class="sum-bars"><h4>How the ' + tot + " claims came out</h4>" + vbar(k) + vkey(k) + '<p class="note">' + (gs ? "Gap Score " + gs.score + " (likely range " + gs.low + " to " + gs.high + ", confidence " + gs.conf + ", based on " + gs.judged + " of " + gs.total + " claims). " : "") + 'Consistent counts 0, watch 0.5, gap 1, and claims with more evidence count more. “Not enough evidence” is never counted as a pass or a fail.</p></div></div>' +
       (flags.length ? '<ul class="flags">' + flags.map(function (x) { return "<li>⚑ " + esc(x) + "</li>"; }).join("") + "</ul>" : "") + "</section>" +
 
       '<section class="block"><h2>Claims at a glance</h2><p class="sub">' + tot + ' claims from the call. Select one to read the quote and the evidence.</p><div class="card glance">' +
@@ -304,7 +321,7 @@
       '<section class="block"><h2>The pipeline</h2>' + flowHTML() + "</section>" +
       '<section class="block"><h2>What the verdicts mean</h2><div class="card scroll"><table class="vtab"><tbody>' +
       [["consistent", "The evidence supports what management said."], ["watch", "Some evidence points the other way, or the claim is only partly supported."], ["gap", "The evidence contradicts the claim, and it shows up in at least two different kinds of signal."], ["insufficient_evidence", "We did not collect anything that can confirm or contradict it. This is not a pass."]].map(function (x) { return "<tr><td>" + pill(x[0]) + "</td><td>" + x[1] + "</td></tr>"; }).join("") + "</tbody></table></div>" +
-      '<p class="fine">Gap Score = gap counts 100, watch 50, consistent 0, averaged over claims that had enough evidence. A higher score means a bigger distance between the story and the evidence. Verdicts are judged by ' + esc(model) + " and then re-checked by Python.</p></section>" +
+      '<p class="fine">Gap Score = a 0 to 100 score where consistent counts 0, watch 0.5 and gap 1, and claims backed by more evidence count more. Because only some claims can be judged, it comes with a likely range. A higher score means a bigger distance between the story and the evidence. Verdicts are judged by ' + esc(model) + " and then re-checked by Python.</p></section>" +
       '<section class="block"><h2>What each signal tells you</h2><div class="card scroll"><table><thead><tr><th>Signal</th><th>Collected from</th><th>What it tells you</th></tr></thead><tbody>' +
       [["App reviews", "Play Store, by a TinyFish agent", "Average rating, share of 1-star reviews and service complaints among the newest reviews."], ["Careers", "Company careers pages or job boards, by a TinyFish agent", "How many roles are open, and in which brand."], ["Reddit", "TinyFish Search and Fetch", "Recent user posts and discussion."], ["News", "TinyFish Search, then a news filter", "Dated, sourced articles, labelled positive, negative or neutral."]].map(function (x) { return "<tr><td><b>" + x[0] + "</b></td><td>" + x[1] + "</td><td>" + x[2] + "</td></tr>"; }).join("") + "</tbody></table></div></section>" +
       '<section class="block"><h2>Limits you should know</h2><div class="limits"><div class="card"><h3>A snapshot, not a trend</h3><p>Most signals are one collection, so “no trend” is often the honest answer.</p></div><div class="card"><h3>Samples are small</h3><p>Review samples are dozens, not thousands. Treat the numbers as indicators.</p></div><div class="card"><h3>Public evidence only</h3><p>Gap cannot see inside a company. It checks claims against what is publicly visible.</p></div></div></section>' +
@@ -315,21 +332,26 @@
 
   /* ---------- ASK GAP ---------- */
   var ADVICE = /\b(buy|sell|hold|target price|price target|should i invest|invest in|multibagger|stock tip)\b/i;
-  var apiBase = null;
+  var apiBase = (/\/app\/?/.test(location.pathname) && /^https?:/.test(location.protocol)) ? location.origin : (CFG.API_BASE || "");
+  apiBase = apiBase.replace(/\/$/, "");
+  /* Wake the backend as soon as the page opens (a sleeping free server needs up to a minute) and show the badge when it answers.
+     The chat never waits for this: it always tries the backend itself. */
   function probeApi() {
-    var base = (/\/app\/?/.test(location.pathname) && /^https?:/.test(location.protocol)) ? location.origin : (CFG.API_BASE || "");
-    if (!base) return;
-    var ctl = window.AbortController ? new AbortController() : null, t = setTimeout(function () { ctl && ctl.abort(); }, CFG.API_PROBE_MS || 1200);
-    fetch(base.replace(/\/$/, "") + "/companies", ctl ? { signal: ctl.signal } : {}).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function () {
-      clearTimeout(t); apiBase = base.replace(/\/$/, ""); var b = document.getElementById("badge"); b.textContent = "live answers"; b.classList.add("live");
+    if (!apiBase) return;
+    var ctl = window.AbortController ? new AbortController() : null, t = setTimeout(function () { ctl && ctl.abort(); }, CFG.API_PROBE_MS || 60000);
+    fetch(apiBase + "/companies", ctl ? { signal: ctl.signal } : {}).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function () {
+      clearTimeout(t); var b = document.getElementById("badge"); if (b) { b.textContent = "live answers"; b.classList.add("live"); }
     }).catch(function () { clearTimeout(t); });
   }
   function askAnswer(slug, q) {
     if (ADVICE.test(q)) return Promise.resolve({ can_answer: false, sources: [], answer: "Gap does not give buy, sell or price advice. It compares what the company said on its earnings call with public evidence. You can ask what the evidence says about any claim." });
     var c = co(slug);
     if (apiBase) {
-      return fetch(apiBase + "/ask/" + encodeURIComponent(slug), { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ question: q }) })
-        .then(function (r) { if (!r.ok) throw new Error("backend"); return r.json(); }).catch(function () { return offline(c, q); });
+      var ctl = window.AbortController ? new AbortController() : null, t = setTimeout(function () { ctl && ctl.abort(); }, CFG.ASK_TIMEOUT_MS || 45000);
+      return fetch(apiBase + "/ask/" + encodeURIComponent(slug), { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ question: q }), signal: ctl ? ctl.signal : undefined })
+        .then(function (r) { clearTimeout(t); if (!r.ok) throw new Error("backend"); return r.json(); })
+        .then(function (res) { return (res && res.answer) ? res : offline(c, q); })
+        .catch(function () { clearTimeout(t); return offline(c, q); });
     }
     return Promise.resolve(offline(c, q));
   }
@@ -337,6 +359,14 @@
     var f = c.findings, items = {}; (f.items || []).forEach(function (i) { items[i.item_id] = i; });
     var low = q.toLowerCase(), cl = claimsOf(c);
     function srcs(list) { var seen = {}, out = []; list.forEach(function (x) { (x.evidence || []).forEach(function (e) { if (seen[e.item_id]) return; seen[e.item_id] = 1; var it = items[e.item_id] || e; out.push({ signal: it.signal, title: it.title, source_url: it.source_url, date: it.date }); }); }); return out.slice(0, 6); }
+    var PROF = { groww: "Groww (run by Billionbrains Garage Ventures) is an Indian investing platform. People use its app and website to invest in stocks and mutual funds, and it offers other products such as futures and options and margin trading. It earns mainly from broking fees and related services.",
+                 eternal: "Eternal is the listed Indian company that owns Zomato, the food delivery and dining app, and Blinkit, a quick-commerce app that delivers groceries and other items in minutes. It also runs Hyperpure, which supplies restaurants." };
+    var pm = low.replace(/[?.!]+$/, "").match(/^(what is|what's|what does|who is|tell me about|explain|describe)\s+(the\s+)?(groww|billionbrains|eternal|zomato|blinkit)(\s+(do|does|company|business|app))*$/);
+    if (pm) { var ps = /groww|billionbrains/.test(pm[3]) ? "groww" : "eternal"; return { can_answer: true, sources: [], answer: PROF[ps] + "\n\n(General background, not from the evidence Gap collected, and it may be out of date.)" }; }
+    if (/\b(more|most|fewer|less|higher|lower|worse|better|compare|than|versus|vs|which)\b/.test(low) && /\b(gaps?|watch|score|mismatch)\b/.test(low)) {
+      var lines = COS.map(function (x) { var kk = counts(x), g = gapStats(x); return short(x.company) + ": " + kk.gap + " gap, " + kk.watch + " watch, " + kk.consistent + " consistent, " + kk.insufficient_evidence + " not enough evidence" + (g ? ". Gap Score " + g.score + " (likely range " + g.low + " to " + g.high + ")" : "") + "."; });
+      return { can_answer: true, sources: [], answer: lines.join("\n") + "\n\nEach score rests on only part of the claims, so treat it as a snapshot." };
+    }
     var listy = /\b(which|list|show|how many|what are|any)\b/.test(low);
     var vm = !listy ? null : /\bgaps?\b|contradict/.test(low) ? "gap" : /watch/.test(low) ? "watch" : /\bconsistent\b|supported/.test(low) ? "consistent" : /not enough|insufficient|unclear|unverif|could not be checked/.test(low) ? "insufficient_evidence" : null;
     if (vm) {
@@ -352,8 +382,8 @@
     var keys = (low.match(/[a-z0-9]{3,}/g) || []).filter(function (w) { return stop.indexOf(w) < 0; }).map(stem);
     function score(t) { t = t.toLowerCase(); return keys.reduce(function (n, k) { return n + (t.indexOf(k) >= 0 ? 1 : 0); }, 0); }
     var ranked = cl.map(function (x) { return { x: x, s: score(x.topic + " " + x.quote + " " + x.explanation) * 2 + score(x.covers || "") }; }).filter(function (r) { return r.s > 0; }).sort(function (p, q2) { return q2.s - p.s; }).slice(0, 2);
-    if (!ranked.length) return { can_answer: false, sources: [], answer: "The saved data does not cover that. Try naming a topic from the Claims page." };
-    return { can_answer: true, sources: srcs(ranked.map(function (r) { return r.x; })), answer: ranked.map(function (r) { return r.x.topic + ": " + V[r.x.verdict].label + ". " + r.x.explanation; }).join("\n\n") + "\n\n(Answered from the saved results. Start the backend for AI answers.)" };
+    if (!ranked.length) return { can_answer: false, sources: [], answer: "The AI is busy right now and this question needs it. Please try again in a moment, or ask about a topic from the Claims page." };
+    return { can_answer: true, sources: srcs(ranked.map(function (r) { return r.x; })), answer: "The AI is busy for a moment, so here is what Gap's analysis says on this.\n\n" + ranked.map(function (r) { return r.x.topic + ": " + V[r.x.verdict].label + ". " + r.x.explanation; }).join("\n\n") };
   }
   function pAsk(r) {
     var cur = (co(r.q.co) || COS[0]).slug;
@@ -369,7 +399,9 @@
       q = (q || "").trim(); if (!q) return;
       var slug = document.getElementById("as").value, box = document.getElementById("qa"), id = "a" + Date.now();
       box.insertAdjacentHTML("afterbegin", '<div class="a" id="' + id + '"><div class="qq">' + esc(q) + '</div><div class="spin" role="status" aria-label="Working"></div></div>');
+      var hint = setTimeout(function () { var sp = document.querySelector("#" + id + " .spin"); if (sp) sp.insertAdjacentHTML("afterend", '<div class="fine" style="margin-top:8px">Still working. The server may be waking up, which can take up to a minute.</div>'); }, 8000);
       askAnswer(slug, q).then(function (res) {
+        clearTimeout(hint);
         var el = document.getElementById(id); if (!el) return;
         el.className = "a" + (res.can_answer ? "" : " no");
         el.innerHTML = '<div class="qq">' + esc(q) + '</div><div class="tx">' + esc(res.answer) + "</div>" + ((res.sources || []).length ? '<div class="src"><b>Sources</b>' + res.sources.map(function (s) { return "<div>" + (safeUrl(s.source_url) ? a(s.source_url, (s.signal ? s.signal + ": " : "") + s.title) : esc((s.signal ? s.signal + ": " : "") + s.title)) + (s.date ? ", " + esc(fdate(s.date)) : "") + "</div>"; }).join("") + "</div>" : "");

@@ -71,6 +71,8 @@ class FakeGemini:
 
 
 c = FakeGemini()
+config.EMBED_PAUSE = 0            # no real waiting in tests
+config.EMBED_BATCH = 10           # several batches, so batching and resuming are tested
 
 # 1. the pool is wider than what the analysis used to see (all reviews, all Reddit posts)
 from backend import signals, adapters
@@ -95,6 +97,13 @@ calls = FakeGemini.embed_calls
 assert retrieval.build_vectors("groww", c)["newly_embedded"] == 0 and FakeGemini.embed_calls == calls
 cache = dl.read_json(dl.processed_path("groww", "embeddings.json"))
 assert cache["dim"] == config.EMBED_DIM and all(len(v["v"]) == config.EMBED_DIM for v in cache["docs"].values())
+
+# 3b. an interrupted run resumes: delete part of the saved vectors, run again, only the missing ones are embedded
+cache = dl.read_json(dl.processed_path("groww", "embeddings.json"))
+for k in list(cache["docs"])[:15]:
+    del cache["docs"][k]
+dl.write_json(dl.processed_path("groww", "embeddings.json"), cache)
+assert retrieval.build_vectors("groww", c)["newly_embedded"] == 15
 
 # 4. meaning search finds evidence the keywords miss: "payout delayed" never appears in the reviews as such
 idx = retrieval.get_index("groww")

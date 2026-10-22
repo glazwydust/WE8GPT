@@ -255,7 +255,8 @@ def _ask(slug, question, client):
         if out["can_answer"]:
             _ANSWERS[key] = (datetime.now().timestamp(), out)
         return out
-    except Exception:                                    # noqa: BLE001 - Gemini slow, busy, quota, bad JSON: never show an error to the user
+    except Exception as e:                               # noqa: BLE001 - Gemini slow, busy, quota, bad JSON: never show an error to the user
+        print(f"Ask Gap fell back to saved verdicts ({slug}): {type(e).__name__}: {e}", flush=True)   # visible in the Render logs
         for fn, basis in ((chat_local.numbers_answer, "evidence"), (chat_local.profile_answer, "background")):
             local = fn(question, overviews, slug) if fn is chat_local.numbers_answer else fn(question, overviews)
             if local:

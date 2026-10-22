@@ -121,24 +121,23 @@ class GeminiClient:
 
     def embed(self, texts, task="RETRIEVAL_DOCUMENT"):
         """Turn texts into vectors (list of lists). task: RETRIEVAL_DOCUMENT for evidence, RETRIEVAL_QUERY for questions/claims.
-        Embeddings have their own quota, separate from the text model. Retries busy errors like _call."""
+        The free tier allows about 100 TEXTS per minute (each text counts, not each call), so callers send small batches.
+        A 429 'please retry in Ns' is waited out. Embeddings have their own quota, separate from the text model."""
         cfg = self._types.EmbedContentConfig(task_type=task, output_dimensionality=config.EMBED_DIM)
-        out, last = [], None
-        for k in range(0, len(texts), 100):                      # the API takes up to 100 texts per call
-            batch = texts[k: k + 100]
-            for attempt, wait in enumerate([0, 5, 15]):
-                if wait:
-                    time.sleep(wait)
-                try:
-                    r = _with_timeout(lambda: self._client.models.embed_content(
-                        model=config.EMBED_MODEL, contents=batch, config=cfg), CALL_TIMEOUT)
-                    out += [list(e.values) for e in r.embeddings]
+        last = None
+        for attempt in range(4):
+            try:
+                r = _with_timeout(lambda: self._client.models.embed_content(model=config.EMBED_MODEL, contents=list(texts), config=cfg), CALL_TIMEOUT)
+                return [list(e.values) for e in r.embeddings]
+            except Exception as e:           # noqa: BLE001
+                last, msg = e, str(e)
+                if "PerDay" in msg or "per day" in msg.lower():
                     break
-                except Exception as e:           # noqa: BLE001
-                    last = e
-                    if not any(x in str(e) for x in ("503", "429", "500", "UNAVAILABLE", "RESOURCE_EXHAUSTED", "Timeout")) \
-                            or "PerDay" in str(e):
-                        raise GeminiError(f"Embedding call failed: {e}")
-            else:
-                raise GeminiError(f"Embedding call failed: {last}")
-        return out
+                if not any(x in msg for x in ("503", "429", "500", "UNAVAILABLE", "RESOURCE_EXHAUSTED", "Timeout")):
+                    break
+                m = re.search(r"retry in ([\d.]+)s", msg)
+                wait = min(70.0, float(m.group(1)) + 2) if m else 10 * (attempt + 1)
+                if attempt < 3:
+                    print(f"  Embedding limit or busy, waiting {wait:.0f}s...", flush=True)
+                    time.sleep(wait)
+        raise GeminiError(f"Embedding call failed: {last}")

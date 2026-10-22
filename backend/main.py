@@ -35,6 +35,7 @@ def companies():
 
 @app.get("/findings/{slug}")
 def findings(slug: str):
+    slug = slug.lower().strip()
     try:
         return pipeline.load_findings(slug)
     except FileNotFoundError as e:
@@ -43,6 +44,7 @@ def findings(slug: str):
 
 @app.get("/score/{slug}")
 def gap_score(slug: str):
+    slug = slug.lower().strip()
     try:
         return pipeline.load_findings(slug)["gap_score"]
     except FileNotFoundError as e:
@@ -52,6 +54,7 @@ def gap_score(slug: str):
 @app.get("/search/{slug}")
 def search(slug: str, q: str, k: int = 10, signal: str = ""):
     """Semantic search over the evidence. Instant, no Gemini text call. signal = reviews, jobs, reddit or news (optional)."""
+    slug = slug.lower().strip()
     try:
         try:
             c = client()
@@ -65,6 +68,7 @@ def search(slug: str, q: str, k: int = 10, signal: str = ""):
 @app.get("/match/{slug}")
 def match(slug: str, k: int = 10):
     """Each claim with the evidence closest in meaning, and the similarity scores."""
+    slug = slug.lower().strip()
     try:
         claims = dl.load_claims(slug)["claims"]
         try:
@@ -81,6 +85,7 @@ def match(slug: str, k: int = 10):
 @app.post("/check/{slug}")
 def check(slug: str, body: Check):
     """The user types a statement; Gap finds the closest evidence and gives a verdict (not saved)."""
+    slug = slug.lower().strip()
     try:
         return pipeline.check_claim(slug, body.claim, client())
     except FileNotFoundError as e:
@@ -91,6 +96,7 @@ def check(slug: str, body: Check):
 
 @app.post("/analyze/{slug}")
 def analyze(slug: str, refresh_news: bool = False, retrieve: bool = False):
+    slug = slug.lower().strip()
     try:
         return pipeline.analyze(slug, client(), force_classify=refresh_news, retrieve=retrieve)
     except FileNotFoundError as e:
@@ -101,6 +107,7 @@ def analyze(slug: str, refresh_news: bool = False, retrieve: bool = False):
 
 @app.post("/ask/{slug}")
 def ask(slug: str, body: Ask):
+    slug = slug.lower().strip()
     try:
         return pipeline.ask(slug, body.question, client())
     except FileNotFoundError as e:

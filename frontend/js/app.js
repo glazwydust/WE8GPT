@@ -385,10 +385,24 @@
     if (!ranked.length) return { can_answer: false, sources: [], answer: "The AI is busy right now and this question needs it. Please try again in a moment, or ask about a topic from the Claims page." };
     return { can_answer: true, sources: srcs(ranked.map(function (r) { return r.x; })), answer: "The AI is busy for a moment, so here is what Gap's analysis says on this.\n\n" + ranked.map(function (r) { return r.x.topic + ": " + V[r.x.verdict].label + ". " + r.x.explanation; }).join("\n\n") };
   }
+  /* Chat history: kept in memory and in this browser (localStorage), so earlier questions survive switching pages and reloads. */
+  var HIST = [];
+  try { HIST = JSON.parse(localStorage.getItem("gap_chat") || "[]") || []; } catch (e) { HIST = []; }
+  function saveHist() { try { localStorage.setItem("gap_chat", JSON.stringify(HIST.slice(0, 40))); } catch (e) {} }
+  function entryHTML(h) {
+    var res = h.res || {}, cc = co(h.slug);
+    return '<div class="qq">' + esc(h.q) + (cc ? ' <span class="fine" style="font-weight:400">· ' + esc(short(cc.company)) + "</span>" : "") + '</div><div class="tx">' + esc(res.answer || "") + "</div>" +
+      ((res.sources || []).length ? '<div class="src"><b>Sources</b>' + res.sources.map(function (s) { return "<div>" + (safeUrl(s.source_url) ? a(s.source_url, (s.signal ? s.signal + ": " : "") + s.title) : esc((s.signal ? s.signal + ": " : "") + s.title)) + (s.date ? ", " + esc(fdate(s.date)) : "") + "</div>"; }).join("") + "</div>" : "");
+  }
+  function renderHist() {
+    var box = document.getElementById("qa"); if (!box) return;
+    box.innerHTML = HIST.map(function (h) { return '<div class="a' + ((h.res && h.res.can_answer) ? "" : " no") + '" id="' + esc(h.id) + '">' + entryHTML(h) + "</div>"; }).join("");
+    var cl = document.getElementById("clr"); if (cl) cl.style.display = HIST.length ? "" : "none";
+  }
   function pAsk(r) {
     var cur = (co(r.q.co) || COS[0]).slug;
     app.innerHTML = '<div class="ph"><div class="ph-in"><div><h1>Ask Gap</h1><p>Questions about what the evidence says. Gap answers from the saved findings and does not give buy or sell advice.</p></div></div></div>' +
-      '<div class="body narrow" style="max-width:900px"><div class="askbox"><form class="askrow" id="af"><select id="as" aria-label="Company">' + COS.map(function (c) { return '<option value="' + esc(c.slug) + '"' + (c.slug === cur ? " selected" : "") + ">" + esc(short(c.company)) + "</option>"; }).join("") + '</select><input id="ai" maxlength="500" placeholder="For example: Is the pricing claim backed up?" aria-label="Your question" autocomplete="off"><button class="btn dark" type="submit">Ask</button></form><div class="sug" id="sg"></div></div><div class="qa" id="qa" aria-live="polite"></div></div>';
+      '<div class="body narrow" style="max-width:900px"><div class="askbox"><form class="askrow" id="af"><select id="as" aria-label="Company">' + COS.map(function (c) { return '<option value="' + esc(c.slug) + '"' + (c.slug === cur ? " selected" : "") + ">" + esc(short(c.company)) + "</option>"; }).join("") + '</select><input id="ai" maxlength="500" placeholder="For example: Is the pricing claim backed up?" aria-label="Your question" autocomplete="off"><button class="btn dark" type="submit">Ask</button></form><div class="sug" id="sg"></div></div><div style="text-align:right;margin:6px 0"><button type="button" class="btn" id="clr" style="display:none">Clear history</button></div><div class="qa" id="qa" aria-live="polite"></div></div>';
     function sugg() {
       var c = co(document.getElementById("as").value), cl = claimsOf(c);
       var s = cl.slice(0, 3).map(function (x) { return "Is the “" + x.topic + "” claim backed up?"; }).concat(["Which claims are worth watching?", "How did TinyFish collect the data?"]);
@@ -402,15 +416,19 @@
       var hint = setTimeout(function () { var sp = document.querySelector("#" + id + " .spin"); if (sp) sp.insertAdjacentHTML("afterend", '<div class="fine" style="margin-top:8px">Still working. The server may be waking up, which can take up to a minute.</div>'); }, 8000);
       askAnswer(slug, q).then(function (res) {
         clearTimeout(hint);
-        var el = document.getElementById(id); if (!el) return;
-        el.className = "a" + (res.can_answer ? "" : " no");
-        el.innerHTML = '<div class="qq">' + esc(q) + '</div><div class="tx">' + esc(res.answer) + "</div>" + ((res.sources || []).length ? '<div class="src"><b>Sources</b>' + res.sources.map(function (s) { return "<div>" + (safeUrl(s.source_url) ? a(s.source_url, (s.signal ? s.signal + ": " : "") + s.title) : esc((s.signal ? s.signal + ": " : "") + s.title)) + (s.date ? ", " + esc(fdate(s.date)) : "") + "</div>"; }).join("") + "</div>" : "");
+        var h = { id: id, q: q, slug: slug, res: { can_answer: !!res.can_answer, answer: res.answer || "", sources: (res.sources || []).map(function (x) { return { signal: x.signal, title: x.title, source_url: x.source_url, date: x.date }; }) } };
+        HIST.unshift(h); saveHist();
+        var el = document.getElementById(id);
+        if (el) { el.className = "a" + (h.res.can_answer ? "" : " no"); el.innerHTML = entryHTML(h); }
+        var cl = document.getElementById("clr"); if (cl) cl.style.display = "";
       });
       document.getElementById("ai").value = "";
     }
     document.getElementById("af").addEventListener("submit", function (e) { e.preventDefault(); ask(document.getElementById("ai").value); });
     document.getElementById("as").addEventListener("change", sugg);
+    document.getElementById("clr").addEventListener("click", function () { HIST = []; saveHist(); renderHist(); });
     sugg();
+    renderHist();
   }
 
   window.addEventListener("hashchange", route);

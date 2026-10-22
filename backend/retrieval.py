@@ -126,18 +126,30 @@ def _load_vectors(slug, pool):
 
 
 def build_vectors(slug, client):
-    """Embed every piece of evidence that has no saved vector yet. Saves to embeddings.json. Run once per data refresh."""
+    """Embed every piece of evidence that has no saved vector yet and save to embeddings.json. Run once per data refresh.
+    Works in small batches with a pause (the free tier allows ~100 texts a minute) and saves after each batch,
+    so if it stops you can simply run it again and it continues where it left off."""
+    import time
     pool = build_pool(slug)
-    vecs, cache = _load_vectors(slug, pool)
+    vecs, _ = _load_vectors(slug, pool)
     todo = [i for i in pool if i["item_id"] not in vecs]
-    if todo:
-        new = client.embed([_doc_text(i) for i in todo], "RETRIEVAL_DOCUMENT")
-        for it, v in zip(todo, new):
+    total = len(todo)
+
+    def save():
+        docs = {i["item_id"]: {"h": _h(_doc_text(i)), "v": vecs[i["item_id"]]} for i in pool if i["item_id"] in vecs}
+        dl.write_json(dl.processed_path(slug, "embeddings.json"), {"model": config.EMBED_MODEL, "dim": config.EMBED_DIM, "docs": docs})
+
+    for k in range(0, total, config.EMBED_BATCH):
+        if k:
+            time.sleep(config.EMBED_PAUSE)
+        chunk = todo[k: k + config.EMBED_BATCH]
+        for it, v in zip(chunk, client.embed([_doc_text(i) for i in chunk], "RETRIEVAL_DOCUMENT")):
             vecs[it["item_id"]] = [round(x, 4) for x in _unit(v)]
-    docs = {i["item_id"]: {"h": _h(_doc_text(i)), "v": vecs[i["item_id"]]} for i in pool if i["item_id"] in vecs}
-    dl.write_json(dl.processed_path(slug, "embeddings.json"),
-                  {"model": config.EMBED_MODEL, "dim": config.EMBED_DIM, "docs": docs})
-    return {"documents": len(pool), "newly_embedded": len(todo)}
+        save()
+        print(f"  embedded {min(k + config.EMBED_BATCH, total)} of {total}", flush=True)
+    if not total:
+        save()
+    return {"documents": len(pool), "newly_embedded": total}
 
 
 # ---------------------------------------------------------------- the index

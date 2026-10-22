@@ -24,6 +24,10 @@ class Ask(BaseModel):
     question: str
 
 
+class Check(BaseModel):
+    claim: str
+
+
 @app.get("/companies")
 def companies():
     return dl.list_companies()
@@ -37,10 +41,58 @@ def findings(slug: str):
         raise HTTPException(404, str(e))
 
 
-@app.post("/analyze/{slug}")
-def analyze(slug: str, refresh_news: bool = False):
+@app.get("/score/{slug}")
+def gap_score(slug: str):
     try:
-        return pipeline.analyze(slug, client(), force_classify=refresh_news)
+        return pipeline.load_findings(slug)["gap_score"]
+    except FileNotFoundError as e:
+        raise HTTPException(404, str(e))
+
+
+@app.get("/search/{slug}")
+def search(slug: str, q: str, k: int = 10, signal: str = ""):
+    """Semantic search over the evidence. Instant, no Gemini text call. signal = reviews, jobs, reddit or news (optional)."""
+    try:
+        try:
+            c = client()
+        except GeminiError:
+            c = None                                  # no key: keyword search still works
+        return pipeline.search(slug, q, c, k=k, signal_types={signal} if signal else None)
+    except FileNotFoundError as e:
+        raise HTTPException(404, str(e))
+
+
+@app.get("/match/{slug}")
+def match(slug: str, k: int = 10):
+    """Each claim with the evidence closest in meaning, and the similarity scores."""
+    try:
+        claims = dl.load_claims(slug)["claims"]
+        try:
+            c = client()
+        except GeminiError:
+            c = None
+        m = pipeline.retrieval.get_index(slug).match_claims(claims, c, k=max(1, min(k, 20)))
+        return [{"claim_id": cl["id"], "topic": cl["topic"], "quote": cl["quote"], "method": m[cl["id"]]["method"],
+                 "evidence": [{**pipeline._public(h), "text": h["text"]} for h in m[cl["id"]]["hits"]]} for cl in claims]
+    except FileNotFoundError as e:
+        raise HTTPException(404, str(e))
+
+
+@app.post("/check/{slug}")
+def check(slug: str, body: Check):
+    """The user types a statement; Gap finds the closest evidence and gives a verdict (not saved)."""
+    try:
+        return pipeline.check_claim(slug, body.claim, client())
+    except FileNotFoundError as e:
+        raise HTTPException(404, str(e))
+    except GeminiError as e:
+        raise HTTPException(502, str(e))
+
+
+@app.post("/analyze/{slug}")
+def analyze(slug: str, refresh_news: bool = False, retrieve: bool = False):
+    try:
+        return pipeline.analyze(slug, client(), force_classify=refresh_news, retrieve=retrieve)
     except FileNotFoundError as e:
         raise HTTPException(404, str(e))
     except (GeminiError, ValueError) as e:

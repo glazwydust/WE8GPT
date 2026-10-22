@@ -114,19 +114,19 @@
 
       '<div class="stats"><div class="stats-in">' + stats.map(function (s) { return '<div class="stat"><b>' + s[0] + "</b><span>" + s[1] + "</span></div>"; }).join("") + "</div></div>" +
 
-      '<section class="band"><div class="wrap"><div class="sec-head"><h2>Investors hear one side of the story</h2><p>Earnings calls are prepared and positive. The truth tends to show up first in places nobody tracks together.</p></div>' +
-      '<div class="cols3"><div><h3>The story is curated</h3><p>Management picks the words. Results, calls and releases all come from the company.</p></div>' +
-      '<div><h3>The evidence is scattered</h3><p>Reviews, hiring, news and Reddit live on different sites, and most have no API.</p></div>' +
-      '<div><h3>Nobody connects them</h3><p>Retail investors can’t read every source against every claim, so mismatches surface late.</p></div></div></div></section>' +
+      '<section class="band"><div class="wrap"><div class="sec-head"><h2>Investors hear one side of the story</h2></div>' +
+      '<div class="cols3"><div><h3>The story is curated</h3><p>Calls and releases come from the company.</p></div>' +
+      '<div><h3>The evidence is scattered</h3><p>Reviews, hiring and Reddit sit on different sites.</p></div>' +
+      '<div><h3>Nobody connects them</h3><p>So mismatches surface late.</p></div></div></div></section>' +
 
-      '<section class="band" style="padding-top:0"><div class="wrap"><div class="sec-head"><h2>See how each company held up</h2><p>The Gap Score runs from 0 to 100: consistent counts 0, watch 0.5 and gap 1, and claims backed by more evidence count more. Lower means the web agrees with management.</p></div>' +
+      '<section class="band" style="padding-top:0"><div class="wrap"><div class="sec-head"><h2>See how each company held up</h2><p>Gap Score 0–100. Lower means the web agrees with management.</p></div>' +
       '<div class="co-cards">' + COS.map(function (c) { var k = counts(c), s = gapScore(c), b = band(s);
         return '<a class="co" href="#/results/' + esc(c.slug) + '">' + ring(s) + "<div><h3>" + esc(short(c.company)) + '</h3><p class="q">' + esc(c.quarter) + " earnings call. " + esc(b.t) + "</p>" + vbar(k) + vkey(k) + "</div></a>"; }).join("") + "</div></div></section>" +
 
       '<section class="band" style="padding-top:0"><div class="wrap"><div class="sec-head"><h2>From transcript to a verdict you can check</h2></div>' + flowHTML() +
       '<p style="margin-top:22px"><a href="#/how">Read the full method</a></p></div></section>' +
 
-      '<section class="band" style="padding-top:0"><div class="wrap"><div class="tf-band"><div><h2>The live web, collected by TinyFish</h2><p>Most of these sources have no API. TinyFish agents browse them like a person would and save what they find, so every number on this site can be traced to a page.</p><p style="margin-top:18px"><a class="btn" href="#/results/' + esc(COS[0].slug) + '#tinyfish" data-tf="1">See the collection log</a></p></div>' +
+      '<section class="band" style="padding-top:0"><div class="wrap"><div class="tf-band"><div><h2>The live web, collected by TinyFish</h2><p>These sites have no API. TinyFish agents browse them like a person, so every number traces back to a page.</p><p style="margin-top:18px"><a class="btn" href="#/results/' + esc(COS[0].slug) + '#tinyfish" data-tf="1">See the collection log</a></p></div>' +
       '<div class="tf-nums"><div><b>' + runs + '</b><span>news search runs</span></div><div><b>' + arts + '</b><span>articles found</span></div><div><b>4</b><span>signal types</span></div></div></div></div></section>';
 
     var tfLink = app.querySelector("[data-tf]");
@@ -217,7 +217,7 @@
       '<section class="block"><div class="card sum">' + ring(s) +
       '<div><span class="pill" style="background:' + b.c + ';color:#fff">' + esc(b.t) + "</span><h3>" + esc(f.company) + '</h3><p class="d">' + n + " of " + tot + " management claims had enough public evidence to judge. " + esc(parts.join(". ")) + ".</p>" +
       '<div class="chips"><span class="chip">Analysed ' + esc(fdate(f.generated_at)) + '</span><span class="chip">Model ' + esc(f.model || "n/a") + "</span>" + (f.stale ? '<span class="chip" style="color:#9a6a07">Data changed since this analysis</span>' : "") + "</div></div>" +
-      '<div class="sum-bars"><h4>How the ' + tot + " claims came out</h4>" + vbar(k) + vkey(k) + '<p class="note">' + (gs ? "Gap Score " + gs.score + " (likely range " + gs.low + " to " + gs.high + ", confidence " + gs.conf + ", based on " + gs.judged + " of " + gs.total + " claims). " : "") + 'Consistent counts 0, watch 0.5, gap 1, and claims with more evidence count more. “Not enough evidence” is never counted as a pass or a fail.</p></div></div>' +
+      '<div class="sum-bars"><h4>How the ' + tot + " claims came out</h4>" + vbar(k) + vkey(k) + '<p class="note">' + (gs ? "Gap Score " + gs.score + " (likely range " + gs.low + " to " + gs.high + ", confidence " + gs.conf + ", based on " + gs.judged + " of " + gs.total + " claims). " : "") + '“Not enough evidence” is not counted.</p></div></div>' +
       (flags.length ? '<ul class="flags">' + flags.map(function (x) { return "<li>⚑ " + esc(x) + "</li>"; }).join("") + "</ul>" : "") + "</section>" +
 
       '<section class="block"><h2>Claims at a glance</h2><p class="sub">' + tot + ' claims from the call. Select one to read the quote and the evidence.</p><div class="card glance">' +
@@ -227,7 +227,7 @@
       '<div class="tiles">' +
       tile(num(mainRec.avg, 1) + " ★", "Recent average rating", "#d99a1f", mainRec.n ? "from " + mainRec.n + " reviews in the last 14 days" + (rv.length > 1 ? " (" + esc(r0.app) + ")" : "") : "") +
       tile(num(mainRec.one_star_pct, 1) + "%", "1-star share", "#e5532b", "") +
-      tile(jb ? num(jb.open_roles) : "–", "Open roles counted", "#2a4f8a", jb && I.jobs_total && I.jobs_total !== jb.open_roles ? "The saved careers file lists " + I.jobs_total + " (job-board search). See Inspect." : "shown on the careers page") +
+      tile(jb ? num(jb.open_roles) : "–", "Open roles counted", "#2a4f8a", jb && I.jobs_total && I.jobs_total !== jb.open_roles ? "Job-board search lists " + I.jobs_total + "." : "shown on the careers page") +
       tile(num(nw.negative_facts) + " / " + num(nw.positive_facts), "Negative / positive news facts", "#1f9d8c", "from " + num(nw.relevant_reported_facts) + " relevant facts") +
       "</div>" +
       '<div class="two"><div class="card"><h3>App reviews</h3>' + (rv.length ? rv.map(appBlock).join("") : '<p class="muted">No review data in this analysis.</p>') + "</div>" +
@@ -258,22 +258,22 @@
   function careersCard(I, jb) {
     var mismatch = I.jobs_total && jb && I.jobs_total !== jb.open_roles;
     var body = (I.jobs || []).slice(0, 6).map(function (j) { return "<li>" + (j.brand ? '<span class="tag">' + esc(j.brand) + "</span>" : "") + esc(j.title) + '<span class="l">' + esc(j.location) + "</span></li>"; }).join("");
-    return '<div class="card"><h3>Careers listings</h3>' + (I.jobs_total != null ? '<div class="big">' + esc(I.jobs_total) + '</div><p class="fine" style="margin:4px 0 8px">' + esc(I.jobs_method || "listings in the saved file") + "</p>" : '<p class="muted">No careers data in the saved files.</p>') +
+    return '<div class="card"><h3>Careers listings</h3>' + (I.jobs_total != null ? '<div class="big">' + esc(I.jobs_total) + '</div><p class="fine" style="margin:4px 0 8px">' + esc(I.jobs_method || "listings found") + "</p>" : '<p class="muted">No careers data collected.</p>') +
       (mismatch ? '<div class="warn">The analysis used ' + esc(jb.open_roles) + " listings it could read. Treat the hiring signal as a small sample.</div>" : "") +
       '<ul class="list">' + body + "</ul>" + (I.jobs_url ? '<p class="fine">' + a(I.jobs_url, "Open careers page") + "</p>" : "") + "</div>";
   }
   function lowStarCard(I) {
-    return '<div class="card"><h3>Low-star reviews, newest first</h3>' + ((I.low_star || []).length ? '<ul class="list">' + I.low_star.map(function (r) { return '<li class="rev"><q>“' + esc(clip(r.text, 200)) + '”</q><div class="l"><span class="s">' + "★".repeat(r.stars) + "</span> " + esc(r.app) + ", " + esc(r.date) + "</div></li>"; }).join("") + "</ul>" : '<p class="muted">No low-star reviews in the saved file.</p>') + "</div>";
+    return '<div class="card"><h3>Low-star reviews, newest first</h3>' + ((I.low_star || []).length ? '<ul class="list">' + I.low_star.map(function (r) { return '<li class="rev"><q>“' + esc(clip(r.text, 200)) + '”</q><div class="l"><span class="s">' + "★".repeat(r.stars) + "</span> " + esc(r.app) + ", " + esc(r.date) + "</div></li>"; }).join("") + "</ul>" : '<p class="muted">No low-star reviews found.</p>') + "</div>";
   }
   function redditCard(I) {
-    return '<div class="card"><h3>Reddit posts used</h3>' + ((I.reddit || []).length ? '<ul class="list">' + I.reddit.map(function (p) { return "<li>" + a(p.url, p.title || "Reddit post") + '<span class="l">' + esc(fdate(p.date)) + "</span></li>"; }).join("") + "</ul>" : '<p class="muted">No Reddit posts in the saved files.</p>') + "</div>";
+    return '<div class="card"><h3>Reddit posts used</h3>' + ((I.reddit || []).length ? '<ul class="list">' + I.reddit.map(function (p) { return "<li>" + a(p.url, p.title || "Reddit post") + '<span class="l">' + esc(fdate(p.date)) + "</span></li>"; }).join("") + "</ul>" : '<p class="muted">No Reddit posts collected.</p>') + "</div>";
   }
   function tinyfishCard(c) {
     var t = c.tinyfish || { runs: [] }, m = t.meta, tot = sum(t.runs, function (r) { return r.articles; });
     return '<section class="block" id="tinyfish"><div class="card tfc"><div class="tfh"><span class="tfb">TinyFish</span><h3 style="margin:0">Collected from the live web</h3></div>' +
       '<p class="muted" style="max-width:62ch">TinyFish agents gathered the signals above and found the earnings-call transcript. Below is the news collection log for ' + esc(short(c.company)) + ".</p>" +
       (m ? '<div class="chips"><span class="chip">Source: ' + esc(m.source) + '</span><span class="chip">Collected ' + esc(fdt(m.collected_at)) + '</span><span class="chip">' + esc(m.articles_total) + " articles after removing duplicates</span></div>" : "") +
-      (t.runs.length ? '<div class="scroll"><table style="margin-top:14px"><thead><tr><th>Run</th><th>Search query</th><th>Type</th><th class="n">Articles</th></tr></thead><tbody>' + t.runs.map(function (r) { return '<tr><td><span class="tag">' + esc(r.run) + "</span></td><td>" + esc(r.query) + "</td><td>" + esc((r.query_type || "").replace(/_/g, " ")) + '</td><td class="n">' + esc(r.articles) + "</td></tr>"; }).join("") + '<tr><td></td><td><b>Total before removing duplicates</b></td><td></td><td class="n"><b>' + tot + "</b></td></tr></tbody></table></div>" : '<p class="fine">No run log saved for this company.</p>') + "</div></section>";
+      (t.runs.length ? '<div class="scroll"><table style="margin-top:14px"><thead><tr><th>Run</th><th>Search query</th><th>Type</th><th class="n">Articles</th></tr></thead><tbody>' + t.runs.map(function (r) { return '<tr><td><span class="tag">' + esc(r.run) + "</span></td><td>" + esc(r.query) + "</td><td>" + esc((r.query_type || "").replace(/_/g, " ")) + '</td><td class="n">' + esc(r.articles) + "</td></tr>"; }).join("") + '<tr><td></td><td><b>Total before removing duplicates</b></td><td></td><td class="n"><b>' + tot + "</b></td></tr></tbody></table></div>" : '<p class="fine">No collection log for this company.</p>') + "</div></section>";
   }
   function dq(f) {
     var w = []; (f.data_quality || []).forEach(function (q) { (q.warnings || []).forEach(function (x) { w.push(q.signal + ": " + x); }); });
@@ -321,13 +321,12 @@
       '<section class="block"><h2>The pipeline</h2>' + flowHTML() + "</section>" +
       '<section class="block"><h2>What the verdicts mean</h2><div class="card scroll"><table class="vtab"><tbody>' +
       [["consistent", "The evidence supports what management said."], ["watch", "Some evidence points the other way, or the claim is only partly supported."], ["gap", "The evidence contradicts the claim, and it shows up in at least two different kinds of signal."], ["insufficient_evidence", "We did not collect anything that can confirm or contradict it. This is not a pass."]].map(function (x) { return "<tr><td>" + pill(x[0]) + "</td><td>" + x[1] + "</td></tr>"; }).join("") + "</tbody></table></div>" +
-      '<p class="fine">Gap Score = a 0 to 100 score where consistent counts 0, watch 0.5 and gap 1, and claims backed by more evidence count more. Because only some claims can be judged, it comes with a likely range. A higher score means a bigger distance between the story and the evidence. Verdicts are judged by ' + esc(model) + " and then re-checked by Python.</p></section>" +
+      '<p class="fine">Gap Score (0–100): consistent 0, watch 0.5, gap 1, weighted by evidence. Higher means a bigger mismatch. Judged by ' + esc(model) + ", re-checked by Python.</p></section>" +
       '<section class="block"><h2>What each signal tells you</h2><div class="card scroll"><table><thead><tr><th>Signal</th><th>Collected from</th><th>What it tells you</th></tr></thead><tbody>' +
-      [["App reviews", "Play Store, by a TinyFish agent", "Average rating, share of 1-star reviews and service complaints among the newest reviews."], ["Careers", "Company careers pages or job boards, by a TinyFish agent", "How many roles are open, and in which brand."], ["Reddit", "TinyFish Search and Fetch", "Recent user posts and discussion."], ["News", "TinyFish Search, then a news filter", "Dated, sourced articles, labelled positive, negative or neutral."]].map(function (x) { return "<tr><td><b>" + x[0] + "</b></td><td>" + x[1] + "</td><td>" + x[2] + "</td></tr>"; }).join("") + "</tbody></table></div></section>" +
+      [["App reviews", "Play Store, by a TinyFish agent", "Average rating, share of 1-star reviews and service complaints among the newest reviews."], ["Careers", "Company careers pages or job boards, by a TinyFish agent", "How many roles are open, and in which brand."], ["Reddit", "Reddit search, by a TinyFish agent", "Recent user posts and discussion."], ["News", "TinyFish Search, then a news filter", "Dated, sourced articles, labelled positive, negative or neutral."]].map(function (x) { return "<tr><td><b>" + x[0] + "</b></td><td>" + x[1] + "</td><td>" + x[2] + "</td></tr>"; }).join("") + "</tbody></table></div></section>" +
       '<section class="block"><h2>Limits you should know</h2><div class="limits"><div class="card"><h3>A snapshot, not a trend</h3><p>Most signals are one collection, so “no trend” is often the honest answer.</p></div><div class="card"><h3>Samples are small</h3><p>Review samples are dozens, not thousands. Treat the numbers as indicators.</p></div><div class="card"><h3>Public evidence only</h3><p>Gap cannot see inside a company. It checks claims against what is publicly visible.</p></div></div></section>' +
       '<section class="block"><h2>An example of a gap</h2><div class="card sample"><div class="t">Illustration with a fictional company, not real data</div><p>Management says “customer experience improved a lot this quarter.” App reviews show the 1-star share rising, and Reddit threads about slow support are growing. Two different signals disagree with the claim, so the verdict is ' + pill("gap") + ".</p></div></section>" +
-      '<section class="block"><h2>Run it yourself</h2><pre class="code">pip install -r requirements.txt\ncp .env.example .env                   <i># add GEMINI_API_KEY</i>\npython -m backend.cli analyze groww\npython -m backend.cli analyze eternal\npython scripts/build_frontend_data.py  <i># refresh the website data</i>\n<i># open frontend/index.html in your browser</i></pre>' +
-      '<p class="fine">To add another company: add its claims and signal files, run <code>analyze</code> and the build script, and it appears on every page.</p></section></div>';
+      '</div>';
   }
 
   /* ---------- ASK GAP ---------- */
@@ -401,7 +400,7 @@
   }
   function pAsk(r) {
     var cur = (co(r.q.co) || COS[0]).slug;
-    app.innerHTML = '<div class="ph"><div class="ph-in"><div><h1>Ask Gap</h1><p>Questions about what the evidence says. Gap answers from the saved findings and does not give buy or sell advice.</p></div></div></div>' +
+    app.innerHTML = '<div class="ph"><div class="ph-in"><div><h1>Ask Gap</h1><p>Ask what the evidence says about a company’s claims. No buy or sell advice.</p></div></div></div>' +
       '<div class="body narrow" style="max-width:900px"><div class="askbox"><form class="askrow" id="af"><select id="as" aria-label="Company">' + COS.map(function (c) { return '<option value="' + esc(c.slug) + '"' + (c.slug === cur ? " selected" : "") + ">" + esc(short(c.company)) + "</option>"; }).join("") + '</select><input id="ai" maxlength="500" placeholder="For example: Is the pricing claim backed up?" aria-label="Your question" autocomplete="off"><button class="btn dark" type="submit">Ask</button></form><div class="sug" id="sg"></div></div><div style="text-align:right;margin:6px 0"><button type="button" class="btn" id="clr" style="display:none">Clear history</button></div><div class="qa" id="qa" aria-live="polite"></div></div>';
     function sugg() {
       var c = co(document.getElementById("as").value), cl = claimsOf(c);

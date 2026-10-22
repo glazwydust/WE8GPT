@@ -74,8 +74,13 @@ def validate_findings(raw, claims, items_by_id):
     return findings, notes
 
 
+BASES = {"evidence", "background", "about_gap", "cannot"}
+BACKGROUND_NOTE = "(General background, not from the evidence Gap collected, and it may be out of date.)"
+
+
 def validate_answer(raw, items_by_id):
     raw = raw if isinstance(raw, dict) else {}
+    basis = raw.get("basis") if raw.get("basis") in BASES else "evidence"
     src, seen = [], set()
     for iid in raw.get("used_item_ids", []) or []:
         it = items_by_id.get(iid)
@@ -84,5 +89,14 @@ def validate_answer(raw, items_by_id):
             src.append({"item_id": iid, "signal": it["signal"], "title": it["title"],
                         "source_url": it["source_url"], "date": it["date"]})
     can = bool(raw.get("can_answer")) and bool(raw.get("answer"))
-    return {"can_answer": can, "answer": str(raw.get("answer", ""))[:900] if can else
-            (str(raw.get("answer", ""))[:400] or "The saved data does not cover that."), "sources": src}
+    if not can:
+        return {"can_answer": False, "basis": "cannot", "sources": [],
+                "answer": str(raw.get("answer", ""))[:400] or "The saved data does not cover that."}
+    answer = str(raw.get("answer", ""))[:1200]
+    if basis == "about_gap":
+        src = []
+    if basis == "background":
+        src = []                                           # background answers cite nothing: be honest about that
+        if "general background" not in answer.lower():
+            answer += "\n\n" + BACKGROUND_NOTE
+    return {"can_answer": True, "basis": basis, "answer": answer, "sources": src}
